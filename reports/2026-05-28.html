@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-05-28</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e2d6;
+            color: #1a1a1a;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Newspaper Container */
+        .newspaper {
+            max-width: 860px;
+            margin: 2rem auto;
+            background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08);
+            padding: 0;
+        }
+
+        /* === Masthead === */
+        .masthead {
+            text-align: center;
+            padding: 2rem 1.5rem 0;
+        }
+        .masthead-topline {
+            font-size: 9px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #6b6358;
+            margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px;
+            font-weight: 900;
+            color: #1a1a1a;
+            letter-spacing: 18px;
+            text-indent: 18px;
+            line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 10px;
+            color: #6b6358;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-top: 8px;
+        }
+        .masthead-rule {
+            border: none;
+            border-top: 4px double #2a2a2a;
+            margin: 1rem 1.5rem 0;
+        }
+        .masthead-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.6rem 1.5rem;
+            font-size: 10px;
+            color: #6b6358;
+            letter-spacing: 1px;
+        }
+        .masthead-info a {
+            color: #6b6358;
+            text-decoration: none;
+        }
+        .masthead-info a:hover {
+            color: #8b1a1a;
+        }
+        .info-center {
+            font-style: italic;
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        /* === Nav Bar === */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.4rem 1.5rem;
+            border-top: 1px solid #c4b99a;
+            border-bottom: 1px solid #c4b99a;
+            font-size: 11px;
+            color: #6b6358;
+        }
+        .nav-bar a {
+            color: #6b6358;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        .nav-bar a:hover {
+            color: #8b1a1a;
+        }
+
+        /* === Lead === */
+        .lead-section {
+            padding: 1.5rem 1.5rem 1.2rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block;
+            border: 1.5px solid #8b1a1a;
+            color: #8b1a1a;
+            font-size: 9px;
+            letter-spacing: 4px;
+            padding: 2px 8px;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+        .lead-text {
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+
+        /* === Articles === */
+        .content {
+            padding: 0 1.5rem;
+        }
+        .full-width {
+            padding: 1.2rem 0;
+        }
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            padding: 1.2rem 0;
+        }
+        .two-col .col {
+            padding: 0 1rem;
+        }
+        .two-col .col:first-child {
+            padding-left: 0;
+            border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child {
+            padding-right: 0;
+        }
+
+        .article {
+            margin-bottom: 0;
+        }
+        .article-categories {
+            margin-bottom: 0.3rem;
+        }
+        .article-category {
+            font-size: 9px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #8b1a1a;
+            font-weight: 600;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900;
+            color: #1a1a1a;
+            line-height: 1.3;
+            margin-bottom: 0.4rem;
+        }
+        .feature-headline {
+            font-size: 30px;
+        }
+        .full-headline {
+            font-size: 24px;
+        }
+        .col-headline {
+            font-size: 19px;
+        }
+        .article-source {
+            font-size: 11px;
+            font-style: italic;
+            color: #6b6358;
+            margin-bottom: 0.6rem;
+        }
+        .article-source a {
+            color: #6b6358;
+            text-decoration: none;
+        }
+        .article-source a:hover {
+            color: #8b1a1a;
+            text-decoration: underline;
+        }
+        .article-body {
+            font-size: 15px;
+            text-align: justify;
+            line-height: 1.75;
+            margin-bottom: 0.8rem;
+            color: #2a2a2a;
+        }
+
+        /* Drop Cap (only for feature) */
+        .has-drop-cap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px;
+            font-weight: 900;
+            float: left;
+            line-height: 0.8;
+            margin: 4px 8px 0 0;
+            color: #8b1a1a;
+        }
+
+        .article-commentary {
+            border-top: 1px dashed #c4b99a;
+            padding-top: 0.5rem;
+            font-size: 13.5px;
+            font-style: italic;
+            color: #6b6358;
+            line-height: 1.6;
+        }
+        .article-commentary::before {
+            content: '✦ ';
+            color: #8b1a1a;
+        }
+
+        /* Separator */
+        .separator {
+            text-align: center;
+            color: #c4b99a;
+            font-size: 14px;
+            letter-spacing: 8px;
+            padding: 0.2rem 0;
+            user-select: none;
+        }
+
+        /* === Colophon === */
+        .colophon {
+            margin-top: 1rem;
+            border-top: 4px double #2a2a2a;
+            background: #eae3d4;
+            padding: 1rem 1.5rem;
+            font-size: 10px;
+            color: #6b6358;
+            text-align: center;
+            letter-spacing: 1px;
+            line-height: 1.8;
+        }
+        .colophon em {
+            color: #8b1a1a;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        /* === Responsive === */
+        @media (max-width: 640px) {
+            .masthead-title {
+                font-size: 40px;
+                letter-spacing: 10px;
+                text-indent: 10px;
+            }
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+            .two-col .col {
+                padding: 0;
+            }
+            .two-col .col:first-child {
+                border-right: none;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #c4b99a;
+            }
+            .feature-headline {
+                font-size: 24px;
+            }
+            .full-headline {
+                font-size: 20px;
+            }
+            .col-headline {
+                font-size: 19px;
+            }
+            .lead-text {
+                font-size: 17px;
+            }
+            .masthead-info {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <!-- Masthead -->
+        <header class="masthead">
+            <div class="masthead-topline">An Independent Publication · Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+        </header>
+        <hr class="masthead-rule">
+        <div class="masthead-info">
+            <span>Vol. <em>6</em> · No. <em>6</em></span>
+            <span class="info-center">Thursday, May 28, 2026</span>
+            <span>今日 <em>7</em> 条精选</span>
+        </div>
+
+        <!-- Nav -->
+        <nav class="nav-bar">
+            <a href="reports/2026-05-27.html">← 2026-05-27</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </nav>
+
+        <!-- Lead -->
+        <section class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">编程智能体的估值飙升与基准测试的残酷现实构成了今天最值得玩味的对比——MCP 协议在同一天被 OpenAI 和 Runway 同时采纳，则预示着新的基础设施正在成型。</div>
+        </section>
+
+        <!-- Articles -->
+        <div class="content">
+
+        <section class="full-width">
+            <div class="article">
+                <div class="article-categories"><span class="article-category">INDUSTRY</span></div>
+                <div class="article-headline feature-headline">Cognition 完成 10 亿美元融资，估值达 260 亿</div>
+                <div class="article-source"><a href="https://x.com/swyx/status/2059717021944926238" target="_blank">X / swyx</a></div>
+                <div class="article-body has-drop-cap">Cognition宣布已成为全球最大的独立智能体实验室。公司完成超10亿美元融资，估值达260亿美元，由Lux Capital、General Catalyst等领投。其企业使用量自年初增长超10倍，年化收入增至4.92亿美元。Cognition于两年前推出Devin，定位为首个AI软件工程师。本轮估值意味着市场将AI编程智能体视为基础设施级别的新品类，而非工具插件。</div>
+                <div class="article-commentary">从 Devin 到 260 亿估值只用了两年——市场在赌 AI 软件工程师不是辅助工具，而是替代方案。</div>
+            </div>
+        </section>
+        <div class="separator">— ✦ —</div>
+        <section class="two-col">
+            <div class="col">
+            <div class="article">
+                <div class="article-categories"><span class="article-category">PAPER</span></div>
+                <div class="article-headline col-headline">ITBench-AA：所有前沿模型在企业智能体任务中均未超过 50%</div>
+                <div class="article-source"><a href="https://huggingface.co/blog/ibm-research/itbench-aa" target="_blank">Hugging Face Blog</a></div>
+                <div class="article-body">由Artificial Analysis和IBM推出的ITBench-AA SRE基准测试显示，所有前沿大模型得分均未超过50%。Claude Opus 4.7以47%领先，GPT-5.5和Qwen3.7 Max分别得46%和42%。测试包含59个需要通过Shell命令、Kubernetes操作等方式解决的企业IT运维场景，涵盖故障诊断、配置管理和安全合规三大类任务。</div>
+                <div class="article-commentary">最强模型也只有 47 分——企业级智能体离「可靠」还有很长的路，但差距就是机会。</div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="article">
+                <div class="article-categories"><span class="article-category">PRODUCT</span></div>
+                <div class="article-headline col-headline">OpenAI 支持私有 MCP 服务器安全连接</div>
+                <div class="article-source"><a href="https://x.com/OpenAIDevs/status/2059703536825565499" target="_blank">X / OpenAI Developers</a></div>
+                <div class="article-body">OpenAI宣布ChatGPT、Codex和Responses API现支持通过仅出站HTTPS连接企业内部网络中的私有MCP服务器。这意味着团队可以在不暴露MCP服务器到公网的前提下，让OpenAI产品安全地访问内部工具和数据源。</div>
+                <div class="article-commentary">OpenAI 拥抱 MCP，等于宣布这个协议从 Anthropic 的提案变成了行业基础设施。</div>
+            </div>
+            </div>
+        </section>
+        <div class="separator">— ✦ —</div>
+        <section class="full-width">
+            <div class="article">
+                <div class="article-categories"><span class="article-category">INDUSTRY</span></div>
+                <div class="article-headline full-headline">Simon Willison：Anthropic 和 OpenAI 通过编程智能体找到了产品市场契合点</div>
+                <div class="article-source"><a href="https://simonwillison.net/2026/May/27/product-market-fit" target="_blank">simonwillison.net</a></div>
+                <div class="article-body">Simon Willison分析指出，Anthropic与OpenAI通过编程智能体找到了产品市场契合点，并因此调整企业定价。两家公司已于2026年4月前后将企业套餐从高额折扣改为与API用量挂钩。Anthropic Enterprise变为每席位20美元/月外加API费用，OpenAI也取消了此前的统一费率。核心判断：编程智能体不是实验性功能，而是已经产生真实商业价值的核心产品。</div>
+                <div class="article-commentary">当编程智能体的账单开始吓到企业客户，你就知道它真的有用了。</div>
+            </div>
+        </section>
+        <div class="separator">— ✦ —</div>
+        <section class="two-col">
+            <div class="col">
+            <div class="article">
+                <div class="article-categories"><span class="article-category">PRODUCT</span></div>
+                <div class="article-headline col-headline">Runway 推出 MCP 服务器，对话中直接生成视频</div>
+                <div class="article-source"><a href="https://runwayml.com/news/mcp" target="_blank">Runway News</a></div>
+                <div class="article-body">Runway正式推出MCP服务器，允许任何兼容MCP的AI智能体（如Claude、ChatGPT、Cursor）在对话界面中直接生成图像与视频，无需切换工作流。该服务器接入了Runway最新的多款模型，包括Gen-4.5和Seedance 2.0。创作者可以在编码或分析的过程中，直接调用视频生成能力。</div>
+                <div class="article-commentary">视频生成进入对话工作流，创意生产的摩擦又少了一层。</div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="article">
+                <div class="article-categories"><span class="article-category">PAPER</span></div>
+                <div class="article-headline col-headline">Qwen3.5 推理速度达 580 tokens/s，刷新智能体负载纪录</div>
+                <div class="article-source"><a href="https://x.com/Alibaba_Qwen/status/2059674574397313277" target="_blank">X / Qwen</a></div>
+                <div class="article-body">Qwen3.5在TokenSpeed推理引擎上，针对智能体工作负载达到创纪录的580 tokens/s速度。该成果由通义千问推理团队、TokenSpeed团队、NVIDIA及Mooncake团队共同实现，采用了tri-admission调度、前缀缓存等优化技术。这一速度意味着智能体的实时交互体验将大幅提升。</div>
+                <div class="article-commentary">580 t/s 让推理延迟几乎消失——实时交互的智能体体验不再是奢侈品。</div>
+            </div>
+            </div>
+        </section>
+        <div class="separator">— ✦ —</div>
+        <section class="full-width">
+            <div class="article">
+                <div class="article-categories"><span class="article-category">INDUSTRY</span></div>
+                <div class="article-headline full-headline">教皇 Leo XIV 发布 AI 通谕《Magnifica Humanitas》</div>
+                <div class="article-source"><a href="https://www.theverge.com/ai-artificial-intelligence/937933/pope-ai-encyclical-tech-industry-reactions" target="_blank">The Verge</a></div>
+                <div class="article-body">教皇Leo XIV发布题为《Magnifica Humanitas》的通谕，警告人工智能的使用绝非纯粹技术问题，当其进入影响人类生活的过程时，便触及权利、机会、地位与自由。通谕发布时Anthropic联合创始人Christopher Olah出席。文件引发科技界内外广泛反应，被视为宗教领袖首次系统性地对AI发展进行伦理定性。</div>
+                <div class="article-commentary">当教皇开始写 AI 通谕，说明这个议题已经从科技圈溢出到人类文明的议程表上。</div>
+            </div>
+        </section>
+        </div>
+
+        <!-- Colophon -->
+        <footer class="colophon">
+            今日精选 <em>7</em> 条 · 数据源 <a href="https://aihot.virxact.com" style="color:#6b6358">aihot.virxact.com</a> · 由 remio agent 生成 · 2026-05-28
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI DAILY · 2026-05-26</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Songti+SC&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+      background: #e8e0d0;
+      color: #1a1a1a;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .newspaper {
+      max-width: 860px;
+      margin: 2rem auto;
+      background: #f5f0e6;
+      box-shadow: 0 0 60px rgba(0,0,0,0.08);
+      padding: 2.5rem 3rem;
+    }
+
+    /* Masthead */
+    .masthead {
+      text-align: center;
+      border-bottom: 4px double #2a2a2a;
+      padding-bottom: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+    .topline {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #6b6358;
+      margin-bottom: 8px;
+    }
+    .title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 64px;
+      font-weight: 900;
+      color: #1a1a1a;
+      letter-spacing: 18px;
+      text-indent: 18px;
+      line-height: 1.1;
+    }
+    .subtitle {
+      font-size: 10px;
+      color: #6b6358;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .info-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      color: #6b6358;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 0.5rem 0;
+    }
+    .info-bar em { font-style: normal; color: #8b1a1a; font-weight: 700; }
+
+    /* Nav */
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.6rem 0;
+      margin-bottom: 1rem;
+      border-top: 1px solid #c4b99a;
+      border-bottom: 1px solid #c4b99a;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .nav-bar a { color: #8b1a1a; text-decoration: none; }
+    .nav-bar a:hover { text-decoration: underline; }
+    .nav-bar span { color: #6b6358; }
+
+    /* Lead */
+    .lead-section {
+      margin-bottom: 1.5rem;
+    }
+    .lead-tag {
+      display: inline-block;
+      background: #8b1a1a;
+      color: #fff;
+      font-size: 9px;
+      letter-spacing: 4px;
+      padding: 3px 10px;
+      margin-bottom: 10px;
+    }
+    .lead-text {
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.5;
+      color: #2a2a2a;
+      padding-bottom: 0.8rem;
+      border-bottom: 2px solid #2a2a2a;
+    }
+
+    /* Article sections */
+    .full-width-section { margin-bottom: 0.5rem; }
+    .article-category {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 9px;
+      letter-spacing: 3px;
+      color: #8b1a1a;
+      margin-bottom: 4px;
+    }
+    .feature-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1.2;
+      color: #1a1a1a;
+      margin-bottom: 6px;
+    }
+    .article-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #1a1a1a;
+      margin-bottom: 6px;
+    }
+    .article-source {
+      font-size: 11px;
+      font-style: italic;
+      color: #6b6358;
+      margin-bottom: 8px;
+    }
+    .article-source a { color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a; }
+    .article-source a:hover { color: #8b1a1a; }
+    .article-body {
+      font-size: 15px;
+      text-align: justify;
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+    .drop-cap::first-letter {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 52px;
+      font-weight: 900;
+      float: left;
+      line-height: 0.8;
+      margin: 4px 8px 0 0;
+      color: #8b1a1a;
+    }
+    .article-commentary {
+      border-top: 1px dashed #c4b99a;
+      padding-top: 8px;
+      font-size: 13.5px;
+      font-style: italic;
+      color: #4a4238;
+      line-height: 1.5;
+    }
+    .article-commentary::before {
+      content: '✦ ';
+      color: #8b1a1a;
+    }
+
+    /* Two column */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .two-col .col:first-child {
+      border-right: 1px solid #c4b99a;
+      padding-right: 1.5rem;
+    }
+    .two-col .col:last-child {
+      padding-left: 0;
+    }
+
+    /* Separator */
+    .separator {
+      text-align: center;
+      font-size: 12px;
+      color: #c4b99a;
+      padding: 0.8rem 0;
+      letter-spacing: 3px;
+      user-select: none;
+    }
+
+    /* Colophon */
+    .colophon {
+      border-top: 3px double #2a2a2a;
+      background: #eae3d4;
+      padding: 1rem 1.5rem;
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #6b6358;
+      line-height: 1.8;
+    }
+    .colophon em { font-style: normal; color: #8b1a1a; font-weight: 700; }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .newspaper { padding: 1.2rem; margin: 0.5rem; }
+      .title { font-size: 36px; letter-spacing: 10px; text-indent: 10px; }
+      .feature-headline { font-size: 22px; }
+      .two-col { grid-template-columns: 1fr; gap: 0.5rem; }
+      .two-col .col:first-child { border-right: none; padding-right: 0; }
+      .info-bar { flex-direction: column; gap: 2px; }
+      .lead-text { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+<div class="newspaper">
+
+  <div class="masthead">
+    <div class="topline">An Independent Publication · Est. 2026</div>
+    <div class="title">AI DAILY</div>
+    <div class="subtitle">aihot 精选 × remio 签发</div>
+  </div>
+
+  <div class="info-bar">
+    <span>Vol. <em>4</em> · No. <em>4</em></span>
+    <span>Tuesday, May 26, 2026</span>
+    <span>今日 <em>6</em> 条精选</span>
+  </div>
+
+  <div class="nav-bar">
+    <span><a href="reports/2026-05-25.html">← 2026-05-25</a></span>
+    <a href="/">返回首页</a>
+    <span></span>
+  </div>
+
+  <div class="lead-section">
+    <div class="lead-tag">LEAD</div>
+    <div class="lead-text">今天，150 万和 1.2T 两个数字定义了 AI 行业的主调——上下文窗口的军备竞赛仍在加速，而梵蒂冈则从另一侧敲响了伦理的警钟。</div>
+  </div>
+
+    <div class="article-section full-width-section">
+      <div class="full-width">
+        <div class="article-category">MODEL</div>
+        <div class="feature-headline">OpenAI GPT-5.6 曝下月发布：上下文窗口跃升至 150 万 token</div>
+        <div class="article-source"><a href="https://www.ithome.com/0/955/078.htm" target="_blank" rel="noopener">IT之家</a></div>
+        <div class="article-body drop-cap">开发者在 OpenAI Codex 后端日志中发现未官宣的 GPT-5.6 模型，内部代号 iris-alpha，支持 150 万 token 上下文窗口，较当前 GPT-5.5 的 105 万提升约 43%。测试显示在输入达 90 万 token 时仍能流畅响应。同系列还发现了 ember-alpha 与 beacon-alpha 版本。</div>
+        <div class="article-commentary">上下文窗口从 105 万跳到 150 万，不是微调而是代际跨越。这意味着长文档理解、全代码库推理、整本书级问答将在今年夏天成为标配。</div>
+      </div>
+    </div>
+
+    <div class="separator">— ✦ —</div>
+
+    <div class="two-col">
+      <div class="col">
+        <div class="article-category">PRODUCT</div>
+        <div class="article-headline">苹果被曝使用定制版 1.2T 参数 Google 模型重塑 Siri</div>
+        <div class="article-source"><a href="https://x.com/kimmonismus/status/2058997271803674991" target="_blank" rel="noopener">X</a></div>
+        <div class="article-body">据报道，苹果正使用一个定制版、参数规模达 1.2T 的 Google 大模型来驱动下一代 Siri 的核心功能，该规模远超预估约 300B 参数的 Gemini 3.5 Flash。简单查询将留在本地设备运行，核心挑战是确保大模型能足够快速地响应日常问题。</div>
+        <div class="article-commentary">苹果用 Google 的模型救 Siri，这件事本身就说明问题。1.2T 参数意味着端侧推理的时间窗口还很远——苹果在「快」和「聪明」之间选了后者。</div>
+      </div>
+      <div class="col">
+        <div class="article-category">PAPER</div>
+        <div class="article-headline">何庭波「韬定律」发布：逻辑折叠技术让芯片性能突破光刻极限</div>
+        <div class="article-source"><a href="https://www.ithome.com/0/954/778.htm" target="_blank" rel="noopener">IT之家</a></div>
+        <div class="article-body">华为何庭波在 ISCAS 2026 提出「韬定律」及逻辑折叠（LogicFolding）技术，通过三维空间拓扑重组提升芯片性能，不依赖新光刻工艺。麒麟 2026 测试中晶体管密度从 155 提升至 238 MTr/mm²，能效提高 41%，最大频率提升近 13%。麒麟 2027 已进入 Silicon 状态。</div>
+        <div class="article-commentary">光刻机受限的背景下，从「二维缩小」转向「三维折叠」是一条绕过物理瓶颈的务实路线。238 MTr/mm² 的密度数据说明这条路已经开始跑通。</div>
+      </div>
+    </div>
+
+    <div class="separator">— ✦ —</div>
+
+    <div class="article-section full-width-section">
+      <div class="col">
+        <div class="article-category">INDUSTRY</div>
+        <div class="article-headline">教皇里奥十四世发布 AI 通谕：警告算法战争与劳动异化</div>
+        <div class="article-source"><a href="https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare" target="_blank" rel="noopener">The Verge</a></div>
+        <div class="article-body">教皇里奥十四世在首份重要通谕《Magnifica Humanitas》中，系统警告了 AI 驱动战争的危险、AI 对劳动的冲击，以及技术不受约束时对个人尊严的侵蚀。通谕呼吁建立新的全球法律与伦理框架，强调 AI 的快速普及正造成经济和社会动荡，对个人的保护不足威胁着人类尊严。</div>
+        <div class="article-commentary">梵蒂冈不是科技媒体，但它的声音穿透力远超科技媒体。这份通谕将成为未来各国 AI 立法辩论中反复引用的伦理锚点。</div>
+      </div>
+    </div>
+
+    <div class="separator">— ✦ —</div>
+
+    <div class="two-col">
+      <div class="col">
+        <div class="article-category">INDUSTRY</div>
+        <div class="article-headline">Anthropic 联合创始人 Olah 在梵蒂冈：AI 模型不是「造」出来的，是「长」出来的</div>
+        <div class="article-source"><a href="https://www.anthropic.com/news/chris-olah-pope-leo-encyclical" target="_blank" rel="noopener">Anthropic</a></div>
+        <div class="article-body">Anthropic 联合创始人 Chris Olah 在教皇 AI 通谕发布会上指出，所有前沿 AI 实验室都面临商业、研究及地缘政治压力，外部监督不可或缺。他提出 AI 模型并非像飞机那样被工程化构建，而是基于人类语言和思想「生长」出来的，其内在性质复杂难解。</div>
+        <div class="article-commentary">「生长 vs 建造」这个比喻值得细品——它暗示我们对模型行为的控制力远低于工程直觉所预期的。监管者尤其该听这句话。</div>
+      </div>
+      <div class="col">
+        <div class="article-category">PRODUCT</div>
+        <div class="article-headline">Qwen3.7-Max 隐式缓存上线：自动启用，零配置提速降费</div>
+        <div class="article-source"><a href="https://x.com/Alibaba_Qwen/status/2058932656797368619" target="_blank" rel="noopener">X</a></div>
+        <div class="article-body">阿里通义千问 Qwen3.7-Max 正式上线隐式缓存功能，自动启用无需设置，开箱即用即可实现更快更便宜的推理。需要更高确定性命中率的用户可尝试显式缓存，阿里云已发布最佳实践指南。</div>
+        <div class="article-commentary">缓存看起来是工程细节，实际上直接影响推理成本和速度。隐式缓存把门槛降到零，对高频调用场景是实打实的省钱。</div>
+      </div>
+    </div>
+
+  <div class="colophon">
+    今日精选 <em>6</em> 条 · 数据源 aihot.virxact.com · 由 remio agent 生成 · 2026-05-26
+  </div>
+
+</div>
+</body>
+</html>

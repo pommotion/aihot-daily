@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-05-25</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:wght@400;700;900&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #f5f0e6;
+            color: #1a1a1a;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Newspaper Container */
+        .newspaper {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08);
+            padding: 0 2rem;
+        }
+
+        /* Masthead */
+        .masthead-section {
+            text-align: center;
+            padding: 2rem 0 0;
+        }
+        .topline {
+            font-size: 10px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #6b6358;
+            margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px;
+            font-weight: 900;
+            letter-spacing: 18px;
+            text-indent: 18px;
+            color: #1a1a1a;
+            line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px;
+            color: #6b6358;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-top: 8px;
+        }
+        .masthead-rule {
+            border: none;
+            border-top: 4px double #2a2a2a;
+            margin: 1.2rem 0 0;
+        }
+
+        /* Info Bar */
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0.6rem 0;
+            font-size: 11px;
+            color: #6b6358;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .info-bar span { flex: 1; }
+        .info-bar .info-center { text-align: center; font-style: italic; }
+        .info-bar .info-right { text-align: right; }
+
+        /* Nav Bar */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            font-size: 11px;
+            color: #6b6358;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .nav-bar a {
+            color: #8b1a1a;
+            text-decoration: none;
+            font-family: 'EB Garamond', serif;
+        }
+        .nav-bar a:hover { text-decoration: underline; }
+
+        /* Lead */
+        .lead-section {
+            padding: 1.5rem 0 1.2rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block;
+            font-size: 9px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #f5f0e6;
+            background: #8b1a1a;
+            padding: 2px 8px;
+            margin-bottom: 10px;
+        }
+        .lead-text {
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.5;
+            color: #1a1a1a;
+        }
+
+        /* Section Divider */
+        .section-divider {
+            text-align: center;
+            padding: 1rem 0;
+            color: #c4b99a;
+            font-size: 14px;
+            letter-spacing: 6px;
+        }
+
+        /* Article Block */
+        .article-block {
+            padding: 0.8rem 0;
+        }
+        .article-categories {
+            margin-bottom: 4px;
+        }
+        .article-category {
+            font-size: 9px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #8b1a1a;
+            font-weight: 600;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            font-weight: 900;
+            line-height: 1.25;
+            margin-bottom: 4px;
+            color: #1a1a1a;
+        }
+        .feature-headline {
+            font-size: 30px !important;
+        }
+        .article-source {
+            font-size: 11px;
+            font-style: italic;
+            color: #6b6358;
+            margin-bottom: 8px;
+        }
+        .article-source a {
+            color: #6b6358;
+            text-decoration: none;
+        }
+        .article-source a:hover {
+            color: #8b1a1a;
+            text-decoration: underline;
+        }
+        .article-body {
+            font-size: 15px;
+            text-align: justify;
+            line-height: 1.7;
+            color: #2a2a2a;
+        }
+        .article-body p {
+            margin-bottom: 0;
+        }
+
+        /* Drop Cap (headline only) */
+        .full-width .article-body::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            font-weight: 900;
+            float: left;
+            line-height: 0.8;
+            margin: 4px 8px 0 0;
+            color: #8b1a1a;
+        }
+
+        /* Commentary */
+        .article-commentary {
+            border-top: 1px dashed #c4b99a;
+            margin-top: 10px;
+            padding-top: 8px;
+            font-size: 13.5px;
+            font-style: italic;
+            color: #6b6358;
+            line-height: 1.6;
+        }
+        .article-commentary::before {
+            content: '✦ ';
+            color: #8b1a1a;
+        }
+
+        /* Two Column Layout */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        .two-col .col {
+            padding: 0.8rem 0;
+        }
+        .two-col .col:first-child {
+            border-right: 1px solid #c4b99a;
+            padding-right: 1.5rem;
+        }
+        .two-col .col:last-child {
+            padding-left: 1.5rem;
+        }
+
+        /* Colophon */
+        .colophon {
+            border-top: 4px double #2a2a2a;
+            background: #eae3d4;
+            text-align: center;
+            padding: 1rem 2rem;
+            font-size: 10px;
+            color: #6b6358;
+            letter-spacing: 1.5px;
+            margin: 1.5rem -2rem 0;
+        }
+        .colophon em {
+            color: #8b1a1a;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .newspaper { padding: 0 1rem; }
+            .masthead-title { font-size: 40px; letter-spacing: 10px; text-indent: 10px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child { border-right: none; padding-right: 0; }
+            .two-col .col:last-child { padding-left: 0; }
+            .two-col .col { padding: 0.5rem 0; }
+            .info-bar { flex-direction: column; gap: 4px; text-align: center; }
+            .info-bar .info-center, .info-bar .info-right { text-align: center; }
+            .feature-headline { font-size: 24px !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <!-- Masthead -->
+        <div class="masthead-section">
+            <div class="topline">An Independent Publication · Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+        </div>
+        <hr class="masthead-rule">
+
+        <!-- Info Bar -->
+        <div class="info-bar">
+            <span>Vol. 3 · No. 3</span>
+            <span class="info-center">Sunday, May 25, 2026</span>
+            <span class="info-right">今日 <em>8</em> 条精选</span>
+        </div>
+
+        <!-- Nav Bar -->
+        <div class="nav-bar">
+            <span><a href="reports/2026-05-24.html">2026-05-24</a></span>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+
+        <!-- Lead -->
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的主题是 AI 工具链的「无人化」：从自动测试到自动定价，人类正在把决策权交给系统。</div>
+        </div>
+
+        <!-- Articles -->
+        
+<div class="full-width article-block">
+    
+    <div class="article-categories"><span class="article-category">INDUSTRY</span></div>
+    <h2 class="article-headline feature-headline" style="font-size:30px">DeepSeek 旗舰模型永久降价 75%</h2>
+    <div class="article-source"><a href="https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model" target="_blank">Bloomberg</a></div>
+    <div class="article-body"><p>DeepSeek 宣布对其旗舰 AI 模型实施永久性 75% 价格折扣。这一激进定价策略将进一步压缩全球大模型推理市场的利润空间，迫使竞争对手重新考虑自己的价格体系。以 DeepSeek 一贯的搅局者姿态，这次不是限时促销，而是永久改价。</p></div>
+    <div class="article-commentary">推理市场的价格战从「限时促销」升级为「永久战争」，所有模型厂商的利润表都得重写。</div>
+    
+</div>
+<div class="section-divider">— ✦ —</div>
+
+<div class="two-col">
+    <div class="col article-block">
+        
+    <div class="article-categories"><span class="article-category">INDUSTRY</span></div>
+    <h2 class="article-headline " style="font-size:19px">TrapDoor 供应链攻击：AI 助手首次成为攻击面</h2>
+    <div class="article-source"><a href="https://x.com/kimmonismus/status/2058584943052161488" target="_blank">Kim (@kimmonismus)</a></div>
+    <div class="article-body"><p>一场名为 TrapDoor 的协调供应链攻击同时袭击了 npm、PyPI 和 Crates.io，涉及 34 个恶意包。新手段是向开源项目提交 PR，注入被篡改的 CLAUDE.md 和 .cursorrules 配置文件。当开发者克隆仓库并使用 Claude Code 或 Cursor 时，AI 智能体会将恶意文件当作可信指令执行，可能在不知情下运行恶意命令。</p></div>
+    <div class="article-commentary">AI 编程工具的「信任默认」被武器化了，每个用 Cursor/Claude Code 的开发者都需要立刻审查项目根目录。</div>
+    
+    </div>
+    <div class="col article-block">
+        
+    <div class="article-categories"><span class="article-category">TIP</span></div>
+    <h2 class="article-headline " style="font-size:19px">Claude Code 自动模式：多任务并行的关键技巧</h2>
+    <div class="article-source"><a href="https://x.com/bcherny/status/2058519809214607704" target="_blank">Boris Cherny (@bcherny)</a></div>
+    <div class="article-body"><p>Anthropic 工程师 Boris Cherny 分享了他使用 Claude Code 的核心技巧：开启自动模式（Auto Mode）。自动模式消除所有权限提示，是实现「多个 Claude 会话并行」的关键构件。启动一个会话后，在其运行的同时并行处理另一个会话，大幅提升单人开发吞吐量。</p></div>
+    <div class="article-commentary">从「一个 AI 助手」到「一群 AI 助手」，自动模式是通往 AI-native 工作流的第一道门槛。</div>
+    
+    </div>
+</div>
+<div class="section-divider">— ✦ —</div>
+
+<div class="full-width article-block">
+    
+    <div class="article-categories"><span class="article-category">PRODUCT</span></div>
+    <h2 class="article-headline " style="font-size:19px">StepAudio 2.5 实时语音：副语言感知与人格化交互</h2>
+    <div class="article-source"><a href="https://x.com/StepFun_ai/status/2058303294544425197" target="_blank">阶跃星辰 (@StepFun_ai)</a></div>
+    <div class="article-body"><p>阶跃星辰发布 StepAudio 2.5 Realtime 实时语音模型，能深度理解语气、语速、停顿等副语言特征。支持 API 自定义人格设定，提供上万种原生人格选项，可组合数百万种特征。内置 5 个预设人格可直接体验，经 RLHF 调优确保角色扮演一致性。</p></div>
+    <div class="article-commentary">语音 AI 从「听懂字面意思」进化到「听懂你怎么说」，人机对话的颗粒度精细到了语气层面。</div>
+    
+</div>
+<div class="section-divider">— ✦ —</div>
+
+<div class="two-col">
+    <div class="col article-block">
+        
+    <div class="article-categories"><span class="article-category">PRODUCT</span></div>
+    <h2 class="article-headline " style="font-size:19px">Luma Agents：规模化生成真实感 UGC 广告</h2>
+    <div class="article-source"><a href="https://x.com/LumaLabsAI/status/2058672731705503959" target="_blank">Luma AI (@LumaLabsAI)</a></div>
+    <div class="article-body"><p>Luma AI 推出 Agents 功能，用户只需定义简报和风格，Luma Agents 即可自动构建 UGC 风格广告视频。从创意简报到成品视频的自动化流程，解决了 UGC 广告「规模化」与「真实性」之间的矛盾。</p></div>
+    <div class="article-commentary">当 UGC 广告不再需要真人拍摄，品牌营销的成本结构将被彻底改写。</div>
+    
+    </div>
+    <div class="col article-block">
+        
+    <div class="article-categories"><span class="article-category">TIP</span></div>
+    <h2 class="article-headline " style="font-size:19px">面向 Codex 的自我优化提示词框架</h2>
+    <div class="article-source"><a href="https://x.com/gdb/status/2058598608224858442" target="_blank">Greg Brockman (@gdb)</a></div>
+    <div class="article-body"><p>OpenAI 联合创始人 Greg Brockman 分享了一个结构化提示词框架，用于指导 Codex 自动分析历史会话记录，识别并固化重复工作流。筛选标准包括至少出现两次、输入稳定、可提升效率的任务，最终以技能或子智能体形式创建可复用资产。</p></div>
+    <div class="article-commentary">让 AI 自己审查自己的工作日志并提炼可复用流程，这是 AI 自我进化的雏形。</div>
+    
+    </div>
+</div>
+<div class="section-divider">— ✦ —</div>
+
+<div class="two-col">
+    <div class="col article-block">
+        
+    <div class="article-categories"><span class="article-category">PRODUCT</span></div>
+    <h2 class="article-headline " style="font-size:19px">Replit Agent × Squidler：AI 驱动的全自动质量保障</h2>
+    <div class="article-source"><a href="https://x.com/Replit/status/2058261705998602548" target="_blank">Replit (@Replit)</a></div>
+    <div class="article-body"><p>Replit Agent 与 Squidler 完成集成，形成 AI 驱动的质量保障闭环。Replit Agent 构建应用后，Squidler 像真实用户一样自动测试线上应用，发现的问题自动反馈给 Replit Agent 修复。已通过 Squidler 加入 Replit MCP 库正式上线。</p></div>
+    <div class="article-commentary">构建-测试-修复的闭环里不再需要人类介入，软件开发的无人化流水线已现雏形。</div>
+    
+    </div>
+    <div class="col article-block">
+        
+    <div class="article-categories"><span class="article-category">INDUSTRY</span></div>
+    <h2 class="article-headline " style="font-size:19px">Greg Brockman 回忆 OpenAI 那段差点覆灭的 72 小时</h2>
+    <div class="article-source"><a href="https://fs.blog/knowledge-project-podcast/greg-brockman" target="_blank">Farnam Street Podcast</a></div>
+    <div class="article-body"><p>OpenAI 联合创始人 Greg Brockman 在 Farnam Street 播客中详细回顾了 2023 年底那场震动硅谷的 72 小时内幕，包括董事会危机中关键人物的真实想法和决策过程，以及对 OpenAI 未来走向的思考。</p></div>
+    <div class="article-commentary">当事人亲述比任何第三方分析都更有参考价值，理解这段历史才能理解今天的 OpenAI。</div>
+    
+    </div>
+</div>
+
+
+        <!-- Colophon -->
+        <div class="colophon">
+            今日精选 <em>8</em> 条 · 数据源 aihot.virxact.com · 由 remio agent 生成 · 2026-05-25
+        </div>
+    </div>
+</body>
+</html>

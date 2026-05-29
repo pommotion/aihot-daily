@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · Vol. 5 · 2026-05-27</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@700;900&family=EB+Garamond:wght@400;500;600&display=swap");
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #f5f0e6; color: #1a1a1a; min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 0 2rem 3rem;
+        }
+
+        /* Masthead */
+        .masthead { text-align: center; padding: 2.5rem 0 1rem; border-bottom: 4px double #2a2a2a; }
+        .topline { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #6b6358; margin-bottom: 10px; }
+        .masthead h1 {
+            font-family: 'Playfair Display', Georgia, serif; font-size: 64px; font-weight: 900;
+            color: #1a1a1a; letter-spacing: 18px; text-indent: 18px; margin: 0; line-height: 1.1;
+        }
+        .masthead .subtitle { font-size: 11px; color: #6b6358; letter-spacing: 6px; text-transform: uppercase; margin-top: 8px; }
+        .info-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.6rem 0; font-size: 10px; color: #6b6358;
+            letter-spacing: 2px; text-transform: uppercase; border-bottom: 2px solid #2a2a2a;
+            font-family: 'EB Garamond', 'Noto Serif SC', serif;
+        }
+        .info-bar em { font-style: normal; color: #8b1a1a; }
+
+        /* Nav */
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; border-bottom: 1px solid #c4b99a;
+            font-family: 'EB Garamond', 'Noto Serif SC', serif;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .nav-bar span { color: #6b6358; }
+
+        /* Lead */
+        .lead-section { padding: 1.8rem 0 1.2rem; border-bottom: 2px solid #2a2a2a; }
+        .lead-tag {
+            display: inline-block; background: #8b1a1a; color: #f5f0e6; padding: 2px 10px;
+            font-size: 10px; letter-spacing: 4px; font-weight: 700; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+
+        /* Layout */
+        .content { padding-top: 1.8rem; }
+        .full-width { margin-bottom: 0.5rem; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-bottom: 0.5rem; }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child { padding-left: 0; border-right: 1px solid #c4b99a; }
+        .two-col .col:last-child { padding-right: 0; }
+        .section-sep {
+            text-align: center; color: #c4b99a; font-size: 14px;
+            padding: 1rem 0; letter-spacing: 6px;
+        }
+
+        /* Article */
+        .article-item { margin-bottom: 1.5rem; }
+        .article-category {
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a;
+            font-weight: 700; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', serif;
+            font-size: 22px; font-weight: 900; line-height: 1.25; margin-bottom: 4px; color: #1a1a1a;
+        }
+        .col .article-headline { font-size: 19px; }
+        .feature-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', serif;
+            font-size: 30px; font-weight: 900; line-height: 1.2; margin-bottom: 4px; color: #1a1a1a;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 8px;
+        }
+        .article-source a { color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a; }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body { font-size: 15px; line-height: 1.65; text-align: justify; color: #1a1a1a; }
+        .article-body p { margin-bottom: 0; }
+
+        /* Drop Cap */
+        .drop-cap p::first-letter {
+            font-family: 'Playfair Display', Georgia, serif; font-size: 52px; font-weight: 900;
+            float: left; line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+
+        /* Commentary */
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; margin-top: 10px; padding-top: 8px;
+            line-height: 1.5;
+        }
+        .article-commentary::before { content: '✦ '; color: #8b1a1a; font-style: normal; }
+
+        /* Colophon */
+        .colophon {
+            margin-top: 2.5rem; padding: 1.2rem 1.5rem; background: #eae3d4;
+            border-top: 4px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { font-style: normal; color: #8b1a1a; }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .masthead h1 { font-size: 36px; letter-spacing: 10px; text-indent: 10px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child { border-right: none; padding: 0 0 1rem 0; }
+            .two-col .col:last-child { padding: 0; }
+            .newspaper { padding: 0 1rem 2rem; }
+            .feature-headline { font-size: 24px; }
+            .col .article-headline { font-size: 19px; }
+            .lead-text { font-size: 17px; }
+            .info-bar { flex-direction: column; gap: 3px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <header class="masthead">
+            <div class="topline">An Independent Publication · Est. 2026</div>
+            <h1>AI DAILY</h1>
+            <div class="subtitle">aihot 精选 &times; remio 签发</div>
+        </header>
+        <div class="info-bar">
+            <span>Vol. <em>5</em> &middot; No. <em>5</em></span>
+            <span>Wednesday, May 27, 2026</span>
+            <span>今日 <em>7</em> 条精选</span>
+        </div>
+        <nav class="nav-bar">
+            <a href="2026-05-25.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </nav>
+
+        <section class="lead-section">
+            <span class="lead-tag">LEAD</span>
+            <p class="lead-text">今天的 AI 新闻像一场无声的军备竞赛：Anthropic 用数学证明展示推理上限，小米用 99% 降价抢推理市场，Runway 悄悄跨过了恐怖谷——而 Ethan Mollick 在提醒我们，有些东西不该交给 AI。</p>
+        </section>
+
+        <main class="content">
+        <div class="full-width">
+            <article class="article-item">
+                <div class="article-category">PAPER</div>
+                <h2 class="feature-headline">Claude Mythos 据报用「巧妙简洁的证明」解决了 OpenAI 提出的 Erdős 单位距离猜想</h2>
+                <div class="article-source">
+                    <a href="https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof" target="_blank" rel="noopener">The Decoder</a>
+                </div>
+                <div class="article-body drop-cap">
+                    <p>Anthropic 工程师 Sholto Douglas 透露，Claude Mythos 在周末期间独立解决了 OpenAI 此前提出的 Erdős 单位距离猜想问题，给出了一个被描述为「巧妙简洁」的证明。这一成果被外界视为 AI 在数学发现领域出现「严重超前」迹象的标志性事件。</p>
+                </div>
+                <div class="article-commentary">
+                    如果属实，这比任何 benchmark 刷榜都更能说明模型推理能力的质变。数学家们该紧张了。
+                </div>
+            </article>        </div>
+        <div class="two-col">
+            <div class="col">
+            <article class="article-item">
+                <div class="article-category">PRODUCT</div>
+                <h2 class="article-headline">小米 MiMo 2.5 Pro 永久降价最高 99%，与 DeepSeek V4 Pro 同价</h2>
+                <div class="article-source">
+                    <a href="https://x.com/kimmonismus/status/2059354372643975490" target="_blank" rel="noopener">X：@kimmonismus</a>
+                </div>
+                <div class="article-body">
+                    <p>小米 MiMo-V2.5 系列 API 价格永久下调，最高降幅达 99%，现与 DeepSeek V4 Pro 处于同一价格带。Token 套餐同步升级，同等价格可用量增加 5-8 倍，现有用户套餐额度全额重置。降价源于全栈推理优化，MiMo-V2.5-TTS 限时免费。</p>
+                </div>
+                <div class="article-commentary">
+                    推理价格战已从「百团大战」进入清场阶段，小玩家的生存空间进一步压缩。
+                </div>
+            </article>            </div>
+            <div class="col">
+            <article class="article-item">
+                <div class="article-category">INDUSTRY</div>
+                <h2 class="article-headline">OpenRouter 完成 1.13 亿美元 B 轮融资，周处理量达 25 万亿 token</h2>
+                <div class="article-source">
+                    <a href="https://x.com/OpenRouter/status/2059277623629664758" target="_blank" rel="noopener">X：@OpenRouter</a>
+                </div>
+                <div class="article-body">
+                    <p>API 网关 OpenRouter 宣布完成由 CapitalG 领投的 1.13 亿美元 B 轮融资。过去 6 个月，其周处理量从 5 万亿增长到 25 万亿 token，反映出 AI 从实验快速转向生产部署的行业趋势。</p>
+                </div>
+                <div class="article-commentary">
+                    API 网关成为 AI 基础设施的「收费站」，这个估值逻辑正在被市场验证。
+                </div>
+            </article>            </div>
+        </div>
+        <div class="section-sep">— ✦ —</div>
+        <div class="full-width">
+            <article class="article-item">
+                <div class="article-category">PRODUCT</div>
+                <h2 class="article-headline">Runway Project Luxo：AI 生成视频已跨越「恐怖谷」</h2>
+                <div class="article-source">
+                    <a href="https://runwayml.com/news/project-luxo" target="_blank" rel="noopener">Runway News</a>
+                </div>
+                <div class="article-body">
+                    <p>Runway 通过 Project Luxo 研究发现，AI 生成视频已跨越恐怖谷。创意从业者观看《The Rogue》等 AI 短片后，开始关注故事本身而非技术瑕疵。所有作品均由单人团队制作，耗时从 3 周到 4 小时不等。Runway 认为，当技术足够好以至于「隐形」时，AI 媒体便真正成熟了。</p>
+                </div>
+                <div class="article-commentary">
+                    单人 4 小时做出的 AI 短片让观众忘了技术——这才是真正的奇点时刻，比任何跑分都有说服力。
+                </div>
+            </article>        </div>
+        <div class="two-col">
+            <div class="col">
+            <article class="article-item">
+                <div class="article-category">PAPER</div>
+                <h2 class="article-headline">蚂蚁 KPop 方法让 Ring-2.6-1T 在 SWE-bench Verified 突破 76 分</h2>
+                <div class="article-source">
+                    <a href="https://x.com/AntLingAGI/status/2059292063032918422" target="_blank" rel="noopener">X：@AntLingAGI</a>
+                </div>
+                <div class="article-body">
+                    <p>蚂蚁团队推出 KPop 方法，用基于二元 KL 散度的自适应掩码机制替代固定比例掩码，动态调整 MoE 模型训练中的训练-推理不匹配。Ring-2.6-1T 在纯 RL 训练下，SWE-bench Verified 突破 76 分，无需修改基础设施或路由重放。</p>
+                </div>
+                <div class="article-commentary">
+                    MoE + RL 这条路正在被验证可行，开源社区的 SWE-bench 天花板又被抬高了一截。
+                </div>
+            </article>            </div>
+            <div class="col">
+            <article class="article-item">
+                <div class="article-category">INDUSTRY</div>
+                <h2 class="article-headline">Google SynthID 水印扩展至 OpenAI、ElevenLabs、Kakao，覆盖超千亿内容</h2>
+                <div class="article-source">
+                    <a href="https://x.com/GoogleDeepMind/status/2059235181274202500" target="_blank" rel="noopener">X：@GoogleDeepMind</a>
+                </div>
+                <div class="article-body">
+                    <p>Google DeepMind 宣布 SynthID 水印技术已为超过 1000 亿条内容添加水印，并正与 OpenAI、ElevenLabs 和 Kakao 合作将水印集成到他们的模型中。这延续了此前与 NVIDIA 共同推动的行业趋势，旨在提升 AI 生成内容的透明度。</p>
+                </div>
+                <div class="article-commentary">
+                    行业在内容溯源上终于开始联手，这是个好信号——虽然来得有点晚。
+                </div>
+            </article>            </div>
+        </div>
+        <div class="section-sep">— ✦ —</div>
+        <div class="full-width">
+            <article class="article-item">
+                <div class="article-category">INDUSTRY</div>
+                <h2 class="article-headline">Ethan Mollick：选择保持人性——AI 让内容趋同的速度可能比提升生产力更快</h2>
+                <div class="article-source">
+                    <a href="https://www.oneusefulthing.org/p/choosing-to-stay-human" target="_blank" rel="noopener">One Useful Thing</a>
+                </div>
+                <div class="article-body">
+                    <p>沃顿商学院教授 Ethan Mollick 撰文探讨人类与 AI 的分工边界。他指出社交媒体内容正变得越来越相似，这种趋同可能意味着大量内容正被 AI 同质化处理。文章涉及教育咨询领域的实验以及最近关于文学奖的争议，核心问题是：我们需要保留哪些人类特质，哪些可以交给 AI。</p>
+                </div>
+                <div class="article-commentary">
+                    AI 让内容趋同的速度，可能比它提升生产力的速度更快。这个问题比「哪些工作会被替代」更值得思考。
+                </div>
+            </article>        </div>
+
+        </main>
+
+        <footer class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 aihot.virxact.com &middot; 由 remio agent 生成 &middot; 2026-05-27
+        </footer>
+    </div>
+</body>
+</html>
