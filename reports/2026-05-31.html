@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI DAILY · 2026-05-31</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, 'Times New Roman', serif;
+      background: #e8e2d6;
+      color: #1a1a1a;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .newspaper {
+      max-width: 860px;
+      margin: 2rem auto;
+      background: #f5f0e6;
+      box-shadow: 0 0 80px rgba(0,0,0,0.1);
+      padding: 0;
+    }
+
+    /* ── Masthead ── */
+    .masthead {
+      text-align: center;
+      padding: 2rem 1.5rem 0;
+    }
+    .masthead-topline {
+      font-size: 9px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #6b6358;
+      margin-bottom: 10px;
+    }
+    .masthead-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 64px;
+      font-weight: 900;
+      letter-spacing: 18px;
+      text-indent: 18px;
+      color: #1a1a1a;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .masthead-sub {
+      font-size: 10px;
+      color: #6b6358;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+    .masthead-border {
+      border-bottom: 4px double #2a2a2a;
+      margin: 12px 1.5rem 0;
+    }
+    .masthead-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 1.5rem;
+      font-size: 11px;
+      color: #6b6358;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #c4b99a;
+    }
+    .masthead-info .vol {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+    }
+
+    /* ── Nav ── */
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 1.5rem;
+      font-size: 11px;
+      color: #6b6358;
+      border-bottom: 1px solid #c4b99a;
+      background: #eae3d4;
+    }
+    .nav-bar a {
+      color: #8b1a1a;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+    .nav-bar a:hover { text-decoration: underline; }
+
+    /* ── Lead ── */
+    .lead-section {
+      padding: 1.5rem 1.5rem 1.2rem;
+      border-bottom: 2px solid #2a2a2a;
+    }
+    .lead-label {
+      display: inline-block;
+      font-size: 9px;
+      letter-spacing: 4px;
+      font-weight: 700;
+      color: #f5f0e6;
+      background: #8b1a1a;
+      padding: 2px 8px;
+      margin-bottom: 10px;
+    }
+    .lead-text {
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.55;
+      color: #1a1a1a;
+    }
+
+    /* ── Articles ── */
+    .content { padding: 0 1.5rem 1.5rem; }
+
+    .article { padding: 1.2rem 0 1rem; }
+
+    .article-categories { margin-bottom: 4px; }
+    .article-category {
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #8b1a1a;
+      font-weight: 700;
+    }
+
+    .article-headline {
+      font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 6px;
+      color: #1a1a1a;
+    }
+    .feature-headline { font-size: 30px; }
+    .col-headline { font-size: 19px; }
+
+    .article-source {
+      font-size: 11px;
+      font-style: italic;
+      color: #6b6358;
+      margin-bottom: 8px;
+    }
+    .article-source a {
+      color: #6b6358;
+      text-decoration: none;
+    }
+    .article-source a:hover { color: #8b1a1a; text-decoration: underline; }
+
+    .article-body {
+      font-size: 15px;
+      text-align: justify;
+      line-height: 1.7;
+      margin-bottom: 8px;
+    }
+
+    .full-width .article-body::first-letter {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 52px;
+      font-weight: 900;
+      float: left;
+      line-height: 0.78;
+      margin: 4px 8px 0 0;
+      color: #8b1a1a;
+    }
+
+    .article-commentary {
+      border-top: 1px dashed #c4b99a;
+      padding-top: 8px;
+      font-size: 13.5px;
+      font-style: italic;
+      color: #4a4a4a;
+      line-height: 1.55;
+    }
+
+    /* ── Two Column ── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      padding-top: 0;
+    }
+    .two-col .col {
+      padding: 1.2rem 0 1rem;
+    }
+    .two-col .col:first-child {
+      border-right: 1px solid #c4b99a;
+      padding-right: 1.2rem;
+    }
+    .two-col .col:last-child {
+      padding-left: 1.2rem;
+    }
+
+    /* ── Divider ── */
+    .section-divider {
+      text-align: center;
+      padding: 1.2rem 0;
+      color: #c4b99a;
+      font-size: 14px;
+      letter-spacing: 6px;
+    }
+
+    /* ── Colophon ── */
+    .colophon {
+      border-top: 4px double #2a2a2a;
+      background: #eae3d4;
+      text-align: center;
+      padding: 1rem 1.5rem;
+      font-size: 10px;
+      color: #6b6358;
+      letter-spacing: 1.5px;
+      line-height: 1.8;
+    }
+    .colophon em {
+      color: #8b1a1a;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .newspaper { margin: 0; box-shadow: none; }
+      .masthead-title { font-size: 40px; letter-spacing: 10px; text-indent: 10px; }
+      .feature-headline { font-size: 24px; }
+      .two-col { grid-template-columns: 1fr; }
+      .two-col .col:first-child { border-right: none; padding-right: 0; }
+      .two-col .col:last-child { padding-left: 0; }
+      .two-col .col { border-bottom: 1px solid #c4b99a; }
+      .lead-text { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="newspaper">
+
+    <!-- Masthead -->
+    <header class="masthead">
+      <div class="masthead-topline">An Independent Publication · Est. 2026</div>
+      <div class="masthead-title">AI DAILY</div>
+      <div class="masthead-sub">aihot 精选 × remio 签发</div>
+    </header>
+    <div class="masthead-border"></div>
+    <div class="masthead-info">
+      <span class="vol">Vol. 9 · No. 9</span>
+      <span>Saturday, May 31, 2026</span>
+      <span>今日 <em>7</em> 条精选</span>
+    </div>
+
+    <!-- Nav -->
+    <nav class="nav-bar">
+      <span><a href="reports/2026-05-30.html">← 前一天</a></span>
+      <a href="/">返回首页</a>
+      <span>已是最新</span>
+    </nav>
+
+    <!-- Lead -->
+    <section class="lead-section">
+      <div class="lead-label">LEAD</div>
+      <div class="lead-text">今天的主题是「AI 的账单终于来了」。从 Copilot 按量计费到美国企业配给 AI 用量，从 xAI 自研框架到 NVIDIA 杀入笔记本芯片——每一幕都在说同一件事：烧钱时代结束，算账时代开始。</div>
+    </section>
+
+    <!-- Articles -->
+    <main class="content">
+      <article class="article full-width">
+  <div class="article-categories"><span class="article-category">INDUSTRY</span></div>
+  <h2 class="article-headline feature-headline">Anthropic 估值 9650 亿美元，正式超越 OpenAI</h2>
+  <div class="article-source"><a href="https://www.bloomberg.com/news/videos/2026-05-29/anthropic-valuation-of-965-billion-passes-openai-video" target="_blank" rel="noopener">Bloomberg</a></div>
+  <div class="article-body">据 Bloomberg 报道，Anthropic 最新一轮融资后估值达到 9650 亿美元，超越 OpenAI 成为全球估值最高的 AI 公司。这一里程碑标志着 AI 行业竞争格局的重大转变——OpenAI 不再是无可争议的领头羊。Anthropic 凭借 Claude 系列模型在企业市场的深耕，以及对安全研究的长期投入，赢得了资本市场的青睐。</div>
+  <div class="article-commentary">「安全叙事」终于值钱了。Anthropic 用三年证明：不抢头条也能赢估值。</div>
+</article>
+
+<div class="two-col">
+  <div class="col"><article class="article ">
+  <div class="article-categories"><span class="article-category">PRODUCT</span></div>
+  <h2 class="article-headline col-headline">GitHub Copilot 新计费模式引发开发者强烈不满</h2>
+  <div class="article-source"><a href="https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs" target="_blank" rel="noopener">TechCrunch</a></div>
+  <div class="article-body">GitHub 宣布将 Copilot 从固定订阅制转向基于 token 的计费模式，这一变动立刻在开发者社区引发轩然大波。大量开发者表示新计费方式将显著增加使用成本，尤其对高频用户影响巨大。TechCrunch 形容开发者反应为「你在开玩笑吧」。这是 AI 工具从补贴期走向商业化必须面对的阵痛。</div>
+  <div class="article-commentary">免费午餐结束的信号。每个 AI 工具都会经历这一天，区别只是谁先翻桌。</div>
+</article></div>
+  <div class="col"><article class="article ">
+  <div class="article-categories"><span class="article-category">INDUSTRY</span></div>
+  <h2 class="article-headline col-headline">美国企业开始对 AI 实施配给制：成本飙升成隐忧</h2>
+  <div class="article-source"><a href="https://www.wsj.com/tech/ai/corporate-america-is-starting-to-ration-ai-as-cost-skyrockets-1eb99d7a" target="_blank" rel="noopener">WSJ via Hacker News</a></div>
+  <div class="article-body">《华尔街日报》报道，随着 AI 使用成本持续攀升，越来越多美国企业开始对内部 AI 工具实施用量配给。部分公司限制了员工每日 AI 调用次数，另一些则根据部门 ROI 分配额度。这一趋势表明，AI 的「边际成本趋近于零」叙事正在被现实修正。</div>
+  <div class="article-commentary">去年画饼说 AI 降本增效，今年开始按人头限量。泡沫期结束的标志不是技术不行，是账单到期了。</div>
+</article></div>
+</div>
+
+<div class="section-divider">— ✦ —</div>
+
+<article class="article full-width">
+  <div class="article-categories"><span class="article-category">MODEL</span></div>
+  <h2 class="article-headline col-headline">OpenAI 推出实时翻译模型，支持 70+ 语言输入</h2>
+  <div class="article-source"><a href="https://x.com/gdb/status/2060452095279415725" target="_blank" rel="noopener">Greg Brockman (@gdb)</a></div>
+  <div class="article-body">OpenAI 联合创始人 Greg Brockman 宣布推出实时翻译模型，支持超过 70 种语言的实时语音翻译。该模型可直接处理语音输入，无需先转文字再翻译，大幅降低延迟。这意味着语音翻译从「可用」正式进入「好用」阶段，对跨国沟通和内容创作场景影响深远。</div>
+  <div class="article-commentary">同传行业倒计时的声音又大了一分。真正的问题是：谁先把它做成可穿戴硬件？</div>
+</article>
+
+<div class="two-col">
+  <div class="col"><article class="article ">
+  <div class="article-categories"><span class="article-category">INDUSTRY</span></div>
+  <h2 class="article-headline col-headline">xAI 放弃 JAX，转向自研训练框架</h2>
+  <div class="article-source"><a href="https://x.com/SemiAnalysis_/status/2060571944575963482" target="_blank" rel="noopener">SemiAnalysis</a></div>
+  <div class="article-body">据 SemiAnalysis 报道，xAI 已决定放弃 Google 开发的 JAX 框架用于 GPU 训练，转而开发自研训练框架。这一决策反映出头部 AI 实验室对训练基础设施自主可控的强烈需求。当模型规模达到一定量级，通用框架的瓶颈开始显现，自研成为必选项。</div>
+  <div class="article-commentary">训练框架正在走操作系统的老路：先通用，再分裂，最后巨头各搞一套。</div>
+</article></div>
+  <div class="col"><article class="article ">
+  <div class="article-categories"><span class="article-category">PRODUCT</span></div>
+  <h2 class="article-headline col-headline">Codex 可自主管理对话线程与并行任务</h2>
+  <div class="article-source"><a href="https://x.com/gdb/status/2060486309886443787" target="_blank" rel="noopener">Greg Brockman (@gdb)</a></div>
+  <div class="article-body">OpenAI 的 Codex 编程智能体现在可以自主管理多个对话线程并并行执行任务。Greg Brockman 演示了 Codex 同时处理多个编程任务的能力，包括自主拆分工作流、管理上下文和汇总结果。这标志着 AI 编程助手从「单线程工具」进化为「多线程协作者」。</div>
+  <div class="article-commentary">从「帮你写代码」到「替你管项目」，AI 编程助手的野心第一次这么直白。</div>
+</article></div>
+</div>
+
+<div class="section-divider">— ✦ —</div>
+
+<article class="article full-width">
+  <div class="article-categories"><span class="article-category">MODEL</span></div>
+  <h2 class="article-headline col-headline">NVIDIA 或将发布 ARM 笔记本芯片 N1X，整合 Blackwell GPU 与 AI 单元</h2>
+  <div class="article-source"><a href="https://x.com/AYi_AInotes/status/2060779431648547016" target="_blank" rel="noopener">阿易 AI Notes</a></div>
+  <div class="article-body">据多家媒体报道，NVIDIA 计划在六月发布代号为 N1X 的 ARM 架构笔记本芯片，该芯片将整合 Blackwell 架构 GPU 与专用 AI 加速单元。这意味着 NVIDIA 正式从「卖 GPU」进入「卖整机平台」阶段，直接与苹果 M 系列和骁龙 X 竞争。</div>
+  <div class="article-commentary">NVIDIA 要用 AI 做护城河打一场芯片战争，苹果和高通都得重新算账了。</div>
+</article>
+    </main>
+
+    <!-- Colophon -->
+    <footer class="colophon">
+      今日精选 <em>7</em> 条 · 数据源 aihot.virxact.com · 由 remio agent 生成 · 2026-05-31
+    </footer>
+
+  </div>
+</body>
+</html>
