@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI DAILY · Vol. 10 · 2026-06-01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+    background: #f5f0e6;
+    color: #1a1a1a;
+    line-height: 1.65;
+}
+
+.newspaper {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #f5f0e6;
+    box-shadow: 0 0 60px rgba(0,0,0,0.08);
+    padding: 0 48px 48px;
+}
+
+/* Masthead */
+.masthead-top {
+    text-align: center;
+    padding-top: 32px;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #6b6358;
+}
+
+.masthead-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 64px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 18px;
+    text-indent: 18px;
+    color: #1a1a1a;
+    margin: 8px 0 4px;
+    line-height: 1.1;
+}
+
+.masthead-subtitle {
+    text-align: center;
+    font-size: 11px;
+    color: #6b6358;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.masthead-rule {
+    border: none;
+    border-bottom: 4px double #2a2a2a;
+    margin-bottom: 16px;
+}
+
+.info-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: #6b6358;
+    letter-spacing: 1px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #c4b99a;
+    margin-bottom: 24px;
+}
+
+.info-left { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }
+.info-center { font-style: italic; }
+.info-right { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }
+
+/* Nav */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6b6358;
+    border-bottom: 1px solid #c4b99a;
+    margin-bottom: 24px;
+}
+
+.nav-link {
+    color: #8b1a1a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-link:hover { text-decoration: underline; }
+.nav-muted { color: #c4b99a; }
+.nav-home { color: #6b6358; text-decoration: none; }
+.nav-home:hover { color: #8b1a1a; }
+
+/* Lead */
+.lead-section {
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #2a2a2a;
+}
+
+.lead-label {
+    display: inline-block;
+    border: 1.5px solid #8b1a1a;
+    color: #8b1a1a;
+    font-size: 9px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.lead-text {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.55;
+    color: #1a1a1a;
+}
+
+/* Articles */
+.full-width {
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #c4b99a;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #c4b99a;
+}
+
+.two-col .col {
+    padding: 0 20px;
+}
+
+.two-col .col:first-child {
+    padding-left: 0;
+    padding-right: 20px;
+    border-right: 1px solid #c4b99a;
+}
+
+.two-col .col:last-child {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.separator {
+    text-align: center;
+    font-size: 14px;
+    color: #c4b99a;
+    letter-spacing: 8px;
+    margin: 8px 0 24px;
+}
+
+.article-category {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 9px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #8b1a1a;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.article-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 900;
+    color: #1a1a1a;
+    line-height: 1.25;
+    margin-bottom: 6px;
+}
+
+.article-source {
+    font-size: 11px;
+    font-style: italic;
+    color: #6b6358;
+    margin-bottom: 10px;
+}
+
+.article-source a {
+    color: #6b6358;
+    text-decoration: none;
+    border-bottom: 1px dotted #c4b99a;
+}
+
+.article-source a:hover {
+    color: #8b1a1a;
+    border-bottom-color: #8b1a1a;
+}
+
+.article-body {
+    font-size: 15px;
+    text-align: justify;
+    color: #1a1a1a;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* Drop Cap for feature article */
+.full-width:first-of-type .article-body::first-letter {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 52px;
+    font-weight: 900;
+    float: left;
+    line-height: 0.8;
+    margin: 4px 8px 0 0;
+    color: #8b1a1a;
+}
+
+.article-commentary {
+    border-top: 1px dashed #c4b99a;
+    padding-top: 10px;
+    font-size: 13.5px;
+    font-style: italic;
+    color: #6b6358;
+    line-height: 1.55;
+}
+
+.article-commentary::before {
+    content: '✦ ';
+    color: #8b1a1a;
+    font-style: normal;
+}
+
+/* Colophon */
+.colophon {
+    border-top: 4px double #2a2a2a;
+    background: #eae3d4;
+    padding: 16px 24px;
+    margin-top: 32px;
+    text-align: center;
+    font-size: 11px;
+    color: #6b6358;
+    letter-spacing: 1px;
+}
+
+.colophon em {
+    color: #8b1a1a;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .newspaper { padding: 0 20px 32px; }
+    .masthead-title { font-size: 40px; letter-spacing: 10px; text-indent: 10px; }
+    .two-col { grid-template-columns: 1fr; }
+    .two-col .col:first-child { border-right: none; border-bottom: 1px solid #c4b99a; padding-right: 0; padding-bottom: 20px; margin-bottom: 20px; }
+    .two-col .col { padding: 0; }
+    .two-col .col:last-child { padding-left: 0; }
+    .info-bar { flex-direction: column; gap: 4px; }
+}
+</style>
+</head>
+<body>
+<div class="paper">
+<div class="newspaper">
+
+<div class="masthead-top">An Independent Publication · Est. 2026</div>
+<h1 class="masthead-title">AI DAILY</h1>
+<div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+<hr class="masthead-rule">
+<div class="info-bar">
+    <span class="info-left">Vol. 10 · No. 10</span>
+    <span class="info-center">June 01, 2026</span>
+    <span class="info-right">今日 8 条精选</span>
+</div>
+
+<div class="nav-bar">
+    <a href="2026-05-31.html" class="nav-link">← 2026-05-31</a>
+    <a href="https://aihot.1986318.xyz" class="nav-home">返回首页</a>
+    <a href="2026-06-02.html" class="nav-link">2026-06-02 →</a>
+</div>
+
+<div class="lead-section">
+    <div class="lead-label">LEAD</div>
+    <div class="lead-text">今天的主题是巨头的边界扩张：OpenAI 要做机器人，软银要建算力帝国，苹果要靠 Gemini 撑起 AI 门面——没有人愿意把未来交给别人。</div>
+</div>
+
+<div class="full-width">
+    <div class="article-category">INDUSTRY</div>
+    <h2 class="article-headline" style="font-size:22px">OpenAI 正式进军机器人领域并启动招聘</h2>
+    <div class="article-source"><a href="https://x.com/sama/status/2061117302528188712" target="_blank" rel="noopener">X：Sam Altman (@sama)</a></div>
+    <div class="article-body" style="position:relative;">OpenAI 宣布成立 OpenAI Robotics 团队，开始招聘全栈硬件、系统及 ML 工程师，目标是编程和制造能服务社会的机器人。该项目由 Aditya Ramesh 领导，其世界模拟研究计划已演变为机器人研究，强调硬件与 ML 研究的协同设计。短期目标并非人形机器人，而是能在真实世界中执行有用任务的机械系统。这意味着 OpenAI 正在从纯软件公司向软硬一体化转型。</div>
+    <div class="article-commentary"><em>Sam Altman 的野心终于不止于聊天窗口了。机器人是 AI 的终极考场——能碰物理世界的模型，才算真正理解了世界。</em></div>
+    </div><div class="two-col"><div class="col">
+    <div class="article-category">INDUSTRY</div>
+    <h2 class="article-headline" style="font-size:19px">GitHub Copilot 新计费模式引发开发者不满</h2>
+    <div class="article-source"><a href="https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs" target="_blank" rel="noopener">TechCrunch：AI</a></div>
+    <div class="article-body">微软旗下 GitHub Copilot 推出基于 token 的新计费模式，取代了此前相对宽松的订阅制。开发者们发现，同样的代码补全操作，在新模式下费用可能翻倍甚至更多。社区反应激烈，大量用户在社交媒体上表达不满，称其「开倒车」。这一变化可能迫使部分开发者转向 Cursor、Codeium 等竞品。</div>
+    <div class="article-commentary"><em>开发者工具最怕的不是涨价，而是定价逻辑变得不可预测。Copilot 正在亲手把用户推向竞争对手。</em></div>
+    </div><div class="col">
+    <div class="article-category">INDUSTRY</div>
+    <h2 class="article-headline" style="font-size:19px">苹果 WWDC 将推 AI 升级：Gemini 蒸馏模型本地运行</h2>
+    <div class="article-source"><a href="https://x.com/kimmonismus/status/2061058117304262999" target="_blank" rel="noopener">X：Kim (@kimmonismus)</a></div>
+    <div class="article-body">苹果下月 WWDC 将重点展示延迟已久的 Siri 及设备端 AI 升级。核心方案是在 iPhone 芯片本地运行从 Google Gemini 蒸馏而来的更小模型，以强调隐私并降低 token 成本。但技术栈大部分源自外部：本地模型由 Gemini 蒸馏，复杂查询仍需云端处理。这意味着苹果的 AI 自主化程度远低于外界预期。</div>
+    <div class="article-commentary"><em>用竞争对手的模型蒸馏来「自研」，苹果这步棋与其说是创新，不如说是承认了差距。</em></div>
+    </div></div><div class="full-width">
+    <div class="article-category">INDUSTRY</div>
+    <h2 class="article-headline" style="font-size:22px">软银将在法国投资 750 亿欧元建设 AI 数据中心</h2>
+    <div class="article-source"><a href="https://www.bloomberg.com/news/articles/2026-05-30/softbank-to-invest-some-75-billion-in-ai-in-france-reports-say" target="_blank" rel="noopener">Bloomberg：Technology</a></div>
+    <div class="article-body" style="position:relative;">软银集团计划投资高达 750 亿欧元（约 870 亿美元），用于在法国建设人工智能数据中心。这是欧洲历史上规模最大的单一 AI 基础设施投资之一。该投资由《论坛报》与《金融时报》率先报道，预计将大幅提升欧洲的 AI 算力供给能力。</div>
+    <div class="article-commentary"><em>孙正义在赌欧洲会成为 AI 算力的下一个主战场。这笔钱够买下半个英伟达的市值。</em></div>
+    </div><div class="separator">— ✦ —</div><div class="two-col"><div class="col">
+    <div class="article-category">TIP</div>
+    <h2 class="article-headline" style="font-size:19px">教皇似乎比 Geoffrey Hinton 更懂人工智能</h2>
+    <div class="article-source"><a href="https://garymarcus.substack.com/p/the-pope-appears-to-understand-ai" target="_blank" rel="noopener">Gary Marcus：The Road to AI We Can Trust</a></div>
+    <div class="article-body">Gary Marcus 撰文指出，教皇关于 AI 的论述触及了当前 AI 可解释性研究的核心挑战——单纯分析 AI 的输出内容，无法还原其生成过程与背后的推理逻辑。相比之下，被誉为「深度学习之父」的 Geoffrey Hinton 则更关注 AI 的风险与对齐问题。两者视角的差异，折射出 AI 社区内部对「理解」一词的根本分歧。</div>
+    <div class="article-commentary"><em>当神学家比工程师更关心 AI 的「可解释性」，这本身就是对技术社区的一种讽刺。</em></div>
+    </div><div class="col">
+    <div class="article-category">PRODUCT</div>
+    <h2 class="article-headline" style="font-size:19px">NVIDIA 发布 DynoSim：模拟驱动推理堆栈优化</h2>
+    <div class="article-source"><a href="https://x.com/NVIDIAAI/status/2060781385686659416" target="_blank" rel="noopener">X：NVIDIA AI (@NVIDIAAI)</a></div>
+    <div class="article-body">NVIDIA 发布 DynoSim，这是一个针对其 Dynamo 推理服务栈的工作负载驱动仿真工具。它将部署测试转化为「模拟—验证」循环：团队无需逐个测试部署选项，而是在单一虚拟时间线上建模整个堆栈，通过高保真仿真快速筛查数千种配置，仅将最有潜力的方案投入真实测试。</div>
+    <div class="article-commentary"><em>卖铲子的开始优化铲子的使用效率了。推理成本每降一分，NVIDIA 的芯片就多卖一块。</em></div>
+    </div></div><div class="separator">— ✦ —</div><div class="two-col"><div class="col">
+    <div class="article-category">INDUSTRY</div>
+    <h2 class="article-headline" style="font-size:19px">特斯拉 FSD 完成全球首次横穿加拿大自动驾驶</h2>
+    <div class="article-source"><a href="https://www.ithome.com/0/957/718.htm" target="_blank" rel="noopener">IT之家</a></div>
+    <div class="article-body">一辆搭载 FSD V14.3.3 的特斯拉汽车，从温哥华出发，历时 4 天 21 小时，行驶 3760 英里（约 6051 公里），全程零人工干预抵达哈利法克斯。所有驾驶操作——包括高速并线、施工路段绕行、夜间行驶——均由系统独立完成。这是全球首次横穿一个主要国家的完全自动驾驶行程。</div>
+    <div class="article-commentary"><em>6000 公里零干预不是实验室数据，是真实世界的压力测试。FSD 正在用里程证明自己的成熟度。</em></div>
+    </div><div class="col">
+    <div class="article-category">PRODUCT</div>
+    <h2 class="article-headline" style="font-size:19px">DeepSeek V4 Flash 上线 OpenCode Zen</h2>
+    <div class="article-source"><a href="https://x.com/opencode/status/2061153857321775209" target="_blank" rel="noopener">X：opencode (@opencode)</a></div>
+    <div class="article-body">DeepSeek V4 Flash 现已在 OpenCode Zen 上线。作为 DeepSeek 最新的轻量级模型，V4 Flash 在保持较高推理能力的同时大幅降低了部署门槛，适合在资源受限的环境中运行。OpenCode Zen 是一个面向开发者的 AI 编码平台，此次集成意味着开发者可以直接使用 DeepSeek 的最新模型进行代码生成。</div>
+    <div class="article-commentary"><em>开源模型进入编码工具的速度越来越快。「便宜又好用」正在成为 DeepSeek 的杀手锏。</em></div>
+    </div></div>
+
+<div class="colophon">
+    今日精选 <em>8</em> 条 · 数据源 <em>aihot.virxact.com</em> · 由 remio agent 生成 · 2026-06-01
+</div>
+
+</div>
+</div>
+</body>
+</html>
