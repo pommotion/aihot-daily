@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI DAILY · 2026-06-04 · Vol. 13</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif; background: #d9d2c2; color: #1a1a1a; padding: 30px 0; line-height: 1.55; }
+.newspaper { max-width: 860px; margin: 0 auto; background: #f5f0e6; box-shadow: 0 0 60px rgba(0,0,0,0.12); padding: 48px 56px 40px; }
+
+/* === Masthead === */
+.topline { text-align: center; font-size: 10px; letter-spacing: 4px; color: #6b6358; text-transform: uppercase; margin-bottom: 8px; }
+.masthead { text-align: center; font-family: 'Playfair Display', Georgia, serif; font-size: 64px; font-weight: 900; letter-spacing: 18px; text-indent: 18px; color: #1a1a1a; line-height: 1; margin: 4px 0 6px; }
+.subtitle { text-align: center; font-size: 11px; color: #6b6358; letter-spacing: 6px; text-transform: uppercase; margin-bottom: 14px; }
+.masthead-rule { border: none; border-top: 4px double #2a2a2a; margin: 0 0 10px; }
+.info-bar { display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #1a1a1a; letter-spacing: 1px; padding: 4px 0 12px; border-bottom: 1px solid #2a2a2a; }
+.info-bar em { font-style: normal; color: #8b1a1a; font-weight: 600; }
+
+/* === Nav === */
+.nav-bar { display: flex; justify-content: space-between; align-items: center; padding: 10px 0 20px; font-size: 12px; letter-spacing: 1px; color: #6b6358; }
+.nav-bar a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #c4b99a; padding-bottom: 1px; }
+.nav-bar a:hover { color: #8b1a1a; border-color: #8b1a1a; }
+
+/* === Lead === */
+.lead { margin: 0 0 28px; padding: 4px 0 22px; border-bottom: 2px solid #2a2a2a; position: relative; }
+.lead-tag { display: inline-block; font-family: 'Playfair Display', Georgia, serif; background: #8b1a1a; color: #f5f0e6; font-size: 10px; letter-spacing: 4px; padding: 3px 10px; font-weight: 700; margin-bottom: 14px; }
+.lead-text { font-style: italic; font-size: 20px; line-height: 1.55; color: #1a1a1a; }
+
+/* === Section divider === */
+.section-divider { text-align: center; font-size: 18px; color: #6b6358; letter-spacing: 12px; padding: 22px 0; }
+
+/* === Articles === */
+.article { padding: 0 0 24px; margin-bottom: 24px; border-bottom: 1px solid #c4b99a; }
+.full-width { padding-right: 0; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.two-col .col { padding: 0 22px 24px; margin-bottom: 24px; border-bottom: 1px solid #c4b99a; }
+.two-col .col:first-child { border-right: 1px solid #c4b99a; padding-left: 0; }
+.two-col .col:last-child { padding-right: 0; }
+
+.article-category { font-family: 'Playfair Display', Georgia, serif; font-size: 10px; letter-spacing: 4px; color: #8b1a1a; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+.article-headline { font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif; font-size: 19px; font-weight: 700; line-height: 1.25; color: #1a1a1a; margin-bottom: 6px; }
+.feature-headline { font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif; font-size: 30px; font-weight: 900; line-height: 1.18; color: #1a1a1a; margin-bottom: 10px; letter-spacing: -0.2px; }
+.article-source { font-style: italic; font-size: 11px; color: #6b6358; margin-bottom: 10px; }
+.article-source a { color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a; }
+.article-source a:hover { color: #8b1a1a; border-color: #8b1a1a; }
+.article-body { font-size: 15px; line-height: 1.65; color: #1a1a1a; text-align: justify; margin-bottom: 12px; }
+.has-dropcap::first-letter { font-family: 'Playfair Display', Georgia, serif; font-size: 52px; font-weight: 900; float: left; line-height: 0.85; margin: 6px 8px 0 0; color: #8b1a1a; }
+.article-commentary { font-style: italic; font-size: 13.5px; line-height: 1.55; color: #2a2a2a; padding-top: 10px; border-top: 1px dashed #c4b99a; }
+.article-commentary::before { content: '✦ '; color: #8b1a1a; font-style: normal; }
+
+/* === Colophon === */
+.colophon { margin-top: 30px; padding: 16px 0 8px; border-top: 4px double #2a2a2a; background: #eae3d4; text-align: center; font-size: 11px; letter-spacing: 2px; color: #2a2a2a; }
+.colophon em { font-style: normal; color: #8b1a1a; font-weight: 700; }
+
+/* === Responsive === */
+@media (max-width: 720px) {
+    .newspaper { padding: 30px 24px; }
+    .masthead { font-size: 44px; letter-spacing: 12px; }
+    .feature-headline { font-size: 24px; }
+    .article-headline { font-size: 17px; }
+    .two-col { grid-template-columns: 1fr; }
+    .two-col .col { padding: 0 0 24px !important; border-right: none !important; }
+}
+</style>
+</head>
+<body>
+<div class="newspaper">
+    <div class="topline">An Independent Publication · Est. 2026</div>
+    <h1 class="masthead">AI DAILY</h1>
+    <div class="subtitle">aihot 精选 × remio 签发</div>
+    <hr class="masthead-rule">
+    <div class="info-bar">
+        <span>Vol. <em>13</em> · No. <em>13</em></span>
+        <span style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; letter-spacing: 2px;">THURSDAY · JUNE 4, 2026</span>
+        <span>今日 <em>8</em> 条精选</span>
+    </div>
+    <div class="nav-bar">
+        <a href="reports/2026-06-03.html">← 2026-06-03</a>
+        <a href="/">返回首页</a>
+        <span>已是最新</span>
+    </div>
+    <div class="lead">
+        <div class="lead-tag">LEAD</div>
+        <div class="lead-text">今天的双线叙事：旧秩序正在解体（微软与 OpenAI 公开对立），新格局开始定价（DeepSeek 完成国内最大单轮融资 500 亿）。</div>
+    </div>
+    
+        <article class="article full-width">
+            <div class="article-category">INDUSTRY</div>
+            <h2 class="feature-headline">微软与 OpenAI 分道扬镳：双方正面交锋</h2>
+            <div class="article-source">The Verge · 订阅版 · <a href="https://www.theverge.com/" target="_blank">原文</a></div>
+            <p class="article-body has-dropcap">前 DeepMind 高管、现任微软 AI 主管 Mustafa Suleyman 明确表示：微软必须独立完成从前依赖 OpenAI 的全部任务。蜜月结束，巨头开始互相定价。</p>
+            <p class="article-commentary">5 年蜜月结束。算力护城河已平，API 与云才是下一战场。</p>
+        </article>
+<div class="two-col">
+
+        <article class="article col">
+            <div class="article-category">INDUSTRY</div>
+            <h2 class="article-headline">DeepSeek 首轮融资 500 亿，估值冲击 4000 亿</h2>
+            <div class="article-source">IT之家 · <a href="https://www.ithome.com/" target="_blank">原文</a></div>
+            <p class="article-body">DeepSeek 拟从腾讯、宁德时代等机构筹集约 500 亿元人民币，估值 3500-4000 亿元。创始人梁文锋个人出资 200 亿，腾讯、宁德时代各领 100 亿、50 亿。</p>
+            <p class="article-commentary">芯片、电池、互联网的钱同时进场，押的是『推理成本』这张牌。</p>
+        </article>
+
+        <article class="article col">
+            <div class="article-category">TIP</div>
+            <h2 class="article-headline">李飞飞团队厘清『世界模型』：学的是空间-时间，不是像素</h2>
+            <div class="article-source">X · Fei-Fei Li / World Labs · <a href="https://x.com/drfeifei" target="_blank">原文</a></div>
+            <p class="article-body">对比语言模型学文本统计，世界模型学光照、物理与动作对状态的影响。基于 POMDP 框架，给出可被滥用的术语一份收敛定义。</p>
+            <p class="article-commentary">术语被用了两年，这是少见的、能真正厘清边界的清单。</p>
+        </article>
+</div>
+
+        <article class="article full-width">
+            <div class="article-category">PRODUCT</div>
+            <h2 class="feature-headline">Anthropic 自动化 95% 业务分析查询，准确率 95%</h2>
+            <div class="article-source">Anthropic Blog · <a href="https://www.anthropic.com/news" target="_blank">原文</a></div>
+            <p class="article-body">Anthropic 用 Claude 接入数据栈，让 95% 的分析查询自助完成，准确率约 95%。关键不是模型，而是数据层、验证流程与技能库。</p>
+            <p class="article-commentary">从『问答』到『决策』，真正的门槛是验证流程，不是模型。</p>
+        </article>
+<div class="two-col">
+
+        <article class="article col">
+            <div class="article-category">INDUSTRY</div>
+            <h2 class="article-headline">欧盟公布技术主权计划：芯片、AI、云全面自主</h2>
+            <div class="article-source">Bloomberg Technology · <a href="https://www.bloomberg.com/technology" target="_blank">原文</a></div>
+            <p class="article-body">欧盟推出全面技术主权路线图，覆盖芯片制造、AI 基础设施与云计算，目标减少对美国和亚洲的依赖。</p>
+            <p class="article-commentary">一张政治支票；18 个月内能否调动出真金白银，才是考验。</p>
+        </article>
+
+        <article class="article col">
+            <div class="article-category">MODEL</div>
+            <h2 class="article-headline">Miso One 开源：8B 语音模型，110ms 延迟，5 秒克隆人声</h2>
+            <div class="article-source">X · Kim / Miso · <a href="https://x.com/kimmonismus" target="_blank">原文</a></div>
+            <p class="article-body">8B 参数的 TTS 模型，权重开源可自托管。推理延迟 110ms，单样本即可克隆音色，音频数据不出本地。</p>
+            <p class="article-commentary">TTS 付费墙开始松动；Vapi、ElevenLabs 的护城河只剩音色库。</p>
+        </article>
+</div>
+<div class="section-divider">— ✦ —</div>
+<div class="two-col">
+
+        <article class="article col">
+            <div class="article-category">INDUSTRY</div>
+            <h2 class="article-headline">Suno 完成 4 亿美元 D 轮融资，估值 54 亿</h2>
+            <div class="article-source">X · Suno · <a href="https://x.com/suno" target="_blank">原文</a></div>
+            <p class="article-body">音乐生成平台 Suno 宣布 D 轮 4 亿美元，估值 54 亿。CEO Mikey 强调『让更多人享受创作』的使命。</p>
+            <p class="article-commentary">估值不是问题；问题在于：收入跑得赢版权诉讼吗？</p>
+        </article>
+
+        <article class="article col">
+            <div class="article-category">TIP</div>
+            <h2 class="article-headline">Karpathy 的 llm-wiki 拿下 5K 星：让 LLM 维护自更新维基</h2>
+            <div class="article-source">X · 硅基流动 SiliconFlow · <a href="https://x.com/SiliconFlowAI" target="_blank">原文</a></div>
+            <p class="article-body">理念是停止在每个会话中重新发现知识。让一个大模型构建并维护一个维基，每次使用都更聪明。几周内拿到 5,000+ 星。</p>
+            <p class="article-commentary">5K 星说明『长会话记忆』的痛点比想象更普遍。</p>
+        </article>
+</div>
+    <div class="colophon">
+        今日精选 <em>8</em> 条 · 数据源 aihot.virxact.com · 由 remio agent 生成 · 2026-06-04
+    </div>
+</div>
+</body>
+</html>
