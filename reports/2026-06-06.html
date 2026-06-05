@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI DAILY · 2026-06-06</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;500;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { background: #d8d0bf; }
+body { font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif; background: #f5f0e6; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem; }
+.newspaper { max-width: 860px; margin: 0 auto; background: #f5f0e6; box-shadow: 0 0 60px rgba(0,0,0,0.12); padding: 3rem 3.5rem; }
+.masthead-topline { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #6b6358; text-align: center; margin-bottom: 6px; }
+.masthead-title { font-family: 'Playfair Display', Georgia, serif; font-size: 64px; font-weight: 900; color: #1a1a1a; letter-spacing: 18px; text-indent: 18px; text-align: center; line-height: 1; margin: 12px 0 4px; }
+.masthead-subtitle { font-size: 12px; color: #6b6358; letter-spacing: 6px; text-align: center; text-transform: uppercase; margin-bottom: 14px; }
+.masthead-double { border-top: 4px double #2a2a2a; border-bottom: 1px solid #2a2a2a; padding: 8px 0; display: flex; justify-content: space-between; font-size: 11px; letter-spacing: 2px; color: #1a1a1a; text-transform: uppercase; }
+.masthead-double em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+.nav-bar { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #6b6358; border-bottom: 1px solid #c4b99a; margin-bottom: 1.6rem; }
+.nav-bar a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #c4b99a; padding-bottom: 1px; }
+.nav-bar a:hover { color: #8b1a1a; border-bottom-color: #8b1a1a; }
+.lead { margin: 0 0 1.8rem; padding-bottom: 1.4rem; border-bottom: 2px solid #2a2a2a; }
+.lead-label { display: inline-block; background: #8b1a1a; color: #f5f0e6; font-size: 10px; letter-spacing: 4px; padding: 3px 10px; font-weight: 700; margin-bottom: 14px; }
+.lead-text { font-style: italic; font-size: 20px; line-height: 1.55; color: #1a1a1a; }
+.lead-text strong { color: #8b1a1a; font-weight: 700; font-style: normal; }
+.article { margin: 1.6rem 0; }
+.article-category { font-size: 10px; letter-spacing: 4px; color: #8b1a1a; font-weight: 700; margin-bottom: 6px; }
+.article-headline { font-family: 'Playfair Display', Georgia, serif; color: #1a1a1a; font-weight: 700; line-height: 1.18; margin-bottom: 6px; }
+.article-headline.feature-headline { font-size: 30px; font-weight: 900; }
+.article-headline.col-headline { font-size: 19px; }
+.article-source { font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px; }
+.article-source a { color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a; }
+.article-source a:hover { color: #8b1a1a; border-bottom-color: #8b1a1a; }
+.article-body { font-size: 15px; line-height: 1.65; text-align: justify; color: #1a1a1a; margin-bottom: 10px; }
+.article.full-width .article-body::first-letter { font-family: 'Playfair Display', Georgia, serif; font-size: 52px; font-weight: 900; float: left; line-height: 0.85; margin: 4px 8px 0 0; color: #8b1a1a; }
+.article-commentary { font-style: italic; font-size: 13.5px; color: #1a1a1a; border-top: 1px dashed #c4b99a; padding-top: 8px; margin-top: 8px; line-height: 1.55; }
+.article-commentary::before { content: '✦ '; color: #8b1a1a; font-weight: 700; font-style: normal; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 1.6rem 0; }
+.two-col .col { padding: 0 1.2rem; }
+.two-col .col:first-child { border-right: 1px solid #c4b99a; padding-left: 0; }
+.two-col .col:last-child { padding-right: 0; }
+.separator { text-align: center; color: #8b1a1a; font-size: 14px; letter-spacing: 8px; margin: 1.4rem 0; }
+.colophon { border-top: 4px double #2a2a2a; background: #eae3d4; padding: 14px 20px; margin: 2rem -3.5rem -3rem; text-align: center; font-size: 11px; letter-spacing: 2px; color: #1a1a1a; text-transform: uppercase; }
+.colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+@media (max-width: 720px) {
+  .newspaper { padding: 1.8rem 1.2rem; }
+  .masthead-title { font-size: 42px; letter-spacing: 10px; text-indent: 10px; }
+  .masthead-double { flex-direction: column; gap: 4px; text-align: center; }
+  .two-col { grid-template-columns: 1fr; }
+  .two-col .col:first-child { border-right: none; border-bottom: 1px solid #c4b99a; padding: 0 0 1rem; margin-bottom: 1rem; }
+  .article-headline.feature-headline { font-size: 24px; }
+  .article.full-width .article-body::first-letter { font-size: 44px; }
+  .colophon { margin: 2rem -1.2rem -1.8rem; }
+}
+</style>
+</head>
+<body>
+<div class="newspaper">
+  <header>
+    <div class="masthead-topline">An Independent Publication · Est. 2026</div>
+    <h1 class="masthead-title">AI DAILY</h1>
+    <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+    <div class="masthead-double">
+      <span class="left">Vol. <em>14</em> · No. <em>14</em></span>
+      <span class="center">Saturday, June 6, 2026</span>
+      <span class="right">今日 <em>8</em> 条精选</span>
+    </div>
+  </header>
+  <nav class="nav-bar">
+    <a href="reports/2026-06-05.html">← 2026-06-05</a>
+    <a href="/">返回首页</a>
+    <span>已是最新</span>
+  </nav>
+  <section class="lead">
+    <span class="lead-label">LEAD</span>
+    <p class="lead-text">三个数字撑起今天的基调：<strong>350 亿美元</strong>、<strong>110 亿美元</strong>、<strong>1.5% GDP</strong>。当私募信贷、跨巨头云协议、国家级基建统计同时浮出水面，AI 已经不再是软件行业的子集，而是资本与地缘的硬通货。</p>
+  </section>
+  <main>
+    
+    <article class="article full-width">
+      <div class="article-category">INDUSTRY</div>
+      <h2 class="article-headline feature-headline">Apollo 与 Blackstone 敲定 350 亿美元债务融资，为 Anthropic 采购 AI 芯片</h2>
+      <div class="article-source">Bloomberg · <a href="https://www.bloomberg.com/news/articles/2026-06-05/apollo-wraps-up-35-billion-debt-financing-for-anthropic-ai-chips">阅读原文</a></div>
+      <p class="article-body">Apollo Global Management 与 Blackstone 已为 Anthropic 敲定 350 亿美元融资方案，用于扩充其 AI 基础设施。这是人工智能竞赛中最新的一笔巨额交易，标志着私募信贷正在成为前沿 AI 公司算力扩张的核心输血管。</p>
+      <div class="article-commentary">私募信贷首次单笔押注 AI 算力超 300 亿，OpenAI 与 Anthropic 的资本差距正在被融资工具创新抹平。</div>
+    </article><div class="two-col"><div class="col">
+    <article class="article col-width">
+      <div class="article-category">INDUSTRY</div>
+      <h2 class="article-headline col-headline">SpaceX 与 Google 达成 110 亿美元云协议：Google 每月向 xAI 数据中心支付 9.2 亿美元</h2>
+      <div class="article-source">X · @rohanpaul_ai · <a href="https://x.com/rohanpaul_ai/status/2063000834045313314">阅读原文</a></div>
+      <p class="article-body">SpaceX 披露与 Google 的新云服务协议：Google 将每月向 SpaceX 支付 9.2 亿美元（约合每年 110 亿美元），用于 xAI 数据中心的计算能力。这表明 AI 算力正成为一种战略性商品，跨公司、跨云、跨竞争对手之间的算力交易已成常态。</p>
+      <div class="article-commentary">Google 给马斯克家族企业输血养 xAI，算力变成可转售的期货，云市场的旧地图作废。</div>
+    </article></div><div class="col">
+    <article class="article col-width">
+      <div class="article-category">INDUSTRY</div>
+      <h2 class="article-headline col-headline">AI 基建占美国 GDP 比重翻倍至 1.5%：数据中心、芯片、网络总投资贡献 0.8 个百分点</h2>
+      <div class="article-source">X · @EpochAIResearch · <a href="https://x.com/EpochAIResearch/status/2062933470373146828">阅读原文</a></div>
+      <p class="article-body">2026 年第一季度，AI 相关的数据中心建设、计算硬件和网络设备投资约占美国 GDP 的 0.8%，推动整个计算基础设施占 GDP 比重达到约 1.5%——较前几年几乎翻倍。AI 资本开支已具备宏观行业级体量。</p>
+      <div class="article-commentary">1.5% GDP 是汽车工业历史峰值的两倍，这轮基建不是泡沫，是国家资产负债表级别的迁移。</div>
+    </article></div></div>
+    <article class="article full-width">
+      <div class="article-category">MODEL</div>
+      <h2 class="article-headline feature-headline">Anthropic 发布化学家 Claude：Opus 4.7 在 20 个化合物 NMR 谱图分析中击败 ChemDraw、MestReNova</h2>
+      <div class="article-source">Anthropic Research · <a href="https://www.anthropic.com/research/making-claude-a-chemist">阅读原文</a></div>
+      <p class="article-body">Anthropic 与顶尖化学家合作训练 Claude 在化学领域的实用性，首份白皮书聚焦 NMR 谱图分析：在 20 个化合物测试中，Opus 4.7 在解释化学位移、归属峰位与推理杂质方面的得分超过 ChemDraw、MestReNova 等专业软件以及 Opus 4.6、Sonnet 4.6。</p>
+      <div class="article-commentary">AI 抢走的不再是文书工作，而是 PhD 的第一手专业判断；化学 SaaS 的护城河正在被通用模型挖空。</div>
+    </article><div class="two-col"><div class="col">
+    <article class="article col-width">
+      <div class="article-category">PRODUCT</div>
+      <h2 class="article-headline col-headline">Google 推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架：跨语料库检索成为企业级默认范式</h2>
+      <div class="article-source">Google Research Blog · <a href="https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platform">阅读原文</a></div>
+      <p class="article-body">Google Research 与 Google Cloud 合作推出跨语料库检索（Cross-Corpus Retrieval）框架，作为 Gemini Enterprise Agent Platform 的 Agentic RAG 核心。该多智能体方法能自动选择最佳语料、规划检索路径并交叉验证，显著提升企业部署中 RAG 答案的可信度。</p>
+      <div class="article-commentary">RAG 从「向量检索 + LLM」升级为「多 Agent 编排 + 交叉验证」，企业落地终于有了可信赖的范式。</div>
+    </article></div><div class="col">
+    <article class="article col-width">
+      <div class="article-category">PAPER</div>
+      <h2 class="article-headline col-headline">微软 Project Mosaic：micro-LED 光学互连，让 GPU 之间的数据传输摆脱铜线功耗墙</h2>
+      <div class="article-source">X · Microsoft Research · <a href="https://x.com/MSFTResearch/status/2062983588606320714">阅读原文</a></div>
+      <p class="article-body">微软 Azure CTO Mark Russinovich 在 Build 2026 上介绍 Project Mosaic：微软剑桥研究院的实验性光学互连技术，采用 micro-LED 实现低功耗、高速数据传输，瞄准的是 GPU 集群内铜缆互连带来的功耗与带宽瓶颈。</p>
+      <div class="article-commentary">光互连不再是 HPC 实验室玩具，Azure 把它列为下一代集群路线图，NVIDIA 的 NVLink 霸主地位将迎来挑战。</div>
+    </article></div></div><div class="separator">— ✦ —</div><div class="two-col"><div class="col">
+    <article class="article col-width">
+      <div class="article-category">PRODUCT</div>
+      <h2 class="article-headline col-headline">Cloudflare 在 AI Gateway 中推出支出限额：你的 AI 账单可以不再失控</h2>
+      <div class="article-source">Cloudflare Blog · <a href="https://blog.cloudflare.com/ai-gateway-spend-limits">阅读原文</a></div>
+      <p class="article-body">Cloudflare 在其 AI Gateway 中正式上线支出限额（spend limits）功能，允许企业按项目、模型、租户设置硬性美元上限并自动熔断。这是首次由基础设施厂商针对 AI API 不可预测的 token 消耗提供原生财务护栏。</p>
+      <div class="article-commentary">AI 失控账单终于有了企业级护栏，CDN 巨头顺手把 FinOps 痛点收编为标准能力。</div>
+    </article></div><div class="col">
+    <article class="article col-width">
+      <div class="article-category">INDUSTRY</div>
+      <h2 class="article-headline col-headline">Meta 智能眼镜 App 暗藏人脸识别 NameTag：已静默推送至 5000 万台设备</h2>
+      <div class="article-source">IT 之家 · <a href="https://www.ithome.com/0/960/735.htm">阅读原文</a></div>
+      <p class="article-body">据报道，Meta 智能眼镜配套 App 的代码中暗藏人脸识别功能 NameTag，并已推送到超过 5000 万台设备。该功能在未对外公开说明的情况下被激活，引发关于公共场所匿名性与隐私边界的争议。</p>
+      <div class="article-commentary">5000 万副眼镜随时扫脸，AI 视觉产品的伦理审查远远跑在监管前面，欧盟 DSA 面临真正的压力测试。</div>
+    </article></div></div>
+  </main>
+  <footer class="colophon">
+    今日精选 <em>8</em> 条 · 数据源 aihot.virxact.com · 由 remio agent 生成 · 2026-06-06
+  </footer>
+</div>
+</body>
+</html>
