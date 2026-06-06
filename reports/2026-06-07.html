@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI DAILY · 2026-06-07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Serif+SC:wght@400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #d9d1bf; }
+  body {
+    font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+    color: #1a1a1a;
+    line-height: 1.55;
+    padding: 24px 12px 48px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .newspaper {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #f5f0e6;
+    box-shadow: 0 0 60px rgba(0,0,0,0.12);
+    padding: 36px 44px 28px;
+  }
+
+  /* ===== Masthead ===== */
+  .masthead-top {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #6b6358;
+    margin-bottom: 6px;
+  }
+  .masthead-title {
+    text-align: center;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 18px;
+    text-indent: 18px;
+    color: #1a1a1a;
+    line-height: 1;
+    margin: 4px 0 6px;
+  }
+  .masthead-sub {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 11px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #6b6358;
+    margin-bottom: 12px;
+  }
+  .masthead-divider {
+    border: 0;
+    border-top: 4px double #2a2a2a;
+    margin: 0 0 10px;
+  }
+  .info-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 11px;
+    color: #1a1a1a;
+    padding: 0 2px 10px;
+    border-bottom: 1px solid #2a2a2a;
+  }
+  .info-bar .left, .info-bar .right {
+    flex: 0 0 auto;
+    letter-spacing: 1.5px;
+  }
+  .info-bar .center {
+    flex: 1;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+  .info-bar em { font-style: italic; color: #8b1a1a; font-weight: 600; }
+
+  /* ===== Nav ===== */
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 12px;
+    color: #6b6358;
+    letter-spacing: 1px;
+  }
+  .nav-bar a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1px solid #c4b99a;
+  }
+  .nav-bar a:hover { color: #8b1a1a; border-bottom-color: #8b1a1a; }
+  .nav-bar span { font-style: italic; }
+
+  /* ===== Lead ===== */
+  .lead { margin: 14px 0 22px; position: relative; }
+  .lead-tag {
+    display: inline-block;
+    background: #8b1a1a;
+    color: #f5f0e6;
+    font-family: 'EB Garamond', serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    padding: 3px 8px 2px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .lead-text {
+    font-family: 'EB Garamond', 'Noto Serif SC', serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.55;
+    color: #1a1a1a;
+    text-align: justify;
+  }
+  .lead-divider {
+    border: 0;
+    border-top: 2px solid #2a2a2a;
+    margin: 18px 0 22px;
+  }
+
+  /* ===== Articles ===== */
+  .article { margin-bottom: 26px; }
+  .article-category {
+    font-family: 'EB Garamond', serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #8b1a1a;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .article-headline {
+    font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+    color: #1a1a1a;
+    font-weight: 900;
+    line-height: 1.18;
+    margin-bottom: 6px;
+  }
+  .full-width .article-headline { font-size: 30px; }
+  .col .article-headline { font-size: 19px; font-weight: 700; }
+  .article-source {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 11px;
+    color: #6b6358;
+    margin-bottom: 10px;
+  }
+  .article-source a {
+    color: #6b6358;
+    text-decoration: none;
+    border-bottom: 1px dotted #6b6358;
+  }
+  .article-source a:hover { color: #8b1a1a; border-bottom-color: #8b1a1a; }
+  .article-body {
+    font-family: 'EB Garamond', 'Noto Serif SC', serif;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #1a1a1a;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  .article-commentary {
+    font-family: 'EB Garamond', 'Noto Serif SC', serif;
+    font-style: italic;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #3a3530;
+    border-top: 1px dashed #c4b99a;
+    padding-top: 8px;
+    text-align: justify;
+  }
+  .article-commentary::before {
+    content: '✦ ';
+    color: #8b1a1a;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  /* Drop cap — only the first full-width lead article */
+  .lead-article .article-body::first-letter {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 52px;
+    font-weight: 900;
+    float: left;
+    line-height: 0.85;
+    margin: 6px 8px 0 0;
+    color: #8b1a1a;
+  }
+
+  /* Two-column grid */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 28px;
+    border-top: 1px solid #c4b99a;
+    padding-top: 22px;
+    margin-top: 4px;
+    margin-bottom: 26px;
+  }
+  .two-col .col {
+    padding-top: 0;
+  }
+  .two-col .col:first-child {
+    border-right: 1px solid #c4b99a;
+    padding-right: 24px;
+  }
+  .two-col .col:last-child {
+    padding-left: 0;
+  }
+
+  /* Single full-width */
+  .full-width {
+    margin-bottom: 26px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #c4b99a;
+  }
+  .lead-article {
+    border-bottom: 1px solid #c4b99a;
+    padding-bottom: 12px;
+    margin-bottom: 6px;
+  }
+
+  /* Section divider */
+  .section-divider {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    color: #8b1a1a;
+    letter-spacing: 8px;
+    margin: 22px 0 6px;
+    font-size: 14px;
+  }
+
+  /* ===== Colophon ===== */
+  .colophon {
+    border-top: 4px double #2a2a2a;
+    background: #eae3d4;
+    margin: 24px -44px -28px;
+    padding: 14px 44px;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #3a3530;
+  }
+  .colophon em { color: #8b1a1a; font-style: italic; font-weight: 600; }
+  .colophon-divider {
+    width: 40px; height: 1px; background: #6b6358; margin: 6px auto;
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .newspaper { padding: 22px 18px 18px; }
+    .masthead-title { font-size: 44px; letter-spacing: 12px; text-indent: 12px; }
+    .lead-text { font-size: 17px; }
+    .full-width .article-headline { font-size: 24px; }
+    .col .article-headline { font-size: 18px; }
+    .two-col { grid-template-columns: 1fr; column-gap: 0; }
+    .two-col .col:first-child { border-right: none; padding-right: 0; border-bottom: 1px solid #c4b99a; padding-bottom: 18px; margin-bottom: 18px; }
+    .colophon { margin: 18px -18px -18px; padding: 12px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="newspaper">
+
+  <!-- ===== Masthead ===== -->
+  <div class="masthead-top">An Independent Publication · Est. 2026</div>
+  <h1 class="masthead-title">AI DAILY</h1>
+  <div class="masthead-sub">aihot 精选 × remio 签发</div>
+  <hr class="masthead-divider">
+  <div class="info-bar">
+    <div class="left">Vol. <em>16</em> · No. <em>16</em></div>
+    <div class="center">SUNDAY, JUNE 7, 2026</div>
+    <div class="right">今日 <em>7</em> 条精选</div>
+  </div>
+
+  <!-- ===== Nav ===== -->
+  <div class="nav-bar">
+    <span>← <a href="reports/2026-06-06.html">2026-06-06</a></span>
+    <a href="/">返回首页</a>
+    <span>已是最新</span>
+  </div>
+
+  <!-- ===== Lead ===== -->
+  <div class="lead">
+    <div class="lead-tag">LEAD</div>
+    <div class="lead-text">
+      资本与监管同步加注：Apollo 为 Anthropic 筹得 350 亿美元债务，SpaceX 与 Google 签下每年 110 亿美元的算力对赌，众议院试图把 AI 监管收归联邦；与此同时，前端体验正被 Gemini Live 的实时多模态创作拉入下一阶段。
+    </div>
+  </div>
+  <hr class="lead-divider">
+
+  <!-- ===== Article 1: Full-width lead ===== -->
+  <div class="article full-width lead-article">
+    <div class="article-category">PRODUCT</div>
+    <h2 class="article-headline">Gemini Live 支持实时创建与编辑图像</h2>
+    <div class="article-source">来源：X · <a href="https://x.com/GeminiApp/status/2062936486509785385">@GeminiApp</a></div>
+    <div class="article-body">
+      Google 把 Gemini Live 从「对话」推向「实时共创」：用户开启 Live 按钮、共享摄像头后，可以边看画面边口述想要的修改，模型在像素级即时重绘。从房间布置预览到数学题手写板书，再到可分享的梗图，整条链路从「先描述—再等待—最后看结果」压缩到「一边说一边看见」。这意味着多模态实时生成首次进入大众消费级默认入口，Google 用一个产品功能把「AIGC 工具」与「日常对话助手」的边界抹掉了。
+    </div>
+    <div class="article-commentary">把生成式 AI 从「出图网站」拽进聊天框，下一个被颠覆的是 Midjourney 和绘图 App 的护城河。</div>
+  </div>
+
+  <!-- ===== Two-column: 2 + 3 ===== -->
+  <div class="two-col">
+    <div class="col article">
+      <div class="article-category">PRODUCT</div>
+      <h2 class="article-headline">GitHub 开源 Spec Kit：先把规范写好，再让 AI 写代码</h2>
+      <div class="article-source">来源：X · <a href="https://x.com/rohanpaul_ai/status/2063246343842501091">Rohan Paul</a></div>
+      <div class="article-body">
+        GitHub 推出的 Spec Kit 是一套开源工具链，专门治理「vibe coding」的最大病灶——AI 在需求没敲定前就匆忙动笔。它把流程倒过来：先写产品规范、澄清差距、制定技术计划、拆解任务，最后才让 agent 落地。规范本身成为一份可执行的开发合约，已经兼容 Copilot、Claude Code、Codex 和 Gemini CLI。
+      </div>
+      <div class="article-commentary">真正的 spec-driven development，不是写更好的 prompt，而是把规范当成一等公民编译进工具链。</div>
+    </div>
+    <div class="col article">
+      <div class="article-category">INDUSTRY</div>
+      <h2 class="article-headline">Apollo 敲定 350 亿美元债务融资，为 Anthropic 买 AI 芯片</h2>
+      <div class="article-source">来源：Bloomberg · <a href="https://www.bloomberg.com/news/articles/2026-06-05/apollo-wraps-up-35-billion-debt-to-buy-">Technology</a></div>
+      <div class="article-body">
+        Apollo Global Management 与 Blackstone 联手为 Anthropic 安排 350 亿美元融资，专项用于扩充其 AI 基础设施。这是今年 AI 算力军备赛里最大单笔私募债融资，也意味着 Anthropic 把「向银行借钱买 GPU」做成了可被市场定价的结构化产品。
+      </div>
+      <div class="article-commentary">当 AI 公司的资产负债表上「GPU」比「现金」更值钱，融资方式就必须重写。</div>
+    </div>
+  </div>
+
+  <!-- ===== Full-width standalone ===== -->
+  <div class="article full-width">
+    <div class="article-category">INDUSTRY</div>
+    <h2 class="article-headline">SpaceX 与 Google 达成 110 亿美元/年云算力协议</h2>
+    <div class="article-source">来源：X · <a href="https://x.com/rohanpaul_ai/status/2063000834045313314">Rohan Paul</a></div>
+    <div class="article-body">
+      SpaceX 披露与 Google 的一项新云服务协议：Google 将以每月 9.2 亿美元、合计每年约 110 亿美元的规模，向 SpaceX 采购 xAI 数据中心的算力。算力被明确定价为「战略商品」，其价格弹性已逼近发射能力与电力。这桩交易把「能为庞大 GPU 集群提供资金、电力、冷却和运营」的公司——无论是 Google 还是 SpaceX——推上了 AI 时代的基础设施杠杆位。
+    </div>
+    <div class="article-commentary">110 亿美元一年只是开胃菜：算力正在变成像石油那样的长协期货市场。</div>
+  </div>
+
+  <!-- ===== Two-column: 5 + 6 ===== -->
+  <div class="two-col">
+    <div class="col article">
+      <div class="article-category">INDUSTRY</div>
+      <h2 class="article-headline">美国众议院推法案草案：禁止各州自行监管 AI</h2>
+      <div class="article-source">来源：Reuters · <a href="https://www.reuters.com/business/us-house-lawmakers-release-draft-bill-regulate-ai-2026-06">via Hacker News</a></div>
+      <div class="article-body">
+        美国众议院议员发布法案草案，明确禁止各州自行制定 AI 相关法规，把监管权统一上收到联邦层面。草案的逻辑是：州一级碎片化的合规要求正在拖慢美国 AI 公司的部署速度；批评者则警告，这等于在 AI 治理最关键的窗口期主动放弃制衡。
+      </div>
+      <div class="article-commentary">这是给创业者减负还是给科技巨头松绑，答案取决于你站在联邦还是州一级。</div>
+    </div>
+    <div class="col article">
+      <div class="article-category">PAPER</div>
+      <h2 class="article-headline">Arena 发布 Agent Arena：30 万真实任务重排座次</h2>
+      <div class="article-source">来源：X · <a href="https://x.com/rohanpaul_ai/status/2063018358795300982">Rohan Paul</a></div>
+      <div class="article-body">
+        Arena 上线基于真实用户任务的智能体排行榜 Agent Arena，数据来自 30 万+ 任务、200 万+ 工具调用和 4000 万行代码。综合指标包含任务成功率、纠正遵从、错误恢复、用户表扬与抱怨以及「工具幻觉」。前三名：GPT-5.5 High（+10.7%）、Claude Opus 4.7 Thinking（+9.5%）、GPT-5.4 High（+8.9%）。
+      </div>
+      <div class="article-commentary">当基准从「做题」换成「干活」，榜单前三的差距比想象的小，但排名变动比想象的猛。</div>
+    </div>
+  </div>
+
+  <div class="section-divider">— ✦ —</div>
+
+  <!-- ===== Two-column: 7 + 8 ===== -->
+  <div class="two-col">
+    <div class="col article">
+      <div class="article-category">PRODUCT</div>
+      <h2 class="article-headline">OpenCV 5 发布：原生支持 Transformer 与大模型</h2>
+      <div class="article-source">来源：IT之家 · <a href="https://www.ithome.com/0/960/969.htm">ithome.com</a></div>
+      <div class="article-body">
+        OpenCV 5 换上基于图的 DNN 引擎，ONNX 算子覆盖率从 4.x 时代的不足 23% 跃升至 80% 以上，并原生支持 Transformer、VLM 和 LLM。Python 集成更紧凑、硬件加速层更清晰、新增原生 FP16/BF16、规范化 0D/1D 张量、扩展 3D 视觉。GitHub 上 86,000+ star、每日安装量破百万的它，是机器人与边缘视觉研究者的基本盘。
+      </div>
+      <div class="article-commentary">经典视觉库第一次把大模型当一等公民，边缘端做 VLM 不再是「自己拼」。</div>
+    </div>
+    <div class="col article">
+      <div class="article-category">TIP</div>
+      <h2 class="article-headline">Claude 是否在 rsync 中制造了更多 bug？</h2>
+      <div class="article-source">来源：Hacker News · <a href="https://alexispurslane.github.io/rsync-analysis">alexispurslane.github.io</a></div>
+      <div class="article-body">
+        一篇 105 分热度的 HN 帖子借数据分析提出疑问：在 Claude 等代码助手进入维护者工作流之后，开源工具 rsync 的 bug 报告节奏是否发生了变化，并附上完整分析链接。这并非指控「AI 写错代码」，而是审视「AI 协助提交的 patch 是否带来了新的失败模式」——是当下值得建立系统性基线的问题。
+      </div>
+      <div class="article-commentary">真正的麻烦不是「AI 写错代码」，而是「AI 写出看起来对、但风格漂移的代码」淹没了 reviewer。</div>
+    </div>
+  </div>
+
+  <!-- ===== Colophon ===== -->
+  <div class="colophon">
+    今日精选 <em>7</em> 条 · 数据源 aihot.virxact.com · 由 remio agent 生成 · 2026-06-07
+    <div class="colophon-divider"></div>
+    AI DAILY · 每日 AI 行业日报 · 仅作资讯整理，观点归原作者
+  </div>
+
+</div>
+</body>
+</html>
