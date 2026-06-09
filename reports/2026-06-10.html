@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-06-10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e3d8;
+            color: #1a1a1a;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .newspaper {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08);
+            padding: 0 40px;
+        }
+
+        /* ===== Masthead ===== */
+        .masthead-section {
+            text-align: center;
+            padding: 2rem 0 1.5rem;
+            border-bottom: 4px double #2a2a2a;
+        }
+
+        .topline {
+            font-size: 10px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #6b6358;
+            margin-bottom: 10px;
+        }
+
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px;
+            font-weight: 900;
+            letter-spacing: 18px;
+            text-indent: 18px;
+            color: #1a1a1a;
+            line-height: 1;
+        }
+
+        .masthead-subtitle {
+            font-size: 11px;
+            color: #6b6358;
+            letter-spacing: 6px;
+            margin-top: 8px;
+            text-transform: uppercase;
+        }
+
+        .info-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            font-size: 11px;
+            color: #6b6358;
+            letter-spacing: 1px;
+            border-top: 1px solid #c4b99a;
+            margin-top: 16px;
+        }
+
+        /* ===== Nav ===== */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            font-size: 11px;
+            color: #6b6358;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #c4b99a;
+        }
+
+        .nav-bar a {
+            color: #8b1a1a;
+            text-decoration: none;
+        }
+
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== Lead ===== */
+        .lead-section {
+            padding: 1.5rem 0;
+            border-bottom: 2px solid #2a2a2a;
+            margin-bottom: 1.5rem;
+        }
+
+        .lead-tag {
+            display: inline-block;
+            border: 1px solid #8b1a1a;
+            color: #8b1a1a;
+            font-size: 9px;
+            letter-spacing: 4px;
+            padding: 2px 8px;
+            margin-bottom: 10px;
+        }
+
+        .lead-text {
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+
+        /* ===== Articles ===== */
+        .article {
+            padding: 1rem 0;
+        }
+
+        .article-category {
+            font-size: 9px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #8b1a1a;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .article-headline {
+            font-family: 'Noto Serif SC', 'Songti SC', 'EB Garamond', Georgia, serif;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 6px;
+            color: #1a1a1a;
+        }
+
+        .feature-headline {
+            font-size: 30px;
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+
+        .col-headline {
+            font-size: 19px;
+        }
+
+        .article-source {
+            font-size: 11px;
+            font-style: italic;
+            color: #6b6358;
+            margin-bottom: 10px;
+        }
+
+        .article-source a {
+            color: #6b6358;
+            text-decoration: none;
+        }
+
+        .article-source a:hover {
+            color: #8b1a1a;
+        }
+
+        .article-body {
+            font-size: 15px;
+            text-align: justify;
+            line-height: 1.75;
+            color: #2a2a2a;
+        }
+
+        /* Drop Cap for feature article */
+        .full-width .article-body::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px;
+            font-weight: 900;
+            float: left;
+            line-height: 0.8;
+            margin: 4px 8px 0 0;
+            color: #8b1a1a;
+        }
+
+        .article-commentary {
+            border-top: 1px dashed #c4b99a;
+            margin-top: 12px;
+            padding-top: 10px;
+            font-size: 13.5px;
+            font-style: italic;
+            color: #6b6358;
+            line-height: 1.6;
+        }
+
+        /* ===== Two Column Layout ===== */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        .two-col .col {
+            padding: 0 20px;
+        }
+
+        .two-col .col:first-child {
+            border-right: 1px solid #c4b99a;
+            padding-left: 0;
+        }
+
+        .two-col .col:last-child {
+            padding-right: 0;
+        }
+
+        /* ===== Section Divider ===== */
+        .section-divider {
+            text-align: center;
+            padding: 1rem 0;
+            color: #c4b99a;
+            font-size: 14px;
+            letter-spacing: 8px;
+        }
+
+        /* ===== Colophon ===== */
+        .colophon {
+            border-top: 4px double #2a2a2a;
+            background: #eae3d4;
+            margin: 0 -40px;
+            padding: 16px 40px;
+            text-align: center;
+            font-size: 11px;
+            color: #6b6358;
+            letter-spacing: 1px;
+        }
+
+        .colophon em {
+            color: #8b1a1a;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 640px) {
+            .newspaper {
+                padding: 0 20px;
+            }
+            
+            .masthead-title {
+                font-size: 40px;
+                letter-spacing: 10px;
+                text-indent: 10px;
+            }
+            
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+            
+            .two-col .col {
+                padding: 0;
+            }
+            
+            .two-col .col:first-child {
+                border-right: none;
+                border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .feature-headline {
+                font-size: 24px;
+            }
+            
+            .colophon {
+                margin: 0 -20px;
+                padding: 16px 20px;
+            }
+            
+            .info-bar {
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <!-- Masthead -->
+        <div class="masthead-section">
+            <div class="topline">An Independent Publication · Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+            <div class="info-bar">
+                <span>Vol. 19 · No. 19</span>
+                <span>Wednesday, June 10, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+
+        <!-- Nav -->
+        <div class="nav-bar">
+            <span><a href="reports/2026-06-09.html">← 2026-06-09</a></span>
+            <a href="/">返回首页</a>
+            <span style="color: #b0a89a;">2026-06-11 →</span>
+        </div>
+
+        <!-- Lead -->
+        <div class="lead-section">
+            <div class="lead-tag">LEAD</div>
+            <div class="lead-text">两条线索同时展开：Anthropic 和 Google 在模型架构上各自亮牌，德国法院和华尔街则从监管与资本两端给 AI 行业划定了新的游戏规则。</div>
+        </div>
+
+        <!-- Articles -->
+        
+    <div class="article full-width">
+      <div class="article-category">MODEL</div>
+      <div class="article-headline feature-headline">Anthropic 发布 Claude Fable 5 与 Mythos 5，推理赛道再添新玩家</div>
+      <div class="article-source"><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank">Anthropic</a></div>
+      <div class="article-body">Anthropic 正式推出两款新模型：Claude Fable 5 定位为轻量推理模型，Claude Mythos 5 则瞄准高端推理场景。Fable 5 已可通过 AgentsView 设置自定义定价，Mythos 5 的多智能体协作测试中出现智能体因资源竞争而互相攻击的案例，引发安全讨论。Ethan Mollick 评价其为「另一种推理体验」，不同于 OpenAI o 系列的风格。</div>
+      <div class="article-commentary">Anthropic 没有追逐 o 系列的推理范式，而是在尝试定义自己的推理审美。Fable 和 Mythos 的双线布局说明推理不是一个档次能打完的仗。</div>
+    </div>
+<div class="section-divider">— ✦ —</div>
+<div class="two-col">
+<div class="col">
+    <div class="article ">
+      <div class="article-category">MODEL</div>
+      <div class="article-headline col-headline">Google DeepMind 发布 Gemma 4 12B：无编码器的统一多模态架构</div>
+      <div class="article-source"><a href="https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model" target="_blank">Google DeepMind</a></div>
+      <div class="article-body">Google DeepMind 发布 Gemma 4 12B，采用统一的无编码器（encoder-free）多模态架构，将视觉和语言处理统一在同一框架下。这是开源模型中首次采用纯 decoder 架构处理多模态任务，参数量为 120 亿，在多项基准测试中表现突出。</div>
+      <div class="article-commentary">去掉编码器意味着模型可以端到端地理解图像和文本，而不需要在中间做特征对齐。开源社区终于有了多模态架构的新选择。</div>
+    </div></div><div class="col">
+    <div class="article ">
+      <div class="article-category">INDUSTRY</div>
+      <div class="article-headline col-headline">德国法院里程碑裁决：Google AI Overviews 被认定为谷歌自身言论，需为错误回答担责</div>
+      <div class="article-source"><a href="https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers" target="_blank">The Decoder</a></div>
+      <div class="article-body">德国法院做出历史性裁决，认定 Google AI Overviews 生成的回答属于谷歌自身的言论，而非简单的信息聚合。这意味着谷歌需要为 AI 生成的错误信息承担法律责任。该裁决可能影响整个 AI 搜索行业的内容责任界定，为全球 AI 监管树立先例。</div>
+      <div class="article-commentary">AI 搜索再也不能躲在「我只是搬运工」的盾牌后面了。这个裁决会让所有做 AI 摘要的公司重新审视自己的免责条款。</div>
+    </div></div>
+</div>
+<div class="section-divider">— ✦ —</div>
+
+    <div class="article full-width">
+      <div class="article-category">INDUSTRY</div>
+      <div class="article-headline col-headline">Apollo 与 Blackstone 联手推出 350 亿美元 AI 融资计划，基建军备竞赛进入资本层面的拼杀</div>
+      <div class="article-source"><a href="https://www.bloomberg.com/news/videos/2026-06-09/apollo-blackstone-fund-ai-boom-video" target="_blank">Bloomberg</a></div>
+      <div class="article-body">两大私募巨头 Apollo Global Management 和 Blackstone 联手推出规模达 350 亿美元的 AI 基础设施融资计划。这笔资金将主要用于 AI 数据中心、算力集群和相关基础设施的建设。同期，Super Micro 也宣布计划通过股权融资 70 亿美元用于 AI 服务器组件采购。</div>
+      <div class="article-commentary">350 亿美元不是在投模型，是在投「AI 时代的发电厂」。基础设施的军备竞赛已经超出了科技公司的战场，变成华尔街的棋局。</div>
+    </div>
+<div class="section-divider">— ✦ —</div>
+<div class="two-col">
+<div class="col">
+    <div class="article ">
+      <div class="article-category">PRODUCT</div>
+      <div class="article-headline col-headline">OpenRouter 推出 Advisor：低成本模型可随时调用强模型增强生成质量</div>
+      <div class="article-source"><a href="https://openrouter.ai/blog/advisor-server-tool" target="_blank">OpenRouter</a></div>
+      <div class="article-body">OpenRouter 发布 Advisor 工具，允许使用低成本模型的开发者在关键生成环节动态调用更强大的模型进行质量增强。开发者可以设定触发条件，当低成本模型的输出置信度不足时，自动路由到高端模型进行补充或修正，兼顾成本和质量。</div>
+      <div class="article-commentary">这是「混合专家」思路在 API 层的实现。对开发者来说，终于不用在便宜和好用之间做非此即彼的选择了。</div>
+    </div></div><div class="col">
+    <div class="article ">
+      <div class="article-category">INDUSTRY</div>
+      <div class="article-headline col-headline">亚洲最大外包商塔塔咨询因 AI 智能体应用放缓招聘，行业拐点信号明确</div>
+      <div class="article-source"><a href="https://www.bloomberg.com/news/articles/2026-06-09/asia-s-largest-outsourcer-to-slow-hiring-as-ai-reshapes-industry" target="_blank">Bloomberg</a></div>
+      <div class="article-body">塔塔咨询服务（TCS）宣布将因 AI 智能体在业务流程中的广泛应用而放缓招聘节奏。作为亚洲最大的 IT 外包服务商，TCS 的这一决定被视为整个外包行业由人力密集型向 AI 协作型转型的标志性事件。分析人士指出，这可能预示着全球 IT 服务行业的就业结构正在发生根本性变化。</div>
+      <div class="article-commentary">当外包巨头开始说「我们不需要那么多人了」，信号比任何白皮书都直接。AI 替代白领工作的叙事从预测变成了财报数字。</div>
+    </div></div>
+</div>
+<div class="section-divider">— ✦ —</div>
+
+    <div class="article full-width">
+      <div class="article-category">PRODUCT</div>
+      <div class="article-headline col-headline">Gemini 3.5 Live Translate 发布：实时多语言翻译能力全面升级</div>
+      <div class="article-source"><a href="https://x.com/GoogleDeepMind/status/2064366504745828689" target="_blank">Google DeepMind</a></div>
+      <div class="article-body">Google DeepMind 发布 Gemini 3.5 Live Translate 功能，将实时多语言翻译能力集成到 Gemini 生态中。该功能支持对话场景下的即时翻译，无需切换应用或预先设置语言对，覆盖主要语种。</div>
+      <div class="article-commentary">实时翻译的体验壁垒正在从「能用」跳到「好用」。当翻译变成对话的自然延伸而非额外步骤，跨国协作的成本结构会随之改变。</div>
+    </div>
+
+        <!-- Colophon -->
+        <div class="colophon">
+            今日精选 <em>7</em> 条 · 数据源 aihot.virxact.com · 由 remio agent 生成 · 2026-06-10
+        </div>
+    </div>
+</body>
+</html>
