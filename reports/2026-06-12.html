@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-06-12</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=EB+Garamond:wght@400;500;600&family=Noto+Serif+SC:wght@400;700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #f5f0e6;
+            color: #1a1a1a;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .newspaper {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08);
+            padding: 0 40px;
+        }
+
+        /* Masthead */
+        .masthead-topline {
+            text-align: center;
+            font-size: 10px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #6b6358;
+            padding-top: 2.5rem;
+            margin-bottom: 6px;
+        }
+        .masthead-title {
+            text-align: center;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px;
+            font-weight: 900;
+            letter-spacing: 18px;
+            text-indent: 18px;
+            color: #1a1a1a;
+            line-height: 1.1;
+        }
+        .masthead-subtitle {
+            text-align: center;
+            font-size: 11px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: #6b6358;
+            margin-top: 4px;
+            margin-bottom: 1rem;
+        }
+        .masthead-rule {
+            border: none;
+            border-top: 4px double #2a2a2a;
+            margin-bottom: 0.5rem;
+        }
+        .masthead-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 11px;
+            color: #6b6358;
+            padding: 0.4rem 0 0.8rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .masthead-info span { letter-spacing: 1px; }
+
+        /* Nav */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.6rem 0;
+            font-size: 11px;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #c4b99a;
+            margin-bottom: 1.5rem;
+        }
+        .nav-bar a, .nav-bar span {
+            color: #6b6358;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .nav-bar a:hover { color: #8b1a1a; }
+
+        /* Lead */
+        .lead { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 2px solid #2a2a2a; }
+        .lead-label {
+            display: inline-block;
+            font-size: 9px;
+            letter-spacing: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #fff;
+            background: #8b1a1a;
+            padding: 2px 10px;
+            margin-bottom: 0.8rem;
+        }
+        .lead-text {
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+
+        /* Section Divider */
+        .section-divider {
+            text-align: center;
+            color: #c4b99a;
+            font-size: 14px;
+            letter-spacing: 8px;
+            padding: 1.5rem 0;
+        }
+
+        /* Full Width Article */
+        .full-width { margin-bottom: 2rem; }
+        .full-width .feature-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-size: 30px;
+            font-weight: 900;
+            line-height: 1.25;
+            margin-bottom: 0.4rem;
+            color: #1a1a1a;
+        }
+        .full-width .article-body::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px;
+            font-weight: 900;
+            float: left;
+            line-height: 0.8;
+            margin: 4px 8px 0 0;
+            color: #8b1a1a;
+        }
+
+        /* Two Column */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            margin-bottom: 2rem;
+        }
+        .two-col .col {
+            padding: 0 1.2rem;
+        }
+        .two-col .col:first-child {
+            border-right: 1px solid #c4b99a;
+            padding-left: 0;
+        }
+        .two-col .col:last-child {
+            padding-right: 0;
+        }
+
+        /* Article common */
+        .article-categories {
+            font-size: 9px;
+            letter-spacing: 3px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #8b1a1a;
+            margin-bottom: 0.3rem;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 0.3rem;
+            color: #1a1a1a;
+        }
+        .full-width .article-headline { font-size: 22px; }
+        .col .article-headline { font-size: 19px; }
+
+        .article-source {
+            font-size: 11px;
+            font-style: italic;
+            color: #6b6358;
+            margin-bottom: 0.5rem;
+        }
+        .article-source a { color: #6b6358; text-decoration: none; }
+        .article-source a:hover { color: #8b1a1a; text-decoration: underline; }
+
+        .article-body {
+            font-size: 15px;
+            text-align: justify;
+            line-height: 1.7;
+            margin-bottom: 0.8rem;
+            color: #2a2a2a;
+        }
+        .article-commentary {
+            border-top: 1px dashed #c4b99a;
+            padding-top: 0.6rem;
+            font-style: italic;
+            font-size: 13.5px;
+            color: #6b6358;
+            line-height: 1.6;
+        }
+        .article-commentary::before {
+            content: '✦ ';
+            color: #8b1a1a;
+            font-style: normal;
+        }
+
+        /* Colophon */
+        .colophon {
+            border-top: 4px double #2a2a2a;
+            background: #eae3d4;
+            margin: 0 -40px;
+            padding: 1rem 40px;
+            text-align: center;
+            font-size: 11px;
+            color: #6b6358;
+            letter-spacing: 1px;
+            line-height: 1.8;
+        }
+        .colophon em {
+            color: #8b1a1a;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .newspaper { padding: 0 20px; }
+            .masthead-title { font-size: 40px; letter-spacing: 10px; text-indent: 10px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child { border-right: none; border-bottom: 1px solid #c4b99a; padding-bottom: 1.5rem; margin-bottom: 1.5rem; padding-left: 0; }
+            .two-col .col { padding: 0; }
+            .full-width .feature-headline { font-size: 24px; }
+            .colophon { margin: 0 -20px; padding: 1rem 20px; }
+        }
+    </style>
+</head>
+<body>
+<div class="newspaper">
+
+    <!-- Masthead -->
+    <div class="masthead-topline">An Independent Publication · Est. 2026</div>
+    <div class="masthead-title">AI DAILY</div>
+    <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+    <hr class="masthead-rule">
+    <div class="masthead-info">
+        <span>Vol. 21 · No. 21</span>
+        <span>June 12, 2026</span>
+        <span>今日 <em style="color:#8b1a1a;font-style:normal;font-weight:600;">7</em> 条精选</span>
+    </div>
+
+    <!-- Nav -->
+    <div class="nav-bar">
+        <a href="2026-06-11.html">← 前一天</a>
+        <a href="/">返回首页</a>
+        <span>已是最新</span>
+    </div>
+
+    <!-- Lead -->
+    <div class="lead">
+        <div class="lead-label">Lead</div>
+        <div class="lead-text">全自主无人机首次在实战中击杀人类士兵——这不是科幻小说的开头，而是今天的新闻头条。与此同时，AI 正在工程师的工位和好莱坞的片场同时加速渗透。</div>
+    </div>
+
+    <!-- Article 1: Full Width Headline -->
+    <div class="full-width">
+        <div class="article-categories">Industry</div>
+        <div class="feature-headline">全自主无人机首次击杀人类士兵， lethal AI 进入实战纪元</div>
+        <div class="article-source">New Scientist · <a href="https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time">原文链接</a></div>
+        <div class="article-body">据《新科学家》报道，完全自主运行的无人机首次在实战中执行致命攻击并击毙人类士兵，这是有记录以来第一次无需人类操作员确认的自主武器实战致死事件。尽管细节尚有限，该事件标志着自主武器系统从实验室和伦理讨论正式跨入真实战场。此前，联合国和多国政府已就自主致命武器的监管框架争论多年，但始终未达成具有约束力的国际条约。这一事件将极大加速相关立法和伦理讨论的紧迫性。</div>
+        <div class="article-commentary">从「AI 能不能杀人」到「AI 已经杀了人」，这句话的距离可能比所有人预想的都短。军备竞赛的逻辑不会等待伦理。</div>
+    </div>
+
+    <div class="section-divider">— ✦ —</div>
+
+    <!-- Article 2-3: Two Column -->
+    <div class="two-col">
+        <div class="col">
+            <div class="article-categories">Industry</div>
+            <div class="article-headline">Prometheus 融资 120 亿美元，7 个月估值飙至 410 亿</div>
+            <div class="article-source">X @kimmonismus · <a href="https://x.com/kimmonismus/status/2065097988859744503">原文链接</a></div>
+            <div class="article-body">杰夫·贝佐斯旗下 AI 公司 Prometheus 以 410 亿美元估值完成 120 亿美元融资，成立仅 7 个月尚无任何产品交付。该公司定位"人工通用工程师"，计划斥资 1000 亿美元收购传统工业企业，通过工厂运营数据构建制造业 AI 护城河。</div>
+            <div class="article-commentary">零产品、410 亿估值、1000 亿收购计划——这不是融资故事，这是赌局。物理世界的 AI 比数字世界慢十年，但资本不想等。</div>
+        </div>
+        <div class="col">
+            <div class="article-categories">Industry</div>
+            <div class="article-headline">Anthropic CEO：AI 将造成大规模结构性失业</div>
+            <div class="article-source">IT之家 · <a href="https://www.ithome.com/0/962/854.htm">原文链接</a></div>
+            <div class="article-body">Anthropic CEO 达里奥·阿莫迪公开警告，AI 造成的大规模岗位流失是技术固有属性而非过渡现象。他提出应对框架：完善劳动力市场监测、推行薪资保障与留岗税收优惠、发放培训补贴，长远来看可能需要全民基本收入。这番表态来自 AI 公司最高层，信号意义远超智库报告。</div>
+            <div class="article-commentary">造 AI 的人亲口说「会有人失业」，比任何外部批评都有说服力。问题是他给出的解法——UBI——在政治上几乎不可行。</div>
+        </div>
+    </div>
+
+    <!-- Article 4: Full Width -->
+    <div class="full-width">
+        <div class="article-categories">Model</div>
+        <div class="article-headline">Gemini Omni Flash 视频生成任务登顶 SOTA</div>
+        <div class="article-source">X @OfficialLoganK · <a href="https://x.com/OfficialLoganK/status/2065118111360303414">原文链接</a></div>
+        <div class="article-body">Google 的 Gemini Omni Flash 模型在图像到视频、文本到视频和视频编辑三个维度同时达到当前最优水平。Logan Kilpatrick 预告该能力将通过 API 向开发者开放。这意味着 Google 正在多模态视频生成赛道上加速追赶 Runway 和 Sora 的领先位置，且走的是「模型即 API」的生态路线而非独立产品。</div>
+        <div class="article-commentary">视频生成这个赛道，模型能力的窗口期正在快速收窄。先发优势不如 API 覆盖面重要——Google 深谙此道。</div>
+    </div>
+
+    <div class="section-divider">— ✦ —</div>
+
+    <!-- Article 5-6: Two Column -->
+    <div class="two-col">
+        <div class="col">
+            <div class="article-categories">Product</div>
+            <div class="article-headline">Runway 与 Lionsgate 扩大合作，联合开发 AI 生成短剧 IP</div>
+            <div class="article-source">Runway News · <a href="https://runwayml.com/news/runway-and-lionsgate-expand-partnership">原文链接</a></div>
+            <div class="article-body">生成式 AI 公司 Runway 与全球内容巨头 Lionsgate 宣布扩大战略合作。Lionsgate 已取得 Runway 股权，双方将启动联合开发项目，首推基于 Lionsgate 现有 IP 和 Runway 生成模型的短剧系列。Lionsgate 同时作为主持伙伴参与 Runway AI 电影节。</div>
+            <div class="article-commentary">从工具供应商到 IP 联合出品方，Runway 正在从「卖铲子」转向「一起挖金子」。好莱坞的围墙正在松动。</div>
+        </div>
+        <div class="col">
+            <div class="article-categories">Product</div>
+            <div class="article-headline">Cursor 推出 Auto-review：分类器智能体管控 Agent 权限</div>
+            <div class="article-source">Cursor Blog · <a href="https://cursor.com/blog/auto-review">原文链接</a></div>
+            <div class="article-body">Cursor 推出 Auto-review 机制，通过专门的分类器智能体在工具调用前审查动作风险。高风险操作会被阻止并返回解释，低风险操作自动放行。分类器采用小模型运行在智能体循环内，基于 6122 条标签数据和合成数据训练，目标是在不频繁打断用户的前提下守住安全底线。</div>
+            <div class="article-commentary">Agent 越自主，权限管控越关键。Cursor 的解法不是「问用户」，而是训练一个 AI 去判断——用 AI 监督 AI 的最小可行方案。</div>
+        </div>
+    </div>
+
+    <!-- Article 7: Full Width -->
+    <div class="full-width">
+        <div class="article-categories">Industry</div>
+        <div class="article-headline">Deezer 上线跨平台 AI 音乐检测器，扫描 Spotify 和 Apple Music 播放列表</div>
+        <div class="article-source">The Verge · <a href="https://www.theverge.com/ai-artificial-intelligence/948153/deezer-ai-music-detector-spotify-apple">原文链接</a></div>
+        <div class="article-body">法国流媒体平台 Deezer 推出面向其他流媒体服务的 AI 音乐检测工具，可扫描用户在 Spotify、Apple Music 等平台上的播放列表，标记其中的 AI 生成音乐。Deezer 此前曾向其他平台提供该技术但鲜有采纳，因此决定直接面向终端用户。CEO Alexis Lanternier 表示，无论用户使用哪个平台，都应有权知道自己的播放列表中是否包含合成音乐。</div>
+        <div class="article-commentary">平台不查，Deezer 替你查。AI 音乐检测正在从「平台责任」变成「消费者知情权」——这个框架转换很聪明。</div>
+    </div>
+
+    <!-- Colophon -->
+    <div class="colophon">
+        今日精选 <em>7</em> 条 · 数据源 <em>aihot.virxact.com</em> · 由 <em>remio agent</em> 生成 · 2026-06-12
+    </div>
+
+</div>
+</body>
+</html>
