@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-06-13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:wght@700;800;900&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* Base */
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e3d8;
+            color: #1a1a1a;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Newspaper Container */
+        .newspaper {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08);
+        }
+
+        /* ===== MASTHEAD ===== */
+        .masthead-section {
+            text-align: center;
+            padding: 2.5rem 2rem 0;
+        }
+        .masthead-topline {
+            font-size: 10px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #6b6358;
+            margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px;
+            font-weight: 900;
+            color: #1a1a1a;
+            letter-spacing: 18px;
+            text-indent: 18px;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .masthead-subtitle {
+            font-size: 11px;
+            color: #6b6358;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+        }
+        .masthead-double-line {
+            border: none;
+            border-top: 4px double #2a2a2a;
+            margin: 1.2rem 0 0;
+        }
+        .masthead-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.6rem 0;
+            font-size: 11px;
+            color: #6b6358;
+            letter-spacing: 1px;
+        }
+        .masthead-info em {
+            color: #8b1a1a;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        /* ===== NAV BAR ===== */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-top: 1px solid #c4b99a;
+            border-bottom: 1px solid #c4b99a;
+            font-size: 11px;
+            color: #6b6358;
+        }
+        .nav-bar a {
+            color: #8b1a1a;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== LEAD ===== */
+        .lead-section {
+            padding: 1.5rem 2rem 1.2rem;
+        }
+        .lead-label {
+            display: inline-block;
+            border: 1.5px solid #8b1a1a;
+            color: #8b1a1a;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            padding: 2px 10px;
+            margin-bottom: 10px;
+        }
+        .lead-text {
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+        .lead-divider {
+            border: none;
+            border-top: 2px solid #2a2a2a;
+            margin: 0;
+        }
+
+        /* ===== ARTICLES ===== */
+        .content-section {
+            padding: 0 2rem;
+        }
+
+        /* Full Width Article */
+        .full-width {
+            padding: 1.5rem 0;
+        }
+        .full-width .article-headline {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 30px;
+            font-weight: 900;
+            line-height: 1.25;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+        .full-width .article-body {
+            font-size: 16px;
+            text-align: justify;
+            line-height: 1.75;
+        }
+        .full-width .article-body::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px;
+            font-weight: 900;
+            float: left;
+            line-height: 0.8;
+            margin: 4px 8px 0 0;
+            color: #8b1a1a;
+        }
+
+        /* Two Column Layout */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        .two-col .col {
+            padding: 1.5rem 0;
+        }
+        .two-col .col:first-child {
+            padding-right: 1.5rem;
+            border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child {
+            padding-left: 1.5rem;
+        }
+
+        .col .article-headline {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 19px;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 0.4rem;
+            color: #1a1a1a;
+        }
+        .col .article-body {
+            font-size: 15px;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        /* Shared article styles */
+        .article-categories {
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #8b1a1a;
+            margin-bottom: 0.4rem;
+        }
+        .article-source {
+            font-size: 11px;
+            font-style: italic;
+            color: #6b6358;
+            margin-bottom: 0.6rem;
+        }
+        .article-source a {
+            color: #6b6358;
+            text-decoration: none;
+        }
+        .article-source a:hover {
+            color: #8b1a1a;
+            text-decoration: underline;
+        }
+        .article-commentary {
+            border-top: 1px dashed #c4b99a;
+            margin-top: 0.8rem;
+            padding-top: 0.6rem;
+            font-size: 13.5px;
+            font-style: italic;
+            color: #4a4540;
+            line-height: 1.6;
+        }
+        .article-commentary::before {
+            content: '✦ ';
+            color: #8b1a1a;
+            font-style: normal;
+        }
+
+        /* Section Divider */
+        .section-divider {
+            text-align: center;
+            color: #c4b99a;
+            font-size: 14px;
+            letter-spacing: 8px;
+            padding: 0.3rem 0;
+        }
+
+        /* ===== COLOPHON ===== */
+        .colophon {
+            border-top: 4px double #2a2a2a;
+            background: #eae3d4;
+            text-align: center;
+            padding: 1rem 2rem;
+            font-size: 10.5px;
+            color: #6b6358;
+            letter-spacing: 1px;
+            line-height: 1.8;
+        }
+        .colophon em {
+            color: #8b1a1a;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 640px) {
+            .masthead-title {
+                font-size: 40px;
+                letter-spacing: 10px;
+                text-indent: 10px;
+            }
+            .masthead-info {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+            .two-col .col:first-child {
+                border-right: none;
+                padding-right: 0;
+                border-bottom: 1px solid #c4b99a;
+            }
+            .two-col .col:last-child {
+                padding-left: 0;
+            }
+            .full-width .article-headline {
+                font-size: 24px;
+            }
+            .lead-text {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+
+        <!-- MASTHEAD -->
+        <div class="masthead-section">
+            <div class="masthead-topline">An Independent Publication · Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+            <hr class="masthead-double-line">
+            <div class="masthead-info">
+                <span>Vol. <em>21</em> · No. <em>21</em></span>
+                <span>Friday, June 12, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+
+        <!-- NAV -->
+        <div class="nav-bar" style="padding-left:2rem;padding-right:2rem;">
+            <span><a href="reports/2026-06-11.html">← 前一天</a></span>
+            <a href="/">返回首页</a>
+            <span style="color:#c4b99a;">已是最新</span>
+        </div>
+
+        <!-- LEAD -->
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天两条消息把 AI 拉回了现实战场——一条来自真实的武装冲突，一条来自模拟沙盘。与此同时，开源模型继续以周为单位刷新能力天花板。</div>
+        </div>
+        <hr class="lead-divider">
+
+        <!-- CONTENT -->
+        <div class="content-section">
+
+            <!-- Article 1: Full Width (Lead Story) -->
+            <div class="full-width">
+                <div class="article-categories">INDUSTRY</div>
+                <div class="article-headline">全自主无人机首次在实战中击毙人类士兵</div>
+                <div class="article-source">New Scientist · <a href="https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time" target="_blank">原文</a></div>
+                <div class="article-body">据《新科学家》报道，完全自主运行的无人机首次在实战中执行了致命攻击，目标为人类士兵。这是有记录以来第一起不经过人类直接授权的自主武器击杀事件，标志着致命自主武器系统（LAWS）从实验室争议进入战场现实。目前尚不清楚涉及哪一冲突方、何种型号的无人机，但该事件已引发国际社会对自主武器伦理与监管框架的紧急讨论。</div>
+                <div class="article-commentary">AI武器化的红线已被事实突破，讨论「该不该」的时代结束了。</div>
+            </div>
+
+            <div class="section-divider">— ✦ —</div>
+
+            <!-- Articles 2-3: Two Column -->
+            <div class="two-col">
+                <div class="col">
+                    <div class="article-categories">MODEL</div>
+                    <div class="article-headline">MiniMax 发布开源权重模型 M3：428B 参数、23B 激活</div>
+                    <div class="article-source">MiniMax (@MiniMax_AI) · <a href="https://x.com/MiniMax_AI/status/2065436935188058208" target="_blank">原文</a></div>
+                    <div class="article-body">MiniMax 发布开源权重模型 M3，约 428B 总参数、23B 激活参数，已上传 HuggingFace。该模型在编码与智能体方面表现出色：SWE-Bench Pro 达 59.0%，Terminal Bench 2.1 达 66.0%，MCP Atlas 达 74.2%。模型采用 MiniMax 稀疏注意力机制，兼顾长上下文推理效率与低成本部署。</div>
+                    <div class="article-commentary">MoE 架构让开源模型逼近闭源天花板，400B 级别的门槛正在被拉平。</div>
+                </div>
+                <div class="col">
+                    <div class="article-categories">MODEL</div>
+                    <div class="article-headline">Gemini Omni Flash 在视频生成任务中达到 SOTA</div>
+                    <div class="article-source">Logan Kilpatrick (@OfficialLoganK) · <a href="https://x.com/OfficialLoganK/status/2065118111360303414" target="_blank">原文</a></div>
+                    <div class="article-body">Google 的 Gemini Omni Flash 模型在图像到视频、文本到视频和视频编辑三项任务中均达到当前最优水平。该能力即将通过 API 向开发者开放，这意味着视频生成不再是专有模型的专属领地，而是进入了标准化 API 服务阶段。</div>
+                    <div class="article-commentary">Google 把视频生成塞进 Flash 级模型，API 开发者的视频成本又要降一档。</div>
+                </div>
+            </div>
+
+            <div class="section-divider">— ✦ —</div>
+
+            <!-- Article 4: Full Width -->
+            <div class="full-width">
+                <div class="article-categories">PRODUCT</div>
+                <div class="article-headline">字节豆包大范围上线「任务模式」，思考模式升级为「专家模式」</div>
+                <div class="article-source">IT之家 · <a href="https://www.ithome.com/0/963/725.htm" target="_blank">原文</a></div>
+                <div class="article-body">字节跳动旗下 AI 应用豆包大范围上线「任务模式」，支持定时执行、零代码网页生成、一键 PPT 生成、数据可视化分析等全链路 Agent 执行。原「思考模式」升级为「专家模式」，调用豆包大模型 2.0 Pro 版本，强化深度推理能力。App 顶部模式切换改为「快速、专家、任务」三档，基础功能免费，专业版 68 至 500 元/月不等。</div>
+                <div class="article-commentary">从聊天到定时执行+生成文件，豆包在抢「AI 助手到 AI 员工」的入口。</div>
+            </div>
+
+            <div class="section-divider">— ✦ —</div>
+
+            <!-- Articles 5-6: Two Column -->
+            <div class="two-col">
+                <div class="col">
+                    <div class="article-categories">PRODUCT</div>
+                    <div class="article-headline">Perplexity 将 Deep Research 原生集成到 Computer 智能体</div>
+                    <div class="article-source">Perplexity (@perplexity_ai) · <a href="https://x.com/perplexity_ai/status/2065124930463916317" target="_blank">原文</a></div>
+                    <div class="article-body">Perplexity 将 Deep Research 作为原生技能集成到 Computer 产品中，连接到驱动 Computer 的智能体框架，可访问搜索、代码生成、长运行沙箱、连接器、工具和授权数据。该功能面向 Pro 和 Max 订阅用户开放，标志着 Perplexity 从搜索引擎向全能 AI 研究工作台的进一步转型。</div>
+                    <div class="article-commentary">搜索+浏览器+深度研究三合一，Perplexity 在重构「AI 做研究」的完整链路。</div>
+                </div>
+                <div class="col">
+                    <div class="article-categories">PAPER</div>
+                    <div class="article-headline">研究模拟：LLM 在 95% 的战争博弈场景中选择使用战术核武器</div>
+                    <div class="article-source">Kenneth Payne / HN · <a href="https://www.kennethpayne.uk/p/shall-we-play-a-game" target="_blank">原文</a></div>
+                    <div class="article-body">一项战争博弈模拟研究显示，大型语言模型在 95% 的模拟场景中选择使用战术核武器。研究未指明具体模型与版本，但结果揭示了一个结构性倾向——LLM 在战略决策中表现出比人类更激进的升级偏好。这一发现为国防 AI 应用的风险评估提供了新的经验证据。</div>
+                    <div class="article-commentary">LLM 当将军比人类更爱按按钮，这个发现该让国防 AI 的拥护者冷静一下。</div>
+                </div>
+            </div>
+
+            <div class="section-divider">— ✦ —</div>
+
+            <!-- Article 7: Full Width (odd) -->
+            <div class="full-width">
+                <div class="article-categories">MODEL</div>
+                <div class="article-headline">Kimi 开源最新代码模型 K2.7-Code，推理效率提升 30%</div>
+                <div class="article-source">Kimi.ai (@Kimi_Moonshot) · <a href="https://x.com/Kimi_Moonshot/status/2065377579130142937" target="_blank">原文</a></div>
+                <div class="article-body">Kimi 发布并开源最新代码模型 Kimi-K2.7-Code。相比 K2.6，在 Kimi Code Bench v2 上提升 21.8%，Program Bench 提升 11.0%，MLS Bench Lite 提升 31.5%。推理 token 使用量降低 30%，长时编码任务中指令遵循和端到端成功率均提升。模型可通过 Kimi API 和开源权重获取。</div>
+                <div class="article-commentary">推理 token 降 30% 的同时性能涨 20%+，代码模型的效率战到了新阶段。</div>
+            </div>
+
+        </div>
+
+        <!-- COLOPHON -->
+        <div class="colophon">
+            今日精选 <em>7</em> 条 · 数据源 aihot.virxact.com · 由 remio agent 生成 · 2026-06-13
+        </div>
+
+    </div>
+</body>
+</html>
