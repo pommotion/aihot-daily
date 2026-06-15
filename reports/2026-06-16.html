@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-06-16</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>25</em> &middot; No. <em>25</em></span>
+                <span>Monday, June 16, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="reports/2026-06-15.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的主题是「开源冲刺与军备竞赛并行」——MiniMax M3 登顶开源榜首，Salesforce 豪掷 36 亿收购 AI 客服，Nvidia 发债 200 亿加码算力。同一天，AI 裁员创两年新高。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">MiniMax 开源 M3 模型权重，登顶开源榜首</div>
+            <div class="article-source"><a href="https://mp.weixin.qq.com/s/AW6L89QZkwN-jD27hQ84ww" target="_blank">MiniMax 官方</a></div>
+            <div class="article-body dropcap">MiniMax 开源了 428B 总参数、23B 激活参数的 M3 模型权重，同步发布 MSA（MiniMax Sparse Attention）稀疏注意力技术论文。M3 是首个从预训练阶段就进行文本、图像多模态交错混合训练的开源模型，发布两周即在 Artificial Analysis 综合智能指数和 GDPval-AA 排行榜均获开源模型第一。</div>
+            <div class="article-commentary">中国团队在开源路线上找到了自己的节奏——不是追赶，是另开一局。</div>
+        </div>
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Salesforce 以 36 亿美元收购 AI 客服平台 Fin</div>
+                <div class="article-source"><a href="https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b" target="_blank">TechCrunch</a></div>
+                <div class="article-body">Salesforce 宣布以 36 亿美元收购 AI 客服平台 Fin（前身为 Intercom），Fin 的 AI 智能体可跨实时聊天、WhatsApp、短信、电话、Slack 等多渠道解决客户问题。Salesforce 计划将其整合进 Agentforce 平台，交易预计 2027 年初完成。</div>
+                <div class="article-commentary">36 亿买的不只是技术，是「AI 客服替代人工」这个确定性的未来。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Nvidia 加入 AI 债务热潮，发行 200 亿美元债券</div>
+                <div class="article-source"><a href="https://the-decoder.com/nvidia-joins-ai-debt-boom-with-20-billion-bond-sale" target="_blank">The Decoder</a></div>
+                <div class="article-body">Nvidia 计划通过自 2021 年以来的首次债券发行筹集至少 200 亿美元，加入 AI 领域的债务融资热潮。这笔资金将用于进一步扩大产能和基础设施投资。</div>
+                <div class="article-commentary">芯片巨头也要借钱扩产，说明 AI 算力需求远未见顶——军备竞赛才刚热身。</div>
+            </div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">Meta 在 Facebook 上线「AI Mode」，用公开帖子合成答案</div>
+            <div class="article-source"><a href="https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms" target="_blank">TechCrunch</a></div>
+            <div class="article-body dropcap">Meta 在 Facebook 推出「AI Mode」搜索功能，利用 Meta AI 从公开帖子、群组和 Reels 中提取信息并合成答案。同时新增 AI 照片预设功能，用户可更换服装、发型和配饰，体育迷可在 Stories 中虚拟穿上队服。</div>
+            <div class="article-commentary">Facebook 把 30 亿用户的公开帖子变成了 AI 的知识库——搜索的形态正在被重写。</div>
+        </div>
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">AI 裁员浪潮成为火药桶：日均 974 人被裁</div>
+                <div class="article-source"><a href="https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg" target="_blank">TechCrunch</a></div>
+                <div class="article-body">今年科技公司已累计裁员约 15 万人，日均 974 人，速度比去年快 44%。上月裁员近 4 万创两年新高，AI 连续三个月被列为裁员首要原因。与此同时，AI 芯片商 Cerebras 上市首日市值达 670 亿美元，两极分化加剧。</div>
+                <div class="article-commentary">这不是未来趋势，是正在发生的现在——AI 一边创造万亿市值，一边抹掉十万岗位。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">下一代投机解码：DFlash 实现推理吞吐 4.3 倍提升</div>
+                <div class="article-source"><a href="https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2" target="_blank">LMSYS</a></div>
+                <div class="article-body">Z Lab、Modal 与 SGLang 团队联合发布 DFlash 投机解码模型和 SGLang Spec V2 引擎。DFlash 采用块扩散加 KV 注入并行生成整块 draft token，在 Qwen 3.5 397B 模型上实现基线 4.3 倍吞吐量，已默认集成至 SGLang。</div>
+                <div class="article-commentary">投机解码从「猜下一个 token」进化到「并行生成整块」——推理加速的范式在变。</div>
+            </div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">Kimi K2.7 Code 高速版上线：同样模型，6 倍速度</div>
+            <div class="article-source"><a href="https://mp.weixin.qq.com/s/p87ebkY1xqKtkGZ2N3DGSw" target="_blank">月之暗面</a></div>
+            <div class="article-body dropcap">Kimi K2.7 Code 高速版上线，与普通版为同一模型，输出速度约 5-6 倍，常规编程场景约 180 Token/s，短上下文可达 260 Token/s。API 定价为普通版 2 倍，Kimi Code Plan 用户可通过抢先体验计划使用。</div>
+            <div class="article-commentary">同样模型，5-6 倍速度，2 倍价格——对写代码的人来说，时间比钱贵。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-06-16</em>
+        </div>
+    </div>
+</body>
+</html>
