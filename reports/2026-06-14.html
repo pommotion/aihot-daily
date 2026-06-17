@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI DAILY · Vol. 22 · 2026-06-14</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=EB+Garamond:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif; background: #e0d8c8; color: #1a1a1a; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+.newspaper { max-width: 860px; margin: 0 auto; background: #f5f0e6; box-shadow: 0 0 60px rgba(0,0,0,0.08); min-height: 100vh; }
+.masthead { padding: 2rem 2.5rem 0; text-align: center; }
+.topline { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #6b6358; margin-bottom: 0.5rem; }
+.masthead h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 64px; font-weight: 900; color: #1a1a1a; letter-spacing: 18px; text-indent: 18px; line-height: 1.1; margin: 0.2rem 0; }
+.subtitle { font-size: 12px; color: #6b6358; letter-spacing: 6px; text-transform: uppercase; margin-top: 0.3rem; }
+.masthead-rule { border-bottom: 4px double #2a2a2a; margin-top: 1rem; }
+.info-bar { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 2.5rem; font-size: 11px; color: #6b6358; letter-spacing: 2px; border-bottom: 1px solid #c4b99a; }
+.info-bar .center { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 12px; color: #2a2a2a; }
+.nav-bar { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 2.5rem; font-size: 11px; color: #6b6358; letter-spacing: 2px; border-bottom: 1px solid #c4b99a; }
+.nav-bar a { color: #8b1a1a; text-decoration: none; text-transform: uppercase; }
+.nav-bar a:hover { text-decoration: underline; }
+.nav-bar .placeholder { color: #b0a890; text-transform: uppercase; }
+.lead { padding: 1.5rem 2.5rem 1.2rem; }
+.lead-label { display: inline-block; border: 2px solid #8b1a1a; color: #fff; background: #8b1a1a; font-size: 10px; font-weight: 700; letter-spacing: 4px; padding: 2px 10px; margin-bottom: 0.8rem; text-transform: uppercase; }
+.lead-text { font-style: italic; font-size: 20px; line-height: 1.5; color: #2a2a2a; font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', serif; }
+.lead-rule { border-bottom: 2px solid #2a2a2a; margin: 1.2rem 0 0; }
+.content { padding: 0 2.5rem; }
+.full-width { padding: 1.5rem 0; }
+.full-width .article-body { font-size: 16px; text-align: justify; line-height: 1.8; margin-top: 0.5rem; }
+.full-width .article-body::first-letter { font-family: 'Playfair Display', Georgia, serif; font-size: 52px; font-weight: 900; float: left; line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0; padding: 1.5rem 0; border-top: 1px solid #c4b99a; }
+.two-col .col { padding: 0 1.2rem; }
+.two-col .col:first-child { border-right: 1px solid #c4b99a; padding-left: 0; }
+.two-col .col:last-child { padding-right: 0; }
+.two-col .article-body { font-size: 14px; text-align: justify; line-height: 1.7; margin-top: 0.3rem; }
+.article-category { font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #8b1a1a; margin-bottom: 0.3rem; }
+.article-headline { font-family: 'Playfair Display', 'Noto Serif SC', 'Songti SC', Georgia, serif; font-weight: 900; line-height: 1.2; color: #1a1a1a; margin-bottom: 0.4rem; }
+.feature-headline { font-size: 30px; }
+.two-col .article-headline { font-size: 19px; }
+.full-width:not(:has(.feature-headline)) .article-headline { font-size: 24px; }
+.article-source { font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 0.6rem; }
+.article-source a { color: #6b6358; text-decoration: none; border-bottom: 1px dotted #b0a890; }
+.article-source a:hover { color: #8b1a1a; }
+.article-commentary { border-top: 1px dashed #c4b99a; margin-top: 0.8rem; padding-top: 0.5rem; font-size: 13.5px; font-style: italic; color: #4a4438; line-height: 1.6; }
+.article-commentary::before { content: '✦ '; color: #8b1a1a; font-style: normal; }
+.separator { text-align: center; color: #c4b99a; font-size: 14px; letter-spacing: 8px; padding: 0.5rem 0; margin: 0; }
+.colophon { border-top: 4px double #2a2a2a; background: #eae3d4; text-align: center; padding: 1rem 2.5rem; font-size: 10px; color: #6b6358; letter-spacing: 2px; }
+.colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+@media (max-width: 640px) {
+    .masthead h1 { font-size: 40px; letter-spacing: 10px; text-indent: 10px; }
+    .masthead, .lead, .content { padding-left: 1.2rem; padding-right: 1.2rem; }
+    .info-bar, .nav-bar { padding-left: 1.2rem; padding-right: 1.2rem; }
+    .two-col { grid-template-columns: 1fr; }
+    .two-col .col { padding: 0; }
+    .two-col .col:first-child { border-right: none; border-bottom: 1px solid #c4b99a; padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+    .feature-headline { font-size: 22px; }
+    .info-bar { flex-direction: column; gap: 0.3rem; }
+}
+</style>
+</head>
+<body>
+<div class="newspaper">
+    <header class="masthead">
+        <div class="topline">An Independent Publication · Est. 2026</div>
+        <h1>AI DAILY</h1>
+        <div class="subtitle">aihot 精选 × remio 签发</div>
+        <div class="masthead-rule"></div>
+    </header>
+    <div class="info-bar">
+        <div>Vol. 22 · No. 22</div>
+        <div class="center">Sunday, June 14, 2026</div>
+        <div>今日 7 条精选</div>
+    </div>
+    <div class="nav-bar">
+        <span><a href="reports/2026-06-13.html">← 前一天</a></span>
+        <span><a href="/">返回首页</a></span>
+        <span class="placeholder">已是最新</span>
+    </div>
+    <div class="lead">
+        <div class="lead-label">LEAD</div>
+        <div class="lead-text">今天的主题是“安全叙事的反噬”：三家公司因为 AI 安全、道德和监管问题同时登上头条，而资本市场仍在以前所未有的速度加注。</div>
+        <div class="lead-rule"></div>
+    </div>
+    <div class="content">
+        <div class="full-width"><article class="article"><div class="article-category">INDUSTRY</div><h2 class="article-headline feature-headline">Anthropic 的安全警告适得其反：政府已撤回其最强 AI 模型</h2><div class="article-source"><a href="https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai" target="_blank">TechCrunch</a></div><div class="article-body">Anthropic 对政府撤回其最强大 AI 模型表达强烈不满，称仅基于一个狭窄的潜在越狱发现，就召回已部署给数亿用户的商业模型，这一决定不合理。此事将 AI 安全叙事与商业利益的张力推到了公众视野中心。一家以“安全”为核心品牌的公司，恰恰因为安全叙事而被政府限制了产品。</div><div class="article-commentary">安全牌成了一把双刃剑，你越是高调讲风险，越是给监管层递刀子。</div></article></div>
+<div class="two-col"><div class="col"><article class="article"><div class="article-category">INDUSTRY</div><h2 class="article-headline">谷歌 Android 安全负责人因反对军事 AI 合作辞职</h2><div class="article-source"><a href="https://www.ithome.com/0/963/888.htm" target="_blank">IT之家</a></div><div class="article-body">谷歌 Android 平台安全负责人 René Mayrhofer 辞职，在内部告别信中指责公司“丧失道德指针”。他批评谷歌悄然放弃碳中和目标、与美国战争部签署允许 AI 用于“任何合法目的”的协议，并担忧谷歌 AI 产品可能被用于大规模监控。谷歌今年 2 月更新 AI 原则时，已移除不使用 AI 开发武器或监控工具的承诺。</div><div class="article-commentary">当“不作恶”从信条变成历史档案，核心安全官用脚投票。</div></article></div><div class="col"><article class="article"><div class="article-category">INDUSTRY</div><h2 class="article-headline">Anthropic 秘密申请上市，估值 9650 亿美元</h2><div class="article-source"><a href="https://www.bloomberg.com/news/articles/2026-06-13/global-capitalism-bets-it-all-on-ai-future-that-alarms-voters" target="_blank">Bloomberg</a></div><div class="article-body">Anthropic 在秘密提交 IPO 申请后再次引发关注。作为史上增长最快的初创公司之一，其估值已达 9650 亿美元。与此同时，全球资本市场正以前所未有的力度押注 AI 未来，但这一趋势也引发了选民层面的广泛忧虑。</div><div class="article-commentary">万亿估值俱乐部再添一席，但市场的疯狂与公众的恐惧在同时升温。</div></article></div></div>
+<div class="separator">— ✦ —</div>
+<div class="full-width"><article class="article"><div class="article-category">MODEL</div><h2 class="article-headline">智谱 GLM-5.2 全量开放：1M 上下文加下周开源</h2><div class="article-source"><a href="https://mp.weixin.qq.com/s/LDrbtLM0wiCTJorvd5GY9w" target="_blank">智谱 GLM</a></div><div class="article-body">智谱发布 GLM-5.2，这是其迄今能力最强的开源模型，支持真正可用的 1M 上下文，在长程任务中保持领先，并被定位为最强的国产 Coding 模型。已面向 GLM Coding Plan 全量用户开放（Lite、Pro、Max、团队版），API 将于下周上线，模型下周正式开源，遵循 MIT 协议。</div><div class="article-commentary">国产 Coding 模型进入百万上下文时代，MIT 协议开源意味着商业可用零门槛。</div></article></div>
+<div class="two-col"><div class="col"><article class="article"><div class="article-category">TIP</div><h2 class="article-headline">SemiAnalysis 揭秘：200 美元订阅榨出 70 倍 token 价值</h2><div class="article-source"><a href="https://www.ithome.com/0/963/834.htm" target="_blank">IT之家 / SemiAnalysis</a></div><div class="article-body">SemiAnalysis 购买了 Anthropic 和 OpenAI 的全部订阅方案，模拟高强度编码任务至触及每周上限。月费 200 美元的 Claude Max 20x 方案，按 API 价格换算最高可消耗约值 8000 美元的 token；ChatGPT Pro 20x 对应约 14000 美元。重度用户可通过订阅获取 40 至 70 倍的 API 价值，但这种价格体系在持续满载后可能难以长期维持。</div><div class="article-commentary">订阅制是给重度用户的价格补贴，但薅满的人越多，这个窗口关得越快。</div></article></div><div class="col"><article class="article"><div class="article-category">INDUSTRY</div><h2 class="article-headline">OpenAI 遭多州总检察长联合调查</h2><div class="article-source"><a href="https://www.bloomberg.com/news/articles/2026-06-13/openai-probed-by-coalition-of-state-attorneys-general" target="_blank">Bloomberg</a></div><div class="article-body">OpenAI 正被一个由多州总检察长组成的联盟调查，该联盟已向 OpenAI 索取涵盖广泛主题的信息。这是继联邦层面监管之后，AI 公司面临的又一层法律压力，表明州级执法力量也正在全面介入 AI 行业。</div><div class="article-commentary">联邦还没落地，州级联盟已经围上来了，合规成本只会越来越高。</div></article></div></div>
+<div class="separator">— ✦ —</div>
+<div class="full-width"><article class="article"><div class="article-category">INDUSTRY</div><h2 class="article-headline">扎克伯格承认 Meta AI 转型“脱轨”：裁员 10% 后组织过载</h2><div class="article-source"><a href="https://www.ithome.com/0/963/858.htm" target="_blank">IT之家</a></div><div class="article-body">Meta 内部备忘录显示，扎克伯格承认公司在 AI 转型中组织调整节奏过快，带来员工安置和管理跨度等问题。Meta 今年 5 月已裁减全球 10% 员工，并将 7000 人转入 AI 相关项目，新成立的 AI 工程部门个人贡献者与管理者的比例最高达 50:1。扎克伯格重申今年不再全公司裁员。</div><div class="article-commentary">一个管理者带 50 个人的团队，这不是转型，这是在透支组织韧性。</div></article></div>
+    </div>
+    <div class="colophon">
+        今日精选 <em>7</em> 条 · 数据源 aihot.virxact.com · 由 remio agent 生成 · 2026-06-14
+    </div>
+</div>
+</body>
+</html>

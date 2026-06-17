@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI DAILY · 2026-06-17</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+SC:wght@400;600;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f5f0e6;
+  --paper-dark: #eae3d4;
+  --ink: #1a1a1a;
+  --news-red: #8b1a1a;
+  --brown-gray: #6b6358;
+  --rule: #2a2a2a;
+  --rule-light: #c4b99a;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--paper);
+  font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', serif;
+  color: var(--ink);
+  line-height: 1.7;
+  padding: 40px 20px;
+}
+.container { max-width: 860px; margin: 0 auto; }
+
+/* Masthead */
+.masthead { text-align: center; padding-bottom: 20px; }
+.masthead-top {
+  font-family: 'EB Garamond', serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--brown-gray);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.masthead h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 18px;
+  color: var(--ink);
+  line-height: 1;
+  padding-left: 18px;
+}
+.masthead .subtitle {
+  font-family: 'EB Garamond', serif;
+  font-size: 14px;
+  letter-spacing: 6px;
+  color: var(--brown-gray);
+  margin-top: 8px;
+}
+.masthead-rule {
+  border-bottom: 4px double var(--rule);
+  margin-top: 15px;
+}
+.masthead-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--brown-gray);
+  padding-top: 8px;
+  letter-spacing: 1px;
+}
+
+/* Nav */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--rule-light);
+  border-bottom: 1px solid var(--rule-light);
+  padding: 8px 0;
+  margin: 15px 0 30px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.nav-bar a { color: var(--news-red); text-decoration: none; }
+
+/* Lead */
+.lead {
+  text-align: center;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--ink);
+  margin-bottom: 35px;
+  padding: 0 40px;
+  line-height: 1.8;
+}
+.lead::before, .lead::after { content: "❧"; color: var(--news-red); margin: 0 8px; font-style: normal; }
+
+/* Article */
+.article {
+  border-bottom: 1px solid var(--rule-light);
+  padding: 28px 0;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 20px;
+}
+.article-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--news-red);
+  text-align: center;
+  line-height: 1;
+}
+.article-num small { display: block; font-size: 10px; color: var(--brown-gray); letter-spacing: 1px; margin-top: 4px; font-weight: 400; }
+.article-body h2 {
+  font-family: 'Playfair Display', 'Noto Serif SC', serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.article-body h2 a { color: var(--ink); text-decoration: none; }
+.article-body h2 a:hover { color: var(--news-red); }
+.article-meta {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--brown-gray);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.article-meta .tag {
+  display: inline-block;
+  background: var(--news-red);
+  color: var(--paper);
+  padding: 2px 8px;
+  font-weight: 600;
+  margin-right: 6px;
+}
+.article-summary {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 12px;
+}
+.article-comment {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--news-red);
+  border-left: 3px solid var(--news-red);
+  padding-left: 12px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 4px double var(--rule);
+  font-size: 12px;
+  color: var(--brown-gray);
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .masthead h1 { font-size: 42px; letter-spacing: 10px; }
+  .article { grid-template-columns: 1fr; }
+  .article-num { font-size: 32px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Masthead -->
+<div class="masthead">
+  <div class="masthead-top">An Independent Publication · Est. 2026</div>
+  <h1>AI DAILY</h1>
+  <div class="subtitle">aihot 精选 × remio 签发</div>
+  <div class="masthead-rule"></div>
+  <div class="masthead-info">
+    <span>Vol. 26 · No. 26</span>
+    <span>June 17, 2026 · Wednesday</span>
+    <span>今日 7 条精选</span>
+  </div>
+</div>
+
+<!-- Nav -->
+<div class="nav-bar">
+  <span><a href="2026-06-16.html">← 6月16日</a></span>
+  <a href="/">返回首页</a>
+  <span>已是最新</span>
+</div>
+
+<!-- Lead -->
+<div class="lead">
+资本在重新画地图。SpaceX 用 600 亿吞掉 Cursor，DeepSeek 首次拿外部钱估值 500 亿，Anthropic 企业市场反超 OpenAI——AI 产业的牌局在一夜之间洗了一轮。
+</div>
+
+<!-- Articles -->
+<div class="article">
+  <div class="article-num">01<small>行业</small></div>
+  <div class="article-body">
+    <h2><a href="https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo">SpaceX 以 600 亿美元股票收购 AI 编程公司 Cursor</a></h2>
+    <div class="article-meta"><span class="tag">行业</span> TechCrunch · 2026-06-16</div>
+    <p class="article-summary">SpaceX 在历史性 IPO 数天后，同意以 600 亿美元股票收购 AI 编程初创公司 Cursor，旨在帮助其围绕 xAI 构建的 AI 部门追赶主要 AI 竞争对手。</p>
+    <p class="article-comment">这不再是 AI 收购 AI，而是航天公司收购编程工具。马斯克把 Cursor 塞进 xAI 体系，说明 AI 编程能力已被视为"基础设施级"资产——就像火箭和卫星一样。</p>
+  </div>
+</div>
+
+<div class="article">
+  <div class="article-num">02<small>行业</small></div>
+  <div class="article-body">
+    <h2><a href="https://the-decoder.com/deepseek-takes-outside-money-for-the-first-time-at-a-50-billion-valuation">DeepSeek 完成首轮外部融资，估值超 500 亿美元</a></h2>
+    <div class="article-meta"><span class="tag">行业</span> The Decoder · 2026-06-16</div>
+    <p class="article-summary">中国 AI 初创公司 DeepSeek 完成首轮外部融资，募资超 500 亿元人民币（约 74 亿美元），估值超 500 亿美元。投资结构特殊：多数投资者将资金交由 DeepSeek 自行管理。</p>
+    <p class="article-comment">坚持不开融资的 DeepSeek 终于松口了。500 亿估值不是重点——重点是它拿了钱还能让投资者"自己管"，这说明 DeepSeek 的议价权已经到了让对方接受不平等条款的地步。</p>
+  </div>
+</div>
+
+<div class="article">
+  <div class="article-num">03<small>行业</small></div>
+  <div class="article-body">
+    <h2><a href="https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests">Anthropic 企业 AI 订阅份额首超 OpenAI</a></h2>
+    <div class="article-meta"><span class="tag">行业</span> TechCrunch · 2026-06-16</div>
+    <p class="article-summary">Anthropic 5 月企业 AI 订阅市场份额达 41%，首次超越 OpenAI（39.5%）。公司刚完成 650 亿美元融资、估值 9650 亿美元，并因首次盈利季度秘密提交 IPO。</p>
+    <p class="article-comment">企业市场的天平正在倾斜。OpenAI 靠 ChatGPT 拿下消费者心智，Anthropic 靠 Claude 的稳定性和安全性拿下了企业钱包。而讽刺的是，政府禁令反而帮了它——被禁的东西总有人想试。</p>
+  </div>
+</div>
+
+<div class="article">
+  <div class="article-num">04<small>模型</small></div>
+  <div class="article-body">
+    <h2><a href="https://www.zhipuai.cn/zh/research/161">GLM-5.2 上线并开源：专注 Coding 与长程任务</a></h2>
+    <div class="article-meta"><span class="tag">模型</span> 智谱 · 2026-06-17</div>
+    <p class="article-summary">GLM-5.2 采用 MIT 协议开源，支持 1M 上下文窗口。Coding 方面能承载项目级上下文，长程任务执行更稳定，遵循生产级工程规范，并支持客户端工具调用。</p>
+    <p class="article-comment">1M 上下文 + MIT 开源，这就是在说："随便用，不收钱。"Coding 方向的押注很明确——当所有人都在卷通用能力时，先把"写代码"这件事做到极致。</p>
+  </div>
+</div>
+
+<div class="article">
+  <div class="article-num">05<small>产品</small></div>
+  <div class="article-body">
+    <h2><a href="https://www.ithome.com/0/964/691.htm">AI 版支付宝开启邀测：右滑打开"阿宝"</a></h2>
+    <div class="article-meta"><span class="tag">产品</span> IT之家 · 2026-06-17</div>
+    <p class="article-summary">支付宝今日开启 AI 版邀测，用户可右滑进入新版界面，由"阿宝"助手代办事项。以查询公积金为例，阿宝自动匹配对应小程序和服务入口，用户无需手动操作。</p>
+    <p class="article-comment">支付宝没有做一个新 App，而是做了一个"右滑入口"。这是中国互联网 AI 化的典型路径：不重建，而是在超级 App 里嵌入 AI 层。"阿宝"这个名字比"Alipay Assistant"好一万倍。</p>
+  </div>
+</div>
+
+<div class="article">
+  <div class="article-num">06<small>行业</small></div>
+  <div class="article-body">
+    <h2><a href="https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch">GitHub 遭遇 AI 算力短缺，微软转向 AWS 求援</a></h2>
+    <div class="article-meta"><span class="tag">行业</span> Hacker News · 2026-06-16</div>
+    <p class="article-summary">微软旗下 GitHub 面临 AI 算力短缺，微软因此转向亚马逊 AWS 寻求计算资源支持。这一消息在 Hacker News 上引发热议。</p>
+    <p class="article-comment">全球最大 AI 公司的子公司，找全球最大云厂商的竞争对手借显卡——这就是算力饥荒的现实。GPU 已经不只是硬件，它像石油一样成了战略资源。</p>
+  </div>
+</div>
+
+<div class="article">
+  <div class="article-num">07<small>产品</small></div>
+  <div class="article-body">
+    <h2><a href="https://mp.weixin.qq.com/s/N5ac768a8LkhEjOVpkR1dQ">小米 MiMo Claw 正式版发布：旗舰模型 + 金山办公</a></h2>
+    <div class="article-meta"><span class="tag">产品</span> 小米 MiMo · 2026-06-17</div>
+    <p class="article-summary">小米推出云端轻量化 Claw 类产品 MiMo Claw 正式版，搭载与 OpenClaw 框架深度适配的 MiMo-V2.5-Pro 旗舰模型，原生兼容金山办公。</p>
+    <p class="article-comment">Claw 类产品从开源框架变成了各大厂商的标配入口。小米的差异化打法是绑定金山办公——直接切入文档场景。硬件厂商做 AI Agent，天然有分发优势。</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  AI DAILY · aihot.virxact.com × remio · 每日自动签发<br>
+  <span style="font-size: 11px; opacity: 0.7;">数据来源：aihot 精选 · 生成时间：2026-06-17</span>
+</div>
+
+</div>
+</body>
+</html>
