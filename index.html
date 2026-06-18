@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI DAILY · 每日 AI 行业日报</title>
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@700;900&family=EB+Garamond:wght@400;500;600&display=swap");
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif; background: #f5f0e6; color: #1a1a1a; min-height: 100vh; }
-        .header { text-align: center; padding: 2.5rem 1rem 1.5rem; border-bottom: 4px double #2a2a2a; }
-        .topline { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #6b6358; margin-bottom: 8px; }
-        .masthead { font-family: 'Playfair Display', Georgia, serif; font-size: 2.5rem; font-weight: 900; color: #1a1a1a; letter-spacing: 12px; text-indent: 12px; }
-        .subtitle { font-size: 11px; color: #6b6358; letter-spacing: 5px; text-transform: uppercase; margin-top: 6px; }
-        .divider { width: 60px; height: 1px; background: #2a2a2a; margin: 1rem auto; }
-        .latest-link { display: inline-block; margin-top: 0.8rem; padding: 0.5rem 1.8rem; border: 2px solid #8b1a1a; color: #8b1a1a; text-decoration: none; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; transition: all 0.2s; }
-        .latest-link:hover { background: #8b1a1a; color: #f5f0e6; }
-        .archive { max-width: 680px; margin: 0 auto; padding: 2rem 1rem 4rem; }
-        .archive-title { font-family: 'Playfair Display', Georgia, serif; font-size: 10px; color: #6b6358; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #c4b99a; }
-        .archive-list { list-style: none; }
-        .archive-list li { padding: 0.6rem 0; border-bottom: 1px solid #c4b99a30; display: flex; justify-content: space-between; align-items: baseline; }
-        .archive-list li:last-child { border-bottom: none; }
-        .archive-list a { color: #1a1a1a; text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
-        .archive-list a:hover { color: #8b1a1a; }
-        .date-label { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 0.9rem; min-width: 110px; }
-        .weekday { font-size: 12px; color: #6b6358; font-style: italic; }
-        .footer { text-align: center; padding: 1.5rem 1rem; font-size: 10px; color: #6b6358; border-top: 3px double #2a2a2a; background: #eae3d4; letter-spacing: 2px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI DAILY · 每日 AI 行业日报</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@700;900&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif; background: #f5f0e6; color: #1a1a1a; min-height: 100vh; }
+.header { text-align: center; padding: 2.5rem 1rem 1.5rem; border-bottom: 4px double #2a2a2a; }
+.topline { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #6b6358; margin-bottom: 8px; }
+.masthead { font-family: 'Playfair Display', Georgia, serif; font-size: 2.5rem; font-weight: 900; color: #1a1a1a; letter-spacing: 12px; text-indent: 12px; }
+.subtitle { font-size: 11px; color: #6b6358; letter-spacing: 5px; text-transform: uppercase; margin-top: 6px; }
+.divider { width: 60px; height: 1px; background: #2a2a2a; margin: 1rem auto; }
+.latest-link { display: inline-block; margin-top: 0.8rem; padding: 0.5rem 1.8rem; border: 2px solid #8b1a1a; color: #8b1a1a; text-decoration: none; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; transition: all 0.2s; }
+.latest-link:hover { background: #8b1a1a; color: #f5f0e6; }
+.archive { max-width: 680px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+.archive-title { font-family: 'Playfair Display', Georgia, serif; font-size: 10px; color: #6b6358; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #c4b99a; }
+.archive-list { list-style: none; }
+.archive-list li { padding: 0.6rem 0; border-bottom: 1px solid #c4b99a30; display: flex; justify-content: space-between; align-items: baseline; }
+.archive-list li:last-child { border-bottom: none; }
+.archive-list a { color: #1a1a1a; text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+.archive-list a:hover { color: #8b1a6a; }
+.date-label { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 0.9rem; min-width: 110px; }
+.weekday { font-size: 12px; color: #6b6358; font-style: italic; }
+.footer { text-align: center; padding: 1.5rem 1rem; font-size: 10px; color: #6b6358; border-top: 3px double #2a2a2a; background: #eae3d4; letter-spacing: 2px; }
+</style>
 </head>
 <body>
-    <div class="header">
-        <div class="topline">An Independent Publication · Est. 2026</div>
-        <div class="masthead">AI DAILY</div>
-        <div class="subtitle">aihot 精选 × remio 签发</div>
-        <div class="divider"></div>
-        <a class="latest-link" id="latestLink" href="#">阅读今日日报 →</a>
-    </div>
-    <div class="archive">
-        <div class="archive-title">历史存档</div>
-        <ul class="archive-list" id="archiveList"></ul>
-    </div>
-    <div class="footer">AI DAILY · 每日 AI 行业日报 · aihot.1986318.xyz</div>
-    <script>
-        const WEEKDAYS = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
-        const REPORTS = ['2026-06-18', '2026-06-17', '2026-06-16', '2026-06-15', '2026-06-14', '2026-06-13', '2026-06-12', '2026-06-11', '2026-06-10', '2026-06-09', '2026-06-08', '2026-06-07', '2026-06-06', '2026-06-05', '2026-06-04', '2026-06-03', '2026-06-02', '2026-06-01', '2026-05-31', '2026-05-30', '2026-05-29', '2026-05-28', '2026-05-27', '2026-05-26', '2026-05-25', '2026-05-24', '2026-05-23', '2026-05-22', '2026-05-21', '2026-05-20'];
-        function render() {
-            const list = document.getElementById('archiveList');
-            const link = document.getElementById('latestLink');
-            if (REPORTS.length === 0) { list.innerHTML = '<div style="color:#6b6358;font-size:0.9rem;padding:2rem 0;text-align:center;">暂无历史日报</div>'; return; }
-            link.href = 'reports/' + REPORTS[0] + '.html';
-            list.innerHTML = REPORTS.map(date => {
-                const d = new Date(date + 'T00:00:00');
-                return '<li><a href="reports/' + date + '.html" class="date-label">' + date + '</a><span class="weekday">' + WEEKDAYS[d.getDay()] + '</span></li>';
-            }).join('');
-        }
-        render();
-    </script>
+<div class="header">
+  <div class="topline">An Independent Publication · Est. 2026</div>
+  <div class="masthead">AI DAILY</div>
+  <div class="subtitle">aihot 簽發 × remio 签发</div>
+  <div class="divider"></div>
+  <a class="latest-link" id="latestLink" href="#">阅读今日日报 →</a>
+</div>
+<div class="archive">
+  <div class="archive-title">历史存档</div>
+  <ul class="archive-list" id="archiveList"></ul>
+</div>
+<div class="footer">AI DAILY · 每日 AI 行业日报 · aihot.1986318.xyz</div>
+<script>
+const WEEKDAYS = ['周日','周一','周二','周三','周四','周五','周六'];
+const REPORTS = ['2026-06-18', '2026-06-17', '2026-06-16', '2026-06-15', '2026-06-14', '2026-06-13', '2026-06-12', '2026-06-11', '2026-06-10', '2026-06-09', '2026-06-08', '2026-06-07', '2026-06-06', '2026-06-05', '2026-06-04', '2026-06-03', '2026-06-02', '2026-06-01', '2026-05-31', '2026-05-30', '2026-05-29', '2026-05-28', '2026-05-27', '2026-05-26', '2026-05-25', '2026-05-24', '2026-05-23', '2026-05-22', '2026-05-21', '2026-05-20'];
+function render() {
+  const list = document.getElementById('archiveList');
+  const link = document.getElementById('latestLink');
+  if (REPORTS.length === 0) { list.innerHTML = '<div style="color:#6b6358;font-size:0.9rem;padding:2rem 0;text-align:center;">暂无历史日报</div>'; return; }
+  link.href = 'reports/' + REPORTS[0] + '.html';
+  list.innerHTML = REPORTS.map(date => {
+    const d = new Date(date + 'T00:00:00');
+    return '<li><a href="reports/' + date + '.html" class="date-label">' + date + '</a><span class="weekday">' + WEEKDAYS[d.getDay()] + '</span></li>';
+  }).join('');
+}
+render();
+</script>
 </body>
 </html>
