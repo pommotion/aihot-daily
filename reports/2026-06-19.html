@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-06-19</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>29</em> &middot; No. <em>29</em></span>
+                <span>Friday, June 19, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="reports/2026-06-18.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天两件事最值得关注：一是阿里开源 Zvec 向量数据库「白嫖 Pinecone」，二是 DeepSeek 研究员让 AI 自主跑通 285B 模型的强化学习研究闭环——从写代码到 debug 全自动。AI 正在同时降低基础设施成本和研究门槛。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">阿里开源向量数据库 Zvec：pip install 即用，对标 Pinecone 每月 70 美元</div>
+            <div class="article-source"><a href="https://x.com/AYi_AInotes/status/2067832098816250346" target="_blank">X · @AYi_AInotes · 2026-06-19</a></div>
+            <div class="article-body dropcap">阿里开源内部向量数据库 Zvec，支持十亿向量毫秒级检索，无需单独起服务，全平台兼容。v0.5.0 新增原生全文混合搜索。UCSD 黄碧薇教授同时提出因果 AI 第四代范式。</div>
+            <div class="article-commentary">RAG 基础设施再添免费选择。对独立开发者来说，向量数据库从「要不要花钱」变成了「选哪个免费方案」的问题。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">DeepSeek 研究员开源 AutoResearch：AI 自主跑通 285B 模型 RL 研究闭环</div>
+                <div class="article-source"><a href="https://x.com/AYi_AInotes/status/2067819352926150953" target="_blank">X · @AYi_AInotes · 2026-06-19</a></div>
+                <div class="article-body">DeepSeek 研究员 Deli Chen 开源 AutoResearch 协议并发布 Self-play 综述论文。AI 智能体首次完全自主在 DeepSeek 285B 模型上完成完整 RL 研究闭环——从实验设计、写代码、提交 GPU 任务到 debug。</div>
+                <div class="article-commentary">AI 开始自己给自己做研究了。当模型能自主跑实验、读结果、调参数，「研究员」的定义可能要重写。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">八部门联合发文力推「人工智能 + 消费」，17 条举措覆盖 AI 手机、汽车、机器人</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/966/295.htm" target="_blank">IT之家 · 2026-06-18</a></div>
+                <div class="article-body">商务部等 8 部门印发实施意见，从供给、场景、流通等 5 方面提出 17 条举措。重点扩大 AI 手机电脑、智能网联汽车、AI 机器人供给，推动 AI 与养老、文旅、教育等融合。</div>
+                <div class="article-commentary">政策从「发展 AI」走向「卖 AI 产品」。信号很明确：AI 硬件消费将被当作经济引擎来推。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">AlphaFold 负责人 John Jumper 离职 Google DeepMind，加入 Anthropic</div>
+            <div class="article-source"><a href="https://x.com/demishassabis/status/2068002732250640603" target="_blank">X · @demishassabis · 2026-06-19</a></div>
+            <div class="article-body dropcap">AlphaFold 团队负责人 John Jumper 在 Google DeepMind 工作近 9 年后宣布离职，将加入 Anthropic。DeepMind CEO Demis Hassabis 对其贡献表示感谢。</div>
+            <div class="article-commentary">诺贝尔奖级科学家从蛋白质折叠转向 AI 安全。Anthropic 的「安全叙事」正在吸引最顶尖的基础研究人才。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">AI 员工 Viktor 登陆 Microsoft Teams，年化收入达 2000 万美元</div>
+                <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2067755504613613699" target="_blank">X · @rohanpaul_ai · 2026-06-19</a></div>
+                <div class="article-body">AI 员工 Viktor 在 Slack 上实现 2000 万美元年化收入（无销售团队、未大规模推广），现已进驻 Microsoft Teams。用户无需学习提示词，像 @同事一样提及即可使用。</div>
+                <div class="article-commentary">2000 万 ARR 零销售团队——这验证了「AI 同事」不是概念，是已经赚钱的品类。零门槛交互是关键。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TIPS</div>
+                <div class="article-headline col-headline">Humanize PPT v0.9：为演讲而生的开源 PPT Skill，先出 4 张真实预览页</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s/rGoYnUcBRkfRKQPbIaawyg" target="_blank">公众号：卡尔的AI沃茨 · 2026-06-19</a></div>
+                <div class="article-body">Humanize PPT v0.9 核心通过 AST（Audience/State/Transfer）逻辑重新编排大纲，渲染前先输出 4 张真实预览页，将图片、视频外包给下游 Skill。</div>
+                <div class="article-commentary">PPT 工具开始卷「演讲逻辑」而不是「模板美化」。先理解听众再排版，这是从「做图」到「做沟通」的转向。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">RESEARCH</div>
+            <div class="article-headline">MosaicLeaks：深度研究智能体能保守秘密吗？AI 性能越好，隐私泄露越严重</div>
+            <div class="article-source"><a href="https://https://huggingface.co/blog/ServiceNow/mosaicleaks" target="_blank">Hugging Face Blog · 2026-06-19</a></div>
+            <div class="article-body dropcap">MosaicLeaks 提出 1,001 条多跳研究链任务，测试发现智能体在混合本地私有文档与外部检索时频繁泄露隐私。单纯优化任务性能反而加剧泄露。</div>
+            <div class="article-commentary">越聪明的 AI 越会「说漏嘴」。这条悖论意味着安全不是性能的副产品，必须独立设计。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-06-19</em>
+        </div>
+    </div>
+</body>
+</html>
