@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-06-20</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>28</em> &middot; No. <em>28</em></span>
+                <span>Saturday, June 20, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="reports/2026-06-19.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">诺奖级科学家从产品转向安全、机器人工厂里超越人类、AI开始自己做研究——三条线交汇，AI从「辅助工具」加速变成「自主劳动力」。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">AlphaFold 负责人 John Jumper 离职 Google DeepMind，加入 Anthropic</div>
+            <div class="article-source"><a href="https://x.com/demishassabis/status/2068002732250640603" target="_blank">X / Demis Hassabis · 2026-06-19</a></div>
+            <div class="article-body dropcap">AlphaFold 核心负责人、蛋白质结构预测领域领军人物 John Jumper 宣布离开 Google DeepMind，加入以 AI 安全为旗号的 Anthropic。Demis Hassabis 对其贡献表示感谢。这一跳槽发生在 AlphaFold 被广泛认为将获诺奖级认可的背景下。</div>
+            <div class="article-commentary">诺奖级科学家放弃蛋白质折叠去搞对齐，说明「让AI别犯错」比「让AI做事」更紧迫了。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">八部门联合发文力推「人工智能 + 消费」，扩大 AI 手机电脑及智能网联汽车消费</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/966/295.htm" target="_blank">ithome · 2026-06-18</a></div>
+                <div class="article-body">中国八个部委联合发布政策文件，将 AI 手机、AI 电脑、智能网联汽车等纳入消费刺激范围，提出扩大 AI 产品供给、培育消费场景、完善基础设施等具体措施，是迄今力度最大的 AI 消费端政策。</div>
+                <div class="article-commentary">政策第一次把AI手机、AI电脑、智能汽车放进同一张消费清单——补贴红利要来了。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Figure 机器人数首超人类员工</div>
+                <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2068089038213693800" target="_blank">X / Rohan Paul · 2026-06-19</a></div>
+                <div class="article-body">Figure 旗下人形机器人在某工厂部署数量首次超过该工厂的人类员工数，标志着人形机器人从实验性试点进入规模化生产辅助阶段。Figure 近期持续加速产线落地。</div>
+                <div class="article-commentary">当机器人数量超过人类，「机器换人」从口号变成了排班表上的事实。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">DeepSeek 研究员开源 AutoResearch：AI 自主跑通 285B 模型 RL 研究闭环</div>
+            <div class="article-source"><a href="https://x.com/AYi_AInotes/status/2067819352926150953" target="_blank">X / AYi_AInotes · 2026-06-19</a></div>
+            <div class="article-body dropcap">DeepSeek 研究员开源 AutoResearch 框架，让 AI 智能体自主完成从假设设计、实验配置到模型训练的完整强化学习研究流程，成功在 285B 参数模型上跑通闭环，展示了 AI 自主研究的可行性。</div>
+            <div class="article-commentary">AI自己设计实验、自己训练285B模型——研究者的角色从「操作员」变成「审核员」。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">NVIDIA Research 发布 SpatialClaw：免训练空间推理框架</div>
+                <div class="article-source"><a href="https://www.marktechpost.com/2026/06/19/nvidia-ai-introduce-spatialclaw-a-training-free-agent-that-treats-code-as-the-action-interface-for-spatial-reasoning" target="_blank">MarkTechPost · 2026-06-19</a></div>
+                <div class="article-body">NVIDIA 研究团队推出 SpatialClaw，一个免训练的空间推理智能体框架，将代码作为动作接口，无需额外训练即可让现有模型理解三维空间关系，在空间推理基准上取得显著提升。</div>
+                <div class="article-commentary">不用训练就能做空间推理，机械臂和自动驾驶的部署成本可能腰斩。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">AI 中心的数据黑洞：样本效率的下一个瓶颈</div>
+                <div class="article-source"><a href="https://www.dwarkesh.com/p/the-sample-efficiency-black-hole-2" target="_blank">Dwarkesh Patel · 2026-06-19</a></div>
+                <div class="article-body">Dwarkesh Patel 发表深度分析，探讨 AI 训练数据消耗速度远超高质量数据生产速度的问题，指出当人类产生的高质量文本和代码被「吃光」后，样本效率将成为制约模型能力增长的核心瓶颈。</div>
+                <div class="article-commentary">训练数据快被「吃光」了——行业的下一个瓶颈不是算力，是「没东西可学」。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">阿里开源向量数据库 Zvec，UCSD 黄碧薇教授提出因果 AI 第四代范式</div>
+            <div class="article-source"><a href="https://x.com/AYi_AInotes/status/2067832098816250346" target="_blank">X / AYi_AInotes · 2026-06-19</a></div>
+            <div class="article-body dropcap">阿里巴巴开源高性能向量数据库 Zvec，降低中小团队构建 RAG 系统的基础设施成本。同期 UCSD 黄碧薇教授提出「因果 AI」第四代范式理论，主张从相关性推理迈向因果推理。</div>
+            <div class="article-commentary">向量数据库开源省了一笔基建钱；因果推理则是从「知其然」到「知其所以然」的范式跳。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-06-20</em>
+        </div>
+    </div>
+</body>
+</html>
