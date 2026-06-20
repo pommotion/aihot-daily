@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-06-21</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>29</em> &middot; No. <em>29</em></span>
+                <span>Sunday, June 21, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-06-20.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">顶级人才流动、中美模型双向贸易、机器人替代拐点——AI竞争格局今天加速重构。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">AlphaFold 负责人 John Jumper 离职 Google DeepMind，加入 Anthropic</div>
+            <div class="article-source"><a href="https://x.com/demishassabis/status/2068002732250640603" target="_blank">X · Demis Hassabis · 2026-06-19</a></div>
+            <div class="article-body dropcap">AlphaFold 团队负责人 John Jumper 在 Google DeepMind 工作近9年后宣布离职，将加入 Anthropic。DeepMind CEO Demis Hassabis 称其合作改变了世界，AlphaFold 展示了 AI 在科学与医学领域的巨大潜力。</div>
+            <div class="article-commentary">AlphaFold之父转投安全派，顶级科学家的选择比论文更能说明方向。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">微软双向转售 GPT 与 DeepSeek，成全球最大 AI 中间商</div>
+                <div class="article-source"><a href="https://x.com/AYi_AInotes/status/2068218661710512231" target="_blank">Bloomberg · 2026-06-19</a></div>
+                <div class="article-body">彭博社报道，微软已成为全球最大AI模型中转站，既将ChatGPT卖给中国企业，也反向将DeepSeek模型卖给西方客户。微软正在测试DeepSeek-R1和DeepSeek-V4，计划向西方客户提供这些中国模型，构建跨中美AI模型的双向贸易网络。</div>
+                <div class="article-commentary">微软两头吃，中美AI模型贸易的中间商角色正在重塑全球算力版图。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Figure 机器人数首次超过人类员工数</div>
+                <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2068089038213693800" target="_blank">X · Rohan Paul · 2026-06-19</a></div>
+                <div class="article-body">Figure 的人形机器人数量首次超过其人类员工数量，标志着人形机器人从理论验证阶段进入规模化部署阶段。公司正在加速制造业场景的自动化替代。</div>
+                <div class="article-commentary">机器人多于员工不是噱头，制造业替代拐点比预想来得早。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">NVIDIA 发布 SpatialClaw：免训练空间推理框架</div>
+            <div class="article-source"><a href="https://www.marktechpost.com/2026/06/19/nvidia-ai-introduce-spatialclaw-a-training-free-agent-that-treats-code-as-the-action-interface-for-spatial-reasoning" target="_blank">MarkTechPost · 2026-06-19</a></div>
+            <div class="article-body dropcap">NVIDIA Research 发布免训练空间推理框架 SpatialClaw，通过将代码作为动作接口调用感知工具（Depth Anything 3、SAM 3），在20项基准测试中平均准确率达59.9%，比SpaceTools高11.2个百分点，比无工具基线高6.5点。</div>
+            <div class="article-commentary">免训练提升空间推理11个点，说明工具调用比堆参数更划算。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">AI 中心的数据黑洞：开源为何只落后闭源4个月</div>
+                <div class="article-source"><a href="https://www.dwarkesh.com/p/the-sample-efficiency-black-hole-2" target="_blank">Dwarkesh Patel · 2026-06-19</a></div>
+                <div class="article-body">Dwarkesh 分析指出，AI进步主要靠扩充数据和算力，强化学习本质是合成数据生成。Epoch报告显示开源模型仅落后闭源4个月，因为数据可从公开API蒸馏，但人类一生接触约2亿token，前沿模型训练需数十到数百T token，数据瓶颈正在逼近。</div>
+                <div class="article-commentary">开源只落后闭源4个月，因为数据能蒸馏——但这扇窗正在被关上。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TIPS</div>
+                <div class="article-headline col-headline">OpenRouter vs Portkey：你的团队该选哪个 LLM 网关？</div>
+                <div class="article-source"><a href="https://openrouter.ai/blog/insights/openrouter-vs-portkey" target="_blank">OpenRouter Blog · 2026-06-19</a></div>
+                <div class="article-body">OpenRouter是托管路由网络，覆盖300+模型，按用量收费无需自有密钥，支持零数据保留和欧盟路由；Portkey是AI控制平面（2026年被Palo Alto收购），置于用户密钥之上，增加治理、提示管理和可观测性，提供1600+ LLM统一API。</div>
+                <div class="article-commentary">一个管路由一个管治理，选错网关后期迁移成本极高，团队趁早对齐需求。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">JAWBONE Act：拟立法打击政府施压平台压制言论</div>
+            <div class="article-source"><a href="https://www.eff.org/deeplinks/2026/06/new-bill-takes-aim-government-pressure-silence-lawful-online-speech" target="_blank">EFF · 2026-06-19</a></div>
+            <div class="article-body dropcap">参议员Cruz和Wyden提出两党法案JAWBONE Act，为受政府胁迫的广播商、互动计算机服务商及AI提供商创建联邦诉讼权，并建立政府与中间方就用户表达问题沟通的透明度体系。EFF举例2025年联邦高官威胁起诉ICEBlock创建者等事件支持该法案。</div>
+            <div class="article-commentary">政府施压删帖将被起诉，AI时代的内容审查边界正在重新划定。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-06-21</em>
+        </div>
+    </div>
+</body>
+</html>
