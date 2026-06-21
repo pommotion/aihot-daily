@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-06-22</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>30</em> &middot; No. <em>30</em></span>
+                <span>Monday, June 22, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-06-21.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">从NSA被数小时攻破到Figure机器人数超越员工数，AI冲击同时抵达安全、劳动力和科研三条战线——攻防经济学正在被改写。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">NSA局长：Mythos数小时内攻破其几乎所有机密系统</div>
+            <div class="article-source"><a href="https://x.com/AISafetyMemes/status/2068718552174252477" target="_blank">X · 2026-06-21</a></div>
+            <div class="article-body dropcap">美国NSA局长称，AI工具Mythos在数小时内攻破其几乎所有机密系统。此前Mythos已在5天内破解MacOS。顶级漏洞团队Google Project Zero完成同等攻击需6个月，单个MacOS零日漏洞价值约200万美元。苹果原假设全球仅10-20个团队具备此能力，Mythos将使该数字增至数千。全球约20亿活跃苹果设备面临威胁，Mac用户多为记者、高管、政府官员等高价值目标。</div>
+            <div class="article-commentary">攻击时间从6个月压缩到数小时，AI正在把顶级零日漏洞的获取成本打掉两个量级——整个攻防经济学被改写了。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">微软双向转售GPT与DeepSeek成全球最大AI中间商</div>
+                <div class="article-source"><a href="https://x.com/AYi_AInotes/status/2068218661710512231" target="_blank">X · 2026-06-20</a></div>
+                <div class="article-body">彭博社报道，微软已成为全球最大AI模型中转站，既将ChatGPT卖给中国企业，也反向将DeepSeek模型卖给西方客户。微软正在测试DeepSeek-R1和DeepSeek-V4，计划向西方客户提供这些中国模型，构建起跨中美AI模型的双向贸易网络。</div>
+                <div class="article-commentary">微软同时卖OpenAI给中国、卖DeepSeek给西方——商业利益正在穿透所有地缘叙事里的围墙。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">AlphaFold负责人John Jumper离职Google DeepMind，加入Anthropic</div>
+                <div class="article-source"><a href="https://x.com/demishassabis/status/2068002732250640603" target="_blank">X · 2026-06-19</a></div>
+                <div class="article-body">AlphaFold团队负责人、诺奖级科学家John Jumper宣布在Google DeepMind工作近9年后离职，将加入Anthropic。DeepMind CEO Demis Hassabis表示AlphaFold展示了AI在科学与医学领域的巨大潜力。Jumper的转向标志着顶级科学AI人才正在向AGI安全与通用能力核心迁移。</div>
+                <div class="article-commentary">蛋白质预测第一人放弃Science去做对齐安全，说明顶级大脑的判断是：AGI风险比攻克疾病更紧迫。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Figure机器人数首超人类员工</div>
+            <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2068089038213693800" target="_blank">X · 2026-06-19</a></div>
+            <div class="article-body dropcap">人形机器人公司Figure的机器人数量首次超过其人类员工数量。这是具身智能领域首次出现「用机器人造机器人」的自循环节点，意味着人形机器人从Demo展示阶段进入规模化自我生产阶段。</div>
+            <div class="article-commentary">机器人数超过员工数不是噱头——当机器人开始造机器人，产能曲线就会脱离人力约束。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">八部门联合发文力推「人工智能+消费」，扩大AI手机电脑及智能网联汽车消费</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/966/295.htm" target="_blank">IT之家 · 2026-06-18</a></div>
+                <div class="article-body">商务部等8部门印发《关于加快「人工智能+消费」发展的实施意见》，从5方面提出17条举措。重点包括扩大AI手机电脑、智能家居、智能网联汽车、智能穿戴、AI机器人等供给，推动AI与居家、养老、文旅、教育等融合，促进AI在零售、电商、物流领域应用，完善基础设施和标准体系。</div>
+                <div class="article-commentary">中国首次把AI从产业政策升级为消费政策——官方定调：AI是下一个家电，要进千家万户。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TIP</div>
+                <div class="article-headline col-headline">DeepSeek研究员开源AutoResearch：AI自主跑通285B模型RL研究闭环</div>
+                <div class="article-source"><a href="https://x.com/AYi_AInotes/status/2067819352926150953" target="_blank">X · 2026-06-19</a></div>
+                <div class="article-body">DeepSeek研究员Deli Chen将AutoResearch协议开源并发布Self-play综述论文。其AI智能体首次完全自主地在DeepSeek 285B模型上完成完整RL研究闭环——从实验设计、写代码、提交GPU任务、debug到结论总结，全程零人工干预，系统调用了GRPO工具。</div>
+                <div class="article-commentary">AI不只是写代码了，它开始自己设计实验、跑GPU、写结论——科研自动化触及了「研究」本身。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">美团tabbit国际版免费接入GPT-5.5/Claude Opus 4.8等旗舰模型</div>
+                <div class="article-source"><a href="https://x.com/AYi_AInotes/status/2068637890247016607" target="_blank">X · 2026-06-21</a></div>
+                <div class="article-body">美团上线tabbit国际版应用，免费集成GPT-5.5、Claude Opus 4.8、Gemini 3.5 Flash及国内Kimi-2.6、GLM-5.1、MiniMax-M3等旗舰模型，用户无需单独订阅即可使用。国际版含海外模型，国内版仅含国内模型，目前处于免费推广阶段以抢占AI入口。</div>
+                <div class="article-commentary">外卖平台白送全家桶旗舰模型——AI入口战已进入「倒贴最贵的货抢人」阶段，C端用户红利窗口正在关闭。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">NVIDIA Research发布SpatialClaw：免训练空间推理框架</div>
+                <div class="article-source"><a href="https://www.marktechpost.com/2026/06/19/nvidia-ai-introduce-spatialclaw-a-training-free-agent-that-treats-code-as-the-action-interface-for-spatial-reasoning" target="_blank">MarkTechPost · 2026-06-19</a></div>
+                <div class="article-body">NVIDIA Research发布SpatialClaw免训练空间推理框架，通过将代码作为动作接口，让智能体调用Depth Anything 3、SAM 3等感知工具自由组合输出，解决VLM在3D空间判断上的弱点。在20项基准测试中平均准确率达59.9%，比SpaceTools高11.2个百分点。</div>
+                <div class="article-commentary">不训练就涨11个点，「代码即动作」让VLM学会用工具补偿空间盲区——免训练增强可能成为新范式。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-06-22</em>
+        </div>
+    </div>
+</body>
+</html>
