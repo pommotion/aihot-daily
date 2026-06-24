@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-06-24</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>32</em> &middot; No. <em>32</em></span>
+                <span>Wednesday, June 24, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-06-23.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">AI 进入&quot;烧钱换基建&quot;的深水区：Oracle 裁员 2.1 万人押注云、字节双线出击、Anthropic 把 Claude 嵌入工作流——巨头们不再比谁模型更强，而是比谁先把 AI 塞进用户的日常。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Oracle 因 AI 应用裁员 21000 人，债务驱动云基础设施投资</div>
+            <div class="article-source"><a href="https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments" target="_blank">Ars Technica · 2026-06-23</a></div>
+            <div class="article-body dropcap">Oracle 裁员 2.1 万人，将节省的资金投入 AI 云基础设施。这标志着 AI 竞争进入&quot;军备竞赛&quot;阶段——不再只是技术比拼，而是资本耐力的较量。</div>
+            <div class="article-commentary">Oracle 在用人力换算力：AI 公司的核心竞争力不再是模型，而是能不能持续烧钱建基础设施。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">字节正式发布 Seed 2.1，豆包推出专业版双线并行</div>
+                <div class="article-source"><a href="https://seed.bytedance.com/zh/blog/seed2-1-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83-%E6%B7%B1%E5%85%A5-ai-%E7%94%9F%E4%BA%A7%E5%8A%9B" target="_blank">字节 Seed · 2026-06-23</a></div>
+                <div class="article-body">Seed 2.1 聚焦生产力场景，豆包专业版瞄准专业用户。字节在通用大模型和垂直产品两个维度同时发力。</div>
+                <div class="article-commentary">Seed 攻技术天花板，豆包抢用户心智——字节终于把&quot;造模型&quot;和&quot;卖产品&quot;这两条腿都迈开了。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">OpenAI ChatGPT 语音最大规模升级：双向 AI 语音模型 Bidi 1 上线测试</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/967/852.htm" target="_blank">IT之家 · 2026-06-23</a></div>
+                <div class="article-body">Bidi 1 实现了双向流式语音对话，ChatGPT 可以边听边说，不再是传统的&quot;说完再听&quot;模式。</div>
+                <div class="article-commentary">语音交互终于要告别&quot;对讲机模式&quot;了。双向流式意味着 AI 能像真人一样插话、打断、追问——这才是自然的对话。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">Anthropic 推出 Claude Tag：在 Slack 中通过 @Claude 协作</div>
+            <div class="article-source"><a href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank">Anthropic Newsroom · 2026-06-23</a></div>
+            <div class="article-body dropcap">Claude Tag 允许用户在 Slack 中 @Claude 进行协作，无需切换工具即可完成 AI 辅助工作。</div>
+            <div class="article-commentary">Anthropic 不在模型能力上硬刚 OpenAI，而是把 Claude 嵌进已有的工作流——&quot;AI 不在远处，就在你打字的地方&quot;。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Google DeepMind 7500 万美元投资 A24，合作开发电影 AI 工具</div>
+                <div class="article-source"><a href="https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal" target="_blank">TechCrunch · 2026-06-22</a></div>
+                <div class="article-body">DeepMind 向好莱坞知名制片公司 A24 投资 7500 万美元，将合作开发面向电影创作的 AI 工具。</div>
+                <div class="article-commentary">AI 不再只是帮人写 PPT 了——DeepMind 拿真金白银砸内容创作的心脏地带，电影是下一个被重构的创意产业。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">五眼联盟警告：AI 网络威胁数月内将影响普通用户</div>
+                <div class="article-source"><a href="https://www.artificialintelligence-news.com/news/five-eyes-warning-ai-cyber-threats" target="_blank">AI News · 2026-06-23</a></div>
+                <div class="article-body">五眼联盟情报机构联合警告，AI 驱动的网络攻击将在数月内波及普通用户，不再是仅限于国家层面的威胁。</div>
+                <div class="article-commentary">AI 武器化已从理论变为现实时间表——当情报机构公开预警，意味着威胁成熟度已不可逆。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">通义实验室开源 Qwen-AgentWorld：让 Agent 学会&quot;先预测，再行动&quot;</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s/NV9WGpGsfFz35jww5agM9g" target="_blank">通义实验室 · 2026-06-23</a></div>
+                <div class="article-body">Qwen-AgentWorld 提出预测-行动框架，让 Agent 在执行前先预测结果并评估，大幅提升复杂任务的完成率。</div>
+                <div class="article-commentary">Agent 的核心瓶颈不是&quot;能做什么&quot;，而是&quot;知道什么时候该做什么&quot;——先想再做，这个思路很实在。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">NatureBench：AI 编码智能体能否匹配 Nature 系列论文已发表 SOTA？</div>
+                <div class="article-source"><a href="https://arxiv.org/abs/2606.24530" target="_blank">arXiv · 2026-06-23</a></div>
+                <div class="article-body">NatureBench 提出以 Nature 系列论文中的已发表 SOTA 作为基准，评估 AI 编码智能体能否复现或超越学术成果。</div>
+                <div class="article-commentary">用人类已发表的科研 SOTA 来考 AI Agent——如果 AI 能复现 Nature 论文的结果，科研自动化就不远了。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-06-24</em>
+        </div>
+    </div>
+</body>
+</html>
