@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-06-30</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>38</em> &middot; No. <em>38</em></span>
+                <span>Tuesday, June 30, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-06-29.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">大模型主权竞赛加速，国产ASIC与海外巨头的边界正在重新划定；与此同时，AI军事化与安全风险首次在真实战场触发致命后果，行业需要更严肃的治理框架。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">美团LongCat Owl Alpha登顶OpenRouter，1.6万亿MoE全由国产ASIC训练</div>
+            <div class="article-source"><a href="https://x.com/EMostaque/status/2071701921241448574" target="_blank">X：Emad Mostaque · 2026-06-28</a></div>
+            <div class="article-body dropcap">美团LongCat的Owl Alpha成为OpenRouter最流行模型，累计消耗10万亿tokens，性能达Gemini/Opus 4.6级别。该模型使用35万亿tokens训练，完全在5万块国产ASIC上完成，上线后每日调用量全球Top3。</div>
+            <div class="article-commentary">国产ASIC首次跑出万亿级MoE并登顶全球调用榜，说明算力自主路线已经具备商业竞争力；Owl即将退役，后续版本能否维持性能与成本优势是下一战。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Rubin Ultra取消，新版尺寸性能减半</div>
+                <div class="article-source"><a href="https://x.com/SemiAnalysis_/status/2071700428249596290" target="_blank">X：SemiAnalysis · 2026-06-28</a></div>
+                <div class="article-body">在GTC 2026宣布Rubin Ultra仅3个月后，原4-die Rubin Ultra因制造执行问题被取消。新的“Rubin Ultra”尺寸减半，实际性能约为原版的一半。</div>
+                <div class="article-commentary">英伟达高端芯片路线首次大规模延期并降级，直接影响超算和AI集群的交付节奏；制造良率问题从幕后走到台前，可能动摇客户对CoWoS产能的信心。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Claude 在 Microsoft Foundry 正式可用</div>
+                <div class="article-source"><a href="https://claude.com/blog/claude-in-microsoft-foundry" target="_blank">Claude Blog · 2026-06-28</a></div>
+                <div class="article-body">Claude Opus 4.8和Claude Haiku 4.5现可在Azure托管的Microsoft Foundry上调用，运行于NVIDIA GB300 GPU，支持提示缓存、扩展思考和企业级治理控制。</div>
+                <div class="article-commentary">Anthropic与Azure的深度绑定把“模型选择权”进一步让渡给云厂商；对微软客户是便利，对多云用户则意味着模型层议价空间被压缩。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">美军用AI选目标误炸伊朗学校，Claude嵌入Palantir首日建议约1000目标</div>
+            <div class="article-source"><a href="https://the-decoder.com/the-us-military-used-ai-to-pick-thousands-of-targets-but-missed-a-note-saying-one-was-a-school" target="_blank">The Decoder · 2026-06-28</a></div>
+            <div class="article-body dropcap">美军首次大规模用Anthropic的Claude嵌入Palantir Maven系统选择打击目标，首日建议约1000个目标。因情报未同步至军方官方数据库，导致导弹误袭学校，约120名儿童死亡。五角大楼事后宣布推出agentic AI initiative。</div>
+            <div class="article-commentary">这不是实验室事故，而是AI军事化落地后的首个公开致命案例；当模型每秒建议数百个目标而人工验证跟不上时，“人在回路”只是口号，亟需强制的人工复核与审计机制。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Cursor for iOS 公测版发布，手机端可运行云端智能体</div>
+                <div class="article-source"><a href="https://cursor.com/blog/ios-mobile-app" target="_blank">Cursor Blog · 2026-06-28</a></div>
+                <div class="article-body">Cursor推出iOS原生公测版，付费计划可用。开发者可在手机上启动云端智能体，远程操控电脑端实例，支持语音输入、Live Activities实时状态推送，云端智能体可自动迭代生成合并就绪的PR。</div>
+                <div class="article-commentary">移动端IDE不再是查看器而是真正的执行入口；云端智能体+远程操控的组合意味着“全天候编码”成为可能，对个人开发者的工作边界是实质性扩张。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">小红书RedKnot推理引擎：按注意力头拆解KV Cache，长文本加速最高5倍</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s/qRrZvL0aZzYI82djFSrLug" target="_blank">公众号：小红书技术 · 2026-06-28</a></div>
+                <div class="article-body">RedKnot将KV Cache沿注意力头维度拆解，通过头分类稀疏、稀疏FFN和SegPagedAttention统一算法与存储粒度。在8卡H800上，128K上下文TTFT加速达5.16倍，预填充FLOPs削减最高79.5%。</div>
+                <div class="article-commentary">把KV Cache粒度从token级降到头级，是推理引擎领域少见的“结构创新”而非单纯工程优化；对需要处理长文档的RAG和Agent场景有直接落地价值。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">TIPS</div>
+                <div class="article-headline col-headline">Claude Code打开GitHub仓库即执行隐藏恶意代码，攻击者可获完全控制</div>
+                <div class="article-source"><a href="https://the-decoder.com/claude-code-runs-a-github-repos-hidden-malware-without-verification-giving-attackers-full-control" target="_blank">The Decoder · 2026-06-28</a></div>
+                <div class="article-body">安全研究人员发现，恶意setup脚本可通过DNS拉取命令，代码本身不出现在仓库中。Claude Code在遇到常规错误后自动执行该脚本，打开反向shell，导致API密钥和登录凭据泄露。</div>
+                <div class="article-commentary">AI编码工具的“自动执行”把供应链攻击从手动运行升级为被动触发；开发者必须把任何第三方setup脚本视为不受信任代码，显式审查后再运行。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">三星与SK海力士计划投资5900亿美元扩产芯片，AI需求推高内存价格</div>
+                <div class="article-source"><a href="https://the-decoder.com/samsung-and-sk-hynix-plan-590-billion-chip-investment-as-ai-demand-sends-memory-prices-soaring" target="_blank">The Decoder · 2026-06-28</a></div>
+                <div class="article-body">在韩国政府支持下，两家公司计划投入5900亿美元扩大芯片产能，包括新建四座工厂和封装中心。Jefferies预测2026年Q3内存价格将上涨40%-50%，2028年新产能仅上线15%-20%才可能缓解。苹果已上调Mac售价。</div>
+                <div class="article-commentary">内存涨价正在从B端传导至C端，未来两年消费电子价格将持续承压；韩国在HBM上的垄断地位让其成为AI时代的“新石油国”，但巨额投资也意味着极高的产能过剩风险。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-06-30</em>
+        </div>
+    </div>
+</body>
+</html>
