@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-07-02</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>41</em> &middot; No. <em>41</em></span>
+                <span>Thursday, July 2, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-07-01.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">AI 发展的「规模红利」正在与「规模成本」正面碰撞——微软砸 25 亿下场做交付，企业却在勒紧腰带限制模型使用；AI 用电暴增 37% 敲响能源警钟，OpenAI 和 Anthropic 则在治理层面各自面临十字路口。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Microsoft 成立「Frontier Company」，斥资 25 亿美元派驻 6000 名 AI 工程师到企业客户现场</div>
+            <div class="article-source"><a href="https://the-decoder.com/microsoft-launches-2-5-billion-frontier-company-to-embed-6000-ai-engineers-inside-enterprise-clients" target="_blank">The Decoder · 07/02</a></div>
+            <div class="article-body dropcap">微软新设业务部门「Frontier Company」，拨款 25 亿美元，将 6000 名行业与工程专家派驻企业客户现场，共同设计、部署并持续改进 AI 系统。该部门由 Rodrigo Kede Lima 领导，旨在超越传统「前部署工程」模式，定位为 OpenAI 和 Anthropic 的「平台中立」替代方案。</div>
+            <div class="article-commentary">微软不再只卖 API 和云资源，而是把 6000 人送到客户工位上。从「卖工具」到「交付结果」，AI 落地进入重服务时代——对咨询公司和 SaaS 厂商都是直接信号。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 提议美国政府持股 5%，估值 426 亿美元</div>
+                <div class="article-source"><a href="https://x.com/testingcatalog/status/2072585845542969583" target="_blank">Financial Times / CNBC · 07/02</a></div>
+                <div class="article-body">据 Financial Times 和 CNBC 报道，OpenAI 提议向美国政府提供公司 5% 的股份，按近期 8520 亿美元估值计算，价值约 426 亿美元。CEO Sam Altman 表示，此举是与公众分享 AI 发展红利的最佳方式。</div>
+                <div class="article-commentary">与其被监管，不如让国家当股东。这是 AI 史上第一次从「对抗监管」转向「利益绑定」的尝试，一旦成行将重塑全球 AI 治理格局。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">快手可灵 AI 获 20.28 亿美元注资，投后估值 180 亿美元，拟赴港上市</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/971/954.htm" target="_blank">IT之家 · 07/02</a></div>
+                <div class="article-body">快手公告，21 名初始投资者以 20.28 亿美元现金注资北京可灵，投后估值 180 亿美元。快手预计未来 12 个月内启动可灵 AI 赴港上市，募资用于扩充算力、建设数据中心及人才引进。</div>
+                <div class="article-commentary">20 亿美元、180 亿估值、计划上市——可灵是国内 AI 视频赛道第一个跑出完整财务模型的故事。但视频生成烧钱速度远超大模型，上市只是拿到下一场的入场券。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic 与五角大楼控权之争：Claude 军事用途护栏分歧白热化</div>
+            <div class="article-source"><a href="https://x.com/kimmonismus/status/2072718147279335507" target="_blank">WSJ / X · 07/02</a></div>
+            <div class="article-body dropcap">法庭文件显示，Anthropic CEO Dario Amodei 与五角大楼副部长数月邮件往来，核心分歧在于 Claude 的军事用途护栏。Anthropic 要求禁止全自主武器及某些监控用途，五角大楼则希望可用于「所有合法国家安全场景」。随后五角大楼将 Anthropic 列为供应链风险。</div>
+            <div class="article-commentary">AI 安全伦理从纸上谈兵升级为合同条款级别的正面冲突。Anthropic 坚守「不造杀器」的底线，代价是被全球最大客户封杀——这个两难是所有前沿 AI 公司都将面对的局面。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">阿里巴巴开源 Page Agent：纯文本操控网页 DOM 的 JavaScript 库</div>
+                <div class="article-source"><a href="https://www.marktechpost.com/2026/07/02/meet-alibabas-page-agent-a-javascript-in-page-gui-agent-that-controls-web-interfaces-with-natural-language-through-the-dom" target="_blank">MarkTechPost · 07/02</a></div>
+                <div class="article-body">阿里巴巴发布 Page Agent，一个开源的 JavaScript 客户端库，通过自然语言指令直接操作 DOM 元素。与 Playwright 等外部自动化工具不同，Page Agent 将实时 DOM 脱水压缩为 FlatDomTree 文本映射，纯文本模型即可精准执行点击、表单填写等操作，无需截图或多模态模型。</div>
+                <div class="article-commentary">不依赖视觉模型，纯文本搞定 GUI 操控——Page Agent 用 FlatDomTree 思路大幅降低了 Agent 操控网页的门槛和成本。对想做浏览器 Agent 的团队来说，这是值得关注的技术路线。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">花旗、Adobe 等企业限制员工使用 AI 旗舰模型以控制成本</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/971/937.htm" target="_blank">IT之家 / 404 Media · 07/02</a></div>
+                <div class="article-body">Atlassian、Adobe、亚马逊等六家企业正限制员工使用 AI 工具，要求改用能力较低的大模型避免成本失控。至少一家企业月度 AI 开销增至三倍，超 1500 万美元。花旗银行因 GitHub 改为按量计费，禁用 Claude Opus 4.6、4.7 及 GPT-5.5 等旗舰模型。</div>
+                <div class="article-commentary">月烧 1500 万美元是什么概念？一家企业花在 AI 上的钱已经超过多数创业公司的全部营收。「先用再说」的粗放阶段结束了，模型厂商的定价策略正面临企业 CFO 的严格审视。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">谷歌 AI 建设导致 2025 年用电量增长 37%，超过新西兰全国用电</div>
+            <div class="article-source"><a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025" target="_blank">Ars Technica · 07/02</a></div>
+            <div class="article-body dropcap">2025 年谷歌年度用电量同比上涨 37%，创历史最大增幅。数据中心全年消耗超 4200 万兆瓦时，超过新西兰、丹麦、尼日利亚等国总用电量。自 2019 年以来，谷歌总用电量已增长超 250%。公司表示 AI 基础设施建设速度超过电网脱碳速度。</div>
+            <div class="article-commentary">AI 规模扩张撞上的第一个硬约束不是算法、不是芯片、甚至不是钱——是电。4200 万兆瓦时超过一个国家，这个数字比任何论文都更有说服力地定义了 AI 面临的根本瓶颈。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-07-02</em>
+        </div>
+    </div>
+</body>
+</html>
