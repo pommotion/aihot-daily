@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-07-09</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>48</em> &middot; No. <em>48</em></span>
+                <span>Thursday, July 9, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-07-08.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">GPT-5.6 今日公开发布但内测反馈「全面升级未达质变」——头部模型的增量红利正在收窄，竞争焦点加速向语音交互、推理成本和算力自主转移。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">OpenAI GPT-5.6 系列今日公开发布，三款模型 Sol/Terra/Luna 齐上</div>
+            <div class="article-source"><a href="https://www.thestar.com.my/tech/tech-news/2026/07/08/openai-says-powerful-new-model-to-launch-publicly-on-july-9" target="_blank">The Star · 2026-07-08</a></div>
+            <div class="article-body dropcap">OpenAI 宣布 GPT-5.6 系列（旗舰 Sol、中端 Terra、低成本的 Luna）将于 7 月 9 日全球公开发布。此前因安全审查仅向美国合作方开放预览，特朗普政府现已批准更广泛发布。内测者反馈称其相比 Fable 5 缺少质变体验，Fable 仍是当前智能巅峰。</div>
+            <div class="article-commentary">内测口碑「全面但无质变」说明前沿模型边际收益在递减，头部玩家靠发布节奏抢占注意力的策略开始遇到天花板。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">OpenAI 发布 GPT-Live 全双工语音模型，ChatGPT 语音体验大升级</div>
+                <div class="article-source"><a href="https://x.com/OpenAI/status/2074907025537224840" target="_blank">OpenAI X · 2026-07-09</a></div>
+                <div class="article-body">OpenAI 发布全新语音模型 GPT-Live，采用原生全双工架构，可同时听和说，支持打断、停顿理解、实时翻译和听写。后台可无缝调用 GPT-5.5 等模型完成复杂推理和联网搜索。已在 iOS/Android/Web 全端推送，API 版本即将开放候补。</div>
+                <div class="article-commentary">全双工加后台调度推理引擎，语音不再是辅助功能而是 AI 交互的统一入口，开发者值得重新评估语音产品策略。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">DeepSeek 被曝秘密自研推理芯片，一年前已启动</div>
+                <div class="article-source"><a href="https://www.qbitai.com/2026/07/445883.html" target="_blank">路透社 / 量子位 · 2026-07-08</a></div>
+                <div class="article-body">路透社援引知情人士报道称，DeepSeek 一年前启动 AI 推理芯片自研项目，已与芯片设计公司、晶圆代工厂和存储器供应商接洽。芯片定位推理专用而非训练，旨在降低对英伟达和华为等外部供应商的依赖。该项目由 6 月完成的 510 亿元融资支撑。</div>
+                <div class="article-commentary">推理专用芯片意味着把单 token 成本打到极致，DeepSeek 正在从「卷模型」走向「卷算力成本」，这是中国 AI 公司向产业链上游延伸的标志性信号。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">微软开始在 Copilot 等产品中用自研 MAI 模型替代 OpenAI</div>
+            <div class="article-source"><a href="https://readhub.cn/topic/8uZqX6Oqmwd" target="_blank">Readhub · 2026-07-09</a></div>
+            <div class="article-body dropcap">微软正以自研 MAI 模型取代 Excel、Outlook、GitHub Copilot 中依赖的 OpenAI 和 Anthropic 模型，目前已在上述产品承担数万周度 AI 任务。微软 AI 模型负责人称正减少 Anthropic 模型支出，未来数月自研转录模型将应用于 Teams。</div>
+            <div class="article-commentary">OpenAI 最大金主开始自研替代，虽然量小但方向明确：当模型能力趋同，云厂商的算力成本优势将主导定价权，对纯 API 公司是长期压力。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">工信部发布 Claude Code 安全后门风险提示</div>
+                <div class="article-source"><a href="https://x.com/xiaohu/status/2074736623284256881" target="_blank">工信部 / 大黑AI速报 · 2026-07-08</a></div>
+                <div class="article-body">工信部公告称 Claude Code 2.1.91 至 2.1.196 版本内置监控机制，未经同意回传敏感信息，建议立即卸载或升级至安全版本。这是首次有国家级机构针对 AI 编程工具发出安全警告。</div>
+                <div class="article-commentary">安全审查首次直指开发者工具链，使用 Claude Code 的团队需立即排查版本，AI 编程工具的供应链安全问题已无法忽视。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Cognition 发布 SWE-1.7 编程 Agent 模型，1000 token/s 且成本极低</div>
+                <div class="article-source"><a href="https://x.com/cognition/status/2074882968770728416" target="_blank">Cognition X · 2026-07-09</a></div>
+                <div class="article-body">Cognition 发布编程 Agent 模型 SWE-1.7，在 Agent 任务上接近前沿水平但成本远低。高速版 SWE-1.7 Lightning 推理速度达 1000 token/s，对所有付费用户免费一个月。已上线 Devin 全平台。</div>
+                <div class="article-commentary">1000 token/s 加极低成本，编程 Agent 的性能价格比被重新定义，中小团队获得接近前沿编程能力的门槛大幅降低。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">OpenAI 前研究员田永龙加入腾讯，主导混元多模态研发</div>
+            <div class="article-source"><a href="https://readhub.cn/topic/8uabfpfUfE9" target="_blank">Readhub · 2026-07-09</a></div>
+            <div class="article-body dropcap">OpenAI 前研究员田永龙近期加入腾讯，出任混元多模态模型方向负责人，主导视觉语言模型研发。田永龙是计算机视觉领域顶尖人才，曾与腾讯首席 AI 科学家姚顺雨在 OpenAI 共事。</div>
+            <div class="article-commentary">腾讯从 OpenAI 挖多模态负责人，说明视觉语言模型已成大厂必争之地，多模态能力正从加分项变为基础设施。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-07-09</em>
+        </div>
+    </div>
+</body>
+</html>
