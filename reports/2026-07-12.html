@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-07-12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>50</em> &middot; No. <em>50</em></span>
+                <span>Sunday, July 12, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-07-11.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">Agent「删光」用户硬盘敲响安全警钟；GPT-5.6 在医疗和数学连创佳绩；具身智能从手术台到基础模型全面加速。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘</div>
+            <div class="article-source"><a href="https://x.com/AYi_AInotes/status/2075761215251312722" target="_blank">X · 阿易 AI Notes · 07-11</a></div>
+            <div class="article-body dropcap">Matt Shumer 在本地 Agent 开启 Full Access，让 subagent 执行文件清理任务时，shell 变量 $HOME 路径解析错误，Agent 直接执行 rm -rf /Users/mattsdevbox，导致数年代码、文件、照片全部丢失。</div>
+            <div class="article-commentary">Agent 自主执行 rm -rf 不是 Bug，是 AI 权限管理的结构性缺陷——每个给 AI 开 Full Access 的人都该警醒。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Claude Fable 5 用 11 天写超 100 万行代码，Rust 重构 JavaScript 运行时 Bun</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/975/469.htm" target="_blank">IT之家 · 07-11</a></div>
+                <div class="article-body">开发者 Jarred Sumner 借助 Claude Fable 5，64 个实例并行，11 天将 Bun 从 Zig 重写为 Rust，编写超 100 万行代码，API 费用约 16.5 万美元。Bun v1.4.0 Canary 版已发布，修复 128 个 Bug。</div>
+                <div class="article-commentary">单次任务花 16.5 万美元 API 费用产出百万行代码——AI 编程正从「辅助」跨入「主力交付」阶段。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">OpenAI 发布 GPT-5.6 系列医疗评估结果</div>
+                <div class="article-source"><a href="https://x.com/sama/status/2075985056846451123" target="_blank">X · Sam Altman · 07-11</a></div>
+                <div class="article-body">最小变体 GPT-5.6 Luna 在最低推理强度下即超越最高推理强度的 GPT-5.5，且成本低 25 倍；最大变体 GPT-5.6 Sol 树立新标杆。评估覆盖患者端与临床端 20000 余案例，由专科医生盲评五维度。</div>
+                <div class="article-commentary">最小变体就超越上一代旗舰且成本降 25 倍——AI 医疗的门槛正在塌方式下降，中小机构入场窗口正在打开。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">宇树 G1 人形机器人完成首例活体微创手术</div>
+            <div class="article-source"><a href="https://x.com/thexpin/status/2075640168896516139" target="_blank">X · X.PIN · 07-10</a></div>
+            <div class="article-body dropcap">《自然》论文展示宇树 G1 人形机器人执行首例活体标准微创手术，加州大学圣地亚哥团队用 G1 对两只活猪完成腹腔镜胆囊切除术，第二台耗时 32 分钟。成本可能仅达芬奇系统的约 5%，但目前仍无法满足无菌标准。</div>
+            <div class="article-commentary">成本仅达芬奇系统的 5%，虽不满足无菌标准，但人形机器人闯进手术室的速度远超所有人预期。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">苹果起诉 OpenAI 窃取商业机密开发 AI 硬件</div>
+                <div class="article-source"><a href="https://x.com/dotey/status/2075712647723397452" target="_blank">X · 宝玉 · 07-10</a></div>
+                <div class="article-body">苹果在加州北区联邦地方法院起诉 OpenAI，指控系统性窃取商业机密用于 AI 硬件开发。被告包括前苹果产品设计副总裁 Tang Tan（任职苹果 24 年）、前高级系统电气工程师 Chang Liu，以及 Jony Ive 联合创立的 io Products。</div>
+                <div class="article-commentary">前苹果高管带机密投奔 OpenAI 做硬件——AI 硬件赛道的人才争夺已从挖角升级为法律战。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">OpenAI 论文：GPT-5.6 Sol Ultra 证明图论「循环双覆盖猜想」</div>
+                <div class="article-source"><a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf" target="_blank">Hacker News · 07-10</a></div>
+                <div class="article-body">OpenAI 发布论文称 GPT-5.6 Sol Ultra 证明了图论中悬而未决的「循环双覆盖猜想」，即每个无桥无向图都存在一组环使每条边恰好被覆盖两次。证明利用 8-流定理和 Tutte 结果完成，论文借助 Codex 撰写。</div>
+                <div class="article-commentary">悬置多年的图论猜想被 AI 拿下——数学证明正成为检验 AI 深度推理能力的新试金石。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">蚂蚁集团 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型</div>
+                <div class="article-source"><a href="https://www.marktechpost.com/2026/07/11/ant-groups-robbyant-unveils-lingbot-va-2-0" target="_blank">MarkTechPost · 07-11</a></div>
+                <div class="article-body">LingBot-VA 2.0 采用因果 DiT 架构，视频专家约 13B 参数（1.9B 激活），引入多块预测实现 2.3 倍训练加速，前瞻推理将延迟降至 142ms/chunk，在 RoboTwin 2.0 的 5 项基准测试中领先。</div>
+                <div class="article-commentary">因果 DiT + 142ms 推理延迟，中国团队在具身基础模型上打出了区别于纯 VLA 的技术路线。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">研究：博科圣地已系统化使用 ChatGPT、Claude 等主流 AI 用于袭击策划</div>
+                <div class="article-source"><a href="https://the-decoder.com/terrorist-groups-are-using-every-major-ai-chatbot-for-attack-planning-and-weapons-development" target="_blank">The Decoder · 07-11</a></div>
+                <div class="article-body">剑桥大学 CASP 对 27 名前成员的 57 次访谈显示，博科圣地两大派系均设立专门 AI 部门，使用 ChatGPT、Claude、Gemini、Grok 等辅助袭击策划、爆炸装置设计和武器维护，ISIS 自 2023 年起提供提示工程和越狱培训。</div>
+                <div class="article-commentary">恐怖组织已设专门 AI 部门、搞越狱培训——AI 安全不再是论文里的假设，而是正在发生的现实威胁。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-07-12</em>
+        </div>
+    </div>
+</body>
+</html>
