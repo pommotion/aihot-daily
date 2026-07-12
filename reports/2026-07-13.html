@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-07-13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>51</em> &middot; No. <em>51</em></span>
+                <span>Monday, July 13, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-07-12.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天AI从两个方向同时突破边界：GPT-5.6 Sol一小时证明50年图论猜想展示科研能力，而苹果诉OpenAI窃密、纳德拉警告企业知识外泄，揭示产业暗战正同步升级。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想</div>
+            <div class="article-source"><a href="https://www.ithome.com/0/975/646.htm" target="_blank">IT之家 · 2026-07-12</a></div>
+            <div class="article-body dropcap">OpenAI 宣布 GPT-5.6 Sol Ultra 在不到一小时内生成了图论难题「循环双覆盖猜想」的完整证明。该猜想由 Szekeres 和 Seymour 于 1970 年代提出，悬而未决超 50 年。模型调用 64 个并行子智能体及对抗智能体，在 8 小时计算预算内仅用约 1 小时完成。OpenAI 已将证明及提示词以 PDF 发布。</div>
+            <div class="article-commentary">并行子智能体加对抗验证，AI从辅助工具变成研究主体——但生成证明和通过同行评审之间还有距离。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">腾讯混元发布 Hy3：295B MoE 架构，Agent 向定位，已接入微信 10 亿用户</div>
+                <div class="article-source"><a href="https://x.com/AYi_AInotes/status/2076341952023310580" target="_blank">X · 2026-07-12</a></div>
+                <div class="article-body">腾讯混元 Hy3 采用 295B 总参数、21B 激活参数的 MoE 架构，推理效率可打平 2-5 倍规模的旗舰模型。定位 Agent 向 LLM，内部 WorkBuddy 任务成功率从 72% 升至 90%，耗时降 34%。已集成至微信服务 10 亿+ 用户，实测 coding、办公、复杂规划表现突出，纯视觉为短板。</div>
+                <div class="article-commentary">押注执行力比智商重要的路线，背靠微信10亿用户跑真实场景——实测数据才是真壁垒。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">纳德拉提出「反向信息悖论」：企业用AI等于免费喂养模型厂商</div>
+                <div class="article-source"><a href="https://x.com/satyanadella/status/2076323181154230284" target="_blank">X · 2026-07-12</a></div>
+                <div class="article-body">微软 CEO 纳德拉提出「反向信息悖论」：企业用AI时暴露的提示词、工具使用、纠正反馈等「智力废气」被模型学习，信息不对称向卖方倾斜。他呼吁企业建立信任边界，保留组织记忆所有权，有权用模型输出微调自有模型，控制自身学习循环。</div>
+                <div class="article-commentary">用AI等于免费给模型厂商喂知识，企业智力废气被对手吸收。纳德拉喊话：要么建边界，要么看着核心能力流失。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">OpenAI 发布 GPT-5.6 医疗评估：最小变体 Luna 用 1/25 成本碾压上代旗舰</div>
+            <div class="article-source"><a href="https://x.com/sama/status/2075985056846451123" target="_blank">X · 2026-07-12</a></div>
+            <div class="article-body dropcap">OpenAI 发布 GPT-5.6 系列医疗评估结果。最小变体 Luna 在最低推理强度下即超越最高推理强度的 GPT-5.5，成本低 25 倍；最大变体 Sol 树立新标杆。评估涵盖患者端与临床端任务，由专科医生盲评，基于准确性、沟通、完整性等五维度，共 20000 次比较。</div>
+            <div class="article-commentary">性价比曲线正在变陡，医疗落地不是等最强模型，而是等便宜到敢批量部署的那一天。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">苹果起诉 OpenAI 挖角窃密：400名员工跳槽，前工程师漏洞访问内网成关键</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/975/634.htm" target="_blank">IT之家 · 2026-07-12</a></div>
+                <div class="article-body">苹果在美国起诉 OpenAI，指控前工程师 Chang Liu 离职时带走 MacBook 并利用软件漏洞持续访问苹果内网获取机密。超 400 名苹果员工跳槽至 OpenAI，苹果称 OpenAI 试图复制 iPhone 产品研发体系。分析师认为即使指控无法证实，OpenAI 硬件计划仍可能受拖累。</div>
+                <div class="article-commentary">400人跳槽加窃密指控，硅谷最大人才战争公开化。这不是法律纠纷，是两个万亿帝国对消费级AI入口的生死争夺。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史，含 .env 密钥明文</div>
+                <div class="article-source"><a href="https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547" target="_blank">Hacker News · 2026-07-12</a></div>
+                <div class="article-body">对 xAI 官方 Grok Build 编码 CLI 的网络流量分析显示，该工具向 xAI 发送三类数据：读取的文件内容（含 .env 密钥）以明文通过 POST 传输、整个仓库全部文件打包上传、完整 git 历史。所有数据上传后获 HTTP 200 确认。</div>
+                <div class="article-commentary">.env密钥明文上传、整个仓库打包发回——CLI工具的便利性背后是零隐私。选工具先看它发什么数据。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">Codex 与 ChatGPT Work 取消 5 小时使用限制，活跃用户达 600 万</div>
+            <div class="article-source"><a href="https://x.com/thsottiaux/status/2076365965915467978" target="_blank">X · 2026-07-12</a></div>
+            <div class="article-body dropcap">OpenAI 暂时取消所有 Plus、Business 和 Pro 计划的 5 小时使用限制，同时推出变更使 GPT 5.6 Sol 整体更高效以降低使用量消耗。ChatGPT Work 活跃用户已达 600 万。GPT 5.6 Sol 的具体效率提升待量化后公布。</div>
+            <div class="article-commentary">取消用量限制加600万活跃用户，OpenAI用无限量换市场份额。烧钱换增长的剧本，重点是能烧多久。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-07-13</em>
+        </div>
+    </div>
+</body>
+</html>
