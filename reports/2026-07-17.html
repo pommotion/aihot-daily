@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-07-17</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>55</em> &middot; No. <em>55</em></span>
+                <span>Friday, July 17, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-07-16.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">AI 从治理到落地全面提速：中国牵头的国际 AI 组织在上海成立，Anthropic 用 Claude Code 两周完成百万行代码迁移，Claude Fable 5 剑指复杂异步任务。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">世界人工智能合作组织协定签署仪式在上海举行，总部设中国上海</div>
+            <div class="article-source"><a href="https://www.ithome.com/0/977/793.htm" target="_blank">IT之家 · 2026-07-16</a></div>
+            <div class="article-body dropcap">7月16日，世界人工智能合作组织协定签署仪式在上海举行，外交部长王毅代表中国签署。该组织为独立政府间国际组织，总部设上海，旨在促进AI国际合作与全球治理。哈萨克斯坦、老挝、巴基斯坦等29国成为创始成员。</div>
+            <div class="article-commentary">29国创始、总部落上海，中国在AI全球治理中从参与者变为规则制定者。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Anthropic 用 Claude Code 大规模迁移代码：Bun 百万行 Zig 转 Rust，两周完成</div>
+                <div class="article-source"><a href="https://claude.com/blog/ai-code-migration" target="_blank">Claude Blog · 2026-07-16</a></div>
+                <div class="article-body">Anthropic 工程师用 Claude Code 两周内将 Bun 的百万行 Zig 代码迁移至 Rust，100%现有测试通过。迁移消耗约16.5万美元API成本，但编译时间从八分钟降至两秒，二进制启动快6倍。另一工程师用周末将Python代码库迁移至16.5万行TypeScript。</div>
+                <div class="article-commentary">百万行迁移两周完成且测试全过，AI编程从辅助走向主力交付，但16万美元成本说明规模化仍有价格门槛。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Anthropic 发布最强通用模型 Claude Fable 5，专为复杂异步工作设计</div>
+                <div class="article-source"><a href="https://claude.com/blog/working-with-claude-fable-5-in-claude-cowork" target="_blank">Claude Blog · 2026-07-16</a></div>
+                <div class="article-body">Anthropic 发布 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。该模型需手动选择，默认模型仍为 Claude Sonnet 5。</div>
+                <div class="article-commentary">专为长时间异步任务设计，Anthropic 在押注 AI 自主完成复杂工作流这条赛道，不再满足于对话式交互。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">欧盟裁定 Google 必须向竞争对手开放 Android 和 Search，影响 Gemini 等 AI 服务</div>
+            <div class="article-source"><a href="https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma" target="_blank">The Verge · 2026-07-16</a></div>
+            <div class="article-body dropcap">欧盟依据《数字市场法案》裁定 Google 必须向竞争对手开放 Android 和 Google Search 的关键部分，包括允许第三方AI助手和搜索引擎获得更大访问权限。两项决定可能削弱 Google 对核心平台的控制，并为 Gemini 未来格局带来深远影响。</div>
+            <div class="article-commentary">被迫开放平台，Gemini 护城河被监管拆解，AI竞争格局从技术驱动转向政策驱动。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">台积电上调2026年资本支出预测至600~640亿美元，A14制程进展顺利</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/977/544.htm" target="_blank">IT之家 · 2026-07-16</a></div>
+                <div class="article-body">台积电在Q2财报会上将2026年资本支出预测上调至600~640亿美元，此前预测约560亿。董事长魏哲家表示预计2028年量产的A14制程（1.4nm）开发进展顺利，将成为比2nm更大、更持久的工艺。台积电预计2026全年美元收入增幅超40%。</div>
+                <div class="article-commentary">600亿美元扩产加A14顺利推进，算力供给端在提前押注2028年前的需求爆发。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">54%企业已遭遇AI智能体安全事件，多数仍共享凭证</div>
+                <div class="article-source"><a href="https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials" target="_blank">VentureBeat · 2026-07-16</a></div>
+                <div class="article-body">VentureBeat调查107家企业发现，54%已遭遇AI智能体安全事件。仅32%为每个智能体分配独立凭证，30%将高风险智能体隔离在沙箱中。安全工具主要依赖模型提供商原生方案，专用智能体安全产品渗透率极低。</div>
+                <div class="article-commentary">过半企业已出事却仍共享凭证，安全投入远落后于部署速度，第一波Agent安全事故潮正在到来。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">Thinking Machines 发布多模态模型 Inkling，开放完整权重</div>
+            <div class="article-source"><a href="https://x.com/thinkymachines/status/2077454609551921208" target="_blank">Thinking Machines · 2026-07-15</a></div>
+            <div class="article-body dropcap">Mira Murati 创办的 Thinking Machines 发布首个公开模型 Inkling，能高效处理文本、图像和音频多模态推理，开放完整权重，即日起可在 Tinker 平台微调，并在 Inkling Playground 中试用。</div>
+            <div class="article-commentary">首个公开模型即开源完整权重，Mira Murati 在闭源大厂围攻下走开放加可微调的差异化路线。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-07-17</em>
+        </div>
+    </div>
+</body>
+</html>
