@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-07-23</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>62</em> &middot; No. <em>62</em></span>
+                <span>Thursday, July 23, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-07-22.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">Alphabet财报验证AI商业化闭环，OpenAI算力预算飙至7500亿美元，Anthropic以15亿和解金巨资买断版权风险——AI行业在增长、烧钱、合规三条线上同时加速。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Alphabet Q2：AI 投资推动营收增长 24%，Gemini 月活达 9.5 亿</div>
+            <div class="article-source"><a href="https://x.com/sundarpichai/status/2080021408856293584" target="_blank">Sundar Pichai · 2026-07-22</a></div>
+            <div class="article-body dropcap">Alphabet Q2财报显示AI投资推动营收同比增长24%，Gemini月活用户达9.5亿，AI对广告和云业务的正向拉动已清晰可见，搜索、YouTube、云全线受益。</div>
+            <div class="article-commentary">AI从成本中心变成收入引擎，Google是第一家交出明确商业化答卷的巨头，其他大厂该紧张了。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 拟投资 200 亿美元建数据中心，2030 年算力支出预期上调至近 7500 亿美元</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/980/322.htm" target="_blank">IT之家 · 2026-07-22</a></div>
+                <div class="article-body">OpenAI计划投资200亿美元在美新建数据中心，并将2030年算力支出预期上调至近7500亿美元，远超此前市场预期，算力军备竞赛持续升级。</div>
+                <div class="article-commentary">7500亿美元超过多数国家年度IT预算，OpenAI在用真金白银告诉世界：AGI的入场券是天文数字。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Anthropic 因盗版书籍支付 15 亿美元和解金，创 AI 版权集体诉讼纪录</div>
+                <div class="article-source"><a href="https://the-decoder.com/anthropics-1-5b-piracy-settlement-with-book-authors-is-a-record-loss-that-hands-ai-labs-their-biggest-legal-win" target="_blank">The Decoder · 2026-07-22</a></div>
+                <div class="article-body">Anthropic因使用盗版书籍训练模型，同意支付15亿美元和解金，创下AI版权集体诉讼最高赔偿纪录。但和解协议同时为已训练模型提供了法律确定性。</div>
+                <div class="article-commentary">表面是赔偿，实质是花钱买断版权不确定性——15亿看似天价，但比逐本谈判和模型重训的代价小得多。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">AMD 投资 50 亿美元，Anthropic 采购 2GW GPU 算力</div>
+            <div class="article-source"><a href="https://x.com/SemiAnalysis_/status/2079929602429141215" target="_blank">SemiAnalysis · 2026-07-22</a></div>
+            <div class="article-body dropcap">AMD宣布向AI基础设施投资50亿美元，同时Anthropic签署2GW GPU采购协议，训练算力需求持续膨胀，AMD正面挑战英伟达在AI芯片市场的地位。</div>
+            <div class="article-commentary">2GW电力相当于一座中型核电站，Anthropic在为下一代超大规模模型做基建准备，AMD则在用资本换生态。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">OpenAI 在 ChatGPT 中正式推出广告服务</div>
+                <div class="article-source"><a href="https://ads.openai.com/" target="_blank">OpenAI · 2026-07-21</a></div>
+                <div class="article-body">OpenAI在ChatGPT中正式推出广告服务，免费用户将在对话中看到AI生成的广告内容，标志着ChatGPT从纯订阅模式走向广告变现。</div>
+                <div class="article-commentary">ChatGPT从订阅走向广告，免费用户正式成为产品——AI时代的商业模式正在定型，跟搜索引擎当年的路径如出一辙。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Cursor 发布智能模型路由系统 Cursor Router</div>
+                <div class="article-source"><a href="https://cursor.com/blog/router" target="_blank">Cursor · 2026-07-22</a></div>
+                <div class="article-body">Cursor发布智能模型路由系统，可根据任务类型自动选择最优模型，在质量、速度和成本之间动态平衡，降低开发者的模型选择成本。</div>
+                <div class="article-commentary">模型路由从实验室走进产品，普通开发者不用再手动在Claude和GPT之间纠结——AI编程工具的下一个竞争维度是调度能力。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">GigaToken 发布：分词速度提升 1000 倍，可无缝替代 HuggingFace Tokenizers</div>
+                <div class="article-source"><a href="https://github.com/marcelroed/gigatoken" target="_blank">GitHub · 2026-07-22</a></div>
+                <div class="article-body">开源项目GigaToken发布，tokenization速度比HuggingFace Tokenizers快约1000倍，可无缝替换现有分词器，大幅降低推理预处理延迟。</div>
+                <div class="article-commentary">分词是推理的隐形瓶颈，1000倍提速意味着端侧推理和实时应用的延迟门槛大幅降低，关注边缘部署的团队该试试。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">小红书开源 BigMac：多模态大模型训练新范式</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s/tNJARtn1jIayL5URg87Row" target="_blank">小红书技术 · 2026-07-22</a></div>
+                <div class="article-body">小红书开源多模态大模型训练框架BigMac，提出新的训练范式降低多模态模型训练门槛，利用其内容生态数据优势构建差异化能力。</div>
+                <div class="article-commentary">中国互联网公司持续加码多模态开源，小红书的内容生态数据是其独特壁垒——社区数据+开源模型是个值得关注的组合。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-07-23</em>
+        </div>
+    </div>
+</body>
+</html>
