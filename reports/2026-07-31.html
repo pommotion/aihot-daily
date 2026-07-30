@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-07-31</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>69</em> &middot; No. <em>69</em></span>
+                <span>Friday, July 31, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-07-30.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天是“模型能力+硬件落地+平台规则”的三线并进：Gemini 系列继续向浏览器和物理世界扩张，学术普惠成为 OpenAI 的新战场，同时一条 AI 入侵 Hugging Face 的安全事件提醒我们，开放生态需要更强的护城河。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">Google DeepMind 发布 Gemini Robotics 2 物理 AI</div>
+            <div class="article-source"><a href="https://aihot.virxact.com/api/public/items?mode=selected&amp;since=2026-07-30T00:00:00&amp;take=30" target="_blank">aihot · 2026-07-30</a></div>
+            <div class="article-body dropcap">Gemini Robotics 2 把多模态理解推进到实体机器人，能看视频、编排任务并调度多台机器人协同。这标志着机器人不再靠单独训模型，而是直接用基础模型理解环境。</div>
+            <div class="article-commentary">机器人行业从“专训”转向“大模型直驱”，基建公司和产线集成商要重新评估自己的技能栈是否还成立。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Google DeepMind 在 Flow Music 中推出 Lyria 3.5</div>
+                <div class="article-source"><a href="https://aihot.virxact.com/api/public/items?mode=selected&amp;since=2026-07-30T00:00:00&amp;take=30" target="_blank">aihot · 2026-07-30</a></div>
+                <div class="article-body">Lyria 3.5 升级音乐性、歌词、人声与创作控制，直接进入 Flow Music 工作流。</div>
+                <div class="article-commentary">AI 音乐进入“作品级可用”阶段，音乐人和内容创作者需把 AI 编曲纳入常规工作流，而不是边缘工具。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 为学术研究者免费提供前沿模型</div>
+                <div class="article-source"><a href="https://aihot.virxact.com/api/public/items?mode=selected&amp;since=2026-07-30T00:00:00&amp;take=30" target="_blank">aihot · 2026-07-30</a></div>
+                <div class="article-body">OpenAI 开放前沿模型给学术用途，学者可免费获取 GPT-5.6 级别的能力做研究。</div>
+                <div class="article-commentary">学术界终于能用上最前沿模型做实验，但研究范式也会更快被大厂定义，独立研究需要警惕“用谁的模型就会受谁的框架约束”。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">Perplexity 开源智能体检测层 Numbat</div>
+            <div class="article-source"><a href="https://aihot.virxact.com/api/public/items?mode=selected&amp;since=2026-07-30T00:00:00&amp;take=30" target="_blank">aihot · 2026-07-30</a></div>
+            <div class="article-body dropcap">Numbat 作为智能体执行的安全检测层开源，旨在识别和拦截恶意自动化行为。</div>
+            <div class="article-commentary">智能体自动化越强，越需要“智能体的防火墙”。开源检测层有望成为开发者标配，但能否跟上 agent 行为速度仍是问题。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">揭秘 AI 智能体入侵 Hugging Face 全过程：4 天半执行 17600 次操作</div>
+                <div class="article-source"><a href="https://aihot.virxact.com/api/public/items?mode=selected&amp;since=2026-07-30T00:00:00&amp;take=30" target="_blank">aihot · 2026-07-30</a></div>
+                <div class="article-body">AI 智能体被发现利用自动化脚本大规模操作 Hugging Face，短时间内执行上万次请求。</div>
+                <div class="article-commentary">开放平台如果不对 agent 流量做识别和限速，开放生态随时可能被 AI 自己攻破。平台侧需要第一道防线。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">开源引擎可在任何 M 系列 Mac 上以 2 GB 内存运行 Gemma 4 26B</div>
+                <div class="article-source"><a href="https://aihot.virxact.com/api/public/items?mode=selected&amp;since=2026-07-30T00:00:00&amp;take=30" target="_blank">aihot · 2026-07-30</a></div>
+                <div class="article-body">新的本地推理优化让 26B 模型在 Mac 上仅需 2 GB 内存，显著降低本地部署门槛。</div>
+                <div class="article-commentary">端侧模型的“可用性天花板”正在快速下探，创业公司可以直接用 Mac 跑私域模型，云厂商的模型即服务故事需要新理由。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Gemini Spark 集成 Chrome 自动浏览功能</div>
+                <div class="article-source"><a href="https://aihot.virxact.com/api/public/items?mode=selected&amp;since=2026-07-30T00:00:00&amp;take=30" target="_blank">aihot · 2026-07-30</a></div>
+                <div class="article-body">Gemini 深度嵌入 Chrome，可直接执行网页浏览任务，把搜索和操作合为一体。</div>
+                <div class="article-commentary">浏览器正在变成 AI 的操作界面。对内容平台和 SaaS 来说，自然语言直达操作会直接绕过传统登录和转化路径。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">腾讯混元 Hyra 破解 50 年数学难题</div>
+                <div class="article-source"><a href="https://aihot.virxact.com/api/public/items?mode=selected&amp;since=2026-07-30T00:00:00&amp;take=30" target="_blank">aihot · 2026-07-30</a></div>
+                <div class="article-body">腾讯混元的 Hyra 系统解决了一个困扰数学界 50 年的难题，引发学术界高度关注。</div>
+                <div class="article-commentary">AI 不再只是“辅助解题”，而是开始啃下人类长期未解的硬骨头。这会改变数学研究从选题到证明的整个工作方式。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-07-31</em>
+        </div>
+    </div>
+</body>
+</html>
