@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-08-04</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>74</em> &middot; No. <em>74</em></span>
+                <span>Tuesday, August 4, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-08-03.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">开源大模型进入2.4T参数时代，欧盟AI法案合规大幕拉开，从模型能力到智能体基础设施，AI产业化加速的今日缩影。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">Qwen3.8-Max 发布：开源最强编码与协作模型，2.4T参数</div>
+            <div class="article-source"><a href="https://qwen.ai/blog?id=qwen3.8" target="_blank">Qwen Blog · 2026-08-04</a></div>
+            <div class="article-body dropcap">Qwen 正式发布 Qwen3.8-Max，这是 Qwen 家族迄今最强的模型，拥有 2.4T 参数（95B 激活），并首次开源 Qwen-Max 级权重，开放权重将于下周发布。</div>
+            <div class="article-commentary">开源模型首次触及闭源顶级权重，Qwen-Max 级开放意味着独立开发者和中小团队也能用极低成本部署生产级编码智能体。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">欧盟《人工智能法案》透明度规则生效，违规最高罚1500万欧元</div>
+                <div class="article-source"><a href="https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes" target="_blank">The Verge · 2026-08-04</a></div>
+                <div class="article-body">欧盟《人工智能法案》下的新透明度义务于8月2日生效，要求公司披露用户何时与 AI 模型互动，并为合成音视频和文本添加机器可读标记。</div>
+                <div class="article-commentary">全球首个 AI 强制披露制度落地，所有面向欧盟用户的产品必须在交互界面标注 AI 身份，不合规即面临巨额罚款，出海团队今天就要改。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">GPT-Live 实时音频新架构发布</div>
+                <div class="article-source"><a href="https://x.com/gdb/status/2084405421041963356" target="_blank">X: Greg Brockman · 2026-08-04</a></div>
+                <div class="article-body">GPT-Live 是一种用于实时音频的新架构和栈，支持在说话的同时聆听。OpenAI 从客户端到模型重建了语音栈，让 ChatGPT 规模下的实时音频交互变得自然。</div>
+                <div class="article-commentary">语音交互从「说完再听」进化到「边说边听」，GPT-Live 把全双工实时音频推向大众产品，电话、会议、陪伴场景将被重新定义。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">Cloudflare 推出 @cloudflare/computer：智能体虚拟文件系统与多执行环境</div>
+            <div class="article-source"><a href="https://blog.cloudflare.com/cloudflare-computer" target="_blank">Cloudflare Blog · 2026-08-04</a></div>
+            <div class="article-body dropcap">Cloudflare 发布 @cloudflare/computer 早期预览版，为每个智能体提供虚拟文件系统，并支持在 isolate、容器沙箱或浏览器中执行代码。</div>
+            <div class="article-commentary">智能体终于有了「电脑」。Cloudflare 把文件系统+多环境执行打包成基础设施，Agent 开发者不用从零搭建沙箱，专注业务逻辑即可。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">微软开源 Orchard 智能体训练框架</div>
+                <div class="article-source"><a href="https://x.com/MSFTResearch/status/2084364547142418722" target="_blank">X: Microsoft Research · 2026-08-04</a></div>
+                <div class="article-body">Orchard 是一个面向研究社区的开源框架，用于跨任务类型训练和评估 AI 智能体，支持较小模型也能实现强劲性能。</div>
+                <div class="article-commentary">Agent 训练长期分散在各家实验室，Orchard 把数据-训练-评估统一成标准流水线，小模型也能跑基准，Agent 研究终于有了共同语言。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Claude Code 连接器可复用至 Artifacts</div>
+                <div class="article-source"><a href="https://x.com/trq212/status/2084387303959740449" target="_blank">X: Thariq · 2026-08-04</a></div>
+                <div class="article-body">连接了 Claude 连接器（如 Gmail、日历、Slack 等）后，Claude Code 也能使用它们，包括在 Artifacts 中。</div>
+                <div class="article-commentary">Anthropic 生态打通了：Claude 桌面端连接器的权限自动延伸到 Code 和 Artifacts，一次接入多处复用，开发者不用再为每个产品单独授权。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">AirLLM 实现单块 4GB GPU 运行 70B 模型推理</div>
+            <div class="article-source"><a href="https://github.com/lyogavin/airllm" target="_blank">Hacker News · 2026-08-04</a></div>
+            <div class="article-body dropcap">AirLLM 项目支持在单块 4GB 显存 GPU 上运行 70B 参数大模型推理，无需多卡或大规模显存配置，已在 Hacker News 获 103 点热度。</div>
+            <div class="article-commentary">70B 推理从「多卡集群」变成「一张亮机卡」。4GB 显存跑 70B 意味着个人开发者本地部署生产级模型的成本降到近乎零。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-08-04</em>
+        </div>
+    </div>
+</body>
+</html>
