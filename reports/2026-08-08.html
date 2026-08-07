@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-08-08</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>78</em> &middot; No. <em>78</em></span>
+                <span>Saturday, August 8, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-08-07.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">OpenAI 首个「关键」级网络安全模型被迫延缓发布，能力越界处安全开始踩刹车；另一边开源模型、统一插件规范与视频长叙事齐头并进，行业在安全与速度之间重新校准。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">OpenAI：因网络安全风险，延缓 Astra 模型发布，列为首个「关键」风险模型</div>
+            <div class="article-source"><a href="https://www.ithome.com/0/987/221.htm" target="_blank">IT之家 · 8月8日</a></div>
+            <div class="article-body dropcap">OpenAI 内部评估显示，Astra 在智能体编程与网络安全领域取得重大突破，按《准备框架》被列为首个网络安全「关键」风险级别模型——可无干预挖掘零日漏洞、自主发起端到端攻击。OpenAI 已暂停相关活动、实施隔离测试与权重加密，与政府机构联合测试后另行发布。</div>
+            <div class="article-commentary">能力最强处恰是最危险处，首个「关键」评级意味着前沿模型已逼近自主攻击红线，安全合规正在成为发布节奏的硬约束。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Agent Plugins 1.0.0 发布：谷歌、亚马逊、微软等支持的统一智能体插件规范</div>
+                <div class="article-source"><a href="https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more" target="_blank">Google Developers Blog · 8月8日</a></div>
+                <div class="article-body">Google 发布 Agent Plugins 1.0.0，一个由谷歌、亚马逊、微软等共同支持的开源智能体插件规范，用于把 skills、tools 等能力打包成标准格式跨平台复用。若被广泛采纳，将终结各家智能体「各说各话」的碎片化局面。</div>
+                <div class="article-commentary">巨头罕见联手定义插件标准，复制浏览器插件生态的路径——智能体互操作一旦成势，独立开发者的插件市场将迎来爆发。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">蚂蚁百灵开源 Ling-3.0-flash：124B 总参数 MoE 模型</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw%3D%3D&amp;mid=2247487457&amp;idx=1&amp;sn=24ad4a355d81291e53fbe680ca987112" target="_blank">蚂蚁百灵公众号 · 8月7日</a></div>
+                <div class="article-body">蚂蚁百灵开源 Ling-3.0-flash，124B 总参数 MoE 架构，同时提供 API、单机与高性能三种部署形态，覆盖从本地推理到生产集群的使用场景，是国产开源模型阵营的最新成员。</div>
+                <div class="article-commentary">124B MoE 走「总参大、激活小」路线，单机可跑意味着中小团队也能落地，国产开源的选择面正在肉眼可见地变宽。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">Seedance 2.5 API 上线，视频生成开启「电影级长叙事」</div>
+            <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzI0NzU1NzI5NQ%3D%3D&amp;mid=2247543416&amp;idx=1&amp;sn=badeafc780a939033a1e4cb0bba4221c" target="_blank">火山引擎公众号 · 8月7日</a></div>
+            <div class="article-body dropcap">火山引擎宣布 Seedance 2.5 API 正式上线，主打电影级长叙事视频生成；同日 Runway、Krea 也宣布接入 Seedance 2.5，其中 Runway 版本支持 50 个角色参考，多角色一致性成为新一轮竞争焦点。</div>
+            <div class="article-commentary">视频生成从「单镜头炫技」转向「长叙事+多角色一致性」，多家平台同一天接入同一模型，说明通用底座已成熟，差异化只能往上层的叙事控制力上找。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">斯坦福与 Arc Institute 用 AI 设计病毒基因组，16 种在实验室成功杀死细菌</div>
+                <div class="article-source"><a href="https://the-decoder.com/stanford-and-arc-institute-scientists-used-ai-to-design-new-viruses-that-killed-bacteria-in-the-lab" target="_blank">The Decoder · 8月8日</a></div>
+                <div class="article-body">斯坦福与 Arc Institute 用基因组大模型 Evo 提出 70 万个候选基因组，合成其中 285 条 DNA 后，16 种产生了能复制的病毒并杀死细菌，部分复制速度超过天然噬菌体。团队刻意未用人类病原体数据训练，但现有生物安全规则并不覆盖纯计算设计。</div>
+                <div class="article-commentary">AI 设计活体首次达到可用级，而监管只盯着实体实验、管不住计算设计——能力先行、规则滞后的缺口，将成为下一轮争议中心。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">腾讯混元开源 HPC-Ops 高性能算子，已集成进 SGLang 主线</div>
+                <div class="article-source"><a href="https://www.lmsys.org/blog/2026-08-07-hpc-ops-sglang" target="_blank">LMSYS Blog · 8月7日</a></div>
+                <div class="article-body">腾讯开源生产级 LLM 推理算子库 HPC-Ops，Attention、Router GEMM、MoE 三算子已合入 SGLang 主线。在其生产环境中，混元 Hy3 的 TPOT 最高下降 48.8%；H20 上 Attention 平均比 FlashInfer/FlashAttention 快 2.25 倍。</div>
+                <div class="article-commentary">推理性能战从模型层下沉到算子层，国产大厂把生产环境验证过的优化反哺开源，SGLang 用户不用换框架就能白捡一轮提速。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">谷歌推出 WeatherNext 气旋模型：AI 高精度预报飓风，平均提前 24 小时</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/986/951.htm" target="_blank">IT之家 · 8月7日</a></div>
+                <div class="article-body">谷歌 DeepMind 联合美国国家飓风中心等机构推出 WeatherNext Cyclones，聚焦台风/飓风的路径、强度与风场预测，平均将预报能力从 2 天推进到 3 天，被形容为「约 10 年气象进展」。模型已开源权重，2025 年曾成功预警飓风梅丽莎登陆。</div>
+                <div class="article-commentary">AI 气象从「跑分好看」进入救灾实战，提前 24 小时对应急撤离是数量级差别；开源权重让各国气象机构能自建预警系统。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Claude Code 会话间可互发消息</div>
+                <div class="article-source"><a href="https://x.com/ClaudeDevs/status/2085817074816070014" target="_blank">X：Claude Devs · 8月8日</a></div>
+                <div class="article-body">Anthropic 为 Claude Code 新增会话间通信能力，多个代理会话可以直接互相发送消息、交接任务与结果，多代理协作从「由编排器统一调度」走向「代理之间直接对话」。</div>
+                <div class="article-commentary">多代理协作从调度模型进化到对话模型，复杂任务可拆给多个会话并行推进、互相验收，开发工作流越来越像一支团队在干活。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-08-08</em>
+        </div>
+    </div>
+</body>
+</html>
