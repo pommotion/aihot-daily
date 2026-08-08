@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-08-09</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>79</em> &middot; No. <em>79</em></span>
+                <span>Sunday, August 9, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-08-08.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">语音指挥电脑的 ChatGPT 上线、Astra 因安全风险紧急刹车、AI 流量反超人类——「agent 接管」与「安全刹车」在同一天踩下。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">OpenAI 桌面端 ChatGPT 上线语音交互，可语音操控电脑执行多步骤任务</div>
+            <div class="article-source"><a href="https://www.ithome.com/0/987/452.htm" target="_blank">IT之家 · 8月9日</a></div>
+            <div class="article-body dropcap">OpenAI 更新 ChatGPT 桌面应用，新增 ChatGPT Voice：基于新的 ChatGPT-Live 语音模型，用户可直接语音指挥 AI 智能体在电脑上执行多步骤任务，支持 ChatGPT Work 和 Codex，可调用计算机操作能力；macOS 上还能通过 Appshots 读取屏幕内容。演示中一句指令即可创建代码线程、提交 PR 并定位 Bug 根因。</div>
+            <div class="article-commentary">语音从「聊天」进化为「操作系统入口」，多步骤 agent 正式落地桌面端，办公与开发场景首当其冲。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 因网络安全风险延缓 Astra 模型发布，列为首个「关键」风险级模型</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/987/221.htm" target="_blank">IT之家 · 8月8日</a></div>
+                <div class="article-body">OpenAI 称尚未发布的 Astra 在智能体编程和网络安全领域取得重大突破，按《准备框架》被列为首个网络安全「关键」风险级别模型——即无需干预即可挖出零日漏洞、或仅凭高层目标自主发起端到端攻击。OpenAI 已采取隔离测试环境、全局监控思维链等措施，并明确 Astra 未参与此前对 Hugging Face 的攻击事件。</div>
+                <div class="article-commentary">模型强到能自主挖零日，安全从合规问题变成发布节奏问题，「关键」分级将重塑各家的上线策略。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Cloudflare：AI 机器人流量已超越人类，五年后人机比或达 1:1000</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/987/438.htm" target="_blank">IT之家 · 8月9日</a></div>
+                <div class="article-body">Cloudflare 数据显示 AI 机器人流量已超过人类流量，预计五年后人类与 AI 机器人的流量比将达到 1:1000，届时人类流量在网络总量中近乎「误差」。</div>
+                <div class="article-commentary">互联网的主导访客正在变成机器人，反爬、验证码与内容生态都将进入「人机倒挂」时代。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">TOOL</div>
+            <div class="article-headline">Claude Code 八月起默认自动模式，会话间可互发消息</div>
+            <div class="article-source"><a href="https://x.com/ClaudeDevs/status/2085794862608318627" target="_blank">X：Claude Devs · 8月8日</a></div>
+            <div class="article-body dropcap">Anthropic 宣布 Claude Code 自八月起默认启用自动模式（auto mode），用户无需再手动切换；同时 Claude Code 会话之间可以互发消息，agent 之间可进行协作接力。</div>
+            <div class="article-commentary">让 agent 自己判断何时该问、何时该干，人机协作的默认关系从「批准制」转向「追认制」。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">DeepMind WeatherNext 飓风模型为预报员争取到额外一天预警时间</div>
+                <div class="article-source"><a href="https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day" target="_blank">Ars Technica · 8月8日</a></div>
+                <div class="article-body">Ars Technica 报道，DeepMind 的 WeatherNext 飓风模型在实际预报中为气象预报员争取到了额外一整天的预警时间，让防灾响应窗口显著拉长。</div>
+                <div class="article-commentary">极端天气下多一天预警就是实打实的生命财产，AI 科学应用的价值第一次如此可量化。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">苹果 Mac 简体中文支持文档更新，「Apple 智能」阿里千问扩展现身</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/987/366.htm" target="_blank">IT之家 · 8月8日</a></div>
+                <div class="article-body">苹果 Mac 简体中文支持文档更新，显示「Apple 智能」将接入阿里千问（Qwen）模型扩展，苹果与阿里在 AI 领域的合作进一步坐实。</div>
+                <div class="article-commentary">国行 iPhone/Mac 的 AI 底座正式落地，阿里借此直接拿下苹果中国 AI 入口。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Grok Imagine 图像编辑迎来重大升级</div>
+                <div class="article-source"><a href="https://x.com/elonmusk/status/2086127247077843282" target="_blank">X：Elon Musk · 8月9日</a></div>
+                <div class="article-body">马斯克宣布 Grok Imagine 图像编辑功能迎来重大升级，具体能力包括对生成图像的进一步编辑与精修，xAI 在图像生成后处理环节加码。</div>
+                <div class="article-commentary">xAI 借 Grok Imagine 猛攻图像编辑，多模态竞争从「生成谁更好」转向「精修谁更强」。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Cloudflare 发布 Kitesurf：V8 隔离环境中运行的「代理优先」浏览器</div>
+                <div class="article-source"><a href="https://blog.cloudflare.com/kitesurf" target="_blank">Cloudflare Blog · 8月8日</a></div>
+                <div class="article-body">Cloudflare 推出 Kitesurf，一款在 V8 隔离环境中运行的「代理优先」（agent-first）浏览器，专为 AI 代理执行网页任务设计，强调安全隔离与可编程控制。</div>
+                <div class="article-commentary">浏览器本身变成可编程的代理沙箱，Cloudflare 在抢跑下一代 web agent 的运行底座。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-08-09</em>
+        </div>
+    </div>
+</body>
+</html>
