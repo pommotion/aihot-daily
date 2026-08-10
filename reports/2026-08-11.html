@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-08-11</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>80</em> &middot; No. <em>80</em></span>
+                <span>Tuesday, August 11, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-08-10.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">资本与开源双线推进：5000 亿美元砸向 AI 基建、Meta 把 30B 智能体模型开源到消费级硬件；研究端 Claude 逼近黎曼猜想级难题，安全端 18 万段会议录音泄露给行业敲响警钟。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">英伟达联合六大资管机构融资 5000 亿美元建 AI 工厂</div>
+            <div class="article-source"><a href="https://x.com/JensenHuang/status/2086934705207959965" target="_blank">X：Jensen Huang · 08-10</a></div>
+            <div class="article-body dropcap">英伟达宣布与 Apollo、BlackRock、Blackstone、Brookfield、Goldman Sachs 和 KKR 合作，建立独立融资平台，动员超 5000 亿美元第三方资本支持 AI 基础设施建设。</div>
+            <div class="article-commentary">六大资管巨头入场，AI 基建从科技公司自筹转向华尔街加杠杆，算力军备竞赛再上台阶。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">RESEARCH</div>
+                <div class="article-headline col-headline">Claude 研究版将黎曼 zeta 零点下界从 41.6% 提升至 67.2%</div>
+                <div class="article-source"><a href="https://www.anthropic.com/research/riemann-zeta" target="_blank">Anthropic Research · 08-10</a></div>
+                <div class="article-body">Anthropic 员工让 Claude 尝试攻克黎曼猜想，虽未成功，但一个未发布的研究版 Claude 取得实质性突破：将满足黎曼猜想的 zeta 函数零点比例下界从 41.6% 提升至 67.2%，系该方向数十年来最大进展。</div>
+                <div class="article-commentary">AI 数学能力首次在百年难题上做出真进展，未发布研究版的实力比公开版更值得关注。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Meta 开源 Muse Glimmer：30B 本地智能体模型，Apache 2.0</div>
+                <div class="article-source"><a href="https://x.com/AIatMeta/status/2086757844544811485" target="_blank">X：AI at Meta · 08-10</a></div>
+                <div class="article-body">Meta 推出开放权重 30B 模型 Muse Glimmer，专为本地常驻智能体工作流优化，可在 Mac 或消费级 GPU PC 上完全本地运行，Apache 2.0 协议开源。SGLang 同步提供 Day-0 支持，128k+ 上下文窗口。</div>
+                <div class="article-commentary">30B 跑满本地智能体任务，开源 + 消费级硬件让「常驻 Agent」从云端特权变成人人可部署。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">tl;dv 超 18.1 万段 AI 会议录音泄露，可实时闯入他人通话</div>
+            <div class="article-source"><a href="https://bobdahacker.com/blog/tldv-hack" target="_blank">Hacker News · 08-10</a></div>
+            <div class="article-body dropcap">AI 会议记录平台 tl;dv 的 Firestore 数据库缺乏租户隔离，任一已认证用户可查询全部 18.1 万段会议记录，涉及 8.4 万用户、35 万域名、23 国政府及多所高校。约 1000 场正在录制的会议甚至暴露可加入 ID，研究者借此闯入马来西亚教育部及美国高校的实时通话。漏洞自 2026 年 1 月报告后 6 个月仍未修复。</div>
+            <div class="article-commentary">租户隔离缺失让半年会议录音裸奔，AI 会议工具泛滥时代，隐私信任账要重新算。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">OpenAI 发布网络安全专用模型 GPT-5.6-Cyber</div>
+                <div class="article-source"><a href="https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows" target="_blank">OpenAI 官网 · 08-10</a></div>
+                <div class="article-body">OpenAI 推出网络安全专用模型 GPT-5.6-Cyber，可通过 Daybreak Red 获取，面向授权的漏洞研究、漏洞验证与安全测试，旨在应对网络防御窗口不断收窄的挑战。</div>
+                <div class="article-commentary">攻防自动化开始分层：通用模型不再包打天下，专用安全模型成为新赛道。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">a16z 数据：智能体操作电脑一年从 42% 升至 85%，反超人类</div>
+                <div class="article-source"><a href="https://www.a16z.news/p/can-agents-use-a-computer-yet-weve" target="_blank">a16z News · 08-10</a></div>
+                <div class="article-body">a16z 数据显示，计算机操作智能体在 OSWorld-Verified 基准上的最佳成绩已从一年前的 42% 升至 85%，超过人类测试者约 72% 的水平，Claude Fable 5 以 85% 领先。</div>
+                <div class="article-commentary">电脑操作一年翻倍反超人类，「智能体替你操作电脑」将成为最先规模化的场景。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">NVIDIA 开源全双工语音模型 VoiceChat 11B：448ms 轮换 + 实时工具调用</div>
+                <div class="article-source"><a href="https://www.marktechpost.com/2026/08/09/nvidia-releases-nemotronlabs-voicechat-11b-an-open-full-duplex-speech-to-speech-model-with-450-ms-turn-taking-and-live-tool-calling" target="_blank">MarkTechPost · 08-09</a></div>
+                <div class="article-body">NVIDIA 发布开源端到端全双工语音对话模型 NemotronLabs VoiceChat 11B，实测轮换延迟 448 毫秒，为首个支持对话中工具调用的开源全双工模型，通过独立输出通道与预置「保持」话术避免 API 执行期间冷场。权重已公开，仅限研究用途，需单张 80GB 显存 GPU。</div>
+                <div class="article-commentary">448ms 轮换 + 对话中调工具，开源语音首次逼近真人对话节奏，但 80GB 显存门槛仍高。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">千问开放平台上线：租房、寄快递、查理财等十余领域可对话办理</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&amp;mid=2247488345&amp;idx=1&amp;sn=ef4e57c9c9350f9238d90211eb2dd453" target="_blank">公众号：千问APP（阿里） · 08-10</a></div>
+                <div class="article-body">千问开放平台今日上线，面向生态伙伴和开发者开放手机、PC、AI 眼镜三类终端的服务接入，首批覆盖物流运输、房产居住、本地生活、理财、汽车等十多个领域，支持标准化协议接入、一键授权与端到端调测，并提供账号、AI 支付、订单接入等基础设施。</div>
+                <div class="article-commentary">对话办业务从演示进入商用，Agent 商业化找到「服务即对话」的落地路径，就看生态接不接。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-08-11</em>
+        </div>
+    </div>
+</body>
+</html>
