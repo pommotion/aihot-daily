@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-08-12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>82</em> &middot; No. <em>82</em></span>
+                <span>Wednesday, August 12, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-08-11.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">双雄同破 10 亿用户、Anthropic 冲刺史上最大 IPO、英伟达 5000 亿美元建 AI 工厂——AI 竞争从技术竞赛全面转入规模与资本对决。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">ChatGPT 与 Gemini 双双突破 10 亿用户</div>
+            <div class="article-source"><a href="https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users" target="_blank">The Verge · 08-12</a></div>
+            <div class="article-body dropcap">OpenAI 在 8 月 6 日博文中披露 ChatGPT 月活用户超 10 亿（7 月周活已达标），Google CEO 皮查伊同时宣布 Gemini 月活达 10 亿，成为谷歌史上增长最快、第 14 个破 10 亿的产品。两大聊天机器人几乎同时跨过十亿门槛，对话式 AI 正式成为国民级入口。</div>
+            <div class="article-commentary">双雄同破十亿，对话式AI已成国民入口，下一战拼商业变现与生态黏性。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">消息称 Anthropic 最快今年 9 月上市，估值达 9650 亿美元</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/988/239.htm" target="_blank">IT之家 · 08-12</a></div>
+                <div class="article-body">Anthropic 正与潜在投资者接触，计划今年 9 月或 10 月初启动可能成为史上规模最大的 IPO，估值高达 9650 亿美元，年化收入超 470 亿美元。公司向投资者淡化中国 AI 企业的竞争影响，并计划拓展医疗与生物领域应用，定价方案尚未公布。</div>
+                <div class="article-commentary">近万亿估值冲刺IPO，市场对AI高估值的检验时刻到了，成败将定行业风向。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">英伟达联合六大机构融资 5000 亿美元建 AI 工厂</div>
+                <div class="article-source"><a href="https://x.com/JensenHuang/status/2086934705207959965" target="_blank">X · Jensen Huang · 08-12</a></div>
+                <div class="article-body">英伟达宣布与 Apollo、BlackRock、Blackstone、Brookfield、Goldman Sachs 和 KKR 合作，建立独立融资平台，动员超 5000 亿美元第三方资本支持 AI 基础设施建设。黄仁勋将算力供给推向主权基金级别的资本运作。</div>
+                <div class="article-commentary">5000亿撬动华尔街，英伟达把卖显卡做成了卖基建，算力话语权再上台阶。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">OpenAI 用 Astra 模型攻克 10 道长期悬而未决的数学难题</div>
+            <div class="article-source"><a href="https://www.theverge.com/ai-artificial-intelligence/977273/the-ai-takeover-of-mathematics-has-begun" target="_blank">The Verge · 08-12</a></div>
+            <div class="article-body dropcap">OpenAI 宣布未发布的 Astra 模型解决了 10 道长期悬而未决的数学难题，涵盖球体堆积、纠错码、非 sofic 群存在性等领域，并发布超 250 页论文及 Lean 形式化验证结果。数学家对 AI 首次系统性产出可验证新数学既兴奋又担忧。</div>
+            <div class="article-commentary">AI 产出经形式化验证的新数学，推理能力已到创造知识的门槛，学界该正视了。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">研究人员发现可读取 ChatGPT 等模型加密推理过程的 API 漏洞</div>
+                <div class="article-source"><a href="https://the-decoder.com/but-marinade-and-leaked-passwords-are-what-researchers-found-in-chatgpts-hidden-reasoning" target="_blank">The Decoder · 08-12</a></div>
+                <div class="article-body">Alexander Panfilov 团队发现 OpenAI、Anthropic、Google 等主要 AI 提供商的 API 存在漏洞，可读取推理模型的加密思考过程。扫描约 7000 条公开会话发现 62 个 API 密钥、33 个邮箱和 33 个密码；经越狱，Haiku 4.5 可逐字转写 Opus 4.8 的原始推理。</div>
+                <div class="article-commentary">加密推理被攻破，「思考不可见」承诺打折，企业级部署的安全信任需重估。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">NVIDIA 发布 Nemotron 3.5 Lightning，专为本地智能体设计</div>
+                <div class="article-source"><a href="https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron" target="_blank">NVIDIA Blog · 08-12</a></div>
+                <div class="article-body">英伟达发布开源 30B 总参、3B 激活参数的 MoE 模型 Nemotron 3.5 Lightning，支持 1M token 上下文，token 生成速度较同类开源模型最高提升 4 倍、任务完成时间缩短 30%，可在 RTX PC、DGX Spark 与 Jetson 上运行。SGLang 同步提供 Day-0 支持。</div>
+                <div class="article-commentary">轻量 MoE 主打本地常驻智能体，英伟达正用开源模型反哺自家硬件生态。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Runway Seedance 2.5 上线：50 个角色参考 + 声画同步</div>
+                <div class="article-source"><a href="https://x.com/runwayml/status/2087251184658657346" target="_blank">X · Runway · 08-12</a></div>
+                <div class="article-body">Seedance 2.5 已在 Runway 上线，支持最多 50 个独特角色参考，以及最长 30 秒、与音乐同步的片段生成。视频生成的一致性能力从「几个角色」跃升到「完整阵容」，直接面向长叙事与 MV 场景。</div>
+                <div class="article-commentary">50 角色参考加声画同步，长镜头叙事一致性不再是短板，视频生成进入剧情片赛道。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">微信小微 AI 帮写与 AI 点评内测：AI 进入朋友圈</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647685081&amp;idx=1&amp;sn=13a05578a3959c047209c8e74b56fa48" target="_blank">数字生命卡兹克 · 08-12</a></div>
+                <div class="article-body">微信基于小微推出朋友圈 AI 帮写与 AI 点评内测：前者根据图片和已写文字生成 3 条朋友圈文案，后者可长按文字生成评价或快捷评论。作者认为这会把 AI 置于社交核心，破坏朋友圈自 2012 年确立的「记录美好生活」基调。</div>
+                <div class="article-commentary">AI 代写代评进最私域的社交场，「人味」被机器代劳，内容真实性面临考验。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-08-12</em>
+        </div>
+    </div>
+</body>
+</html>
