@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-08-16</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>85</em> &middot; No. <em>85</em></span>
+                <span>Sunday, August 16, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-08-15.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今日基调：中国开源模型密集出货逼宫，美国巨头以降价应战，AI 行业进入以价换量与并购整合的下半场。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Cursor 正式被 SpaceX 收购</div>
+            <div class="article-source"><a href="https://cursor.com/blog/joining-spacex" target="_blank">Hacker News · 8月16日</a></div>
+            <div class="article-body dropcap">Cursor 被 SpaceX 正式收购，完成自 4 月启动的收购流程。借助 SpaceX 全球最大的 GPU 集群，Cursor 将构建更强且成本更低的模型，以更低价格向客户提供更强能力；本周三发布的 Grok 4.6 被视为双方合作的首个成果。</div>
+            <div class="article-commentary">开发工具巨头并入马斯克阵营，AI 编码赛道格局一夜改写，后续定价只会更激进。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">通义千问开源 Qwen3.8 系列，含 2.4T Max 级开放权重</div>
+                <div class="article-source"><a href="https://x.com/Alibaba_Qwen/status/2088280182356611304" target="_blank">通义千问 · 8月15日</a></div>
+                <div class="article-body">通义千问开源 Qwen3.8 系列：27B 原生多模态稠密模型全面超越 Qwen3.7-Plus，原生 262K 上下文可扩至 1M，Apache 2.0 许可；同步放出 Max 级 Qwen3.8-2.4T-A95B 开放权重，硅基流动即日上线，主打自主编码、深度研究与端到端智能体执行。</div>
+                <div class="article-commentary">阿里把「小参数越级打大模型」打成常态，开源旗舰规模再拉满，闭源厂商压力陡增。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">DeepSeek-V4-Pro 正式版上线，Agent 能力大幅增强</div>
+                <div class="article-source"><a href="https://api-docs.deepseek.com/zh-cn/updates" target="_blank">DeepSeek API 更新日志 · 8月13日</a></div>
+                <div class="article-body">DeepSeek-V4-Pro 正式版在 APP、网页端与 API 同步上线，Agent 能力显著提升：HLE（wo/w tools）达 42.7/60.0，Terminal Bench 2.1 为 87.9。硅基流动提供 Day-0 支持，1M 上下文、MIT 协议，输入 $1.32/M、输出 $3.96/M。</div>
+                <div class="article-commentary">能力对标顶配、价格对标国内，DeepSeek 把 Agent 赛道正式拖入开源价格战。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">GLM-5.3 发布：编程能力开源第一，并涌现网络安全能力</div>
+            <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&amp;mid=2247494084&amp;idx=1&amp;sn=a2e5cd9a534a4825feb3633ea1b6d492" target="_blank">智谱 · 8月15日</a></div>
+            <div class="article-body dropcap">智谱发布 GLM-5.3：与 5.2 同基座、靠后训练 Scaling 提升智能上界，编程能力较前代提升 50%，Terminal Bench 3.0 开源第一并接近 Claude Fable 5；白盒代码审查等安全任务持平 Mythos 5，CyberGym 测试 84.5%。权重两周后开源。</div>
+            <div class="article-commentary">开源模型卷完规模卷安全能力，编程榜单前排已被中国厂商包场。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Gemini 3.7 Flash 全面上线，价格砍半</div>
+                <div class="article-source"><a href="https://deepmind.google/blog/introducing-gemini-3-7-flash" target="_blank">Google DeepMind · 8月14日</a></div>
+                <div class="article-body">Google DeepMind 发布 Gemini 3.7 Flash，距 3.6 Flash 仅三周，主打编程与智能体任务，输入/输出价格每百万 token 仅 $0.75/$3.75，为原 3.6 Flash 的一半；已向 Gemini 聊天 Pro/Ultra 用户开放，并驱动 Gemini Spark 的工具调用。</div>
+                <div class="article-commentary">三周一迭代还直接腰斩价格，巨头用节奏证明模型早已不是年更产品。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 与 Anthropic 陷入价格战：中国 AI 对手步步紧逼</div>
+                <div class="article-source"><a href="https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground" target="_blank">Ars Technica · 8月15日</a></div>
+                <div class="article-body">Ars Technica 报道，在中国 AI 厂商追赶压力下，OpenAI 与 Anthropic 开启价格战：双方持续下调 API 定价、压缩利润空间以保住市场份额，前沿模型的定价逻辑正被系统性重写。</div>
+                <div class="article-commentary">中国开源模型的低价冲击波已传导至美国头部，API 定价权之争正式开打。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">AI 生成书籍淹没亚马逊，人类作者单书收入被拉低</div>
+                <div class="article-source"><a href="https://the-decoder.com/ai-generated-books-are-flooding-amazon-and-tanking-sales-for-human-authors" target="_blank">The Decoder · 8月15日</a></div>
+                <div class="article-body">对 14,419 本自出版电子书的分析显示：2023 年 Q1 至 2026 年 Q1 书目总量增长 38.3 倍，季度收入仅增长 8.9 倍；七个类型中，无 AI 文本书籍的单书收入全面下滑——AI 书以数量挤占市场，人类作者收益被系统性摊薄。</div>
+                <div class="article-commentary">内容洪水的代价由创作者集体承担，平台不设闸，劣币驱逐良币只会加剧。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TIPS</div>
+                <div class="article-headline col-headline">Claude 接管应用日常维护：388 个 PR 的实战</div>
+                <div class="article-source"><a href="https://x.com/bcherny/status/2088014489438621990" target="_blank">X · 8月15日</a></div>
+                <div class="article-body">开发者 Boris Cherny 让 Claude 通过 Slack 频道接管应用日常维护：崩溃模糊测试、重复代码统一、死代码移除等，数周自动开出 388 个 PR，其中 180 个经 Claude Code Review 与人工审核后合并；出错时通过调整例程次日改进。</div>
+                <div class="article-commentary">AI 已能独立跑通「发现-修复-提 PR」的维护闭环，开发者的角色转向审核与设规。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-08-16</em>
+        </div>
+    </div>
+</body>
+</html>
