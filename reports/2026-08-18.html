@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-08-18</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>88</em> &middot; No. <em>88</em></span>
+                <span>Tuesday, August 18, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-08-17.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">黄仁勋官宣 1500 亿 AI 工厂、宇树科创板敲钟——AI 基础设施与资本两端同时点火。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">黄仁勋宣布与 SB Energy 合作，为 OpenAI 打造 4.25GW AI 工厂</div>
+            <div class="article-source"><a href="https://x.com/JensenHuang/status/2089331487342829862" target="_blank">X：Jensen Huang · 2026-08-18</a></div>
+            <div class="article-body dropcap">NVIDIA 锁定俄亥俄州 PORTS-Pike 园区电力容量，首期部署 4.25 吉瓦算力，每代系统约 150 万块 GPU，对应 1500–2000 亿美元收入。OpenAI 作为租户入驻，承诺 2030 年前完成部署。</div>
+            <div class="article-commentary">算力第一次被包装成「电力+容量」产品，意味着 AI 公司之间不再是 GPU 数量之争，而是兆瓦级供电协议的圈地战。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">宇树科技 8 月 19 日科创板上市，A 股人形机器人第一股</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/990/812.htm" target="_blank">IT之家 · 2026-08-18</a></div>
+                <div class="article-body">发行价 150.80 元/股，对应市值约 610 亿元，预计募资 60.99 亿元。2025 年营收 16.99 亿元，同比从 1.59 亿跃升近 10 倍，净利润仍为负。</div>
+                <div class="article-commentary">宇树把「人形机器人」从 PPT 阶段推到了交易所 K 线——一二级市场现在用脚投票，看谁能把硬件做出爆款出货量。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Cursor 推出 Origin 代码托管服务，背刺 GitHub</div>
+                <div class="article-source"><a href="https://cursor.com/changelog/origin-code-hosting" target="_blank">Cursor Changelog · 2026-08-18</a></div>
+                <div class="article-body">Origin 向所有付费计划开放早期测试版，提供仓库、PR、代码浏览和 GitHub 双向同步。Vercel、Depot 等已首批接入，AI 编辑器开始往「开发全栈」扩张。</div>
+                <div class="article-commentary">编辑器不再写代码就完事——AI IDE 直接托管你的 git 仓库，GitHub「代码只是数据」的地基被撬动。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">404 Media 追踪快递：亚马逊批量购书扫描后销毁用于 AI 训练</div>
+            <div class="article-source"><a href="https://www.404media.co/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility" target="_blank">404 Media · 2026-08-18</a></div>
+            <div class="article-body dropcap">记者在一本珍本里放追踪器，曝光亚马逊未公开的「买书—扫描—销毁」流程，书籍最终送往一处 AI 训练中心。版权问题再次被摆到台面。</div>
+            <div class="article-commentary">训练数据「灰产」第一次被物流证据铁锤——以后所有大模型厂商都要准备回答：你的语料从哪来、合不合法。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Qwen 3.8 27B 视觉大模型开源，基准超越前代与闭源 Qwen 3.7-Plus</div>
+                <div class="article-source"><a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b" target="_blank">Simon Willison · 2026-08-16</a></div>
+                <div class="article-body">Apache 2.0 许可的 27B 参数视觉大模型，官方基准超过 Qwen 3.6 27B 和闭源 Qwen 3.7-Plus，但默认推理强度过高导致模型过度思考。</div>
+                <div class="article-commentary">开源 27B 视觉跑到闭源 Plus 之上——单卡微调玩家手里又多了一张牌，前提是你得会调它的推理强度。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 反思安全：「Defender&#x27;s Window」用前沿模型加固自身防御</div>
+                <div class="article-source"><a href="https://openai.com/index/the-defenders-window" target="_blank">OpenAI · 2026-08-18</a></div>
+                <div class="article-body">OpenAI 公开四大支柱：用 Codex 验证代码漏洞、智能体优先分流告警、持续枚举攻击路径、只向可信防御者开放网络能力。演示中 ChatGPT Work 15 分钟完成人工需数小时的红队任务。</div>
+                <div class="article-commentary">OpenAI 把自己变成了首批「AI 防御 AI」的甲方——以后模型厂商跑安全演练，先要派自家的 agent 上场。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Google ADK 开源零信任 AI 智能体示例，三层硬性安全机制</div>
+                <div class="article-source"><a href="https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit" target="_blank">Google Developers Blog · 2026-08-18</a></div>
+                <div class="article-body">基于 ADK + Gemini 的客服退货智能体，演示硬件加密签名、gVisor 沙箱、确定性语义网关三层防护，专门防御提示注入。系统提示词只是软约束。</div>
+                <div class="article-commentary">Agent 安全的官方答案浮出水面：别再相信 prompt 防火线，把关键写操作放进硬件签名 + 沙箱的硬约束里。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TOOL</div>
+                <div class="article-headline col-headline">OpenRouter 上线 Activity 仪表盘与 Analytics API，追踪 AI 使用成本</div>
+                <div class="article-source"><a href="https://openrouter.ai/blog/announcements/activity-dashboard" target="_blank">OpenRouter · 2026-08-18</a></div>
+                <div class="article-body">按智能体、模型、请求维度查看支出、token 量、缓存命中率，支持下钻到单条请求日志。成本可见性终于在多模型路由层做实。</div>
+                <div class="article-commentary">多模型混部时代的「账单焦虑」被工具化——以后 CTO 评估 agent ROI，先看 OpenRouter 仪表盘再说话。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-08-18</em>
+        </div>
+    </div>
+</body>
+</html>
