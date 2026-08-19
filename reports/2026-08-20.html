@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-08-20</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>89</em> &middot; No. <em>89</em></span>
+                <span>Thursday, August 20, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-08-19.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">Anthropic 因网络安全临界点主动踩刹车，AI 行业从「卷能力」转入「卷责任」；同日国产模型、H20 工程优化、本地推理与量化技术都在加速突破。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic 因网络安全临界点暂停 RL 训练，行业「能力 - 安全」平衡重置</div>
+            <div class="article-source"><a href="https://openai.com/index/pacing-model-development-cyber-capabilities" target="_blank">OpenAI Blog · 2026-08-19</a></div>
+            <div class="article-body dropcap">Anthropic 判断下一代模型可能突破「关键网络安全能力阈值」，主动暂停最新模型两周 RL 训练，同时强化研究环境隔离与思维链监控。这一决定源于近期 OpenAI-Hugging Face 事件及即将发布的 Astra 模型评估。</div>
+            <div class="article-commentary">头部实验室首次为网络安全风险主动降速，所有厂商的安全节奏将被拉齐对齐。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenRouter 官宣并入 Stripe：AI Infra 价值被支付巨头正式收编</div>
+                <div class="article-source"><a href="https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe" target="_blank">OpenRouter Blog · 2026-08-19</a></div>
+                <div class="article-body">日处理 10 万亿 token、服务 1000 万开发者的模型路由平台 OpenRouter 宣布与 Stripe 合并，保留原名独立运营。Stripe 看中的是 AI 调用背后的支付与商业化基础设施机会。</div>
+                <div class="article-commentary">模型层还是流量层？Stripe 用收购表态，AI 调用本身是最值钱的下水道。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">LMSYS 在 H20 上把 DeepSeek-V4-Pro 跑到 271 tokens/s，逼近 B300 性能</div>
+                <div class="article-source"><a href="https://www.lmsys.org/blog/2026-08-19-deepseek-v4-pro-engine-optimization-h20" target="_blank">LMSYS Blog · 2026-08-19</a></div>
+                <div class="article-body">针对 1.6 万亿参数 MoE 模型 DeepSeek-V4-Pro，LMSYS 通过场景化服务配置在单节点 H20-141GB 上实现 271 output tokens/s，与 B300 的 383.7 tokens/s 差距缩至 1.4 倍。被出口管制压住的 H20 集群有望重新发挥价值。</div>
+                <div class="article-commentary">国产芯片禁令反而逼出软件栈极限优化，H20 集群的剩余生命周期被延长。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">GLM-5.3 API 上线：AA 智能指数 60 分，与 Claude/GPT 旗舰并列开源第一</div>
+            <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&amp;mid=2247494105&amp;idx=1&amp;sn=8d7409e0fb846a3c7803c142b5d1a8e7" target="_blank">智谱公众号 · 2026-08-20</a></div>
+            <div class="article-body dropcap">智谱 GLM-5.3 擅长复杂编码、防御性网络安全与长程任务，在 AA 综合智能指数中取得 60 分，与 Claude Fable 5、GPT-5.6 Sol 同级，与 Kimi K3 并列开源第一，单任务成本为旗舰模型中最低。</div>
+            <div class="article-commentary">国产开源阵营首次站到 60 分关口，企业选闭源旗舰的理由又少了一个。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">RESEARCH</div>
+                <div class="article-headline col-headline">智能体记忆剂量研究：八款模型评测显示，记忆策略必须按能力校准</div>
+                <div class="article-source"><a href="https://huggingface.co/blog/ibm-research/altk-evolve-hmm" target="_blank">Hugging Face Blog · 2026-08-19</a></div>
+                <div class="article-body">IBM Research 发现智能体记忆不是可随意开启的功能。强模型（如 DeepSeek-V3.2 671B）注入完整指南提升 +9.5pp；弱模型（如 gpt-oss-120b）采用精选检索反而提升 +16.1pp 且仅增加 5% token。该方法无需更新权重。</div>
+                <div class="article-commentary">Agent 设计的常识被打破：记忆不是越多越好，给弱模型灌上下文反而是负担。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TECHNIQUE</div>
+                <div class="article-headline col-headline">Liquid AI 发布 LFM2.5 QAD 量化检查点：Q4_0 下恢复 97% BF16 精度损失</div>
+                <div class="article-source"><a href="https://huggingface.co/blog/LiquidAI/qad" target="_blank">Hugging Face Blog · 2026-08-19</a></div>
+                <div class="article-body">Liquid AI 用量化感知蒸馏（QAD）训练 LFM2.5 系列四个尺寸（230M/350M/1.2B/2.6B）的 Q4_0 GGUF 检查点，在保持原生 Q4_0 内存与速度的同时，恢复 BF16 平均精度损失的 97%，边缘部署与小模型场景受益明显。</div>
+                <div class="article-commentary">Q4_0 一直为人诟病的精度黑洞被补上，本地小模型跑生产不再是赌博。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Mojo🔥 正式开源：编译器与工具链 Apache 2.0 全开放</div>
+            <div class="article-source"><a href="https://www.modular.com/blog/mojo-open-source" target="_blank">Modular Blog · 2026-08-19</a></div>
+            <div class="article-body dropcap">Modular 在 Mojo 1.0 发布一周后立刻将语言、编译器与工具链全栈开源，采用 Apache 2.0（含 LLVM 例外）。标准库自 2024 年起已开放，编译器 PR 暂未接受，计划年底前开放社区贡献通道。</div>
+            <div class="article-commentary">AI 时代系统级语言的稀缺性被 Mojo 押中，开源是它拿下 Python/CUDA 之外第三条路的前提。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-08-20</em>
+        </div>
+    </div>
+</body>
+</html>
