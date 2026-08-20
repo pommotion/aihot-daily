@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-08-21</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>90</em> &middot; No. <em>90</em></span>
+                <span>Friday, August 21, 2026</span>
+                <span>今日 <em>6</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-08-20.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天两条主线：OpenAI 给员工画好 2027 上市时间表，Anthropic 同日把 Computer Use / Skills / Files 三大工具 API 一次性 GA——商业化和代理能力两条战线同时起跑。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">OpenAI CFO 告知员工：公司最迟将于 2027 年完成 IPO</div>
+            <div class="article-source"><a href="https://www.ithome.com/0/991/886.htm" target="_blank">IT之家 · 2026-08-20</a></div>
+            <div class="article-body dropcap">OpenAI CFO 萨拉·弗里亚尔在全员大会明确最迟 2027 年完成 IPO，6 月已秘密递交招股书；本季度整体 ARR 增长 35%，企业级业务 ARR 增长 50%，AI 编程与办公产品 WAU 突破 2000 万。</div>
+            <div class="article-commentary">融了千亿美金后 OpenAI 终于给出明确退出窗口，员工持股即将兑现——离职潮、薪酬包、估值锚都会被这件事重新定价。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Claude Platform 三大工具 API 一次性 GA：Computer Use + Skills + Files</div>
+                <div class="article-source"><a href="https://claude.com/blog/computer-use-skills-api-files-api" target="_blank">Claude Blog · 2026-08-20</a></div>
+                <div class="article-body">Computer Use、Skills API、Files API 在 Claude Platform 全面上线，新增浏览器操作工具，让智能体能操控软件、调用团队技能并把成品文件直接交付给用户。</div>
+                <div class="article-commentary">三件套齐发意味着 Anthropic 不再只卖裸模型，开始卖「可装配的代理工厂」——用 Skills 把组织流程封装进模型，锁住的是工作流而非模型权重。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">阿里发布 Qwen-UI-Agent：主打让模型「会用每一块屏幕」</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/992/239.htm" target="_blank">IT之家 · 2026-08-20</a></div>
+                <div class="article-body">阿里巴巴正式推出 Qwen-UI-Agent，覆盖移动端、电脑端、网页端及 DeepSearch 环境，让模型具备真实世界 GUI 操作与深度搜索能力。</div>
+                <div class="article-commentary">国内大厂第一次拿出对标 OpenAI Operator / Claude Computer Use 的基座模型；接下来在 GUI Agent 这条窄道比的是端到端真实任务成功率。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">Hugging Face 开源 LFM2.5 DSpark 草稿模型，推理加速最高 3.18 倍</div>
+            <div class="article-source"><a href="https://huggingface.co/blog/LiquidAI/lfm25-dspark" target="_blank">Hugging Face Blog · 2026-08-20</a></div>
+            <div class="article-body dropcap">LFM2.5 推出三款 300M 参数 DSpark 草稿模型，用投机解码在不改变输出的前提下把 GPU 吞吐最高拉到 3.18 倍、端侧 2.87 倍；LFM2.5-2.6B 函数调用延迟平均下降 57%，已开源支持 llama.cpp。</div>
+            <div class="article-commentary">「不换模型就能提速」是当下最划算的工程红利——2.6B 小模型函数调用延迟近乎砍半，对本地化和端侧 Agent 团队现在就能上。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Mistral 推出 Agentic Search：用五件套工具做多步检索循环</div>
+                <div class="article-source"><a href="https://mistral.ai/news/agentic-search" target="_blank">Mistral AI News · 2026-08-20</a></div>
+                <div class="article-body">Mistral 发布 Agentic Search，由 search/open/navigate/read/grep 五件工具组成多步检索循环，专门解决长文档与多源场景下的复杂查询。</div>
+                <div class="article-commentary">把检索从「一次性召回」改成「闭环验证」，专治企业 RAG 一直啃不动的多跳问答和数字表格难题——比单纯卷向量召回务实得多。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">FastMetal 让 M 系列 Mac 在本地 30 秒生成 5 秒 480P 视频</div>
+                <div class="article-source"><a href="https://x.com/haoailab/status/2090177721913770407" target="_blank">X · Sky Computing Lab · 2026-08-19</a></div>
+                <div class="article-body">FastMetal 把 FastWan-QAD 系列搬上 Apple Silicon，DiT/DMD/解码器全程在 MLX+Metal 上运行；一段 5 秒 480P 视频 30 秒出片，全程 3.9 GiB 内存，无需 CUDA 与云端。</div>
+                <div class="article-commentary">视频生成首次无需数据中心在消费级硬件跑通，原型预览和独立创作者立刻能用；不过 5秒/30秒/3.9GB 的代价，离「拍电影」还差得远。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>6</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-08-21</em>
+        </div>
+    </div>
+</body>
+</html>
