@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-08-26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>96</em> &middot; No. <em>96</em></span>
+                <span>Wednesday, August 26, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-08-25.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">算力进一步向头部两家集中，AI 记忆开始产品级打通，芯片与网络协议同步升级基础设施——今天是「上层产品收敛、底层硬件开打」的一天。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Dylan Patel：Anthropic 与 OpenAI 到 2028 年将控制全球大部分算力</div>
+            <div class="article-source"><a href="https://www.dwarkesh.com/p/dylan-patel-3" target="_blank">Dwarkesh Podcast · 2026-08-25</a></div>
+            <div class="article-body dropcap">SemiAnalysis 创始人 Dylan Patel 在 Dwarkesh 播客中预测，到 2028 年 Anthropic 与 OpenAI 将掌握全球大部分 AI 算力，形成事实上的双寡头格局，中小基础模型玩家将被算力墙挡在门外。</div>
+            <div class="article-commentary">买不到 GPU 的玩家该换赛道了——未来两年应用层护城河远比基础模型值得押注。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑</div>
+                <div class="article-source"><a href="https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it" target="_blank">Anthropic Blog · 2026-08-25</a></div>
+                <div class="article-body">Anthropic 把记忆能力从单次聊天扩展到 Cowork 工作流，用户可以逐条查看 AI 记住了什么、删除或修改任何一条，记忆首次变成可审计、可编辑的用户资产。</div>
+                <div class="article-commentary">记忆从「黑盒提示词」变成「可审计用户资产」，合规与个性化的张力首次被产品级解决。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Apple 发布 M6 与 M5 Ultra，搭载 M5 Max / Ultra 的新 Mac Studio 同步登场</div>
+                <div class="article-source"><a href="https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute" target="_blank">Apple Newsroom · 2026-08-25</a></div>
+                <div class="article-body">Apple 跳过 M5 命名直接双线并发，发布 M6 与 M5 Ultra 两款旗舰芯片，AI 算力大幅跃升；同日推出搭载 M5 Max 与 M5 Ultra 的新款 Mac Studio，主打本地大模型推理。</div>
+                <div class="article-commentary">Apple Silicon 双线齐发，本地大模型推理终于有了消费级桌面芯片选项。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Meta 开源 MetaRoCE：为 AI 规模以太网打造的全新 RDMA 传输协议</div>
+            <div class="article-source"><a href="https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet" target="_blank">Meta Engineering · 2026-08-24</a></div>
+            <div class="article-body dropcap">Meta 发布并开源专为 AI 数据中心设计的 RDMA 协议 MetaRoCE，目标在以太网之上提供 InfiniBand 级别的低延迟传输，直接挑战 Nvidia 在 AI 集群网络的事实标准地位。</div>
+            <div class="article-commentary">算力战的下一站不是芯片而是网络——Meta 把数据中心内部通信变成开源战场的第一步。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Google WeatherNext 提前 5 天精准预测五级飓风，气象机构首次认可 AI 预警</div>
+                <div class="article-source"><a href="https://x.com/GoogleAI/status/2092275116503707733" target="_blank">Google AI · 2026-08-25</a></div>
+                <div class="article-body">Google WeatherNext 模型提前 5 天准确预测一场五级飓风的路径与强度，多家气象机构承认 AI 模型在极端天气预报上首次超越传统数值模式，相关采购流程将被重构。</div>
+                <div class="article-commentary">AI for Science 走出论文进入灾害响应，气象机构订阅合同要先被 AI 重写一遍。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">OpenRouter 上线视频生成 API：一份代码在多家模型间切换</div>
+                <div class="article-source"><a href="https://openrouter.ai/blog/tutorials/video-generation-api" target="_blank">OpenRouter Blog · 2026-08-25</a></div>
+                <div class="article-body">OpenRouter 推出统一视频生成 API，开发者用同一套代码可在 Sora、Veo、可灵等多家视频模型之间路由切换，无需为每个厂商单独接入。</div>
+                <div class="article-commentary">视频生成从「挑模型」变成「选路由」，厂商绑定比价格战先一步失效。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">LangChain 与 Airbyte 集成：让企业数据摄取达到生产级稳定</div>
+            <div class="article-source"><a href="https://www.langchain.com/blog/making-data-ingestion-production-ready-a-langchain-powered-airbyte-destination" target="_blank">LangChain Blog · 2026-08-25</a></div>
+            <div class="article-body dropcap">LangChain 与数据集成平台 Airbyte 深度集成，把企业 RAG 与 Agent 所需的结构化数据接入管道升级到生产级别，自动处理 schema 漂移、增量更新与权限隔离。</div>
+            <div class="article-commentary">RAG 工程化的最后一公里是脏数据治理，LangChain 借 Airbyte 从框架升级成数据层。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-08-26</em>
+        </div>
+    </div>
+</body>
+</html>
