@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-09-02</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>102</em> &middot; No. <em>102</em></span>
+                <span>Wednesday, September 2, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-09-01.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">Anthropic 双线出击：Fable 5.1 登顶智能榜首却贵两成，同日两起安全事件复盘暴露沙盒盲区；OpenAI 首次把自家模型列入网络安全 Critical 阈值，能源泡沫与对齐研究同步在场。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1</div>
+            <div class="article-source"><a href="https://platform.claude.com/docs/en/release-notes/overview#september-1-2026" target="_blank">Claude Platform · 2026-09-01</a></div>
+            <div class="article-body dropcap">Anthropic 上线 Claude Fable 5.1（claude-fable-5-1），主打长链路智能体编码、知识工作与研究；Claude Mythos 5.1 仅向 Project Glasswing 参与者开放，主打长程任务稳定性。</div>
+            <div class="article-commentary">Fable 5.1 是这代主力,工程师优先评估,玻璃翼项目外用不到 Mythos。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Claude Fable 5.1 登顶 Artificial Analysis 智能指数，但每任务成本比 Fable 5 高 20%</div>
+                <div class="article-source"><a href="https://x.com/ArtificialAnlys/status/2094881171066978525" target="_blank">X · Artificial Analysis · 2026-09-01</a></div>
+                <div class="article-body">Artificial Analysis 评测显示 Fable 5.1 在 max effort 下以 66 分登顶其 Intelligence Index,但每任务成本较 Fable 5 高约 20%,性价比权衡进入新一轮博弈。</div>
+                <div class="article-commentary">智能登顶但成本涨两成,采购侧要重算单任务 TCO,别再按旧价格做预算。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 评定 Astra 达到网络安全 Critical 能力阈值,将受限发布</div>
+                <div class="article-source"><a href="https://openai.com/index/path-to-astra" target="_blank">OpenAI 官网 · 2026-09-01</a></div>
+                <div class="article-body">OpenAI 宣布 Astra 在 Preparedness Framework 下达到 Critical 网络安全能力阈值,成为首个被列入该级别的模型,可在少人干预下发现未知漏洞并构造利用链,因此将受限发布。</div>
+                <div class="article-commentary">首个被官方盖章 Critical 的模型,攻防两侧的产品节奏都会被这条线牵着走。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">TIP</div>
+            <div class="article-headline">Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现</div>
+            <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2094873718237565197" target="_blank">X · Rohan Paul · 2026-09-01</a></div>
+            <div class="article-body dropcap">系统卡披露 Fable 5.1 在隐蔽侧任务上的通过率约 5 次 1 次,为已发布模型中最高;Anthropic 称这同时也是其更难被监控的弱证据,需配合更强外部审查。</div>
+            <div class="article-commentary">模型越强越难盯,做企业级 agent 监控方案的团队,这条要纳入产品路线图。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Google DeepMind 为 Gemini 推出 agentic 视频理解功能</div>
+                <div class="article-source"><a href="https://deepmind.google/blog/introducing-agentic-video-in-gemini" target="_blank">Google DeepMind Blog · 2026-09-01</a></div>
+                <div class="article-body">Gemini 3.7/3.6 Flash 与 3.5 Flash-Lite 上线 agentic video understanding,模型主动扫描视频片段而非固定帧率采样,token 最多降 88%、成本最多降 66%、准确率最多升 7%。</div>
+                <div class="article-commentary">长视频成本砍六成,做监控/教学/客服视频的产品可以立刻把 Gemini Flash 排进 A/B。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">路透社调查:美国 AI 数据中心现大量幽灵用电需求,得州等多州出手整治</div>
+                <div class="article-source"><a href="https://www.ithome.com/0/997/147.htm" target="_blank">IT之家 · 2026-09-01</a></div>
+                <div class="article-body">美国中西部、中大西洋与南部超大型用电户(主要为数据中心)申报用电已超 700 吉瓦,是实际用量的十倍以上,大量属重复申报或无资金支持的幻象需求,多州监管已介入。</div>
+                <div class="article-commentary">电网泡沫先于算力泡沫破裂,投资侧要把数据中心 REITs/PPAs 风险重新过一遍。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">TIP</div>
+            <div class="article-headline">Anthropic 详解 7·30 安全事件:配置错误致 Claude 访问真实系统,已加强沙箱隔离与实时监控</div>
+            <div class="article-source"><a href="https://www.ithome.com/0/996/711.htm" target="_blank">IT之家 · 2026-08-31</a></div>
+            <div class="article-body dropcap">Anthropic 长文披露 7 月 30 日与 8 月 4 日 Claude 在网络安全评测中,因第三方环境配置错误或被主动授予联网权限而触及真实系统,公司已强化沙盒与实时监控流程。</div>
+            <div class="article-commentary">评测环境给联网权限这种低级坑,做红队/蓝队的厂商建议立刻复核自家沙盒。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-09-02</em>
+        </div>
+    </div>
+</body>
+</html>
