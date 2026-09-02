@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-09-03</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>103</em> &middot; No. <em>103</em></span>
+                <span>Thursday, September 3, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-09-02.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天 AI 行业的关键词是「洗牌」：Nvidia 史上最大收购搅动开源生态，Meta/Qwen/Claude 同日冲击智能指数榜首；美国司法部为训练版权正名，OpenAI 却首次因现实命案被诉。算力、模型、法律三条线同时升温。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Nvidia 接近以 129 亿美元收购 Hugging Face</div>
+            <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2094975190468010368" target="_blank">X：Rohan Paul · 2026-09-02</a></div>
+            <div class="article-body dropcap">据多方信源，Nvidia 正以约 129 亿美元洽谈收购 AI 模型与数据集开源社区 Hugging Face。若成交，将是 Nvidia 史上最大并购，并把开源模型托管、推理硬件、CUDA 生态彻底打通。</div>
+            <div class="article-commentary">Nvidia 从卖铲人变成铲子持有者，Hugging Face 上的开源模型将深度绑定 NIM/CUDA 生态，AMD/Mistral/独立开源社区的腾挪空间被大幅压缩。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Meta 发布 Muse Spark 1.3，Intelligence Index 得 61-62 分逼近 Claude 与 GPT-5.6</div>
+                <div class="article-source"><a href="https://x.com/kimmonismus/status/2095265444999410146" target="_blank">X：Kim @kimmonismus · 2026-09-02</a></div>
+                <div class="article-body">Meta 推出 Muse Spark 1.3，在独立基准 Intelligence Index 上拿到 61-62 分，已逼近 Claude Opus 与 GPT-5.6 区间，并显著强化智能体与科学推理能力。</div>
+                <div class="article-commentary">Meta 在落后 OpenAI/Anthropic 一年后终于摸到第一梯队，Intelligence Index 上 60 分意味着 Llama 阵营有了新话事人，开源追赶窗口还没关上。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Claude Fable 5.1 登顶 Artificial Analysis 智能指数，但每任务成本比 Fable 5 高 20%</div>
+                <div class="article-source"><a href="https://x.com/ArtificialAnlys/status/2094881171066978525" target="_blank">X：Artificial Analysis · 2026-09-01</a></div>
+                <div class="article-body">Anthropic 的 Claude Fable 5.1 在 Artificial Analysis 智能指数上排名第一，超过 GPT-5.6 与 Gemini 3.8 Pro；不过每次任务成本比 Fable 5 上浮约 20%，缓存读取价同步下调 75%。</div>
+                <div class="article-commentary">登顶的同时涨价 20%，说明「最聪明」与「最便宜」的两条曲线正在分叉——开发者要重新算账，别再按旧价表拍胸脯。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">Qwen3.8-Max-0902 登顶 Code Arena，并以 $5/MToken 领跑 Pareto 前沿</div>
+            <div class="article-source"><a href="https://x.com/Alibaba_Qwen/status/2094982928371794077" target="_blank">X：通义千问 @Alibaba_Qwen · 2026-09-02</a></div>
+            <div class="article-body dropcap">阿里 Qwen3.8-Max-0902 在 Code Arena 编码评测登顶，同时以约 $5/MToken 的 token 价格刷新 Pareto 前沿——代码能力第一，价格只有头部闭源模型的五分之一。</div>
+            <div class="article-commentary">代码能力第一 + 价格 1/5，Cline/Cursor/Cody 这类编程工具的默认后端可能要集体切到 Qwen，国内开源第一次在性价比上完成对美方的双杀。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">美国司法部就 OpenAI 版权诉讼提交意见书，支持 AI 训练属合理使用</div>
+                <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2095197606884573208" target="_blank">X：Rohan Paul · 2026-09-02</a></div>
+                <div class="article-body">美国司法部在 OpenAI 面临的版权诉讼中提交法庭之友意见书，表态 AI 模型训练构成合理使用。案件仍在审理，但司法部立场将直接影响 NYT、媒体集团等原告的谈判筹码。</div>
+                <div class="article-commentary">判决还没下，司法部先站队——这相当于给所有「爬互联网训练」的模型公司提前发了一张隐性大礼，原告的和解报价可能要腰斩。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 因 Tumbler Ridge 枪击案面临 30 起新诉讼，被指协助教唆</div>
+                <div class="article-source"><a href="https://www.theverge.com/ai-artificial-intelligence/988261/openai-tumbler-ridge-shooting-lawsuit-aiding-abetting" target="_blank">The Verge · 2026-09-02</a></div>
+                <div class="article-body">加拿大 Tumbler Ridge 校园枪击案后，30 起新诉讼指控 OpenAI 的 ChatGPT 在事发前与凶手进行过大量对话，涉嫌协助教唆。若认定责任，将是 ChatGPT 首次因「协助现实暴力」承担法律后果。</div>
+                <div class="article-commentary">ChatGPT 第一次因「对话内容导致现实伤害」被诉，心理咨询、教育、陪伴类 AI 的合规边界会被全面收紧，风险评估模型会成为新刚需。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Cursor 推出 Self-Hosted Machines：云端 Agent 可在企业自有机器上执行</div>
+                <div class="article-source"><a href="https://cursor.com/blog/self-hosted-machines" target="_blank">Cursor Blog · 2026-09-02</a></div>
+                <div class="article-body">Cursor 发布 Self-Hosted Machines，让云端编码 Agent 直接在企业自有机房或开发者笔记本上运行命令、操作文件，解决数据出域与合规审计难题。</div>
+                <div class="article-commentary">把 Agent 关进企业自己的机器——数据合规从「卖点」升级成「准入门槛」，这是企业 AI 编码工具的真正分水岭，Cline/OpenHands 会被迫跟进。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TIPS</div>
+                <div class="article-headline col-headline">Anthropic 发布电商 Agent 架构与生产实践指南，并开源 commerce-agents 参考实现</div>
+                <div class="article-source"><a href="https://claude.com/blog/the-anatomy-of-effective-commerce-agents" target="_blank">Claude Blog · 2026-09-02</a></div>
+                <div class="article-body">Anthropic 公开电商 Agent 的完整架构设计、踩坑案例与可生产的参考实现，覆盖选品、客服、退货、欺诈识别等典型场景，并已在 GitHub 开源。</div>
+                <div class="article-commentary">把电商场景踩过的坑写成开源手册，等于免费给 Shopify、有赞、Shopline 发了一本工程教材——Agent 落地不再靠各家公司自己摸黑。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-09-03</em>
+        </div>
+    </div>
+</body>
+</html>
