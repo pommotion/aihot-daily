@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-09-09</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>109</em> &middot; No. <em>109</em></span>
+                <span>Wednesday, September 9, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-09-08.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">AI 智能体在数学上动真格，资本在算力上开闸——Anthropic 千亿算力合同与 Mistral 创纪录融资同日落地。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">OpenAI 智能体团队宣布求解 Navier-Stokes 千禧年大奖难题</div>
+            <div class="article-source"><a href="https://openai.com/index/navier-stokes-solution" target="_blank">OpenAI · 2026-09-08</a></div>
+            <div class="article-body dropcap">OpenAI 宣布由一组智能体使用显著强于 GPT-6 Astra 的下一代模型，给出 Navier-Stokes 存在与光滑性千禧年大奖难题的一个 blow up 解，并附证明文稿与 Lean 形式化验证。该问题悬置约 90 年，OpenAI 数月内召集多领域专家协作。</div>
+            <div class="article-commentary">这次跑通的不是数学，而是「智能体 + 形式化验证 + 跨领域专家」的可复制研究流水线。Noam Brown 提示单次成本数百万美元，但会快速下降——门槛一降，研究范式就改。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Anthropic 据报道签约 5170 亿美元算力协议，锁定至少 14.8 GW</div>
+                <div class="article-source"><a href="https://the-decoder.com/anthropic-reportedly-signs-517-billion-in-compute-deals-after-dario-amodei-warned-rivals-about-reckless-risk" target="_blank">The Decoder · 2026-09-08</a></div>
+                <div class="article-body">The Information 披露 Anthropic 在 11 个月内签署价值高达 5170 亿美元的算力合同，自 2025 年 10 月以来锁定至少 14.8 GW 算力，并计划自建数据中心。</div>
+                <div class="article-commentary">Dario 刚警告对手「鲁莽烧钱」，转头就签下 AI 史上最激进算力长单——算力已不是成本项，是新型资产负债表。14.8 GW 足够喂 8-10 个 GPT-6 级别训练，OpenAI 不加速就会被反向包抄。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元</div>
+                <div class="article-source"><a href="https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier" target="_blank">Mistral AI · 2026-09-08</a></div>
+                <div class="article-body">Mistral 宣布完成 30 亿欧元 D 轮融资，投后估值超 210 亿欧元，是欧洲科技公司有史以来最大股权融资。资金将用于算力扩张、模型训练与海外团队扩充。</div>
+                <div class="article-commentary">欧洲主权 AI 的旗帜没倒——三年做到 210 亿欧元估值，比很多美股 AI 上市公司还值钱。法德政企的「非美国方案」叙事仍在被真金白银买单。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">OpenAI 发布 ChatGPT Images 2.5 图像模型</div>
+            <div class="article-source"><a href="https://openai.com/index/introducing-chatgpt-images-2-5" target="_blank">OpenAI · 2026-09-08</a></div>
+            <div class="article-body dropcap">ChatGPT Images 2.5 生成延迟较 2.0 降低最多 50%，细节、编辑精度、参考照片保真度与多轮编辑一致性全面提升，面向 ChatGPT、API 与 Sora 同步开放。</div>
+            <div class="article-commentary">Midjourney 和 Flux 还在卷美学，OpenAI 已经在卷「可控编辑 + 工程化速度」。参考照片保真度提升才是创作者的硬痛点——广告/电商立等可取的图批时代真来了。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Runway 发布 Adobe 插件，原生嵌入 Premiere Pro 与 After Effects</div>
+                <div class="article-source"><a href="https://runwayml.com/news/company-news/runway-for-adobe" target="_blank">Runway · 2026-09-08</a></div>
+                <div class="article-body">Runway Plugins 直接嵌入 Premiere 与 AE 时间线，可生成图像/视频、重绘片段；Edit Studio 基于已有片段用 Aleph 2 按原始时长重新渲染。插件免费下载，生成功能消耗现有订阅额度。</div>
+                <div class="article-commentary">不抢剪辑师饭碗，而是坐在 Adobe 的工位上——Runway 选择了最聪明的分发路径：当生成能力成为剪辑流程的默认按钮，竞品就再也插不进来。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">OpenAI 向 Plus/Pro/Business/Enterprise 全量推送 Astra</div>
+                <div class="article-source"><a href="https://x.com/OpenAI/status/2097431322117476423" target="_blank">OpenAI · 2026-09-08</a></div>
+                <div class="article-body">Astra 已对 ChatGPT Work 和 Codex 的 Plus、Pro、Business、Enterprise 用户全量开放，用户可在 openai.com/gpt-tv/ 观看实机演示。</div>
+                <div class="article-commentary">上周刚发布的 Astra 在 5 天内完成付费层全量推送，OpenAI 这次没有「灰度两个月」的耐心。GPT-6 入口之争已经白热化，谁先占据屏幕时间谁就赢。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">RESEARCH</div>
+            <div class="article-headline">Dwarkesh 研究：预训练进步主要来自数据改进</div>
+            <div class="article-source"><a href="https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data" target="_blank">Dwarkesh Patel · 2026-09-08</a></div>
+            <div class="article-body dropcap">Dwarkesh 在最高 1e19 FLOPs 预算下重训 2019–2025 年各年度代表性模型与数据语料，发现数据改进带来 12.0x 算力效率提升，模型架构改进 3.7x——数据贡献约为模型的 3.24 倍。</div>
+            <div class="article-commentary">Sora 2 和 GPT-N 都在拼架构创新，但这组对照实验泼了一盆冷水：过去六年模型侧的真正护城河是数据，而不是网络。当下大家拼算力，不如拼谁能拿到下一个量级的干净数据。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-09-09</em>
+        </div>
+    </div>
+</body>
+</html>
