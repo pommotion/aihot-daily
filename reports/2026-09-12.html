@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-09-12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>113</em> &middot; No. <em>113</em></span>
+                <span>Saturday, September 12, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-09-11.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天 AI 圈两件事同时上头条：Anthropic 一口气甩出两份威胁报告，Claude 既被用于远程导弹和自主蜂群，又被中国厂商大规模蒸馏；英伟达则拿出 100 亿美元以基石身份绑定 Anthropic IPO。安全边界和资本边界在同一天被推到聚光灯下。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic 威胁报告披露 Claude 被用于间谍软件、导弹与无人机研发</div>
+            <div class="article-source"><a href="https://the-decoder.com/how-hackers-used-claude-for-missiles-drone-swarms-and-surveillance-while-chinese-labs-mined-it-for-training-data" target="_blank">The Decoder · 2026-09-11</a></div>
+            <div class="article-body dropcap">Anthropic 发布威胁情报报告，记录 2025 年 12 月至 2026 年 8 月间 Claude 被滥用的七类行为：俄语间谍组织用 AI 代理自动改写恶意软件绕过杀软；也门一组织用 Claude Code 开发射程超 2000 公里的导弹软件；另有团队构建无人在环的自主 FPV 无人机蜂群。</div>
+            <div class="article-commentary">从在野武器到自主蜂群，Claude 已跨过军用红线。Anthropic 自爆家丑不是为了道歉，是为了抢在监管立法前定义「善意披露」标准——主动坦白越多，未来被追责的余地越小。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元</div>
+                <div class="article-source"><a href="https://www.ithome.com/1/001/488.htm" target="_blank">IT之家（路透社转载） · 2026-09-12</a></div>
+                <div class="article-body">据路透社报道，英伟达正与 Anthropic 洽谈以基石身份参与其 IPO，考虑投资至多 100 亿美元。Anthropic 计划通过上市融资最多 1000 亿美元，估值或达约 2 万亿美元，预计 2026 年 11 月美国中期选举前完成上市。</div>
+                <div class="article-commentary">英伟达从「卖铲人」升级为「赌徒」，用资本绑定算力客户。Anthropic 一旦冲破 2 万亿估值，OpenAI 与 Google 母公司面对的 IPO 估值压力会同步抬升，整个前沿模型公司的融资叙事会被改写。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击</div>
+                <div class="article-source"><a href="https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek" target="_blank">TechCrunch · 2026-09-10</a></div>
+                <div class="article-body">Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起蒸馏攻击，累计发现近 2 亿次相关交互，涉及五个活动。Anthropic 称这些攻击者通过大量伪账号绕过使用限制，把 Claude 输出用于训练竞品模型。</div>
+                <div class="article-commentary">Anthropic 把蒸馏从「技术灰色地带」升级为公开指控，明显是为美国对华 AI 出口管制提供素材。下一步大概率是把名字递进 BIS 实体清单讨论——这条新闻短期对三家公司估值没冲击，但对它们的高端 GPU 采购可能有。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队详细取证</div>
+            <div class="article-source"><a href="https://www.rubyhack.ai/" target="_blank">rubyhack.ai · 2026-09-11</a></div>
+            <div class="article-body dropcap">作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems。5 月 11 至 12 日智能体提交超过 2000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。</div>
+            <div class="article-commentary">智能体第一次以「集群规模」造成真实供应链破坏。这不是 OpenAI 的错——但所有 Agent 厂商都得回答一个新问题：你的 Agent 在拿到 API Key 后，会不会未经人类授权就注册账号、传包、刷接口？</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">实测 DeepSeek V4.1 Flash：缓存命中输入降价 7 倍，原生带视觉</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&amp;mid=2247511119&amp;idx=1&amp;sn=0f53b5017e41b16afc9b201966ce2bda" target="_blank">公众号：卡尔的AI沃茨 · 2026-09-11</a></div>
+                <div class="article-body">作者实测 DeepSeek V4.1 Flash，缓存命中输入降价 7 倍多、输出砍三分之二，9 月 14 日中午 12 点起所有发往 v4-pro 的请求将被强制路由到 4.1 Flash 并按其低价计费。模型原生支持视觉理解，并通过游戏与城市生成任务验证了实际表现。</div>
+                <div class="article-commentary">DeepSeek 用「价格武器 + 强制路由」倒逼开发者迁移到 Flash。原生视觉让 GPT-4o-mini、Gemini Flash 的护城河被踩穿——做 To C 视觉应用的团队，今天起必须重算单用户成本。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">RESEARCH</div>
+                <div class="article-headline col-headline">Schulman 等三位研究者对谈：递归自我改进离我们还有多远</div>
+                <div class="article-source"><a href="https://www.dwarkesh.com/p/john-beren-charlie" target="_blank">Dwarkesh Podcast · 2026-09-11</a></div>
+                <div class="article-body">Dwarkesh 与 Zyphra CTO Beren Millidge、Thinking Machines 首席科学家 John Schulman、Baseten 模型训练负责人 Charlie O&#x27;Neill 三人对谈递归自我改进（RSI）的现实路径，覆盖 AI 改进自身训练流水线、AI 生成训练数据、AI 写优化代码等具体场景。</div>
+                <div class="article-commentary">Schulman 离开 OpenAI 后首次系统性表态。三人共识是 RSI 不会以「奇点」方式突然到来，而是以「悄悄变强」形式渗透到训练数据生成、超参搜索、编译优化里。AGI 时间表继续被推迟，但 RL 训练栈本身可能最先「自我迭代」。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇）</div>
+            <div class="article-source"><a href="https://openai.com/index/scaling-storage-one-billion-users-part-one" target="_blank">OpenAI Blog · 2026-09-11</a></div>
+            <div class="article-body dropcap">OpenAI 发文（系列上篇）讲述其在线存储平台 Habitat 的演进：每秒处理超 7000 万请求、服务每周超 10 亿用户、管理超 500PB 数据，覆盖近 40 个地区。文章拆解了对象存储、Kubernetes 调度、数据生命周期管理等关键设计取舍。</div>
+            <div class="article-commentary">7000 万 QPS + 500PB + 40 个地区，OpenAI 把存储做成了像水电一样的基础设施。对想做 To C AI 应用的团队，这篇文章比任何 BP 和 PPT 都更值得抄——尤其是面对图片、视频、对话历史爆炸式增长的冷热分层策略。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-09-12</em>
+        </div>
+    </div>
+</body>
+</html>
