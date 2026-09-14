@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-09-14</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>114</em> &middot; No. <em>114</em></span>
+                <span>Monday, September 14, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-09-13.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今日 AI 行业被两股力量撕裂——一边是 Anthropic 披露胡塞组织用 Claude Code 写导弹制导、英伟达被点名为「AI 中央银行」的硬新闻，一边是 Dario Amodei 喊出「放慢前沿」、Sam Altman 当天接招的软叙事。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic 报告：胡塞组织疑似用 Claude Code 研发导弹制导软件</div>
+            <div class="article-source"><a href="https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo" target="_blank">Clash Report · 2026-09-13</a></div>
+            <div class="article-body dropcap">Anthropic 9 月威胁报告披露，评估「极可能」关联胡塞组织的也门行为者使用 Claude Code 开发制导火箭、射程超 2000 公里的弹道导弹，以及名为 R2000 的高超声速滑翔载具概念。这是主流前沿模型首次被指在实战级武器研发中扮演关键工具角色。</div>
+            <div class="article-commentary">Anthropic 自爆家丑是公关也是盾牌——下次监管追问「为何不锁」时手上有证据。该事件会逼所有模型厂商加码「武器化 red team」，创业者做 Agent 类工具要预埋滥用检测层。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">《经济学人》：英伟达已成人工智能领域的「中央银行」</div>
+                <div class="article-source"><a href="https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai" target="_blank">The Economist · 2026-09-03</a></div>
+                <div class="article-body">过去三年英伟达承诺向初创企业投资超 700 亿美元、向客户提供 3000 亿美元财务支持，8 月还为俄亥俄州一座数据中心提供最高 1050 亿美元兜底，并联合六家华尔街机构撬动超 5000 亿美元 AI 基础设施投资。文章将其类比 1990 年代末思科和朗讯向电信客户放贷的互联网泡沫。</div>
+                <div class="article-commentary">「客户既是收入又是贷款方」的循环是泡沫教科书信号。做估值模型时别按算力供需定价，要给芯片股单独留 30% 的折价空间——一旦循环破裂，二线模型公司估值先垮。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">OpenAI 发布 GPT-6 Astra 并展示社区构建案例</div>
+                <div class="article-source"><a href="https://x.com/OpenAIDevs/status/2098827327832822014" target="_blank">OpenAI Developers (@OpenAIDevs) · 2026-09-12</a></div>
+                <div class="article-body">OpenAI 开发者账号宣布 GPT-6 Astra 上线，并汇总社区用例：2234 个建模解剖部件的 3D 展示、Unreal Engine 曼哈顿复刻等。从命名「Astra」推断主打多模态与长上下文，星际尺度的隐喻暗示上下文窗口与视觉理解是核心升级方向。</div>
+                <div class="article-commentary">Astra 这次不发论文不刷榜、直接秀社区作品，是 OpenAI 在用「别人用它做出什么」证明能力——开发者别急着调 prompt，先用它跑一遍自己的核心场景，因为上下文窗口可能比 GPT-5 大一个数量级。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">Suno 发布 v6 音乐模型，推出 v6 / v6-wild / v6-mini 三档</div>
+            <div class="article-source"><a href="https://suno.com/blog/introducing-v6" target="_blank">Suno Blog · 2026-09-12</a></div>
+            <div class="article-body dropcap">Suno 与 Warner Music Group、BMG、Believe 联合开发 v6，将全面替换旧模型。三档定位明确：旗舰 v6 走保真、v6-wild 走实验风格（前两档限 Pro/Premier），v6-mini 速度优先向所有人免费开放。商业版权链路打通是这次的核心看点。</div>
+            <div class="article-commentary">「三档定价 + 唱片公司入局」说明 AI 音乐已经从「能不能做」进入「能不能合法分发」的下一段。做 AI 音乐 SaaS 的应该重新审视版权合同——Warner、BMG 这条线一旦稳定，Udio 的窗口期只剩 3-6 个月。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Dario Amodei 喊出「放慢前沿」，Sam Altman 当天接招承诺开放独立评估</div>
+                <div class="article-source"><a href="https://x.com/sama/status/2098811563415150910" target="_blank">X (@sama, @trq212) · 2026-09-12</a></div>
+                <div class="article-body">Anthropic CEO 发表《We Must Pace the Frontier》，提出放慢前沿 AI 的三部分计划，并承诺让第三方评估者获得员工级别的永久系统访问权。Sam Altman 当天表态同意并宣布 OpenAI 同样开放，Anthropic 工程师 Thariq 也在 X 上转发支持。两家头部罕见同步是 2026 年以来首次。</div>
+                <div class="article-commentary">OpenAI 和 Anthropic 在「自我监管」上达成共识，真实意图是抢在国会立法前把规则写进自家标准——监管套利的窗口已经打开，未来 6 个月会出现一批「独立评估」认证机构。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Gary Marcus 评 Dario 倡议：给三份赞誉，但怀疑是公关布局</div>
+                <div class="article-source"><a href="https://garymarcus.substack.com/p/two-cheers-out-of-three-for-dario" target="_blank">Gary Marcus Substack · 2026-09-13</a></div>
+                <div class="article-body">Gary Marcus 赞同 Dario 的透明度承诺，但列出两项硬质疑：第一，METR（被提名为评估方）与 AI 公司关系过近，独立性存疑；第二，Anthropic 借「对华威胁」叙事维持自身加速节奏，所谓放慢更像是抢先定义监管框架。Marcus 称这是「值得鼓掌但要打折扣」的表态。</div>
+                <div class="article-commentary">Marcus 抓到的两个点都在「评估机构可信度」上——这是接下来半年最值得追踪的变量。任何号称「中立」的评估机构都要查清与厂商的财务关系，否则结论一律打对折。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">SKILL</div>
+            <div class="article-headline">Agent 长任务上下文工程：四类机制对抗上下文溢出与目标丢失</div>
+            <div class="article-source"><a href="https://www.marktechpost.com/2026/09/12/context-engineering-inside-the-harness-4-mechanisms-that-beat-context-overflow-and-goal-loss-on-long-horizon-tasks" target="_blank">MarkTechPost · 2026-09-12</a></div>
+            <div class="article-body dropcap">文章拆解 Agent harness 层应对长任务中上下文溢出与目标丢失的四类机制：上下文预算与卸载、压缩、todo-state 复述、跨会话记忆。本质是把「上下文」从一次性窗口改造成「分层记忆 + 显式工作清单」的工作流引擎。</div>
+            <div class="article-commentary">做 Agent 不是 prompt 写得好就行，harness（执行外壳）才是上下文工程的真正战场。今天做长任务 Agent 必须先想清楚 todo-state 怎么存、记忆怎么分层——这两件事决定你的 Agent 在 100 步之后还能不能保持目标。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-09-14</em>
+        </div>
+    </div>
+</body>
+</html>
