@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-09-15</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>115</em> &middot; No. <em>115</em></span>
+                <span>Tuesday, September 15, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-09-14.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今日 AI 主线两条：一头是 Apple 把 Siri AI 推上测试版、Anthropic 冲刺 2 万亿 IPO，消费端与资本端同时点燃；另一头是 DeepSeek、硅基流动、小红书接连把开源大模型的成本/规模压到新低，开源与闭源的边界被再次撕开。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Apple Intelligence 与全新 Siri AI 测试版上线，支持屏幕感知与跨设备对话</div>
+            <div class="article-source"><a href="https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here" target="_blank">Apple Newsroom · 2026-09-14</a></div>
+            <div class="article-body dropcap">Apple 推出全面重构的 Siri AI 与新一代 Apple Intelligence，主打个人语境理解、屏幕感知、系统级应用操作和跨设备对话，今日起英文测试版随 2027 系统更新推送，下月扩展至法、日、韩、葡、西 5 种语言。</div>
+            <div class="article-commentary">Apple 把「屏幕感知+跨设备记忆」一次给齐，端侧 AI 终于追上 Gemini Live。但端云协同能否压住延迟、个人语境数据怎么过隐私关，决定 5 亿 iPhone 用户会不会真把 Siri 用起来——这一仗没第二次机会。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Anthropic 计划登陆纳斯达克，连续两季盈利瞄准 2 万亿美元估值</div>
+                <div class="article-source"><a href="https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo" target="_blank">The Decoder · 2026-09-14</a></div>
+                <div class="article-body">Anthropic 告知投资者将连续第二季度盈利，毛利率超 80%。但 FT 指出该口径剔除股权激励等成本，且未计入对 Amazon 等伙伴的分成和模型训练投入。IPO 估值传闻冲击 2 万亿美元，对标未上市的 OpenAI。</div>
+                <div class="article-commentary">「连续两季盈利」用调整后利润口径撑出来，IPO 估值直接对标 OpenAI——Anthropic 在用企业级订阅证伪「大模型永远亏损」的叙事。但 2 万亿的关键不是收入增速，是 AWS 投资+分成条款会不会被市场按账面剥离，给二线模型公司的估值留多少空间。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">DeepSeek-V4.1-Flash (Max) 进入 Agent Arena 开源第 3，每任务中位成本 $0.07</div>
+                <div class="article-source"><a href="https://x.com/arena/status/2099549108013006958" target="_blank">X @arena · 2026-09-14</a></div>
+                <div class="article-body">DeepSeek-V4.1-Flash (Max) 净提升 +4.87%，登上 Agent Arena 开源模型第 3、成本比第 2 名 Hy4 preview 低 68% 且仅差 0.09 个百分点；总榜第 12，Confirmed Success 信号排第 4 (+13.75%)。</div>
+                <div class="article-commentary">$0.07/任务、净提 4.87%，DeepSeek 又一次把开源 Agent 的性价比曲线往下压——专挑 Anthropic/OpenAI 的高价 Agent 区间打。做 Agent 产品的现在就该重新算 BOM，闭源旗舰只在 0.1% 的硬场景里还值得付溢价。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">硅基流动上线开源模型 Hy4 preview，770B 总参 / 49B 激活 / 1M 上下文</div>
+            <div class="article-source"><a href="https://x.com/SiliconFlowAI/status/2099536759168352634" target="_blank">X @SiliconFlowAI · 2026-09-14</a></div>
+            <div class="article-body dropcap">Hy4 preview 采用 MoE 架构，总参 770B、激活 49B、支持 1M 上下文，Apache 2.0 协议，可接入 Claude Code、Codex、Cursor。定价 $0.834/M 输入、$2.501/M 输出、$0.042/M 缓存。</div>
+            <div class="article-commentary">1M 上下文 + Apache 2.0 + $0.8 输入价，国产开源第一次在「长上下文旗舰」赛道跟 DeepSeek 并排站着——之前这块只有闭源旗舰玩得起。做长文档/法律/代码库 Agent 的，今天就该把 Hy4 跑进对比表。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">小红书 AllSpark 开源 Search Agent 模型 Iris，35B/397B 同量级领先</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&amp;mid=2247496383&amp;idx=1&amp;sn=2db8607f797615a3647d9fec7e54f448" target="_blank">公众号 小红书技术 · 2026-09-14</a></div>
+                <div class="article-body">小红书 AllSpark 团队发布并开源 Search Agent 模型 Iris，35B 与 397B 双版本在同量级评测中领先，权重与评测代码公开，数据与训练配方将陆续放出。</div>
+                <div class="article-commentary">小红书第一次以「全权重开源」姿态进入 Search Agent 赛道——35B/397B 双档意味着既给消费级显卡留了入口，也压了顶级。Search Agent 这条线不再只是 Perplexita/秘塔，国内大厂开始正面卡位。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Anthropic 公开 CI 重构细节：工程师产出涨 8 倍，CI 任务 6 个月涨 25 倍</div>
+                <div class="article-source"><a href="https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic" target="_blank">Claude Blog · 2026-09-14</a></div>
+                <div class="article-body">Anthropic 披露工程师季度代码交付量是 2021-2025 年均值的 8 倍，其中 80% 由 Claude 编写；六个月 CI 任务量涨 25 倍。团队重构了 Test Impact Analysis 服务，按改动范围选择性跑测试，把 PR 反馈时长压回可接受水位。</div>
+                <div class="article-commentary">「人均产出 8 倍、CI 25 倍」不是炫技，是给所有 AI-first 团队的预警——Agent 编码时代最大的瓶颈不是写代码，是测试基础设施。Anthropic 这次主动开源重构思路，CI 平台、测试选型厂商接下来 6 个月会被迫跟进。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Tomer Tunguz 拆解 Amodei「放缓前沿」背后的五派立场与算力监管难题</div>
+            <div class="article-source"><a href="https://tomtunguz.com/what-does-the-pause-mean" target="_blank">Tomer Tunguz Blog · 2026-09-14</a></div>
+            <div class="article-body dropcap">VC Tomer Tunguz 梳理 Dario Amodei 放缓前沿 AI 倡议背后可解释性、劳工、经济、地缘政治、监管俘获五派立场，指出没有任何一派给出「该多快」的量化答案，算力监管面临的具体技术问题仍未落地。</div>
+            <div class="article-commentary">所有人反对加速、没人说得清该多慢——Tunguz 戳穿的是监管空转。真正能推动节奏的只有「算力配额/出口管制」这种硬抓手，未来 1-2 个季度盯紧美国 BIS 和欧盟 AI Act 的二级立法，那是节奏落点。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-09-15</em>
+        </div>
+    </div>
+</body>
+</html>
