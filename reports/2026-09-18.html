@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-09-18</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>118</em> &middot; No. <em>118</em></span>
+                <span>Friday, September 18, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-09-17.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天主线很清楚：版权诉讼的内部铁证把行业「偷数据」的潜规则摆上台面，AI 又同时成为攻击工具和办公入口——安全和合规不再是配角。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">纽约时报诉 OpenAI 与微软案新解封文件：双方内部承认 LLM 建立在「窃取」之上并引发 Doom Loop</div>
+            <div class="article-source"><a href="https://aihot.virxact.com/" target="_blank">NYT · 2026-09-18</a></div>
+            <div class="article-body dropcap">纽约时报诉 OpenAI 与微软案最新解封文件显示，微软与 OpenAI 内部邮件承认当前 LLM 建立在对版权内容的大规模抓取之上。文件同时披露，AI 公司内部已将这种数据获取方式称为「史上最大劳动窃取」，并担忧形成「Doom Loop」式的依赖。</div>
+            <div class="article-commentary">司法证据首次坐实「偷数据」是行业共识而非外界指控，所有做训练数据的团队都要重新评估版权风险。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">WSJ：研究人员用 Claude Opus 5 借 Discourse 漏洞访问 OpenAI 私有代码仓库</div>
+                <div class="article-source"><a href="https://aihot.virxact.com/" target="_blank">WSJ · 2026-09-18</a></div>
+                <div class="article-body">WSJ 报道，三名安全研究人员利用 Claude Opus 5 配合 Discourse 论坛漏洞，成功访问了 OpenAI 部分私有代码仓库。事件暴露了 AI 公司在第三方 SaaS 与内部代码托管之间的边界防护薄弱。</div>
+                <div class="article-commentary">AI 模型本身成了新型渗透工具，安全团队要把「模型 + SaaS 漏洞」当作一类新攻击面来设计防御。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Anthropic 发布 Claude Docs / Slides / Design，文档与设计直接嵌入对话导出 PPT/PDF</div>
+                <div class="article-source"><a href="https://aihot.virxact.com/" target="_blank">Anthropic · 2026-09-18</a></div>
+                <div class="article-body">Anthropic 在 Claude 对话中直接上线 Docs、Slides、Design 三件套，生成的文档、幻灯片、设计稿可以一键导出为 PowerPoint 或 PDF。对话即工作产物的形态进一步成型。</div>
+                <div class="article-commentary">Anthropic 把「聊天框」升级成「办公套件入口」，直接挤压 Notion、Canva 在中小团队的留存空间。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">DeepSeek 发布 V4.1-Flash：552B MoE 多模态模型主打 KV cache 压缩</div>
+            <div class="article-source"><a href="https://aihot.virxact.com/" target="_blank">DeepSeek · 2026-09-18</a></div>
+            <div class="article-body dropcap">DeepSeek 发布 V4.1-Flash，总参数 552B 的 MoE 架构多模态模型，核心卖点是 KV cache 压缩，目标是在长上下文场景下显著降低推理显存与时延。</div>
+            <div class="article-commentary">MoE + KV 压缩双管齐下，长上下文性价比正在成为国产模型弯道超车的新赛道。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">阿里 Qwen 发布原生全模态 Qwen3.8-Omni-Flash，主打音视频智能体任务交付</div>
+                <div class="article-source"><a href="https://aihot.virxact.com/" target="_blank">阿里 · 2026-09-18</a></div>
+                <div class="article-body">阿里通义千问发布原生全模态模型 Qwen3.8-Omni-Flash，强调在音视频输入下的智能体任务交付能力，可直接处理跨模态指令并执行多步骤操作。</div>
+                <div class="article-commentary">国内大模型竞争从「卷基准」转向「卷端到端任务执行」，Omni 的下一战场是真实业务闭环。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Meta 发布 Muse for Mac：个人智能体可在本地直接操控电脑完成任务</div>
+                <div class="article-source"><a href="https://aihot.virxact.com/" target="_blank">Meta · 2026-09-18</a></div>
+                <div class="article-body">Meta 发布面向 macOS 的个人智能体 Muse，可在用户电脑上直接执行文件操作、浏览器任务和应用控制，类似 Apple Intelligence 与 Operator 的合体形态。</div>
+                <div class="article-commentary">巨头集体押注「桌面 Agent」，下一轮 OS 战火烧到谁能接管用户的鼠标键盘。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">产品</div>
+            <div class="article-headline">GitHub 用 Copilot 智能体把 Copilot 运行时从 TypeScript 迁移到 83 万行 Rust</div>
+            <div class="article-source"><a href="https://aihot.virxact.com/" target="_blank">GitHub · 2026-09-18</a></div>
+            <div class="article-body dropcap">GitHub 内部用 Copilot Agent 完成了一次自指式迁移：把 Copilot 自身的运行时从 TypeScript 重写为 83 万行 Rust。AI 写系统级语言大规模重构首次有了公开案例。</div>
+            <div class="article-commentary">「AI 改造 AI 基础设施」从口号落地为生产案例，大型 monorepo 重构的工程范式正在被改写。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-09-18</em>
+        </div>
+    </div>
+</body>
+</html>
