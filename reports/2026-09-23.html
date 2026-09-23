@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-09-23</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>124</em> &middot; No. <em>124</em></span>
+                <span>Wednesday, September 23, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-09-22.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">OpenAI 与 Anthropic 同日开打价格战——GPT-6 双子 API 砍半、Opus 5.5 智能指数登顶；同日五角大楼调查报告把 AI 推上伦理审判台。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">OpenAI 发布 GPT-6 Sol 与 Luna，API 定价较 GPT-5.6 促销价降 50%</div>
+            <div class="article-source"><a href="https://www.marktechpost.com/2026/09/22/openai-releases-gpt-6-sol-and-luna-50-cheaper-api-pricing-and-benchmarks" target="_blank">MarkTechPost · 2026-09-23</a></div>
+            <div class="article-body dropcap">OpenAI 一次性发布 GPT-6 系列两款模型：Sol 走旗舰路线，每 1M tokens 输入 $2、输出 $10；Luna 走轻量路线，输入 $0.10、输出 $0.50，定价相比 GPT-5.6 促销价下调约 50%，同步上线 API、ChatGPT Work 与 Codex。</div>
+            <div class="article-commentary">旗舰与廉价同日发，明确在和下午的 Claude Opus 5.5 抢定价话语权。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Anthropic 发布 Claude Opus 5.5，智能指数 58 登顶、成本较 Opus 5 降 40%</div>
+                <div class="article-source"><a href="https://x.com/claudeai/status/2102435511222890900" target="_blank">Claude 官方 · 2026-09-22</a></div>
+                <div class="article-body">Anthropic 发布 Claude 5.5 系列首个模型 Opus 5.5，多数任务达到 Fable 5.1 水平但成本砍 40%；Artificial Analysis 智能指数以 58 分登顶，超过 GPT-6 系列，并同时上线 OpenRouter 与 Claude Code v2.1.280 默认模型。</div>
+                <div class="article-commentary">用「智能指数+降价」组合拳，直接对标同日发布的 GPT-6，双雄对决摊牌。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">BENCHMARK</div>
+                <div class="article-headline col-headline">Artificial Analysis 评测 GPT-6 Sol/Luna：成本减半但智能指数持平</div>
+                <div class="article-source"><a href="https://x.com/ArtificialAnlys/status/99000" target="_blank">Artificial Analysis · 2026-09-23</a></div>
+                <div class="article-body">Artificial Analysis 对 GPT-6 Sol 与 Luna 跑完多维度独立评测：成本确实比 GPT-5.6 促销价降约一半，但综合智能指数较 GPT-5.6 几乎持平，编码与推理子项有升有降，说明降价换的是价格不是能力跃迁。</div>
+                <div class="article-commentary">第三方一盆冷水：便宜不等于更强，选型要看子项别看标签。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">五角大楼内部调查：过度依赖 Palantir Maven AI 是误击伊朗学校、123 名儿童死亡的成因之一</div>
+            <div class="article-source"><a href="https://www.bloomberg.com/graphics/2026-iran-school-attack" target="_blank">Bloomberg · 2026-09-22</a></div>
+            <div class="article-body dropcap">五角大楼调查披露，2026 年 2 月 28 日两枚 Tomahawk 导弹击中伊朗米纳布 Shajarah Tayyebeh 小学，造成 150+ 人死亡、其中至少 123 名儿童；Centcom 部分人员过度信任 Palantir 的 Maven Smart System，叠加七年未更新的卫星图像与过时情报，是关键诱因。</div>
+            <div class="article-commentary">军用 AI 的「幻觉」会致命，已经不是技术问题而是问责问题。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Meta 智能体 Muse 曝严重 0-day 漏洞，Amazon 已开始封禁其购物功能</div>
+                <div class="article-source"><a href="https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day" target="_blank">Ars Technica · 2026-09-22</a></div>
+                <div class="article-body">安全研究员 Patrick Wardle 发现 Meta 的 AI 助手 Muse 存在高危 0-day：任何本地应用或终端命令都可窃取用户 Muse 账户 token，从而完全控制智能体；PoC 已实现写任意文件、调用摄像头拍照。Meta 在披露 12 小时后出热修复；此前 Amazon 因 Muse 是未授权 Agent 已封禁其购物功能。</div>
+                <div class="article-commentary">高权限 Agent 配 Token 明文存储，是 Agent 时代的新攻击面必修课。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Kimi 浏览器扩展上线，前身 Kimi WebBridge 更名，可一键录制操作步骤为可复用 Skill</div>
+                <div class="article-source"><a href="https://kimi.com/products/kimi-browser-extension" target="_blank">Kimi 官方 · 2026-09-22</a></div>
+                <div class="article-body">Kimi 推出新浏览器扩展（原 Kimi WebBridge）：侧边栏常驻对话，可让 Kimi 导航网页、填表单、执行任务；重复性任务支持录制一次后保存为 skill，下次自动接手。Chrome Web Store 与 kimi.com 已上架。</div>
+                <div class="article-commentary">从聊天工具切到浏览器 Agent，把重复流程固化成 skill 是正确的产品形态。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">Qwen-Image-2.1 登顶 Arena 图像编辑与文生图开源榜双榜第一</div>
+            <div class="article-source"><a href="https://x.com/Alibaba_Qwen/status/2102569821997346912" target="_blank">Qwen 官方 · 2026-09-23</a></div>
+            <div class="article-body dropcap">通义千问宣布 Qwen-Image-2.1 在 Arena 的 Image Edit Arena 与 Text-to-Image Arena 同时拿下开源榜第一，图像编辑 Arena 得分 1367、总榜第 16，距离第 15 名 GPT-Image-1.5-high-fidelity 仅 3 分。</div>
+            <div class="article-commentary">开源图像模型与闭塞顶级仅差 3 分，工程红利仍在阿里这边。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-09-23</em>
+        </div>
+    </div>
+</body>
+</html>
