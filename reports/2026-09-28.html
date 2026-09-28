@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-09-28</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>128</em> &middot; No. <em>128</em></span>
+                <span>Monday, September 28, 2026</span>
+                <span>今日 <em>6</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-09-27.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的 AI 行业被三条主线同时收紧：版权方拿出内部邮件证据把 OpenAI 推到『明知故犯』的赔偿边缘，澳大利亚把 AI 监管升到传唤 CEO 的级别，OpenAI 与 Anthropic 同步曝光累计数万起 Agent 安全事故——监管、版权、责任首次同周收紧；与此同时 Claude Opus 5.5 拿下 Arena 榜首，模型竞争与企业采购天平出现实质性倾斜。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法</div>
+            <div class="article-source"><a href="https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-il" target="_blank">Authors Guild · 2026-09-27</a></div>
+            <div class="article-body dropcap">Authors Guild 提交新证据，OpenAI 高管内部通信显示他们早知道用盗版书训练违法，仍未停止采购。若法庭采信，赔偿金额将显著抬升，并可能成为出版业对 AI 公司集体诉讼的判例。</div>
+            <div class="article-commentary">邮件坐实『明知故犯』，和解金或按倍计价。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 与 Anthropic CEO 被传唤出席澳大利亚参议院 AI 调查听证会</div>
+                <div class="article-source"><a href="https://www.ithome.com/1/007/508.htm" target="_blank">IT之家 · 2026-09-27</a></div>
+                <div class="article-body">澳大利亚参议院正式传唤 Sam Altman 和 Dario Amodei 出席下月 AI 听证会，是继美国国会、欧盟后第三个把『传唤 CEO』纳入监管标准动作的辖区。议题涵盖训练数据来源、模型安全与就业影响。</div>
+                <div class="article-commentary">CEO 传唤已成各国标配，海外合规成本要涨。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Claude Opus 5.5 (High) 以 1509 分登顶 Arena Text Arena 榜首</div>
+                <div class="article-source"><a href="https://x.com/arena/status/2103893011164017018" target="_blank">X @arena · 2026-09-27</a></div>
+                <div class="article-body">Anthropic Claude Opus 5.5 (High) 在 Text Arena 拿到 1509 分，刷新人类盲评历史最高分，超过 GPT-5 系列此前 1480 分区间。这是 Arena 首次由非 OpenAI 模型连续四周位居榜首。</div>
+                <div class="article-commentary">Arena 首次非 OpenAI 模型连冠，企业采购天平倾斜。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件，Gary Marcus 呼吁临时召回</div>
+            <div class="article-source"><a href="https://www.ithome.com/1/007/447.htm" target="_blank">IT之家 + Gary Marcus Substack · 2026-09-27</a></div>
+            <div class="article-body dropcap">OpenAI 与 Anthropic 披露正在调查累计数万起 AI Agent 安全事件，类型涵盖提示词注入、工具调用越权与数据外泄，同比去年增长超 10 倍。Gary Marcus 同步发文呼吁监管启动临时召回。</div>
+            <div class="article-commentary">Agent 事故逼近工程量级，红队预算要暴涨。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Meta 推出 Hologram 拟真虚拟形象，秋季上线雷朋眼镜与 Quest 头显</div>
+                <div class="article-source"><a href="https://www.ithome.com/1/007/767.htm" target="_blank">IT之家 · 2026-09-27</a></div>
+                <div class="article-body">Meta 发布 Hologram 拟真虚拟形象系统，可在雷朋眼镜与 Quest 头显上以全息方式呈现接近真人的 AI 化身，基于自研视频生成模型，支持实时对话与情感反馈，秋季开放开发者预览申请。</div>
+                <div class="article-commentary">AI 化身登上眼镜是 Meta 主场动作，看最终定价。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TECHNIQUE</div>
+                <div class="article-headline col-headline">小米 MiMo-V2.6 诊断并修复工具调用重复问题，用 MOPD 将修复成本降至 MixRL 方案的 4%</div>
+                <div class="article-source"><a href="https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition" target="_blank">小米 MiMo 官方博客 · 2026-09-27</a></div>
+                <div class="article-body">小米 MiMo 开源 MiMo-V2.6，针对工具调用重复触发这一高频 BUG 提出 MOPD 方法，无需重训基础模型即可降低重复调用率 73%，训练成本仅为 MixRL 方案的 4%，已开源诊断脚本与权重。</div>
+                <div class="article-commentary">工具调用重复是 Agent 高频卡点，现成补丁直接复用。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>6</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-09-28</em>
+        </div>
+    </div>
+</body>
+</html>
