@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-09-30</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>130</em> &middot; No. <em>130</em></span>
+                <span>Wednesday, September 30, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-09-29.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的主线是「头部模型迭代加速 + 监管治理双向收紧 + 一笔算力大单」。Anthropic 与 SpaceX 的 845 亿美元算力合同、FTC 对头部实验室的强制调证、白宫超级智能协议，是这一轮最值得关注的信号三件套。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic 与 SpaceX 签最高 845 亿美元算力协议，90 天可解</div>
+            <div class="article-source"><a href="https://www.ithome.com/1/008/589.htm" target="_blank">IT之家 · 2026-09-30</a></div>
+            <div class="article-body dropcap">Anthropic 与 SpaceX 签署算力合同，金额上限最高 845 亿美元，用于租用 SpaceX 数据中心内的英伟达 GPU，合同可提前 90 天通知解除。</div>
+            <div class="article-commentary">连 SpaceX 都下场当云厂，算力饥渴已外溢到非传统供应商；&#x27;90 天可解&#x27;意味着这是一份有退路的豪赌。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">FTC 以消费者保护为由对 OpenAI、Anthropic 等启动全面调查</div>
+                <div class="article-source"><a href="https://the-decoder.com/ftc-launches-sweeping-probe-into-openai-anthropic-and-other-ai-labs-over-consumer-protection-concerns/" target="_blank">The Decoder · 2026-09-30</a></div>
+                <div class="article-body">FTC 将通过具法律约束力的 Civil Investigative Demands 强制调取文件并质询高管，OpenAI、Anthropic 与 METR 均在调查范围内，命令将在数周内发出。</div>
+                <div class="article-commentary">从口头警告升级到有法律效力的强制调证，头部实验室将首次接受正式质询；这份文件能解释很多动作。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">OpenAI 发布 GPT-6.1 Sol：以 Astra 五分之一价格逼近其编码与计算机操作水平</div>
+                <div class="article-source"><a href="https://www.marktechpost.com/2026/09/30/openai-releases-gpt-6-1-sol-near-astra-coding-and-computer-use-at-one-fifth-of-astras-token-price/" target="_blank">MarkTechPost · 2026-09-30</a></div>
+                <div class="article-body">GPT-6.1 Sol 定价为每百万 token 输入 2 美元、输出 10 美元、缓存输入 0.10 美元，约为 GPT-6 Astra 标准价格的五分之一；在 WebDev 榜同价提升 70 分。</div>
+                <div class="article-commentary">用 1/5 价格逼近旗舰能力，Agent 任务的经济模型被改写，先评估自己工作流能不能降级到 6.1 Sol。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">Google DeepMind 发布 Gemini 4 Argon，先向可信网络防御者开放</div>
+            <div class="article-source"><a href="https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/" target="_blank">Google DeepMind · 2026-09-30</a></div>
+            <div class="article-body dropcap">Gemini 4 Argon 通过 Fairwind Program 先面向可信网络安全防御者开放，之后再逐步面向开发者、企业和消费者；Agent Arena 排名第 8，每任务成本 0.62 美元。</div>
+            <div class="article-commentary">先发安全场景、再放 ToB/ToC，与传统 &#x27;先 ToC 再 ToB&#x27; 反向，把模型可信做成了产品发布节奏。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Trump 推动二十余家公司在白宫签署自愿性 AI 安全协议</div>
+                <div class="article-source"><a href="https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/" target="_blank">Ars Technica · 2026-09-30</a></div>
+                <div class="article-body">约二十余家科技公司签署白宫超级智能协议，承诺独立安全审计、定期会商、共同安全标准；协议无法律约束力，仅具道德约束力。</div>
+                <div class="article-commentary">签字不等于交棒，真正的监管武器还在 FTC 手里；读这份协议要看它和 FTC 调查是不是同一天。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 披露并处置一起有组织的模型蒸馏攻击行动</div>
+                <div class="article-source"><a href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign" target="_blank">OpenAI · 2026-09-30</a></div>
+                <div class="article-body">OpenAI 识别并处置一起系统性提取模型受保护推理内容的攻击行动，最早活动可追溯到 7 月第一周。</div>
+                <div class="article-commentary">把模型被蒸馏主动披露，比悄悄压锅更能震慑对手；OpenAI 选在这个时点公开，是对竞品的一次明牌施压。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Google DeepMind 发布 SynthID Bio，把水印嵌入 AI 生成蛋白质</div>
+                <div class="article-source"><a href="https://deepmind.google/blog/introducing-synthid-bio/" target="_blank">Google DeepMind · 2026-09-30</a></div>
+                <div class="article-body">SynthID Bio 把签名写进 AI 生成的生物序列和预测结构中，水印可在湿实验合成出的物理蛋白质上验证，且不损害生物功能。</div>
+                <div class="article-commentary">从文本/图像水印跨进生物序列，正撞上生物安全监管窗口；&#x27;AI 生蛋白可被追溯&#x27;这件事，越早定标准越主动。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">蚂蚁百灵发布 Ling-3.1-flash，560B 总参 / 25B 激活、1M 上下文</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzkyODk2MDQwNw==&amp;mid=2247488041&amp;idx=1&amp;sn=e895cef2129ff2a96598d78b5a45c17b" target="_blank">公众号：蚂蚁百灵 · 2026-09-30</a></div>
+                <div class="article-body">Ling-3.1-flash 总参数 560B、每 Token 激活 25B、上下文 1M；架构为 7 层 KDA 配 1 层 Gated MLA，512 个路由专家选 8 个加 1 个共享专家。</div>
+                <div class="article-commentary">百万上下文配线性注意力高占比，国内开源旗舰已经追到主流架构节奏；长任务 Agent 可重点评估。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-09-30</em>
+        </div>
+    </div>
+</body>
+</html>
