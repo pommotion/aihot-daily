@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-10-07</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>138</em> &middot; No. <em>138</em></span>
+                <span>Wednesday, October 7, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-10-06.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的主线是同一件事的两面：token 在变得更便宜、模型变得更能干，而真正卡住规模化的电力、验证与规则开始同时亮红灯。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">OpenAI 向全部 ChatGPT 用户推出 GPT-6 与 Intelligent UI</div>
+            <div class="article-source"><a href="https://openai.com/index/gpt-6-for-everyone/" target="_blank">OpenAI 官方 · 2026-10-07</a></div>
+            <div class="article-body dropcap">OpenAI 面向全部 ChatGPT 用户开放 GPT-6，并同步引入 Intelligent UI：回答中直接生成图形、按钮、表单、图表和可交互组件。前沿模型第一次以默认形态进入免费/付费全量用户，交互层从纯文本转向可操作界面。</div>
+            <div class="article-commentary">聊天框不再是终点，做工具的人得重排入口。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Anthropic 发布 Claude Haiku 5.5，Artificial Analysis 得分 43</div>
+                <div class="article-source"><a href="https://artificialanalysis.ai/articles/claude-haiku-5-5" target="_blank">Artificial Analysis · 2026-10-06</a></div>
+                <div class="article-body">Claude Haiku 5.5 在 Artificial Analysis Intelligence Index 得 43 分，比上一代 Haiku 一年提升 26 分，是首个支持 effort 设置与 adaptive thinking 的 Haiku 模型。定价每百万 token 输入 $0.10、输出 $0.50，超过 100k 输入时为 $0.50/$2.50。</div>
+                <div class="article-commentary">小模型一年涨 26 分，日常活可以全下沉到廉价档。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Anthropic 为 Claude Max 和 Team 套餐推出月度 Platform API 额度</div>
+                <div class="article-source"><a href="https://x.com/ClaudeDevs/status/2107895957933408429" target="_blank">X：Claude Devs · 2026-10-07</a></div>
+                <div class="article-body">Anthropic 为订阅用户打包 Platform API 额度：Max 5x 为 $100，Max 20x 为 $200，Team 最高 $500 且团队内可共享。额度适用于任何模型，可在自己的代码或第三方 harness 中调用，等于把 API 账单并进订阅。</div>
+                <div class="article-commentary">订阅开始覆盖 API，用量不再随调用量单独计费。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">Anthropic 将 Claude Sonnet 5.5 缓存读取价格减半至每百万 token $0.10</div>
+            <div class="article-source"><a href="https://x.com/claudeai/status/2107894060229034197" target="_blank">X：Claude · 2026-10-07</a></div>
+            <div class="article-body dropcap">Anthropic 将 Claude Sonnet 5.5 缓存读取价格从每百万 token $0.20 降至 $0.10，官方称多数长时运行任务整体成本下降约 20%。Cursor 同日公布 Haiku 5.5 定价并同步下调自家缓存读取价格。</div>
+            <div class="article-commentary">降价点押在缓存命中，长会话 agent 才是真受益方。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">RESEARCH</div>
+                <div class="article-headline col-headline">Microsoft Research Asia 开源 Agent Lightning v1.0：3,500 行代码的智能体 RL 训练框架</div>
+                <div class="article-source"><a href="https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/" target="_blank">MSRA 博客 · 2026-10-07</a></div>
+                <div class="article-body">微软亚洲研究院提出 Harnessed Agentic RL 范式并开源重建的 Agent Lightning v1.0：部署时用的同一套 agent harness 直接参与强化学习，无需为了训练在框架内重写一遍 agent，全仓仅 3,500 行代码。</div>
+                <div class="article-commentary">训练部署同一套代码，agent 迭代终于不用重写两遍。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">NVIDIA Nemotron 系列微调后达到 IOI 2026 与 IMO 2026 金牌水平</div>
+                <div class="article-source"><a href="https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026" target="_blank">Hugging Face · 2026-10-07</a></div>
+                <div class="article-body">NVIDIA Nemotron 团队基于 Nemotron 3，用 SFT、RL 与反馈驱动推理三条不同路线分别构建系统，在 IOI 2026 与 IMO 2026 达到金牌水平，权重与构建配方在 Hugging Face 公开。</div>
+                <div class="article-commentary">竞赛金牌已能微调复现，稀缺的不再是分数而是原创难题。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">RESEARCH</div>
+                <div class="article-headline col-headline">OpenAI 发布内部前沿模型产出的数学研究成果，多数证明已用 Lean 形式化</div>
+                <div class="article-source"><a href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank">OpenAI 官方 · 2026-10-06</a></div>
+                <div class="article-body">OpenAI 公开一批由内部前沿模型产出的新数学成果，以 GitHub 仓库形式发布，附论文修订与引用协议；其中许多证明已用 Lean 形式化以便计算机验证，等于把「模型能证」变成可复算的公开记录。</div>
+                <div class="article-commentary">形式化让 AI 数学从可宣称变成可验收，这是信任的分界线。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">a16z：德州并网队列从 63 GW 涨到 474 GW，九成申请是数据中心</div>
+                <div class="article-source"><a href="https://www.a16z.news/p/why-texas-is-making-data-centers" target="_blank">a16z · 2026-10-07</a></div>
+                <div class="article-body">a16z 分析德州电网暂停审批数据中心的原因：并网申请队列从 2024 年底 63 GW 激增至今年 6 月 474 GW，约九成为数据中心，其中大量是开发商的投机性排队，且与社区沟通严重不足。</div>
+                <div class="article-commentary">GPU 到货不等于能开机，真正的瓶颈已经变成电表。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-10-07</em>
+        </div>
+    </div>
+</body>
+</html>
