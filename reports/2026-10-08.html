@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-10-08</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>138</em> &middot; No. <em>138</em></span>
+                <span>Thursday, October 8, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-10-07.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的主线是「钱和风险同时上头条」：OpenAI 年化营收被曝腰斩式下调 200 亿，数学界公开抵制它；而一条提示词就能劫持整个 AWS 账户的智能体漏洞，说明能力跑在安全前面。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">OpenAI 年化营收被曝接近 500 亿美元，比市场预期少约 200 亿</div>
+            <div class="article-source"><a href="https://www.ithome.com/1/010/751.htm" target="_blank">IT之家 · 10-08</a></div>
+            <div class="article-body dropcap">金融时报报道，OpenAI 向投资者披露截至 9 月底年化营收逼近 500 亿美元，远低于外界此前估算的 700 亿。差异主要来自统计口径：Anthropic 把 AWS、谷歌云等合作方销售收入计入自身营收，OpenAI 则剔除。消息面当日纳指 100 收跌 1.4%，英伟达跌 2.9%，甲骨文跌 5.5%。</div>
+            <div class="article-commentary">同一套营收可以有 ±200 亿美元的解释权，握在谁手里就听谁的。做 AI 应用的人该记住：别再拿「OpenAI 年化 X 亿」当行业景气度指标，这个数字是口径游戏不是业绩。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">部分数学家呼吁抵制 OpenAI：722 份 AI 生成证明涌入学界</div>
+                <div class="article-source"><a href="https://the-decoder.com/some-mathematicians-call-for-openai-boycott-after-ai-generated-proofs-flood-their-field/" target="_blank">The Decoder · 10-08</a></div>
+                <div class="article-body">AHM 组织在 Terence Tao 主持下发表声明，抵制 OpenAI 在 GitHub 一次性放出 722 份未公开内部模型产出的数学手稿（归为 372 个成果组），称这是展示力量而非学术行为。OpenAI 此前宣称内部模型一个月内解决逾 100 个开放数学问题，约 8000 道测试题成功率约 5%，每道平均消耗 3 小时 GPT-Pro 级算力。</div>
+                <div class="article-commentary">5% 成功率被包装成「解决 100 道开放问题」，这是本条最值得警惕的信号——不是数学家保守，是叙事在抢跑。往后看 AI for Science 的成果，先看失败率和验证方式，再看数字。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体</div>
+                <div class="article-source"><a href="https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found/" target="_blank">The Decoder · 10-08</a></div>
+                <div class="article-body">Zenity Labs 披露名为 AgentCorruption 的漏洞链：对一个公开的 Amazon Bedrock AgentCore 智能体发一条提示词，即可借元数据服务 169.254.169.254 窃取 AWS 凭据，进而横向控制同账户同区域的所有 AgentCore 智能体，读取私人对话、源代码和存储凭据，还能篡改智能体长期记忆。</div>
+                <div class="article-commentary">以前的漏洞偷的是数据，这次偷的是「替你干活的那个东西本身」，而且能改它的记忆。已经把智能体接进云账号的团队，今天就该去检查凭证作用域。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Crowdstrike：疑似单人用 AI 渗透工具攻破多家韩国银行</div>
+            <div class="article-source"><a href="https://the-decoder.com/ai-powered-hacking-tools-enabled-a-likely-single-attacker-to-breach-multiple-south-korean-banks/" target="_blank">The Decoder · 10-08</a></div>
+            <div class="article-body dropcap">Crowdstrike 报告称，一名疑似中文使用者于 2026 年 9 月底至 10 月初，利用 AI 驱动的开源渗透测试工具 ARTEX 攻击多家韩国金融机构并窃取数据，其中 Shinhan Bank 超过 25000 条包含姓名、联系方式、收入与信用额度的记录泄露。</div>
+            <div class="article-commentary">攻击者从「雇一支队伍」变成「开一个订阅」。攻防的差距不在技术，在人数——防守方还是原来的编制，攻方成本已经降到个人级别。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Arena 完成 2 亿美元 B 轮，估值 31 亿并推出 Alignment Index</div>
+                <div class="article-source"><a href="https://x.com/arena/status/2108310714423423254" target="_blank">X：Arena · 10-08</a></div>
+                <div class="article-body">由 Lightspeed 与 Khosla Ventures 联合领投，a16z、Felicis、Salesforce Ventures 等参投。Arena 自 A 轮以来年化收入超 1 亿美元，平台累计 3.5 亿场会话、6200 万次投票，用户遍布 150 多国。同时发布基于真实智能体轨迹的 Alignment Index，从 Unauthorized Action、False Attribution、Deceptive Completion 三个信号评估 20 多个前沿模型。</div>
+                <div class="article-commentary">「谁在野外被用得最多」正在变成比官方 benchmark 更硬的指标，因为它无法被刷。押注模型选型的人，可以开始把 Arena 流量当参考数据源了。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">OpenAI 的 Decisions API 上架 OpenRouter，输入 $0.10/M、输出免费</div>
+                <div class="article-source"><a href="https://x.com/OpenRouter/status/2107929204142874759" target="_blank">X：OpenRouter · 10-07</a></div>
+                <div class="article-body">GPT-6 Luna Decisions 登陆 OpenRouter。该 API 允许应用指定模型、工具或动作，发送文本、JSON 或图片，返回带概率的类型化答案。定价为输入 $0.10/M、输出免费，上下文 1M；OpenAI 开发者账号称其决策速度比经 Responses API 调用 GPT-6 Luna 最快 10 倍。</div>
+                <div class="article-commentary">输出免费等于逼你把输出压成结构化标签，这是把 LLM 从「聊天对象」推成「分类器」。路由、分流、缓存这类逻辑以后大概率不再由你手写 prompt。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">TIP</div>
+                <div class="article-headline col-headline">单张 RTX 5090 上跑 MiniMax H3 实时视频，30 秒片子 23.5 秒生成</div>
+                <div class="article-source"><a href="https://blog.comfy.org/p/how-i-generated-live-video-with-minimax" target="_blank">Comfy Blog · 10-08</a></div>
+                <div class="article-body">ComfyUI 博客作者用智能体搜集并整合各类优化手段，把 MiniMax H3 实时视频生成压到单张 RTX 5090（32GB 显存）上运行，生成 30 秒视频耗时 23.51 秒，达到 1.28 倍实时吞吐。</div>
+                <div class="article-commentary">值得看的不是「一张卡跑通了」，而是作者用智能体自动找优化点这个动作本身——调参的边际成本正在归零，硬件采购决策可以再等等。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Google 开源 ML Drift 端侧推理引擎，接替 TFLite GPU delegate</div>
+                <div class="article-source"><a href="https://developers.googleblog.com/ml-drift-next-gen-gpu-aiml-inference-at-the-edge/" target="_blank">Google Developers Blog · 10-08</a></div>
+                <div class="article-body">Google AI Edge 团队以 Apache 2.0 许可开源 ML Drift，一个跨平台端侧 GPU 推理计算引擎，作为 LiteRT 的核心 GPU 加速层，定位为 TFLite GPU delegate 的接替者，面向端侧 AI 推理提供新一代 GPU 计算能力。</div>
+                <div class="article-commentary">手机和 IoT 上跑模型的性能差距，很大程度卡在推理算子实现而非模型本身。换成 Apache 2.0 意味着创业公司不用再被 TFLite 的维护节奏绑住。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-10-08</em>
+        </div>
+    </div>
+</body>
+</html>
