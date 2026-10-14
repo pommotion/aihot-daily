@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-10-13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>144</em> &middot; No. <em>144</em></span>
+                <span>Tuesday, October 13, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-10-12.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天两条主线：模型拼性价比，工程工具链被迫重写，而消费端的产品先撑不住了。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODELS</div>
+            <div class="article-headline">Gemini 4 Argon 正式 GA：智能指数追平 GPT-6 Astra，任务成本仅六成</div>
+            <div class="article-source"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/" target="_blank">Google Blog · 2026-10-13</a></div>
+            <div class="article-body dropcap">Google 发布 Gemini 4 Argon，面向开发者、企业与科研任务全球开放，可经 Gemini API、AI Studio 与 Antigravity 调用。Artificial Analysis 智能指数上与 GPT-6 Astra 排名持平，但 Cost per Task 只有后者 60%。OpenRouter 同步上线，introductory 定价输入 $2/M、输出 $10/M。</div>
+            <div class="article-commentary">智能持平、成本六成，这是价格战不是性能战，该重算账的是选模型的人。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">榜单第一不等于好用：Argon 实测暴露 Agent 与前端塌陷</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647687032&amp;idx=1&amp;sn=c5368ed503c4b529ee3946cce017543e" target="_blank">数字生命卡兹克 · 2026-10-13</a></div>
+                <div class="article-body">卡兹克实测认为 Argon 知识类专业能力强劲，Vals Index 综合第一（68.9）、单次成本 15.68 美元；但 CUA-bench 仅 4.83% 排倒数第二，前端效果不及 GPT-6 Astra，额度消耗快，中文写作 AI 味重，整体体验不佳。</div>
+                <div class="article-commentary">Agent 与前端双双塌陷，评测分数开始骗不到真正干活的人了。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Character.AI 成立五年申请破产，算力月支出是订阅收入的五倍</div>
+                <div class="article-source"><a href="https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/" target="_blank">TechCrunch · 2026-10-13</a></div>
+                <div class="article-body">Character.AI 申请 Chapter 11 破产，资产负债在 5000 万至 1 亿美元之间，部分资产以 2000 万美元售予 Disney。法院文件显示其 2024 年月度算力支出 1380 万美元，订阅收入峰值仅 280 万美元，2026 年 8 月仍每月亏损 800-900 万美元。</div>
+                <div class="article-commentary">烧的钱是收入的五倍，这才是陪聊类消费 AI 的死因，不是不够有人喜欢。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">WORKFLOW</div>
+            <div class="article-headline">Anthropic 五个月自研 Scion 换掉 git，代码评审工具 Antique 同期上线</div>
+            <div class="article-source"><a href="https://www.anthropic.com/engineering/redesigning-source-control" target="_blank">Anthropic Engineering · 2026-10-13</a></div>
+            <div class="article-body dropcap">Anthropic 发布工程复盘：Claude 使日均合并代码量从 2026 年 5 月的约 2500 条增至 9 月的超 3 万条，五个月内自研版本控制系统 Scion 并完全替代 git，同时推出代码评审工具 Antique。</div>
+            <div class="article-commentary">代码产量翻十倍，git 扛不住才被迫重写，瓶颈从模型挪到了工具链。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Xbow 用 GPT-5.6 挖出 Chrome 三漏洞链，获 Google 25 万美元全链奖励</div>
+                <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2110203596948353155" target="_blank">X: Rohan Paul · 2026-10-13</a></div>
+                <div class="article-body">Xbow 工程师 Brendan Dolan-Gavitt 用 OpenAI 的 gpt-5.6-sol 分析 Chrome 源码，历时六天、花费约 4 万美元算力，找到三个独立漏洞组成漏洞链，使标签页内普通 JavaScript 穿越两道防护边界、逃出所有沙箱，获 Google 全链条 25 万美元奖励。</div>
+                <div class="article-commentary">4 万美元算力换 25 万奖金，漏洞挖掘第一次有了清晰的投入产出比。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Epic 迪士尼 15 亿美元项目转向 AI 先行开发，游戏无限期延期</div>
+                <div class="article-source"><a href="https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/" target="_blank">Ars Technica · 2026-10-12</a></div>
+                <div class="article-body">据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元的合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理与引导生成内容；这款合作射击游戏已无限期延期。</div>
+                <div class="article-commentary">让 Claude 写全部代码的实验，代价是这款游戏暂时发不出来。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPERS</div>
+                <div class="article-headline col-headline">AWS 提出 priming：不重训也能把 Transformer 改造成混合状态空间架构</div>
+                <div class="article-source"><a href="https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch" target="_blank">Amazon Science · 2026-10-12</a></div>
+                <div class="article-body">AWS 团队发布论文《Priming: Hybrid state space models from pre-trained Transformers》，提出 priming 方法，复用预训练 Transformer 权重构建混合架构，将预训练成本降低逾 99%，全流程消耗不足源模型 0.5% 的 token 预算。</div>
+                <div class="article-commentary">架构换代不必从头训，这是给存量权重续命的第二条路。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">面壁开源 MiniCPM-V 4.7：35B-A3B MoE 多模态模型 3GB 内存端侧跑</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&amp;mid=2247499456&amp;idx=1&amp;sn=03da7aed4dabbd4fca5c89ce88d4a90a" target="_blank">面壁智能 · 2026-10-13</a></div>
+                <div class="article-body">面壁智能联合 OpenBMB 社区发布并开源 MiniCPM-V 4.7，包含 35B-A3B 与 1B 两个版本，称其为全球首个可在端侧无损流畅运行的开源 MoE 多模态大模型，3GB 内存即可流畅运行。</div>
+                <div class="article-commentary">3GB 内存跑 35B MoE，端侧多模态的价格战才刚开打。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-10-13</em>
+        </div>
+    </div>
+</body>
+</html>
