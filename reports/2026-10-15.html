@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-10-15</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>145</em> &middot; No. <em>145</em></span>
+                <span>Thursday, October 15, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-10-14.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天两条主线同时发生：资本开始给 AI 降温，技术端却在成批开源，一热一冷撞在同一周。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic Q3 营收 168 亿美元增速放缓，IPO 估值预期从 2 万亿砍到 1.5 万亿</div>
+            <div class="article-source"><a href="https://the-decoder.com/anthropics-q3-revenue-hits-16-8b-but-growth-slows-ahead-of-planned-november-ipo/" target="_blank">The Decoder · 2026-10-15</a></div>
+            <div class="article-body dropcap">Q3 营收 168 亿美元，环比增速约 45%，远低于 Q2 超过 140% 的水平。年内调整后营业利润率 11%，现金流为正，每 1 美元算力支出产出 1.70 美元收入。部分投资者失望，预计 11 月 IPO 估值降至 1.5 万亿美元以下。</div>
+            <div class="article-commentary">增速骤降，估值立刻砍掉四分之一，AI 泡沫开始校准。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Meta 开源 Muse Spark Open：816B 参数、42B 激活、1M 上下文、原生多模态</div>
+                <div class="article-source"><a href="https://pytorch.org/blog/muse-spark-open/" target="_blank">PyTorch Blog · 2026-10-15</a></div>
+                <div class="article-body">权重已在 Hugging Face 以 Muse Model License 放出，总参数 816B、激活 42B，上下文 1M token，原生支持图像、音频与文档输入，主打编码和智能体工作流。相比 8 月版本新增了安全后训练。</div>
+                <div class="article-commentary">开源大模型不再卷参数，开始卷上下文长度和原生多模态。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">八州总检察长联合起诉 OpenAI，指控 ChatGPT 诱导青少年自伤</div>
+                <div class="article-source"><a href="https://www.platformer.news/openai-states-lawsuit-liability/" target="_blank">Platformer · 2026-10-14</a></div>
+                <div class="article-body">八州总检察长分别在州法院起诉 OpenAI，指控 ChatGPT 强化妄想、提供危险医疗建议并协助策划暴力，依据各州消费者保护法。诉状还要求法院禁止 OpenAI 开发可自我改进且无法保证与人类价值对齐的模型。另有 42 个州在调查。</div>
+                <div class="article-commentary">真正的风险是诉讼要求禁止自我改进模型，技术路线被司法锁死。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">Microsoft AI 公布 MAI-Base-2 预训练细节：2.8T MoE，FLOPs 效率超 DeepSeek-V4-Pro 4.2–12.3 倍</div>
+            <div class="article-source"><a href="https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/" target="_blank">Microsoft AI · 2026-10-15</a></div>
+            <div class="article-body dropcap">MAI-Base-2 是 800 亿激活、2.8T 总参数的 MoE 基础模型。在 held-out 评测中其 BPB 低于所测全部开源权重模型，预训练 FLOPs 效率比 DeepSeek-V4-Pro-Base 高 4.2 至 12.3 倍。</div>
+            <div class="article-commentary">把训练效率而不是参数规模做成头条，微软在重新定义竞赛指标。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">可灵 Kling 4.0 上线：30 秒一镜到底，纸箱形变体现物理理解提升</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647687203&amp;idx=1&amp;sn=a58bc4411e8226b629f1b5c61509a198" target="_blank">数字生命卡兹克 · 2026-10-15</a></div>
+                <div class="article-body">可灵凌晨上线 Kling 4.0，支持最长 30 秒直出、最多 10 帧多帧参考，强化复杂打斗等大范围动态。作者实测后认为纸箱形变等细节体现了物理规律理解的提升。1080P 30 秒约 16 元，后续将支持 10-bit 4K HDR。</div>
+                <div class="article-commentary">30 秒不切镜头，短视频剪辑的活被模型直接抢走一块。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Gemini 4 Argon 公布 ARC-AGI 成绩：ARC-AGI-3 得分 97.5%</div>
+                <div class="article-source"><a href="https://x.com/arcprize/status/2110768288523251762" target="_blank">ARC Prize · 2026-10-15</a></div>
+                <div class="article-body">ARC-AGI-3 上 provider adapter harness 得分 97.5%、成本 4.8 万美元，标准 harness 仅 49.8%、成本反而更高；ARC-AGI-2 得分 91.3%、每任务 0.32 美元。DeepMind 是第二家突破 95% 的实验室。</div>
+                <div class="article-commentary">换个 harness 就差 48 分，榜单还剩多少可信度可谈。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">HOW-TO</div>
+                <div class="article-headline col-headline">vLLM 详解 Kimi K3 在 AMD MI355X 上的优化，单 GPU 吞吐超 NVIDIA HGX B300 24.4%</div>
+                <div class="article-source"><a href="https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x" target="_blank">vLLM 官方博客 · 2026-10-15</a></div>
+                <div class="article-body">AMD 与 Embedded LLM 详解 Kimi K3 在八卡 Instinct MI355X 上的推理优化路径，给出单 GPU 吞吐超过英伟达 HGX B300 24.4% 的实测结果，为想绕开单一供应商的团队提供可复现的工程方案。</div>
+                <div class="article-commentary">英伟达之外的第二供应商，第一次交出了可复现的硬数字。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Perplexity 开源沙箱平台 SPACE，支撑 Perplexity Computer 全部沙箱能力</div>
+                <div class="article-source"><a href="https://x.com/AravSrinivas/status/2110785848958759165" target="_blank">Perplexity CEO · 2026-10-15</a></div>
+                <div class="article-body">Perplexity CEO 宣布开源沙箱平台 SPACE（perplexityai/space），支撑 Perplexity Computer 的全部沙箱能力。他认为沙箱本身是同质化商品，但生产级流量下服务数百万沙箱需要大量工程细节，开源意在交给社区维护。</div>
+                <div class="article-commentary">开源沙箱等于承认这是基础设施，不该被一家 AI 公司独占。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-10-15</em>
+        </div>
+    </div>
+</body>
+</html>
