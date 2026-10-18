@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-10-17</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>147</em> &middot; No. <em>147</em></span>
+                <span>Saturday, October 17, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-10-16.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">中国 AI 首次把搜索和模型定价一并推向市场，而安全与贸易管制两条战线同时收紧——能力在扩散，闸门也在合拢。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">DeepSeek 开放自研搜索 API，索引千亿级网页并内置反 GEO 机制</div>
+            <div class="article-source"><a href="https://api-docs.deepseek.com/zh-cn/updates/#开放自研搜索-api" target="_blank">DeepSeek 官方 · 2026-10-16</a></div>
+            <div class="article-body dropcap">DeepSeek 开放自研搜索 API，底层是其 AI 原生的搜索引擎，每天稳定处理数亿次请求。该引擎索引全球千亿级网页、支持多语言，并内置识别机制过滤 SEO 作弊、GEO 操纵与低质 AIGC 内容，使用方式见官方网页搜索与抓取指南。</div>
+            <div class="article-commentary">模型厂商下场做搜索，意味着 RAG 的默认底座不再是 Google 或 Bing。谁掌握检索层，谁就掌握 Agent 的事实入口。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">商务部、科技部拟将 23 项 AI 技术列入出口管制目录征求意见</div>
+                <div class="article-source"><a href="https://www.ithome.com/1/013/983.htm" target="_blank">IT之家 · 2026-10-16</a></div>
+                <div class="article-body">两部门发布 2026 年第 48 号公告，就修订《中国禁止出口限制出口技术目录》公开征求意见，拟增列人工智能、生物医药、光伏共 40 项技术，其中禁止出口 14 项、限制出口 26 项，并对相关技术实施出口前登记的临时管理措施。</div>
+                <div class="article-commentary">AI 首次被成建制写进出口管制清单。开源权重模型的分发自由，很可能成为下一个谈判筹码。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Meta 开源 Muse Spark Open：816B 参数、42B 激活、1M 上下文</div>
+                <div class="article-source"><a href="https://pytorch.org/blog/muse-spark-open/" target="_blank">PyTorch Blog · 2026-10-15</a></div>
+                <div class="article-body">Meta 发布开放权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），相比 8 月的 Muse Spark 增加了安全后训练。</div>
+                <div class="article-commentary">1M 上下文加原生多模态，这是第一个把「长文档代理」当默认场景的开源权重模型。注意它带的额外安全后训练。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">RESEARCH</div>
+            <div class="article-headline">PromptArmor：开放权重模型遭间接提示词注入的易感率高出闭源 88%</div>
+            <div class="article-source"><a href="https://www.promptarmor.com/resources/open-weight-susceptibility" target="_blank">PromptArmor · 2026-10-16</a></div>
+            <div class="article-body dropcap">PromptArmor 在 9800 次试验的评测中发现，开放权重模型（DeepSeek、Kimi、GLM、Qwen）对真实世界间接提示词注入攻击链的易感率为 26.7%，闭源模型（GPT、Claude、Gemini）为 14.2%，前者高出 88%。</div>
+            <div class="article-commentary">闭源模型的安全护栏不只是产品功能，也是它的竞争壁垒。自建部署时这笔账要重新算。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Kling 4.0 上线：30 秒一镜到底直出，首尾帧升级为 10 帧多帧参考</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647687203&amp;idx=1&amp;sn=a58bc4411e8226b629f1b5c61509a198" target="_blank">数字生命卡兹克 · 2026-10-16</a></div>
+                <div class="article-body">可灵 AI 上线视频模型 Kling 4.0，此前 9 月底曾向部分黑金年卡及 Ultra 年订用户开放 4.0 Flash 尝鲜版。实测提升集中在三方面：最长 30 秒一镜到底直出，城市追逐、马戏团等复杂场景中人物与道具接触的物理形变表现更好；大范围动态与复杂打斗的动作衔接、镜头临场感明显提升；首尾帧改为最多 10 帧的多帧参考，全能参考可替换运镜、场景和人物。</div>
+                <div class="article-commentary">从「生成片段」走向「直接出片」，30 秒一镜到底抹掉了大部分剪辑需求。分镜能力该重估了。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TIP</div>
+                <div class="article-headline col-headline">Anthropic 复盘：当 Claude 写了 90% 的代码，代码评审该怎么重新设计</div>
+                <div class="article-source"><a href="https://x.com/shao__meng/status/2111274173192638932" target="_blank">X：邵猛 · 2026-10-17</a></div>
+                <div class="article-body">解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 已写下约 90% 的代码，2026 年 6 月到 9 月合并 PR 数量翻倍以上，而 revert 率下降超 40%——评审机制从人工逐行审，转向信任模型产出、用人来盯住风险点。</div>
+                <div class="article-commentary">PR 量翻倍而 revert 率反降，是「AI 写代码」第一次拿出可量化的质量证据。评审岗位该转型成风险审计。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">TIP</div>
+                <div class="article-headline col-headline">vLLM 披露 Kimi K3 在 AMD MI355X 上的优化：单 GPU 吞吐超 NVIDIA HGX B300 24.4%</div>
+                <div class="article-source"><a href="https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x" target="_blank">vLLM 官方博客 · 2026-10-16</a></div>
+                <div class="article-body">AMD 与 Embedded LLM 在 vLLM 官方博客详解 Kimi K3 在八卡 AMD Instinct MI355X 上的推理优化路径，包括 MoE 负载均衡、通信调度与内核层的针对性调整，最终单 GPU 吞吐比 NVIDIA HGX B300 高出 24.4%。</div>
+                <div class="article-commentary">同一模型换硬件后反超 NVIDIA 24%，说明卡的优势一半来自软件栈。换卡前先看优化做到哪一步。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">投资者下调 Anthropic IPO 估值预期，从约 2 万亿降至约 1.5 万亿美元</div>
+                <div class="article-source"><a href="https://www.ithome.com/1/013/723.htm" target="_blank">IT之家 · 2026-10-16</a></div>
+                <div class="article-body">路透社援引知情人士称，Anthropic 公布最新财务数据后，部分投资者开始考虑下调其 IPO 估值。此前市场预期 11 月上市时估值约 2 万亿美元，投资者日活动上讨论的区间降至约 1.5 万亿美元。</div>
+                <div class="article-commentary">第一个 AI 超级独角兽的定价被砍四分之一。上市定价会成为整个行业的估值锚。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-10-17</em>
+        </div>
+    </div>
+</body>
+</html>
