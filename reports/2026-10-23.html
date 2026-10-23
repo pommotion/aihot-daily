@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-10-23</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>153</em> &middot; No. <em>153</em></span>
+                <span>Friday, October 23, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-10-22.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的主线不是产品发布，而是攻防节奏的倒挂：AI 花两天挖出潜伏十几年的 PHP 漏洞，四天后已被全球黑客打上百万次。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">AI 挖出潜伏十几年的 PHP 底层漏洞，补丁上线前攻击窗口已过</div>
+            <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647687466&amp;idx=1&amp;sn=ba7ba0f3ca50ef789c17b179dd061f60" target="_blank">数字生命卡兹克 · 2026-10-22</a></div>
+            <div class="article-body dropcap">两个 CVSS 9.2 的 PHP 远程代码执行漏洞由 GPT-5.6 Sol 辅助发现，无账号攻击者即可接管服务器。补丁发布前四天已被利用，演示视频外流，多国政府网站预防性下线，NSA 发布修复警告。</div>
+            <div class="article-commentary">发现只花两天、修复拖了两个月，攻防节奏被 AI 彻底倒挂。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Symantec 截获「Skynet 模式」智能体，劫持他人模型算力自持续攻击</div>
+                <div class="article-source"><a href="https://the-decoder.com/an-ai-agent-in-skynet-mode-hijacks-unprotected-language-models-to-launch-self-sustaining-cyberattacks/" target="_blank">The Decoder · 2026-10-22</a></div>
+                <div class="article-body">研究人员用蜜罐截获一个把大语言模型嵌为核心的攻击智能体，它劫持互联网上无防护的模型端点，自主扫描目标、利用漏洞、窃取数据库凭据并安装挖矿程序，最多连续执行十万步，费用由被劫持模型的主人承担。</div>
+                <div class="article-commentary">攻击成本趋零、算力账单转嫁无辜者，裸露 API 成了新攻击面。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Anthropic 最快本周五公开提交 S-1 招股书，或创史上最大 IPO</div>
+                <div class="article-source"><a href="https://www.ithome.com/1/016/243.htm" target="_blank">IT之家 · 2026-10-22</a></div>
+                <div class="article-body">据雅虎财经援引知情人士，Anthropic 最早于本周五公开提交 S-1 招股说明书，估值规模有望创科技 IPO 纪录。Newcomer 同期披露其股权结构：多年因治理与安全路线分歧而观望的投资人中，无一持股超过 2%。</div>
+                <div class="article-commentary">安全叙事撑起了史上最大 IPO，也解释了它为何一直慢半拍。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">DeepSeek 新一轮融资约 150 亿美元，半年累计募资 225 亿</div>
+            <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2113106318659928525" target="_blank">X：Rohan Paul（引 Bloomberg）· 2026-10-22</a></div>
+            <div class="article-body dropcap">据 Bloomberg，DeepSeek 最新一轮融资约 150 亿美元，为中国最大规模私募融资之一。CATL 与腾讯是最大投资方之一，投前估值约 748 亿美元，叠加 6 月首轮，半年共募资约 225 亿美元。</div>
+            <div class="article-commentary">钱流向算力和人才，瓶颈已从算法转成算力采购。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">Anthropic 用 Claude 对 123 个开源库完成汇编级形式化安全证明</div>
+                <div class="article-source"><a href="https://www.anthropic.com/research/formal-verification" target="_blank">Anthropic Research · 2026-10-21</a></div>
+                <div class="article-body">Anthropic 与 Theorem 合作，把 OSS-Fuzz 的模糊测试输出转成规格，用 Claude 对 123 个开源库的 239 个入口点证明任意 64MB 以下输入不会崩溃，产出约 1.8 亿行 Rocq 证明。</div>
+                <div class="article-commentary">模型能产出机器可校验的证明，安全审计多了一条替代路径。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Claude 网页与移动端下周起默认开启 auto mode</div>
+                <div class="article-source"><a href="https://x.com/claudeai/status/2113360845409583307" target="_blank">X：Claude · 2026-10-22</a></div>
+                <div class="article-body">Claude 宣布下周起 Pro、Max、Team 套餐在网页、桌面和移动端的会话默认以 auto mode 运行，不再逐步请求批准，改由独立分类器审查高风险操作。测试中该分类器拦截了 89% 的危险命令，手动批准仅占 14%。</div>
+                <div class="article-commentary">审批弹窗消失，风险从用户手里转移到了模型判断力上。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">TIP</div>
+                <div class="article-headline col-headline">Anthropic 指南：什么时候该把子智能体塞回主 Agent 循环</div>
+                <div class="article-source"><a href="https://claude.com/blog/building-agents-when-to-fold-subagents-into-your-main-agent-loop" target="_blank">Claude Blog · 2026-10-22</a></div>
+                <div class="article-body">Anthropic Applied AI 团队对比多种智能体结构后指出，带 skills 的单智能体在质量上常优于「一个提示词包办一切」和拆分子智能体的方案，成本与延迟更低。一家客户改用单循环后，运行时间约快两倍。</div>
+                <div class="article-commentary">多数人过度设计了智能体结构，先跑单循环再谈拆分。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">MiniMax 开放 M3.1 Flash 权重：428B 总参数、每 token 激活 23B</div>
+                <div class="article-source"><a href="https://x.com/MiniMax_AI/status/2113436864904610008" target="_blank">X：MiniMax · 2026-10-23</a></div>
+                <div class="article-body">MiniMax 宣布 M3.1 Flash 权重全面公开，总参数 428B、每 token 激活 23B，提供 Hugging Face 与 ModelScope 下载。稀疏激活让这类超大模型自部署时的显存与推理成本明显低于同规模稠密模型。</div>
+                <div class="article-commentary">开权重 + 低激活，自建推理的账第一次算得过来了。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-10-23</em>
+        </div>
+    </div>
+</body>
+</html>
