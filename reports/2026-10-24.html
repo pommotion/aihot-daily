@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-10-24</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>154</em> &middot; No. <em>154</em></span>
+                <span>Saturday, October 24, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-10-23.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天两条主线并行：国产开源把大模型价格和显存门槛同时往下压，而 OpenAI 一边披露能接管服务器的压缩库漏洞，一边因为员工的阅后即焚聊天开除安全研究员。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">Kimi K3.1 Pro 发布：2.8T 参数、100 万 Token 上下文，价格砍半</div>
+            <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647687627&amp;idx=1&amp;sn=4816c8130f378587885913b465fd686f" target="_blank">Moonshot AI · 10 月 23 日</a></div>
+            <div class="article-body dropcap">月之暗面发布旗舰模型 Kimi K3.1 Pro，参数规模 2.8T，支持 100 万 Token 上下文与多模态输入，完整权重预计 11 月 4 日前开放。API 定价为输入每百万 Token 13 元、输出 68 元，相比 K3 接近砍半，同时推出速度提升 2 到 3 倍、价格翻倍的 Highspeed 版本。该模型已上线 OpenRouter，在 Artificial Analysis 智能指数以 55 分位列第 4。</div>
+            <div class="article-commentary">2.8T 只卖 K3 半价，再叠加开源权重，私有化部署的门槛被一次踩平。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 红队发现 Brotli 未认证远程代码执行漏洞并公开披露</div>
+                <div class="article-source"><a href="https://x.com/OpenAI/status/2113766354386084338" target="_blank">OpenAI · 10 月 23 日</a></div>
+                <div class="article-body">OpenAI 公布其红队演练中在 Brotli 压缩库发现的未认证远程代码执行漏洞。攻击者只需发送或回复恶意压缩数据即可在受影响机器上执行代码，无需注册账号。影响范围包括 Node.js、Bun、Envoy 等内嵌 Brotli 的软件，未打补丁且接受压缩请求的服务端可被对端直接接管，使用 curl --compressed 的客户端同样在列。</div>
+                <div class="article-commentary">服务端跑 Node 或 Envoy 的今天就该查版本，这是能直接被接管机器的洞。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 将估值目标从 1.4 万亿美元下调至 1.25 万亿，仍拟融资 300 亿美元</div>
+                <div class="article-source"><a href="https://the-decoder.com/openai-lowers-valuation-target-raises-up-to-30-billion/" target="_blank">The Decoder · 10 月 23 日</a></div>
+                <div class="article-body">据 The Decoder 报道，OpenAI 正接近完成至多 300 亿美元的新一轮融资，但把对外估值目标从最初设定的 1.4 万亿美元下调至 1.25 万亿美元。这是该公司在大规模算力投入与商业化节奏之间的一次预期修正，融资规模本身并未缩水。</div>
+                <div class="article-commentary">砍估值照融 300 亿，说明资本开始给 OpenAI 的叙事打折，但还不肯下车。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">国务院办公厅印发意见：增强 AI 创造就业效应，减缓替代影响</div>
+            <div class="article-source"><a href="https://www.ithome.com/1/017/113.htm" target="_blank">IT之家 · 10 月 23 日</a></div>
+            <div class="article-body dropcap">国务院办公厅 10 月 23 日印发《关于适应人工智能技术发展助力构建就业友好型发展方式的意见》，提出要增强 AI 创造就业机会、改造传统岗位的正面效应，同时有效减缓 AI 应用带来的就业替代影响。文件将 AI 对劳动力市场的冲击首次作为需要主动干预的治理议题。</div>
+            <div class="article-commentary">政策措辞从「鼓励发展」切换到「兜底就业」，AI 替代第一次被当成要管的风险。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">WSJ：OpenAI 因使用 Signal 阅后即焚聊天解雇 3 名安全研究员</div>
+                <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2113511968112042349" target="_blank">WSJ / Rohan Paul · 10 月 23 日</a></div>
+                <div class="article-body">据《华尔街日报》报道，OpenAI 安全团队发现有 3 名内部安全研究员与一名外部安全研究员使用阅后即焚的 Signal 聊天，随后将这 3 名研究员解雇。事件发生在公司同时对外强调前沿模型安全审查的时期，涉及内部沟通留痕与合规边界。</div>
+                <div class="article-commentary">用阅后即焚就开除，说明安全团队最大的风险已经不在模型，而在信任成本。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">MiniMax 开放 M3.1 Flash 权重：428B 总参数、每 Token 仅激活 23B</div>
+                <div class="article-source"><a href="https://x.com/MiniMax_AI/status/2113436864904610008" target="_blank">MiniMax · 10 月 23 日</a></div>
+                <div class="article-body">MiniMax 宣布开源 M3.1 Flash 的模型权重，总参数 428B，采用 MoE 结构，每个 Token 仅激活 23B 参数，已同步上线 Hugging Face 与 ModelScope 供下载。稀疏激活设计让它在推理成本上明显低于同规模稠密模型。</div>
+                <div class="article-commentary">428B 只激活 23B，单机可跑的大模型又降一档，中小团队该重算选型账。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Anthropic 详解 Claude Duet 智能体的凭证隔离与审批设计</div>
+                <div class="article-source"><a href="https://claude.com/blog/claude-duet-safety-privacy-and-security" target="_blank">Anthropic · 10 月 23 日</a></div>
+                <div class="article-body">Anthropic 发布处于研究预览阶段的 Claude Duet 智能体安全设计。发消息、付款、删除等重要操作需用户在审批卡上确认，另有一个独立于模型之外的分类器判断操作是否符合原始意图；密码、Cookie 与登录令牌不经过模型，支付使用一次性虚拟卡；敏感信息分为绝不共享与需同意共享两级，发送前由独立分类器检查。</div>
+                <div class="article-commentary">凭证不进模型、敏感操作走审批卡，Agent 落地的答案可能压根不在模型侧。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">Microsoft AI 发布 SDBench 基准与 MAI-DxO 诊断系统，登上 Science</div>
+                <div class="article-source"><a href="https://microsoft.ai/news/building-medical-superintelligence/" target="_blank">Microsoft AI · 10 月 22 日</a></div>
+                <div class="article-body">Microsoft AI 发布 Sequential Diagnosis Benchmark（SDBench）与配套的 AI 诊断系统 MAI-DxO，相关论文已发表于 Science。SDBench 按顺序问诊的方式评测模型在信息逐步披露下的诊断能力，MAI-DxO 则在该基准上做多步临床推理。</div>
+                <div class="article-commentary">比分数更该看的是它把「按顺序问诊」做成了基准，医疗 AI 开始考流程不只考知识。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-10-24</em>
+        </div>
+    </div>
+</body>
+</html>
