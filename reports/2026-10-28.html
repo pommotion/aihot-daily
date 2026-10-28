@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-10-28</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>158</em> &middot; No. <em>158</em></span>
+                <span>Wednesday, October 28, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-10-27.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">Anthropic 的招股书把 AI 生意的真实利润率摊在桌上，同一天它的内网被智能体打穿——能力与风险本来就是同一枚硬币。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic 招股书解密：H1 营收 163 亿美元，拟以代码 AN 登陆纳斯达克</div>
+            <div class="article-source"><a href="https://latent.space/p/ainews-anthropic-s1/" target="_blank">Latent Space · 2026-10-27</a></div>
+            <div class="article-body dropcap">Anthropic 公开提交 S-1，计划以代码 AN 在纳斯达克上市。营收从 2023 年的 4100 万美元增至 2026 年上半年 163 亿美元，Q2 单季 116 亿美元、同比增长 1368%；上半年毛利率 85%，营业利润 9.74 亿美元、Q2 首次转正。SemiAnalysis 播客进一步给出实施口径：增量毛利 90%、推理毛利 85%、净收入留存 500%。计划募资约 1000 亿美元。</div>
+            <div class="article-commentary">85% 毛利率把大模型从烧钱实验变成接近 SaaS 的现金流生意，应用层的定价逻辑要重算。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">AI 智能体攻破 Anthropic 内部系统，12 小时触及薪酬与 Slack 记录</div>
+                <div class="article-source"><a href="https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/" target="_blank">The Decoder · 2026-10-28</a></div>
+                <div class="article-body">安全初创公司 Cathedral 经第三方业务软件渗入 Anthropic 内部系统，称其 AI 智能体不到十二小时即接触到会议记录、薪资数据和 Slack 消息，随后通过漏洞赏金计划披露。双方对事件波及范围的说法并不一致。</div>
+                <div class="article-commentary">最擅长防攻击的公司被智能体打穿，攻防的时间差已由机器速度决定，人的流程救不了。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">RESEARCH</div>
+                <div class="article-headline col-headline">OpenAI 称模型解决三项科学难题，同时请诺奖级专家复核</div>
+                <div class="article-source"><a href="https://www.ithome.com/1/018/203.htm" target="_blank">IT之家 / The Decoder · 2026-10-27</a></div>
+                <div class="article-body">OpenAI 宣布其模型在三个方向产出研究结果：数学上给出所有维度下局部光滑猜想的证明，由此解决挂谷猜想与斯坦因限制猜想；计算机科学上给出推翻指数时间假设（ETH）的证明，暗示相关任务存在更快算法；物理学上提出量子色动力学与标准模型统一完备化的严格存在性证明，触及杨–米尔斯千禧年难题的一部分。部分证明已转写为 Lean 供机器逐步校验，另有诺奖得主在内的外部专家担任 shepherd 核查。</div>
+                <div class="article-commentary">重点不在结论而在流程：Lean 转写加外部复核，才把「模型说它证明了」变成可验证的东西。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">RESEARCH</div>
+            <div class="article-headline">Axiom 智能体集群 24 天形式化验证有限单群分类定理</div>
+            <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2115224910603890778" target="_blank">X：Rohan Paul · 2026-10-27</a></div>
+            <div class="article-body dropcap">Axiom 用 AI 智能体集群在 24 天内完成了数学史上最长证明的机器验证：把横跨 500 多篇论文、约 15000 页的有限单群分类定理（CFSG）转成 3800 万行以上机器可验证代码，过程中发现已发表记录中的 34 处严重出入。该形式化工程规模已可视为最大的开源项目之一，且体量约每 37 天翻倍。</div>
+            <div class="article-commentary">24 天干完人类几十年的校对，还揪出 34 处错，数学界该重估同行评审的成本结构了。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Google DeepMind 发布 Genie 4：实时可操控，首次原生生成音频</div>
+                <div class="article-source"><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/" target="_blank">Google DeepMind · 2026-10-27</a></div>
+                <div class="article-body">Genie 4 主打实时交互模拟，照片级真实感与物体碰撞等物理表现较 Genie 3 有明显进步。用户可用 WASD 和双摇杆实时控制角色或镜头，运行中能用自然语言修改天气、加入物体。作为首个原生生成音频的实时世界模型，它还能同步产出环境声与人物实时对话。</div>
+                <div class="article-commentary">世界模型第一次同时给到「可操作」和「有声音」，游戏原型与仿真预演的素材成本会被重算。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">OpenAI 发布 GPT-6.1 Terra，主打电脑操作与写作</div>
+                <div class="article-source"><a href="https://x.com/thsottiaux/status/2114800277677092936" target="_blank">X：Tibo / OpenRouter · 2026-10-26</a></div>
+                <div class="article-body">GPT-6.1 Terra 发布，官方称这是首个在写作、个性表达和细致理解请求上明显更好的模型，擅长理解屏幕内容并跨应用执行操作。API 与订阅中可用量是 6.1 Sol 的两倍，价格更低；已上线 OpenRouter，定价 1 美元/百万输入、5 美元/百万输出。</div>
+                <div class="article-commentary">两倍用量还降价，说明推理成本在往下掉；真正的变量是电脑操作，Agent 从聊天框挪到了桌面。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Epoch AI 用真实岗位任务评测：最强模型平均只得 65 分</div>
+                <div class="article-source"><a href="https://epochai.substack.com/p/can-ai-automate-epoch" target="_blank">Epoch AI · 2026-10-26</a></div>
+                <div class="article-body">Epoch AI 发布 Epoch Automation Reports，把机构内部的图表设计、研究规划等真实任务按人类员工标准交给前沿模型评分。领先的 Claude Fable 5.1 与 GPT-6 Astra 平均得分 65%，未达到 100% 可自动化的门槛。</div>
+                <div class="article-commentary">榜单刷到 90 分，换成真实工作只剩 65，自建岗位评测比看 benchmark 更能指导采购决策。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">面壁智能开源 MiniCPM-OCR：1.3B 解析模型 + 2B 判别模型</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&amp;mid=2247499654&amp;idx=1&amp;sn=9bcbf9492c492a5d5e611af41670425f" target="_blank">公众号：面壁智能 · 2026-10-28</a></div>
+                <div class="article-body">MiniCPM-OCR 1.0（1.3B）在 Real5-OmniDocBench 取得 93.68 分、OCRBench v2 取得 54.7 分的 SOTA，经 DSpark 加速后吞吐达 1.217 页/秒，端到端效率提升 55%。同批开源的还有 2B 规模的判别模型。</div>
+                <div class="article-commentary">1.3B 就跑到文档解析 SOTA，发票合同这类批量活可以搬回本地，不必再按页付费调 API。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-10-28</em>
+        </div>
+    </div>
+</body>
+</html>
