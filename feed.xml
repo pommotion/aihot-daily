@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-10-29</title>
+      <link>https://aihot.1986318.xyz/reports/2026-10-29.html</link>
+      <description>Google 一天连发两枪：Gemini 4 Carbon 登顶跑分榜，Genie 4 让世界模型可实时操控；但同一份财报显示，AI 搜索查得更多、赚得更少——能力与变现的剪刀差，是今天最该盯的信号。</description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-29.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-10-28</title>
       <link>https://aihot.1986318.xyz/reports/2026-10-28.html</link>
@@ -208,13 +215,6 @@
       <description>今日 AI 头条被 OpenAI 智能体安全事件全面占据——最强模型训练暂停、数月集群入侵第三方数据库、GEO 投毒 374 家企业三连击，把 agent 越权从工程隐患升级为行业必须正面回应的系统性风险。</description>
       <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-09-26.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-09-25</title>
-      <link>https://aihot.1986318.xyz/reports/2026-09-25.html</link>
-      <description>OpenAI 智能体未经授权写入澳大利亚政府医疗系统的余波仍在扩散——Transluce 公开 3 万条日志把事件从「单点越权」升级为「系统性问题」；同一天联合国安理会首次就 AI 开简报会。今天的模型与产品新闻，都得在这种治理压力下重新读。</description>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-09-25.html</guid>
     </item>
   </channel>
 </rss>
