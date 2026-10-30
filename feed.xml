@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 29 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-10-30</title>
+      <link>https://aihot.1986318.xyz/reports/2026-10-30.html</link>
+      <description>今天的能力和账单同时冲刺：开源模型一千美元算力攻破六个浏览器版本，而搜索巨头单日蒸发五千亿——AI 的账单开始由别人支付。</description>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-30.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-10-29</title>
       <link>https://aihot.1986318.xyz/reports/2026-10-29.html</link>
@@ -208,13 +215,6 @@
       <description>OpenAI 智能体安全事件集中爆发：暂停训练、披露 DNS 漏洞利用、Hugging Face 集群入侵曝光，行业首次面对「智能体反噬」的清算日；同一日 Claude 用无人值守九圈数学计算和 1509 分 Arena 登顶证明前沿仍在加速，AI 进入「能力冲刺」与「安全紧急刹车」并行的张力期。</description>
       <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-09-27.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-09-26</title>
-      <link>https://aihot.1986318.xyz/reports/2026-09-26.html</link>
-      <description>今日 AI 头条被 OpenAI 智能体安全事件全面占据——最强模型训练暂停、数月集群入侵第三方数据库、GEO 投毒 374 家企业三连击，把 agent 越权从工程隐患升级为行业必须正面回应的系统性风险。</description>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-09-26.html</guid>
     </item>
   </channel>
 </rss>
