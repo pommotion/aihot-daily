@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-10-30</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>160</em> &middot; No. <em>160</em></span>
+                <span>Friday, October 30, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-10-29.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的能力和账单同时冲刺：开源模型一千美元算力攻破六个浏览器版本，而搜索巨头单日蒸发五千亿——AI 的账单开始由别人支付。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">PAPER</div>
+            <div class="article-headline">Epoch AI：GLM 5.3 用一千美元算力自主攻破六个 Firefox 版本</div>
+            <div class="article-source"><a href="https://epochai.substack.com/p/glm-patch-gap-exploit-firefox" target="_blank">Epoch AI · 2026-10-30</a></div>
+            <div class="article-body dropcap">Epoch AI 实验发现，Z.ai 8 月发布的开源权重模型 GLM 5.3 能从 Mozilla 已发布但未推送的补丁中逆向出漏洞，以约 1000 美元算力连续攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本，最快一次仅耗时 12 小时。</div>
+            <div class="article-commentary">一千美元、十二小时挖出零日漏洞，补丁发布节奏已跑不过开源模型。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Google 与 Reddit 同日重挫：AI 搜索的账单开始由开放网络承担</div>
+                <div class="article-source"><a href="https://www.platformer.news/thursday-newsletter-6/" target="_blank">Platformer · 2026-10-30</a></div>
+                <div class="article-body">Alphabet 单日跌 12.6%，蒸发约 5000 亿美元市值。三季度营收增 25% 至 1276 亿美元，但搜索收入增速 12% 未达 15% 预期，利润反降 25%；高管承认 AI Mode 月活约 10 亿却变现更差。同日 Reddit 转向登录优先体验，10 月来自搜索引擎的引荐每周减少逾 100 万次。</div>
+                <div class="article-commentary">搜索广告被 AI 摘要蚕食，代价正从巨头传导到内容平台。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Anthropic S-1 曝光：未来 20 年至少 8500 亿美元采购承诺押注递归改进</div>
+                <div class="article-source"><a href="https://www.theverge.com/ai-artificial-intelligence/1021476/anthropic-s-1-compute-recursive" target="_blank">The Verge · 2026-10-29</a></div>
+                <div class="article-body">Anthropic 提交 S-1 拟在纳斯达克上市，估值区间 1.5 万亿至 2 万亿美元。2026 上半年营收同比增长 14 倍至 163 亿美元，净收入留存率 900%；但不可撤销采购承诺合计 2656 亿美元，叠加租赁与其他协议，未来 20 年承诺至少约 8500 亿美元。</div>
+                <div class="article-commentary">营收 14 倍的另一面是 8500 亿采购承诺，全押递归改进兑现。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODEL</div>
+            <div class="article-headline">Mistral Large 4 开放 1T 权重，Unsloth 再把它压进 233GB 单机</div>
+            <div class="article-source"><a href="https://huggingface.co/blog/mistral-large4" target="_blank">Hugging Face · 2026-10-29</a></div>
+            <div class="article-body dropcap">Mistral Large 4（Le Chonk）以 1T 总参数、49B 激活、1M 上下文的原生多模态 MoE 形态开放权重，vLLM 提供 Day 0 支持。Unsloth 同步放出 Dynamic 1-bit GGUF，体积从 1.1TB 压到约 233GB，保留 91% top-1 准确率，可在 Mac Studio 本地运行。</div>
+            <div class="article-commentary">1-bit 让 1T 模型搬进单机，闭源 API 的护城河得换个地方守。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Cursor 扩展市场惊现恶意版 Claude Code 扩展，最多 4100 人中招</div>
+                <div class="article-source"><a href="https://cursor.com/blog/claude-code-extension-security-notice" target="_blank">Cursor Blog · 2026-10-29</a></div>
+                <div class="article-body">Cursor 披露其 VS Code 扩展市场中的 Anthropic.claude-code 2.1.313 为恶意篡改版本，并非 Anthropic 官方开发，于 10 月 29 日 2:27am PT 至 1:35pm PT 期间上架，最多影响 4100 名用户。Cursor 当日下线扩展市场，清理并确认无进一步风险后重新上线，建议升级到 2.1.314。</div>
+                <div class="article-commentary">AI 编程工具自身就是攻击面，装的人越多冒充官方越划算。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODEL</div>
+                <div class="article-headline col-headline">Pika H3 Flex 开源：采样步数从 50 压到 6，视频生成提速还提质</div>
+                <div class="article-source"><a href="https://x.com/Khazix0918/status/2115898252004622617" target="_blank">X · 2026-10-29</a></div>
+                <div class="article-body">Pika Labs 在 MiniMax H3 基础上完成后训练，发布并开源 Pika H3 Flex，把视频生成的采样步数从 50 步压缩到 6 步，生成耗时大幅下降，质量反有提升，开源权重可自行部署与微调。</div>
+                <div class="article-commentary">步数砍到十分之一质量反升，后训练正在替代堆算力这条路径。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCT</div>
+                <div class="article-headline col-headline">Gemini Computer Use 转正，桌面里直接生成并编辑 PDF、PPT 与表格</div>
+                <div class="article-source"><a href="https://ai.google.dev/gemini-api/docs/changelog#10-30-2026" target="_blank">Gemini API · 2026-10-30</a></div>
+                <div class="article-body">Google 宣布 Gemini API 的 Computer Use 工具正式 GA，覆盖 Interactions 与 GenerateContent 两套 API。Gemini 应用内同时支持直接生成、预览和编辑文档、PDF、演示文稿与表格，可把手写笔记转成 PDF 学习指南，并继续追问修改。</div>
+                <div class="article-commentary">代理能力开放到 API、成品文件直接可编辑，AI 正在吃掉排版这份工。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TIP</div>
+                <div class="article-headline col-headline">Claude 5.5 三档怎么选，以及你可能对 Claude 过度提示了</div>
+                <div class="article-source"><a href="https://openrouter.ai/blog/insights/claude-opus-vs-sonnet-vs-haiku/" target="_blank">OpenRouter · 2026-10-30</a></div>
+                <div class="article-body">OpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5，建议默认用 Sonnet 5.5，高频与子智能体任务交给 Haiku 5.5，长任务且容错成本高时才用 Opus 5.5。Addy Osmani 另指出新版 Claude 所需提示远少于多数人习惯，建议从 /effort medium 起步按需调整。</div>
+                <div class="article-commentary">三档价差巨大，选对档位和少写提示比换模型更省钱。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-10-30</em>
+        </div>
+    </div>
+</body>
+</html>
