@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 31 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-01</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-01.html</link>
+      <description>今天的关键词是「结算」：OpenAI 把聊天和编码并成一张账单，巨头把三万亿美元押进机房，欧盟用法案逼出文本水印；Agent 终于开始接手真实活计，安全账单也在同步送达。</description>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-01.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-10-31</title>
       <link>https://aihot.1986318.xyz/reports/2026-10-31.html</link>
@@ -208,13 +215,6 @@
       <description>今天是「OpenAI DevDay 占据头条」的一天：模型、智能体、订阅、平台四线全线扩张；与此同时算力紧张、安全警报、消费硬件吃紧三条隐患线同步放大——头条与风险在同一天被同时拉满。</description>
       <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-09-29.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-09-28</title>
-      <link>https://aihot.1986318.xyz/reports/2026-09-28.html</link>
-      <description>今日 AI 大事件悬在资本、监管、安全三根线上：Anthropic 估值传出 2 万亿，参议院传唤两大模型公司 CEO，OpenAI 与 Anthropic 自报数万起智能体失控——整个赛道从技术赛跑切换到制度成熟轨道。</description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-09-28.html</guid>
     </item>
   </channel>
 </rss>
