@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-11-01</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>162</em> &middot; No. <em>162</em></span>
+                <span>Sunday, November 1, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-10-31.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的关键词是「结算」：OpenAI 把聊天和编码并成一张账单，巨头把三万亿美元押进机房，欧盟用法案逼出文本水印；Agent 终于开始接手真实活计，安全账单也在同步送达。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">PRODUCT</div>
+            <div class="article-headline">OpenAI 12 月起将 ChatGPT 与 Codex 合并为统一 Token 额度</div>
+            <div class="article-source"><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&amp;mid=2647688028&amp;idx=1&amp;sn=e509269da2e0e0b4d4dfbb121b42204b" target="_blank">数字生命卡兹克 · 2026-11-01</a></div>
+            <div class="article-body dropcap">OpenAI 更新帮助文档：12 月起 Plus、Pro 用户在 ChatGPT 聊天与 Codex 间共享同一份 Token 额度，Instant 聊天不受影响，Work 智能体能力并入主界面。此前 Codex Pro 额度先降后恢复，这次合并更像算力成本压力的外溢。</div>
+            <div class="article-commentary">无限聊天时代结束，算力账被直接摊到了订阅页上。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">彭博社统计：Alphabet、Meta、微软、亚马逊、甲骨文承诺投入超 3 万亿美元建 AI 基础设施</div>
+                <div class="article-source"><a href="https://www.ithome.com/1/020/632.htm" target="_blank">IT之家 · 2026-10-31</a></div>
+                <div class="article-body">彭博社统计五大巨头 AI 基建承诺投入合计超 3 万亿美元：谷歌超 1 万亿美元，约为一年前八倍；Meta 超 8000 亿美元，近半是 30 年长租约；甲骨文成为首家因 AI 数据中心投资导致自由现金流转负的大型科技公司。</div>
+                <div class="article-commentary">军备竞赛的本质是资产负债表竞赛，甲骨文现金流转负只是开始。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Parameter Labs 披露接管 ChatGPT 账户的攻击链</div>
+                <div class="article-source"><a href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/" target="_blank">Simon Willison · 2026-10-31</a></div>
+                <div class="article-body">Parameter Labs 披露 ChatGPT 沙箱逃逸链路：HTML 预览 iframe 里的不可信代码经 postMessage 触发 MathLive 虚拟键盘 innerHTML 注入，再借 CSP 放行的 YouTube oEmbed 端点反射执行 JS，可窃取登录态数据。</div>
+                <div class="article-commentary">分享链接成了入口，登录态浏览器里的 Agent 需要重新评估。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">赛迪研究院：我国 AI 推理数据量首超训练数据量，6 月日均词元调用量超 175 万亿</div>
+            <div class="article-source"><a href="https://www.ithome.com/1/020/809.htm" target="_blank">IT之家 · 2026-11-01</a></div>
+            <div class="article-body dropcap">赛迪研究院报告称我国 AI 推理数据量首次超过训练数据量，标志从模型研发转入规模化产业应用。截至 6 月日均词元调用量超 175 万亿，较 2024 年初增长 1000 多倍；已在钢铁、汽车等 20 个行业落地 1000 多个场景。</div>
+            <div class="article-commentary">推理超过训练，意味着中国 AI 的钱开始花在「用」而非「造」上。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">Google 论文提出 FlowAgent，在代码合并前自动修复失败的测试</div>
+                <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2116855559034912990" target="_blank">Rohan Paul · 2026-11-01</a></div>
+                <div class="article-body">Google 论文介绍内部 CI 中的 FlowAgent：捕获测试失败后由 Agent 编辑、构建并重跑测试直至通过，修复连同根因说明进入代码评审。195 个真实失败中 67.18% 修复正确，生产环境已应用 28554 个修复，中位耗时 9.85 分钟。</div>
+                <div class="article-commentary">省下的是开发者动手前的等待窗口，比模型分数更接近真实 ROI。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">DeepSeek 提出 Super-agent 双层架构：Router 分派、Worker 并发执行</div>
+                <div class="article-source"><a href="https://www.ithome.com/1/020/615.htm" target="_blank">IT之家 · 2026-10-31</a></div>
+                <div class="article-body">DeepSeek Harness 团队提出 Router 层承接交互与分派、Worker 层隔离并发执行的双层事件驱动架构，归纳连续、高效、主动、持久四项特征。同日以 MIT 许可开源原型 dsh-superagent v0.1.0，可监听 GitHub 与飞书请求生成并行 Ticket。</div>
+                <div class="article-commentary">「一个模型干所有事」拆成调度层+执行层，是务实的 Agent 工程解法。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Anthropic 为四个旧款 Claude 模型补装水印，两个旧模型可通过采样参数绕过</div>
+                <div class="article-source"><a href="https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/" target="_blank">The Decoder · 2026-10-31</a></div>
+                <div class="article-body">为赶上欧盟 AI 法案 12 月期限，Anthropic 把文本水印扩展到 Claude Mythos 5、Opus 4.7、Opus 4.6 与 Sonnet 4.6。但报道指出其中两个旧模型可通过调整采样参数规避水印，合规补丁到位不等于检测可靠。</div>
+                <div class="article-commentary">水印是给监管看的，绕过漏洞留给了技术人，文本溯源远未可靠。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TIP</div>
+                <div class="article-headline col-headline">OpenRouter 教程：233 行脚本在 Linux 沙箱里跑通 AI 代码审查</div>
+                <div class="article-source"><a href="https://openrouter.ai/blog/tutorials/ai-code-review/" target="_blank">OpenRouter · 2026-11-01</a></div>
+                <div class="article-body">OpenRouter 发布教程，用 233 行、仅依赖标准库的 review.py，经 Responses API 组合 Files API、Shell 沙箱与 Apply Patch：把改动文件传到托管 Linux 沙箱，让模型实际跑检查确认 bug，再返回 V4A 补丁，附四模型实测数据。</div>
+                <div class="article-commentary">让模型在沙箱里跑一遍再下结论，比让它口头评审可信得多。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-11-01</em>
+        </div>
+    </div>
+</body>
+</html>
