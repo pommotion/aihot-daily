@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-02</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-02.html</link>
+      <description>今天的关键词是「露底」：SemiAnalysis 的 GDPx 基准让最好的通用智能体只拿到 12%，能力天花板第一次被量化；同一天 OpenAI 开始把数据中心改名为「AI 算力园区」备战选举后的政治战，沙特阿美则用 26 亿美元直接下场买算力——技术、资本与政治三本账同时翻开。</description>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-02.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-01</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-01.html</link>
@@ -208,13 +215,6 @@
       <description>今天的主线是「头部模型迭代加速 + 监管治理双向收紧 + 一笔算力大单」。Anthropic 与 SpaceX 的 845 亿美元算力合同、FTC 对头部实验室的强制调证、白宫超级智能协议，是这一轮最值得关注的信号三件套。</description>
       <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-09-30.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-09-29</title>
-      <link>https://aihot.1986318.xyz/reports/2026-09-29.html</link>
-      <description>今天是「OpenAI DevDay 占据头条」的一天：模型、智能体、订阅、平台四线全线扩张；与此同时算力紧张、安全警报、消费硬件吃紧三条隐患线同步放大——头条与风险在同一天被同时拉满。</description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-09-29.html</guid>
     </item>
   </channel>
 </rss>
