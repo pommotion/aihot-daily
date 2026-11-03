@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-03</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-03.html</link>
+      <description>今天的关键词是账单：Anthropic 用 12 倍营收换来 233 亿美元净亏损与近 9000 亿美元算力长约，Google 趁势把 2.5 系列强制并入 3.8；而开源侧 Mistral 把万亿参数模型直接放出权重——供给在涨，代价也在涨。</description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-03.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-02</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-02.html</link>
@@ -208,13 +215,6 @@
       <description>今天 AI 主线集中在 Agent 的代价：监管调查、估值狂飙、HBM 瓶颈与安全失准同时进入公众视野，工程突破反而被挤压成配角。</description>
       <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-02.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-09-30</title>
-      <link>https://aihot.1986318.xyz/reports/2026-09-30.html</link>
-      <description>今天的主线是「头部模型迭代加速 + 监管治理双向收紧 + 一笔算力大单」。Anthropic 与 SpaceX 的 845 亿美元算力合同、FTC 对头部实验室的强制调证、白宫超级智能协议，是这一轮最值得关注的信号三件套。</description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-09-30.html</guid>
     </item>
   </channel>
 </rss>
