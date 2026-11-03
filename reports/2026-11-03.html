@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-11-03</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>164</em> &middot; No. <em>164</em></span>
+                <span>Tuesday, November 3, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-11-02.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的关键词是账单：Anthropic 用 12 倍营收换来 233 亿美元净亏损与近 9000 亿美元算力长约，Google 趁势把 2.5 系列强制并入 3.8；而开源侧 Mistral 把万亿参数模型直接放出权重——供给在涨，代价也在涨。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic 单季营收 12 倍增至近 170 亿美元，净亏损 233 亿美元</div>
+            <div class="article-source"><a href="https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss/" target="_blank">The Decoder · 2026-11-02</a></div>
+            <div class="article-body dropcap">该季营收近 170 亿美元，是一年前的 12 倍；但运营成本 175 亿美元吞掉全部收入，净亏损 233 亿美元，高于去年同期的 121 亿。更新后的招股书首次披露，算力与数据中心租约承诺约 8950 亿美元，其中 4475 亿美元须在 2031 年前支付。</div>
+            <div class="article-commentary">营收翻十二倍还在亏钱，前沿模型的账远没算平</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">OpenAI 用激活分类器在前沿模型内部做逐 token 安全监控</div>
+                <div class="article-source"><a href="https://alignment.openai.com/training-activation-classifiers/" target="_blank">OpenAI Alignment Research · 2026-11-02</a></div>
+                <div class="article-body">OpenAI 自 GPT-5.6 起在前沿模型流量上部署激活分类器，读模型内部激活逐 token 评分，可在生成中途拦截违规回复和工具调用。实验显示它比更大的文本分类器更抗越狱，但每换一代基础模型就得重新训练这套防线。</div>
+                <div class="article-commentary">安全从输出端挪进内部激活层，代价是每代模型都要重训</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCTS</div>
+                <div class="article-headline col-headline">Google 弃用 Gemini 2.5 Pro 与 2.5 Flash，12 月 1 日起请求自动改路由</div>
+                <div class="article-source"><a href="https://ai.google.dev/gemini-api/docs/changelog#11-02-2026" target="_blank">Gemini API Changelog · 2026-11-02</a></div>
+                <div class="article-body">2.5 Pro 与 2.5 Flash 已弃用，AI Studio 里选不到。12 月 1 日起请求自动改路由到 3.8 Flash 与 3.5 Flash-Lite，并按目标模型费率计费。破坏性变更含 function calling 校验、thinking_level 取代 thinking_budget、移除采样参数。</div>
+                <div class="article-commentary">只剩一个月，不改模型串的人会在 12 月 1 日被静默改价</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODELS</div>
+            <div class="article-headline">Mistral Large 4 开放权重：1 万亿参数 MoE，每 token 激活 520 亿</div>
+            <div class="article-source"><a href="https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B" target="_blank">Hugging Face · Mistral AI · 2026-11-03</a></div>
+            <div class="article-body dropcap">1 万亿参数原生多模态 MoE，128 个路由专家每 token 激活 4 个，总激活约 520 亿，1M 上下文，原生支持 160 多种语言。网络安全与视觉定位是主打方向，权重与技术报告同步开放，采用修改版 MIT 许可，商用托管需另购授权。</div>
+            <div class="article-commentary">开放权重第一次摸到万亿级，自建编码智能体的成本账要重算</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCTS</div>
+                <div class="article-headline col-headline">Claude Platform 推出 message threads 公测，长会话首 token 快约 35%</div>
+                <div class="article-source"><a href="https://claude.com/blog/message-threads" target="_blank">Claude Blog · 2026-11-02</a></div>
+                <div class="article-body">智能体每轮只发新增消息，不用重发全部对话历史。官方数据显示在 500K 到 1M token 的请求规模下，首 token 时间中位数下降约 35%，并给出线程的生命周期管理与接入方式。</div>
+                <div class="article-commentary">省的不是钱是等待，长会话智能体的体感差距藏在这三成里</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Revolut 把约 2000 名工程师迁到自托管 GLM 编码</div>
+                <div class="article-source"><a href="https://twitter.com/guilleflorvs/status/2117379073785696395" target="_blank">Hacker News · 2026-11-02</a></div>
+                <div class="article-body">据 Revolut AI 运营负责人 David Abitbol，公司已把约 2000 名工程师迁到自托管的 GLM 上做日常编码，仅 Claude Code 与 Codex 列为例外。闭源 API 的定价，第一次直接决定了大型金融科技公司的开发工具选型。</div>
+                <div class="article-commentary">两千人换掉主力编码模型，闭源 API 的优势只剩在例外名单里</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">OPINION</div>
+                <div class="article-headline col-headline">Addy Osmani：Agent 越顺手，人越容易交出判断</div>
+                <div class="article-source"><a href="https://x.com/addyosmani/status/2117512471930167377" target="_blank">X · @addyosmani · 2026-11-03</a></div>
+                <div class="article-body">他提出从「认知卸载」到「认知投降」的光谱：输出越流畅，人越容易放弃独立判断。做法包括提问前先写假设、把验证标准前置成可执行测试、要求 Agent 列出它替你做的决策与假设、用测验收尾而不是读摘要。</div>
+                <div class="article-commentary">把责任钉进流程，比任何提示词技巧都更能守住质量</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">OpenAI 推出 Grid Protectors，让算力校园在电网紧张时主动降载</div>
+                <div class="article-source"><a href="https://openai.com/index/grid-protectors-program" target="_blank">OpenAI · 2026-11-02</a></div>
+                <div class="article-body">OpenAI 与电力公司、监管机构和政策制定者合作，让未来的算力校园在电网吃紧时降低用电需求，首站落地 Georgia 的 Effingham County 校园，并公开了与 Georgia Power 合同中的可削减容量与电费影响。</div>
+                <div class="article-commentary">AI 基建第一次承认自己是被电网管制的耗电大户，谈判筹码变了</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-11-03</em>
+        </div>
+    </div>
+</body>
+</html>
