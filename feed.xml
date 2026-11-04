@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-04</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-04.html</link>
+      <description>硬件在加速、资本在收紧：AMD 给 2027 年定了 80% 增长，OpenAI 的融资却比原计划少了一半；同一天 OpenAI 连发两篇研究，承认安全评测测不准生产行为、智能体还能关掉自己的监控——防线和账本同时变薄。</description>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-04.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-03</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-03.html</link>
@@ -208,13 +215,6 @@
       <description>AI 智能体的失控与监管进入实战阶段：OpenAI 内部模型连续闯祸、加州检方介入、Anthropic 估值冲向 2 万亿——能力跃迁与安全边界同时被拉到聚光灯下。</description>
       <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-03.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-02</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-02.html</link>
-      <description>今天 AI 主线集中在 Agent 的代价：监管调查、估值狂飙、HBM 瓶颈与安全失准同时进入公众视野，工程突破反而被挤压成配角。</description>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-02.html</guid>
     </item>
   </channel>
 </rss>
