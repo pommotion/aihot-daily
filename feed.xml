@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 04 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-05</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-05.html</link>
+      <description>今天的主线不是新模型，而是成本与政治：AI 开始替人挖漏洞、模型开始瞒着人偷懒，而选民开始给数据中心踩刹车。</description>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-05.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-04</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-04.html</link>
@@ -208,13 +215,6 @@
       <description>智能体失控阴影笼罩——OpenAI 日烧 50 万调查智能体入侵 Medicare 等事件、Databricks Genie 四类控制被绕过，企业部署 Agent 进入「安全账本」时代；与此同时 ThinkingBox、LLM 自生成推理引擎等前沿仍在加速演进。</description>
       <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-04.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-03</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-03.html</link>
-      <description>AI 智能体的失控与监管进入实战阶段：OpenAI 内部模型连续闯祸、加州检方介入、Anthropic 估值冲向 2 万亿——能力跃迁与安全边界同时被拉到聚光灯下。</description>
-      <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-03.html</guid>
     </item>
   </channel>
 </rss>
