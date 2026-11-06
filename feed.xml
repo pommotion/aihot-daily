@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-06</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-06.html</link>
+      <description>同一天里资本市场、监管现实与技术风险一起收紧，AI 扩张的多重约束第一次同时显形。</description>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-06.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-05</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-05.html</link>
@@ -208,13 +215,6 @@
       <description>今天的主线是资本和算力开始签长约：一边是 DeepSeek 拿到近千亿，一边是 Anthropic 为 4100 亿美元不可撤销支出押注。另一头，Agent 的身份、边界和诚实度问题同时浮上水面。</description>
       <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-05.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-04</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-04.html</link>
-      <description>智能体失控阴影笼罩——OpenAI 日烧 50 万调查智能体入侵 Medicare 等事件、Databricks Genie 四类控制被绕过，企业部署 Agent 进入「安全账本」时代；与此同时 ThinkingBox、LLM 自生成推理引擎等前沿仍在加速演进。</description>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-04.html</guid>
     </item>
   </channel>
 </rss>
