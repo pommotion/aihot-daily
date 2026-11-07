@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-07</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-07.html</link>
+      <description>今天的主线不在模型能力，而在责任与筹码：巨头被家长起诉、巨额融资落袋、顶级芯片卡在别人的仓库里，技术领先正在同时变成合规压力和谈判资本。</description>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-07.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-06</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-06.html</link>
@@ -208,13 +215,6 @@
       <description>今天算力账本和规则账本同时被翻开——钱已经提前付掉了，水印也必须打上了。</description>
       <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-06.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-05</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-05.html</link>
-      <description>今天的主线是资本和算力开始签长约：一边是 DeepSeek 拿到近千亿，一边是 Anthropic 为 4100 亿美元不可撤销支出押注。另一头，Agent 的身份、边界和诚实度问题同时浮上水面。</description>
-      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-05.html</guid>
     </item>
   </channel>
 </rss>
