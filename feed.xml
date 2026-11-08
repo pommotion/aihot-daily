@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 07 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-08</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-08.html</link>
+      <description>资本与政治同时收紧，AI 从扩张叙事转入被审视阶段：融资要接受市场定价，能力要接受安全审计，落地要接受民意与法律检验。</description>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-08.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-07</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-07.html</link>
@@ -208,13 +215,6 @@
       <description>今天的主线是同一件事的两面：token 在变得更便宜、模型变得更能干，而真正卡住规模化的电力、验证与规则开始同时亮红灯。</description>
       <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-07.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-06</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-06.html</link>
-      <description>今天算力账本和规则账本同时被翻开——钱已经提前付掉了，水印也必须打上了。</description>
-      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-06.html</guid>
     </item>
   </channel>
 </rss>
