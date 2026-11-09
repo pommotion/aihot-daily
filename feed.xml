@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 08 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-09</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-09.html</link>
+      <description>同一天里，模型更便宜更稳，资本市场却在为估值和算力的政治账买单——AI 正从「叙事扩张」进入「工程兑现、预期收紧」的阶段。</description>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-09.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-08</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-08.html</link>
@@ -208,13 +215,6 @@
       <description>今天的主线是「钱和风险同时上头条」：OpenAI 年化营收被曝腰斩式下调 200 亿，数学界公开抵制它；而一条提示词就能劫持整个 AWS 账户的智能体漏洞，说明能力跑在安全前面。</description>
       <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-08.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-07</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-07.html</link>
-      <description>今天的主线是同一件事的两面：token 在变得更便宜、模型变得更能干，而真正卡住规模化的电力、验证与规则开始同时亮红灯。</description>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-07.html</guid>
     </item>
   </channel>
 </rss>
