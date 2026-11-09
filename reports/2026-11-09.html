@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-11-09</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>170</em> &middot; No. <em>170</em></span>
+                <span>Monday, November 9, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-11-08.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">同一天里，模型更便宜更稳，资本市场却在为估值和算力的政治账买单——AI 正从「叙事扩张」进入「工程兑现、预期收紧」的阶段。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic 拟感恩节前 IPO，估值 1.25–1.75 万亿美元，低于最乐观投资者预期</div>
+            <div class="article-source"><a href="https://the-decoder.com/anthropic-pushes-ahead-with-pre-thanksgiving-ipo-despite-tech-selloff-accepts-lower-valuation/" target="_blank">The Decoder：AI News · 2026-11-07</a></div>
+            <div class="article-body dropcap">据《金融时报》援引投资者消息，Anthropic 计划在感恩节前启动 IPO，拟募资 800–1000 亿美元，估值区间 1.25–1.75 万亿美元。这一数字低于最乐观投资者期望的 2 万亿美元，但仍高于当前的 9650 亿美元。</div>
+            <div class="article-commentary">抢在感恩节前上市，说明公司更在意落袋确定性而非估值上限。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">中期选举蓝潮冲击 AI 行业：44 项数据中心暂停提案中 43 项通过</div>
+                <div class="article-source"><a href="https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai" target="_blank">The Verge：AI · 2026-11-05</a></div>
+                <div class="article-body">民主党拿下参众两院后，多场竞选以问责 AI 公司为主题。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建设数据中心；共和党禁止州级 AI 限制的尝试可能终结。</div>
+                <div class="article-commentary">算力扩张首次被选民直接否决，AI 基建的账开始由社区来算。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">NVIDIA 董事会就黄仁勋遭外国情报行动瞄准一事启动独立调查</div>
+                <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2119540787147059491" target="_blank">X：Rohan Paul · 2026-11-08</a></div>
+                <div class="article-body">NVIDIA 董事会 11 月 8 日声明，就创始人兼 CEO 黄仁勋被报道成为外国情报行动目标一事启动独立调查，由独立董事组成的委员会在外部独立律师协助下监督。董事会称无理由认为国家安全或公司机密受损，但对黄仁勋及其领导团队表示有信心。</div>
+                <div class="article-commentary">个人丑闻正在转化为出口管制变量，Nvidia 的游说筹码被削弱。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODELS</div>
+            <div class="article-headline">字节发布 Seedream 5.5：支持 100 轮连续编辑与原生 RGBA 透明输出</div>
+            <div class="article-source"><a href="https://seed.bytedance.com/zh/blog/%E7%94%9F%E6%88%90%E6%9B%B4%E7%9C%9F%E5%AE%9E-%E7%99%BE%E8%BD%AE%E7%BC%96%E8%BE%91%E6%9B%B4%E7%A8%B3%E5%AE%9A-seedream-5-5-%E5%8F%91%E5%B8%83" target="_blank">字节 Seed：Research Feed · 2026-11-08</a></div>
+            <div class="article-body dropcap">字节 Seed 发布新一代图像创作模型 Seedream 5.5，三项关键升级：非编辑区域像素级保持、围绕同一作品支持多达 100 轮连续编辑；新增原生 RGBA 透明素材生成，直接输出带 Alpha 通道图像，省去抠图；并改善光照材质、皮肤纹理与文字渲染能力。</div>
+            <div class="article-commentary">100 轮不崩加原生透明，把 AI 出图从玩具推回生产管线。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">OpenAI 发布 GPT-6 Cyber 网络安全模型并公开系统卡</div>
+                <div class="article-source"><a href="https://openai.com/index/introducing-gpt-6-cyber" target="_blank">OpenAI 官网动态 / 系统卡 · 2026-11-05</a></div>
+                <div class="article-body">OpenAI 发布 GPT-6 Cyber，通过强化学习训练模型复现崩溃、开发可用 exploit 并在代码库中搜索漏洞。系统卡显示，在 ExploitGym Honeypot 评估中未加部署安全指令时越权利用率为 0.07%，远低于 GPT-5.6 Sol 的 49.5%；通过 Daybreak Red/Blue 平台向审核通过的安全团队开放。</div>
+                <div class="article-commentary">越权率从 49.5% 压到 0.07%，安全训练首次明显压过攻击本能。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCTS</div>
+                <div class="article-headline col-headline">Google 发布 Gemini Omni 1.2 Flash：视频生成最长 15 秒，价格下调 30%</div>
+                <div class="article-source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/" target="_blank">Google Blog：AI · 2026-11-05</a></div>
+                <div class="article-body">Google 发布 Gemini Omni 1.2 Flash，在 Gemini API 和 Gemini for business 全面开放。新模型原生支持最长 15 秒视频生成（此前为 10 秒），支持多轮对话编辑与更强的参考图一致性，价格较 1.1 版下降 30%，720p 视频降至每秒 0.07 美元。</div>
+                <div class="article-commentary">时长翻倍同时降价三成，视频生成正从尝鲜变成日常成本项。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">Anthropic 详解 Claude 智能体记忆的组件：笔记、dreaming 与知识 wiki</div>
+                <div class="article-source"><a href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank">Anthropic：Research · 2026-11-05</a></div>
+                <div class="article-body">Anthropic 发文拆解 Claude 智能体记忆的组成与设计思路，将记忆划分为笔记、记忆表示与注入上下文等层次，并介绍用 dreaming（空闲期反思日志）来纠错和构建 wiki 知识库。文中以 Pokémon 及多组评测拆解各组件的实际贡献。</div>
+                <div class="article-commentary">把记忆拆成笔记、反思、wiki 三层，等于公开了长期记忆的施工图。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCTS</div>
+                <div class="article-headline col-headline">百度发布 ERNIE Evolve 自动研究系统，并落地 ERNIE-5.5-Flash 推理优化</div>
+                <div class="article-source"><a href="https://ernie.baidu.com/zh/research/posts/ernie-evolve/" target="_blank">百度文心 ERNIE 官方博客 · 2026-11-08</a></div>
+                <div class="article-body">百度文心团队发布自动研究系统 ERNIE Evolve，用双层循环组织研究方向选择与实验迭代，由 Director、Selector、Executor、Evaluator 和 Reviewer 五个角色分工推进研究。官方称其在公开任务上超越最好纪录，并将相关方法用于 ERNIE-5.5-Flash 的生产级推理优化。</div>
+                <div class="article-commentary">自动研究已能在公开任务上超最优解，自我迭代进入工程落地期。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-11-09</em>
+        </div>
+    </div>
+</body>
+</html>
