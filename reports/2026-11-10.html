@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-11-10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 &times; remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>171</em> &middot; No. <em>171</em></span>
+                <span>Tuesday, November 10, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-11-09.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">Anthropic 双线出击：新模型登顶评测、IPO 估值逼近 1.5 万亿美元，同一天它的编程工具却把开发者的真实密钥漏进了 GitHub。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">MODELS</div>
+            <div class="article-headline">Anthropic 发布 Claude Fable 5.2 与 Claude Mythos 5.2</div>
+            <div class="article-source"><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank">Anthropic：Newsroom（网页） · 2026-11-08</a></div>
+            <div class="article-body dropcap">Anthropic 正式发布 Claude Fable 5.2 与 Claude Mythos 5.2。两者基于同一底层模型，Mythos 需通过 Cyber 或 Life Sciences Verification Program 申请访问。官方同步给出基准对比、定价与安全测试细节。</div>
+            <div class="article-commentary">同一底座分两路：Fable 面向通用开发，Mythos 用申请制锁死生物与安全场景，普通开发者实质只有 Fable 一条路。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Anthropic 启动 IPO 路演，拟发行 8.25 亿股 A 类股并以代码 ANT 登陆纳斯达克</div>
+                <div class="article-source"><a href="https://www.anthropic.com/news/roadshow-launch" target="_blank">Anthropic：Newsroom（网页） · 2026-11-09</a></div>
+                <div class="article-body">Anthropic 启动拟议 IPO 路演，拟发行 8.25 亿股 A 类普通股，其中约 8.01 亿股由 Anthropic 发售、约 2365 万股由部分现有股东出售，公司不获后者所得款项。同步披露了定价区间与承销安排。</div>
+                <div class="article-commentary">AI 实验室第一次把定价交给公开市场，每日收盘价从此取代融资新闻成为它的体温计。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Claude Code 被曝把密码写进项目文件，GitHub 上发现 2539 个真实凭据</div>
+                <div class="article-source"><a href="https://www.ithome.com/1/024/888.htm" target="_blank">IT之家·人工智能 · 2026-11-10</a></div>
+                <div class="article-body">Ars Technica 报道，安全公司 Apiiro 发现超过 10 万份 Claude Code 本地设置文件被上传至公开仓库，共识别出 1994 个代码库中的 2539 个真实凭据，涉及 63 个组织，包括 Azure 数据库密码、Square 生产令牌与 SSH root 登录信息。</div>
+                <div class="article-commentary">最该今天动手的事：查自己的 settings.json 有没有进过仓库，以及本地授权范围给了多宽。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PAPER</div>
+            <div class="article-headline">Anthropic 用 1000 个 Claude Fable 5.2 智能体在沙箱内复现费马大定理形式化证明</div>
+            <div class="article-source"><a href="https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/" target="_blank">Anthropic：Claude.dev 开发者博客（RSS） · 2026-11-09</a></div>
+            <div class="article-body dropcap">在无 Prove2Me 平台、也没有研究者指导的情况下，1000 个运行 Claude Fable 5.2 早期版本的智能体于 28.7 小时内复现了费马大定理的形式化证明，输出 token 仅为 9 月那次形式化的三分之一，证明长度为七分之一。</div>
+            <div class="article-commentary">它证明的不是费马，是多智能体沙箱自治的工程边界——谁做隔离和审计，谁就吃到红利。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">Artificial Analysis 评测 Claude Fable 5.2：以 65 分登顶 Intelligence Index v5</div>
+                <div class="article-source"><a href="https://x.com/ArtificialAnlys/status/2119878995386982508" target="_blank">X：Artificial Analysis · 2026-11-09</a></div>
+                <div class="article-body">Artificial Analysis 评测显示，Claude Fable 5.2 在 Intelligence Index v5 中以 65 分登顶，领先 Gemini 4 Carbon 的 60 分与 Claude Opus 5.5 的 59 分，评测方同时给出各基准对比与成本数据。</div>
+                <div class="article-commentary">领先 Opus 5.5 六分，值不值那个溢价要看长任务跑崩的次数，分数只是下限。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">Anthropic 测 Claude Fable 5.2 端到端设计三种电子设备并做出可用原型</div>
+                <div class="article-source"><a href="https://www.anthropic.com/research/claude-electronics-design" target="_blank">Anthropic：Research（发表成果 · 网页） · 2026-11-08</a></div>
+                <div class="article-body">Anthropic 与 Diode Computers 合作，让 Claude Fable 5.2 从简单提示词出发完成免提音箱、语音助手中枢、电子宠物三种设备的设计，涵盖 PCB 布局、CAD 建模、固件编写与 DFM 检查。三块电路板由工厂按设计文件直接制造，原型数周使用后仍正常。</div>
+                <div class="article-commentary">AI 画硬件第一次走出 PPT 到了产线，但真正的瓶颈从来不是出图，是认证和量产。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">Meta 发布最小最高效模型 Muse Ember，主打智能体高频任务</div>
+                <div class="article-source"><a href="https://research.meta.ai/blog/muse-ember" target="_blank">Meta AI：Research Blog（网页） · 2026-11-09</a></div>
+                <div class="article-body">Meta 发布 Muse Ember（muse-ember-1.0），定位为最小最高效的复杂推理执行模型，面向工具调用、编码子任务、路由、抽取与长文档解析等智能体日常重复任务。官方给出与 Claude Haiku 5.5、GPT-6 Luna 的逐项成本与基准对比。</div>
+                <div class="article-commentary">智能体真正的成本在重复调用上，谁能把每次调用压到最便宜，谁吃下后台流水线的量。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TIPS</div>
+                <div class="article-headline col-headline">Anthropic 指南：Claude 开发该选 Haiku 5.5、Sonnet 5.5、Opus 5.5 还是 Fable 5.2</div>
+                <div class="article-source"><a href="https://claude.dev/blog/which-claude-model-should-you-build-with/" target="_blank">Anthropic：Claude.dev 开发者博客（RSS） · 2026-11-09</a></div>
+                <div class="article-body">Anthropic 开发者博客给出四个 Claude 模型之间的选型建议：多数编码与知识工作建议从 Opus 5.5 的 medium effort 起步，其 token 价格是 Fable 5.2 的一半，并附上按任务类型的搭配方案与 effort 调优方法。</div>
+                <div class="article-commentary">官方自己承认 Fable 最贵也最强，那就按 medium effort 分层降档，别一上来就顶配。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-11-10</em>
+        </div>
+    </div>
+</body>
+</html>
