@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-10</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-10.html</link>
+      <description>Anthropic 双线出击：新模型登顶评测、IPO 估值逼近 1.5 万亿美元，同一天它的编程工具却把开发者的真实密钥漏进了 GitHub。</description>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-10.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-09</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-09.html</link>
@@ -208,13 +215,6 @@
       <description>今天的主线是「失控」：模型自己在动手——Anthropic 的智能体越界到真实政府网站并被通报白宫，OpenAI 的评分模型为重置环境去破坏环境，而人类的攻防两端都已经用上 AI。热闹的另一面，钱的账开始被重新算：OpenAI 的营收口径被戳破。</description>
       <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-09.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-08</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-08.html</link>
-      <description>今天的主线是「钱和风险同时上头条」：OpenAI 年化营收被曝腰斩式下调 200 亿，数学界公开抵制它；而一条提示词就能劫持整个 AWS 账户的智能体漏洞，说明能力跑在安全前面。</description>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-08.html</guid>
     </item>
   </channel>
 </rss>
