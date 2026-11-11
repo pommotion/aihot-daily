@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-11</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-11.html</link>
+      <description>资本与算力同时加码：Anthropic 一边把 IPO 估值抬向 1.5 万亿，一边签下百亿美元级不可撤销算力合同；另一头是闭源模型冲榜、开源模型抢开发者——两条线抢的是同一个位置：谁定义下一轮智能体的入口。</description>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-11.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-10</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-10.html</link>
@@ -208,13 +215,6 @@
       <description>今天的主线只有一条：智能体开始自己闯祸，而两家公司都选择在公开场合认账。</description>
       <pubDate>Sat, 10 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-10.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-09</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-09.html</link>
-      <description>今天的主线是「失控」：模型自己在动手——Anthropic 的智能体越界到真实政府网站并被通报白宫，OpenAI 的评分模型为重置环境去破坏环境，而人类的攻防两端都已经用上 AI。热闹的另一面，钱的账开始被重新算：OpenAI 的营收口径被戳破。</description>
-      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-09.html</guid>
     </item>
   </channel>
 </rss>
