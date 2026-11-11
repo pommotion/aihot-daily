@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-11-11</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>172</em> &middot; No. <em>172</em></span>
+                <span>Wednesday, November 11, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-11-10.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">资本与算力同时加码：Anthropic 一边把 IPO 估值抬向 1.5 万亿，一边签下百亿美元级不可撤销算力合同；另一头是闭源模型冲榜、开源模型抢开发者——两条线抢的是同一个位置：谁定义下一轮智能体的入口。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic 投资需求火热，承销商拟将 IPO 目标估值上调回 $1.5T 或更高</div>
+            <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2120320127484969162" target="_blank">X：Rohan Paul (@rohanpaul_ai) · 2026-11-11</a></div>
+            <div class="article-body dropcap">FT 报道，Anthropic 承销商因投资者需求旺盛，计划上调 IPO 定价至 $1.5T 或更高。此前发行区间 $70–78 对应 $1.26T–$1.41T 估值；若超额定价，募资将超 $100B，Google、Nvidia 与 Microsoft 按发行价投入 $26B。</div>
+            <div class="article-commentary">承销商敢抬价说明市场抢票，但买的是未来几年的算力承诺，收入增速才是这票的底。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Anthropic 修订版 S1 文件披露与 Microsoft、Google 超 100 亿美元级新算力协议</div>
+                <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2120369586096976098" target="_blank">X：Rohan Paul (@rohanpaul_ai) · 2026-11-11</a></div>
+                <div class="article-body">修订版 S1 披露与 Microsoft、Google 的新协议：Microsoft 承诺到 2033 年 6 月至少支出 472 亿、最高 492 亿美元；Google 最低承诺从约 1145 亿升至约 1213 亿美元。两笔均不可撤销，不用容量也须照付。</div>
+                <div class="article-commentary">不用也得付，说明头部产能早被包圆；AI 成本曲线的定价权，已经握在云厂商手里。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Stripe 收购 OpenRouter，双方宣布合并后定位</div>
+                <div class="article-source"><a href="https://x.com/OpenRouter/status/2120234542183395787" target="_blank">X：OpenRouter (@OpenRouter) · 2026-11-10</a></div>
+                <div class="article-body">OpenRouter 官方宣布正式并入 Stripe。平台称有超 1000 万开发者与公司使用，提供新模型访问、多 provider 故障切换，并为团队执行支出上限与数据策略。双方承诺合并后继续保持模型路由中立。</div>
+                <div class="article-commentary">支付巨头买下模型路由层，最值钱的不是流量，是替企业管账和管策略的那层管道。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">OpenAI Q3 营收达 100 亿美元，效率仍落后于 Anthropic</div>
+            <div class="article-source"><a href="https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic/" target="_blank">The Decoder：AI News（RSS） · 2026-11-11</a></div>
+            <div class="article-body dropcap">据《华尔街日报》与 The Information 报道，OpenAI Q3 营收环比增长约 50% 至 100 亿美元，但调整后经营亏损从 101 亿升至 109 亿美元，营收与亏损同步扩张。</div>
+            <div class="article-commentary">收入涨五成亏损也涨五成，规模还没跑出单位经济性，这不是靠增速就能掩盖的数字。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">Google DeepMind 发布 Gemini 4 Carbon 前沿模型</div>
+                <div class="article-source"><a href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/" target="_blank">Google DeepMind：Blog（RSS） · 2026-11-10</a></div>
+                <div class="article-body">DeepMind 正式向开发者、企业与普通用户开放 Gemini 4 Carbon，定位为其最强前沿模型，主打网络安全、复杂知识工作、软件工程与科学推理中的长程智能体工作流，并公布基准排名与定价。</div>
+                <div class="article-commentary">Carbon 的看点不在跑分，而在把长链条任务打包成默认能力，竞争正从比聪明转向比能干活。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">MiniMax 发布开源图像生成模型 H3-Image，10 秒内生成 4K 图像</div>
+                <div class="article-source"><a href="https://www.minimax.io/blog/minimax-h3-image" target="_blank">MiniMax：Blog（网页） · 2026-11-10</a></div>
+                <div class="article-body">MiniMax 发布基于 H3 的开放权重图像生成模型 H3-Image，支持文生图、参考图生成与图像编辑，可输出 4096×4096 的 4K 图像，速度最高达主流方案的 5 倍，官方给出权重入口。</div>
+                <div class="article-commentary">开源 4K 图像把单张成本压到可忽略，商用素材生产从此不必把毛利交给闭源 API。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">百度发布 ERNIE 5.5 Flash Preview，权重将于 11 月 25 日前开源</div>
+                <div class="article-source"><a href="https://ernie.baidu.com/zh/release/ernie-5-5-flash-preview/" target="_blank">百度文心 ERNIE 官方博客 · 2026-11-10</a></div>
+                <div class="article-body">ERNIE 5.5 Flash Preview 是此前 Base 模型的第一个后训练版本，总参数 280B、激活参数 14B、支持 1M 上下文，API 已在千帆平台上线，官方称权重将于 11 月 25 日前开源。</div>
+                <div class="article-commentary">中间版就敢开源，百度要的不是这一版的分数，是让开发者先把工具链建在自己生态里。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">Microsoft Research 揭示 Lazarus 权重空间后门技术，通过重编程休眠神经元攻击 AI Agent</div>
+                <div class="article-source"><a href="https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/" target="_blank">Microsoft Research 博客（RSS） · 2026-11-10</a></div>
+                <div class="article-body">微软研究团队披露 Lazarus 后门：只需重编程 LLM 中少于 10 个休眠神经元，无需训练即可给基于该模型的 Agent 装上后门。论文同时给出从模型来源与权重完整性入手的防御思路。</div>
+                <div class="article-commentary">十个神经元就能改写行为，意味着权重来源审查必须从下载那一刻开始，而不是部署前。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-11-11</em>
+        </div>
+    </div>
+</body>
+</html>
