@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-11-12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>173</em> &middot; No. <em>173</em></span>
+                <span>Thursday, November 12, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-11-11.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的基调很直白：钱在抢跑，治理在追责，而真正能落地的新东西全挤在成本和延迟上。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic IPO 拟募资最高 90.4B 美元，或成史上最大上市</div>
+            <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2120526677247939001" target="_blank">X：Rohan Paul · 11-11</a></div>
+            <div class="article-body dropcap">据 Bloomberg 报道，Anthropic 通过 IPO 加私募配售寻求最高 904 亿美元募资，目标完全稀释估值约 1.4 万亿美元，将超越 SpaceX 的 857 亿美元成为史上最大上市。订单数倍于发行份额，高盛与摩根士丹利牵头 22 家银行，股票以 ANT 代码在纳斯达克全球精选市场交易。</div>
+            <div class="article-commentary">AI 一级市场的估值锚被直接推到万亿级，同赛道的融资故事接下来都要重新定价。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Anthropic 官宣首次公开募股（IPO）</div>
+                <div class="article-source"><a href="https://x.com/AnthropicAI/status/2120841731302154708" target="_blank">X：Anthropic (@AnthropicAI) · 11-12</a></div>
+                <div class="article-body">Anthropic 官方宣布启动首次公开募股，公开入口 ipo.anthropic.com，已向 SEC 提交注册声明及招股说明书，证券在注册声明生效前不得出售，初始招股说明书经高盛与摩根士丹利获取。</div>
+                <div class="article-commentary">从传闻到递表只隔几天，抢跑姿态写在了脸上，同行的时间表被硬生生压缩。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">WSJ 报道 Nvidia 董事会接近决定是否罢免 CEO 黄仁勋</div>
+                <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2120663635479625930" target="_blank">X：Rohan Paul · 11-11</a></div>
+                <div class="article-body">WSJ 报道，英伟达董事会此前公开支持创始人黄仁勋，如今接近决定是否将其罢免。起因是其与一名被指为中国情报人员的女子交往，随后又曝出与公司员工的第二段婚外情。周日开始的独立调查暂未发现机密泄露证据。</div>
+                <div class="article-commentary">治理风险第一次压过技术叙事，AI 硬件的确定性被塞进董事会会议室重新评估。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Grok 被指生成儿童色情图像，xAI 面临多起集体诉讼</div>
+            <div class="article-source"><a href="https://www.ithome.com/1/025/809.htm" target="_blank">IT之家·人工智能 · 11-11</a></div>
+            <div class="article-body dropcap">据彭博社报道，多名未成年受害者就 Grok 被用于把普通照片篡改成儿童性虐待材料（CSAM），对马斯克旗下 xAI 提起多起集体诉讼。律师估计符合索赔条件的受害者可能多达数千人，争议焦点在于第 230 条是否适用。</div>
+            <div class="article-commentary">生成内容的责任边界正被诉讼定价，能力链上每一环都可能被追责，护栏不再是免责牌。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCTS</div>
+                <div class="article-headline col-headline">Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策</div>
+                <div class="article-source"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank">Google Blog：AI · 11-11</a></div>
+                <div class="article-body">Google 推出由新模型 Gemini Decision 1 驱动的 Decisions API，可在 150-250ms 端到端延迟内，一次性评估最多 1000 个是/否、多选与评分题，支持文本、图像、音频、视频与 PDF（最高 256K tokens）输入。</div>
+                <div class="article-commentary">两百多毫秒判一千道题，自训分类器这类活基本可以外包给 API 了。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">Runway 开源 27B 世界动作模型 Praxis-1，权重采用 Apache 2.0 许可</div>
+                <div class="article-source"><a href="https://runwayml.com/news/company-news/praxis-1-is-now-available" target="_blank">Runway：News · 11-11</a></div>
+                <div class="article-body">Runway 宣布以 Apache 2.0 许可向所有人开放 Praxis-1 权重。该模型为 27B 参数 MoE 扩散 Transformer，同时预测视频与动作，在 NVIDIA RoboLab-120 榜单以 46.2% 成功率居首，超过 FLUX 3 Action（42.9%）、Cosmos3 Nano（36.8%）与 π0.5（28.0%）。</div>
+                <div class="article-commentary">开源权重加双模态预测，机器人团队终于有了一个不必按调用付费的动作底座。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">TIPS</div>
+                <div class="article-headline col-headline">OpenRouter 详解自纠错网站本地化流水线：GPT-6.1 Sol 翻译 7 种语言全站约 $460</div>
+                <div class="article-source"><a href="https://openrouter.ai/blog/announcements/openrouter-in-8-languages/" target="_blank">OpenRouter：Announcements · 11-12</a></div>
+                <div class="article-body">OpenRouter 上线简中、日语等 7 种语言 Beta 本地化，并披露配套的自纠错流水线：GPT-6.1 Sol 翻译 16,918 条字符串，经代码检查、同模型校验与每日 AI 审查重试，最坏每条约 20 次模型调用，全站七语言重译约 460 美元，约为 Smartling 牌价的 6%。</div>
+                <div class="article-commentary">七语言全站重译 460 美元，是传统翻译牌价的 6%，本地化成本第一次变得可算。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">Anthropic 发布 MAMUBench：单一智能体协调在四类环境中均胜过每个用户各自的智能体团队</div>
+                <div class="article-source"><a href="https://alignment.anthropic.com/2026/worse-together/" target="_blank">Anthropic：Alignment Science Blog · 11-11</a></div>
+                <div class="article-body">Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI、Alibaba 的前沿模型，并发布其中三个环境为基准 MAMUBench 供社区复测。</div>
+                <div class="article-commentary">协调能力比个体能力更值钱：会协作的单代理胜过四个各自为战的代理。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-11-12</em>
+        </div>
+    </div>
+</body>
+</html>
