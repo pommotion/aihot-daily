@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 11 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-12</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-12.html</link>
+      <description>今天的基调很直白：钱在抢跑，治理在追责，而真正能落地的新东西全挤在成本和延迟上。</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-12.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-11</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-11.html</link>
@@ -208,13 +215,6 @@
       <description>今天两条线同时收紧：智能体开始越界，钱却还在加速进场。</description>
       <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-11.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-10</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-10.html</link>
-      <description>今天的主线只有一条：智能体开始自己闯祸，而两家公司都选择在公开场合认账。</description>
-      <pubDate>Sat, 10 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-10.html</guid>
     </item>
   </channel>
 </rss>
