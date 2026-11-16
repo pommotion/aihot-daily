@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-11-16</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>177</em> &middot; No. <em>177</em></span>
+                <span>Monday, November 16, 2026</span>
+                <span>今日 <em>7</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-11-15.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">AI 的账本今天被翻上台面：IMF 量出万亿级循环融资，同一天国产模型把 Agent 实战排名和调用成本一起压了下来。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">OPINION</div>
+            <div class="article-headline">IMF 总裁警告全球经济过度依赖 AI，循环融资规模超 1 万亿美元</div>
+            <div class="article-source"><a href="https://www.ithome.com/1/027/861.htm" target="_blank">IT之家·人工智能 · 2026-11-16</a></div>
+            <div class="article-body dropcap">IMF 总裁格奥尔基耶娃在东盟峰会表示，全球经济正靠 AI 支撑，过度依赖可能危及金融稳定。IMF 估计 AI 企业间循环融资已超 1 万亿美元，约三分之二来自债务融资；最坏情景下美股 2026 年或跌 20%。</div>
+            <div class="article-commentary">AI 泡沫第一次被官方量化，重仓 AI 叙事的人该重算风险。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">Qwen 发布 Qwen4-Max：2.4T 参数骨干、百万 token 上下文</div>
+                <div class="article-source"><a href="https://qwen.ai/blog?id=qwen4-max" target="_blank">Qwen Blog · 2026-11-16</a></div>
+                <div class="article-body">Qwen4-Max 基于全新 Qwen4 架构，2.4T 骨干参数、每 token 激活 71B、328B N-gram Embedding 参数，原生视觉与 100 万 token 上下文。据 Artificial Analysis，Intelligence Index 得分 43，比 Qwen3.8 Max 高 9 分。</div>
+                <div class="article-commentary">2.4T 骨干换来的不是最高分，是每任务成本降到三分之一。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">Qwen4-Max 登顶 Agent Arena 中国模型榜首，Alibaba 升至总榜第 5</div>
+                <div class="article-source"><a href="https://x.com/arena/status/2122153116959482051" target="_blank">X：Arena · 2026-11-16</a></div>
+                <div class="article-body">Arena 榜单基于 14.7k 条真实 Agent 会话给出排名，Qwen4-Max 以 +7.5% 净提升在 Agent Arena 总榜排第 14，成为第一中国模型；Alibaba 随之升至总榜第 5，仅次于 Anthropic、Google、OpenAI 与 Meta。</div>
+                <div class="article-commentary">Agent 实战榜被国产模型咬开缺口，只看对话榜会看错格局。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">MODELS</div>
+            <div class="article-headline">腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文的日常高性价比模型</div>
+            <div class="article-source"><a href="https://hunyuan.tencent.com/research/100145?langVersion=zh" target="_blank">腾讯混元 Research · 2026-11-16</a></div>
+            <div class="article-body dropcap">混元推出 Hy4 flash，总参数 224B（含 64B Engram 参数）、激活 12B，支持多模态与 1M 上下文；API 价格输入 0.5 元、输出 2 元每百万 tokens，大幅低于上一代 Hy4，原文附架构与多场景评测。</div>
+            <div class="article-commentary">12B 激活配 1M 上下文，给长文档流水线用的，不是冲榜用的。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">Apple 联合 OpenEvidence 启动 Apple Health AI Usage Study</div>
+                <div class="article-source"><a href="https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/" target="_blank">Apple Newsroom · 2026-11-14</a></div>
+                <div class="article-body">Apple 宣布在美国推出 Apple Health AI Usage Study，与 OpenEvidence 合作研究用户实际如何与对话式健康 AI 工具互动，并公开了研究规模、参与条件与隐私安排。</div>
+                <div class="article-commentary">Apple 不是在推健康 AI，是在摸清用户怎么用，为接管健康数据铺路。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TIPS</div>
+                <div class="article-headline col-headline">AI 手搓的 1.4M 纯 HTML 3D 游戏走红，拆解 Three.js 程序化生成原理</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s/ZJddy1ssHBvw_1sm12jrkg" target="_blank">公众号：数字生命卡兹克 · 2026-11-15</a></div>
+                <div class="article-body">近期走红的 1.4MB 纯 HTML 3D 游戏，约 700KB 是打包进文件的 Three.js，其余全部由代码程序化生成，没有图片、模型与录音。作者拆解生成原理，并给出可复用的提示词模板与自查迭代方法。</div>
+                <div class="article-commentary">没有素材也能出可玩 demo，程序化生成正替掉外包建模这一步。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">TIPS</div>
+            <div class="article-headline">自媒体作者分享 10 条指挥 Agent 最常用的 Prompt</div>
+            <div class="article-source"><a href="https://mp.weixin.qq.com/s/SD5q9kVK5gXyTHVQjNPnoA" target="_blank">公众号：数字生命卡兹克 · 2026-11-16</a></div>
+            <div class="article-body dropcap">作者整理近两个月指挥 Agent 最常用的 10 条 Prompt：第一性原理找根因、先对齐偏好再出三版方案、推演改动的二阶三阶影响、假设最优方案并主动找反例、从 Git 历史识别历史包袱、复盘 Bug 并沉淀成规则或 Skill。</div>
+            <div class="article-commentary">把提示词当工程资产攒起来，比每次重写省时也不易跑偏。</div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>7</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-11-16</em>
+        </div>
+    </div>
+</body>
+</html>
