@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 15 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-16</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-16.html</link>
+      <description>AI 的账本今天被翻上台面：IMF 量出万亿级循环融资，同一天国产模型把 Agent 实战排名和调用成本一起压了下来。</description>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-16.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-15</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-15.html</link>
@@ -208,13 +215,6 @@
       <description>今天的主线只有两条：Gemini 4 Argon 把前沿智能的价格打下来了，另一边监管开始对模型厂商动真格。</description>
       <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-14.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-13</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-13.html</link>
-      <description>今天两条主线：模型拼性价比，工程工具链被迫重写，而消费端的产品先撑不住了。</description>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-13.html</guid>
     </item>
   </channel>
 </rss>
