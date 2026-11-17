@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 16 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-17</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-17.html</link>
+      <description>模型端在降价和自托管上抢地盘，规则端则在出口管制、州级起诉和智能体越权实验里收紧。</description>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-17.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-16</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-16.html</link>
@@ -208,13 +215,6 @@
       <description>今天两条主线同时发生：资本开始给 AI 降温，技术端却在成批开源，一热一冷撞在同一周。</description>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-15.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-14</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-14.html</link>
-      <description>今天的主线只有两条：Gemini 4 Argon 把前沿智能的价格打下来了，另一边监管开始对模型厂商动真格。</description>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-14.html</guid>
     </item>
   </channel>
 </rss>
