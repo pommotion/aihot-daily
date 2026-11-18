@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-18</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-18.html</link>
+      <description>今天的主线是巨头集体换挡：模型在拆档定价，资本在抢入场券，安全在收紧底线。</description>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-18.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-17</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-17.html</link>
@@ -208,13 +215,6 @@
       <description>今天的主线只有一条：AI 开始进入「被制度约束」的阶段——出口管制、法院判刑、公众认知鸿沟同时出现，而模型侧的开源竞赛仍在继续。</description>
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-16.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-15</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-15.html</link>
-      <description>今天两条主线同时发生：资本开始给 AI 降温，技术端却在成批开源，一热一冷撞在同一周。</description>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-15.html</guid>
     </item>
   </channel>
 </rss>
