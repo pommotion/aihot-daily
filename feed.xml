@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 18 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-19</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-19.html</link>
+      <description>英伟达换帅、Anthropic 敲钟，AI 的账本开始比故事更硬。</description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-19.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-18</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-18.html</link>
@@ -208,13 +215,6 @@
       <description>中国 AI 首次把搜索和模型定价一并推向市场，而安全与贸易管制两条战线同时收紧——能力在扩散，闸门也在合拢。</description>
       <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-17.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-16</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-16.html</link>
-      <description>今天的主线只有一条：AI 开始进入「被制度约束」的阶段——出口管制、法院判刑、公众认知鸿沟同时出现，而模型侧的开源竞赛仍在继续。</description>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-16.html</guid>
     </item>
   </channel>
 </rss>
