@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-11-20</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>181</em> &middot; No. <em>181</em></span>
+                <span>Friday, November 20, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-11-19.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">上市定价与出口管制同一天落地，AI 的两本账同时翻开。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic 登陆纳斯达克，开盘价 111 美元较发行价高出 33%</div>
+            <div class="article-source"><a href="https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/" target="_blank">TechCrunch：AI（RSS） · 2026-11-19</a></div>
+            <div class="article-body dropcap">Anthropic 在纳斯达克完成 IPO，开盘几分钟涨至 111.50 美元，较 83 美元发行价高 33%，募资超 810 亿美元；叠加私募后现金储备预计 2200 亿美元，市值超 2 万亿美元。</div>
+            <div class="article-commentary">订阅制 AI 的最大一笔公开市场定价已落地。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">芯片停运叠加海外云通道关闭，中国科技公司面临双重冲击</div>
+                <div class="article-source"><a href="https://the-decoder.com/chinese-tech-firms-face-a-double-hit-as-chip-shipments-stop-and-overseas-cloud-access-disappears/" target="_blank">The Decoder：AI News（RSS） · 2026-11-19</a></div>
+                <div class="article-body">美国收紧 AI 芯片出口管制并关闭第三国云算力通道后，亚洲多笔数据中心交易瓦解：Moonshot 取消印尼云商 1.5 亿美元合同，台积电、三星暂停向中国客户交付部分处理器。</div>
+                <div class="article-commentary">算力绕道被堵死，国产模型训练排期要重排。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Nvidia 股价近期波动复盘：财报强劲但股价较 10 月高点跌近 40%</div>
+                <div class="article-source"><a href="https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings" target="_blank">The Verge：AI（RSS） · 2026-11-19</a></div>
+                <div class="article-body">Nvidia 第三季度营收同比翻倍至 1158 亿美元，数据中心增长 110%；但受芯片股抛售、黄仁勋辞职与治理调查影响，股价收于 145.98 美元，创 52 周新低。</div>
+                <div class="article-commentary">业绩翻倍却跌破 52 周低点，市场开始给治理打折。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">Anthropic IPO 检验 AI 循环融资模式，Amazon 和 Google 持股市值约 3079 亿美元</div>
+            <div class="article-source"><a href="https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/" target="_blank">TechCrunch：AI（RSS） · 2026-11-19</a></div>
+            <div class="article-body dropcap">TechCrunch 拆解 Anthropic IPO 对 AI 循环融资的检验：Amazon 持股 14.7%、超 1590 亿美元，Google 持股 13.7%，芯片厂亦参与 260 亿私募。</div>
+            <div class="article-commentary">芯片厂既是股东又是供应商，这轮融资的账得自己算。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">腾讯混元开放 Hy4 权重</div>
+                <div class="article-source"><a href="https://x.com/TencentHunyuan/status/2123625549147070538" target="_blank">X：腾讯混元 (@TencentHunyuan) · 2026-11-20</a></div>
+                <div class="article-body">腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型，总参数 770B、激活 49B、支持 1M 上下文，同步发布含安全评估的 System Card，并提供 GGUF 下载。</div>
+                <div class="article-commentary">1M 上下文旗舰开放权重，本地部署门槛又降一档。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCTS</div>
+                <div class="article-headline col-headline">Google 在 Gemini API 与 AI Studio 上线 Genie 4 实时世界模型</div>
+                <div class="article-source"><a href="https://x.com/_philschmid/status/2123465741592637445" target="_blank">X：Philipp Schmid（Google DeepMind 开发者体验） (@_philschmid) · 2026-11-19</a></div>
+                <div class="article-body">DeepMind 宣布 Genie 4 在 Gemini API 与 AI Studio 上线，可从文本或图像生成 720p 24fps 世界，用 WASD、提示词和立体声实时操控并串流。</div>
+                <div class="article-commentary">世界模型开始按 API 计价，实时内容形态要重排。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PRODUCTS</div>
+                <div class="article-headline col-headline">Mac 版 Gemini 应用上线计算机操作功能，可代用户执行跨应用任务</div>
+                <div class="article-source"><a href="https://x.com/joshwoodward/status/2123534862569324703" target="_blank">X：Josh Woodward (@joshwoodward, Google Labs VP) · 2026-11-19</a></div>
+                <div class="article-body">Google Labs 宣布 Mac 版 Gemini 上线 computer use，可跨文件夹、应用和网页代用户执行任务，屏幕与光标控制权仍归用户，演示中把草图变成 Blender 模型。</div>
+                <div class="article-commentary">跨应用代操作落地，权限边界比演示效果更关键。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">MIT 研究测算数据中心用电 2023 年在美国致约 650 例过早死亡</div>
+                <div class="article-source"><a href="https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119" target="_blank">MIT News（RSS） · 2026-11-19</a></div>
+                <div class="article-body">MIT 团队在 Environmental Research Letters 估算，2023 年数据中心用电带来的额外空气污染在美国致约 650 例过早死亡，其中 513 例来自 PM2.5。</div>
+                <div class="article-commentary">算力的外部成本第一次被量化到具体死亡人数。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-11-20</em>
+        </div>
+    </div>
+</body>
+</html>
