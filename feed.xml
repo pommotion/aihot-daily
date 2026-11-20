@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-20</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-20.html</link>
+      <description>上市定价与出口管制同一天落地，AI 的两本账同时翻开。</description>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-20.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-19</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-19.html</link>
@@ -208,13 +215,6 @@
       <description>今天的主线是「开源模型不涨价地变强」：DeepSeek 一天内发新版本、登顶 WebDev 榜首、又开放搜索 API；而另一头，德国法院逼 Google 为 AI 摘要内容本身负责。</description>
       <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-18.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-17</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-17.html</link>
-      <description>中国 AI 首次把搜索和模型定价一并推向市场，而安全与贸易管制两条战线同时收紧——能力在扩散，闸门也在合拢。</description>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-17.html</guid>
     </item>
   </channel>
 </rss>
