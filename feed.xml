@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 20 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-21</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-21.html</link>
+      <description>黎曼猜想的声明与全球 AI 抛售同一天出现：能力在加速，定价在回调。</description>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-21.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-20</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-20.html</link>
@@ -208,13 +215,6 @@
       <description>今天的主线是两条并行：地缘与合规压力正在收紧，而开源小模型与扩散式架构在能力与速度两端同时发力——Agent 的成本曲线正被快速压平。</description>
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-19.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-18</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-18.html</link>
-      <description>今天的主线是「开源模型不涨价地变强」：DeepSeek 一天内发新版本、登顶 WebDev 榜首、又开放搜索 API；而另一头，德国法院逼 Google 为 AI 摘要内容本身负责。</description>
-      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-18.html</guid>
     </item>
   </channel>
 </rss>
