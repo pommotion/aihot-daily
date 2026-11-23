@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-23</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-23.html</link>
+      <description>国内旗舰开始改结构而不改参数，海外则在吵该用哪把尺子量模型。</description>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-23.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-22</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-22.html</link>
@@ -208,13 +215,6 @@
       <description>今天两条主线并行：国产开源把大模型价格和显存门槛同时往下压，而 OpenAI 一边披露能接管服务器的压缩库漏洞，一边因为员工的阅后即焚聊天开除安全研究员。</description>
       <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-24.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-23</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-23.html</link>
-      <description>今天的主线不是产品发布，而是攻防节奏的倒挂：AI 花两天挖出潜伏十几年的 PHP 漏洞，四天后已被全球黑客打上百万次。</description>
-      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-23.html</guid>
     </item>
   </channel>
 </rss>
