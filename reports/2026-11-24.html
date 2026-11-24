@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-11-24</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>185</em> &middot; No. <em>185</em></span>
+                <span>Tuesday, November 24, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-11-23.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">黄仁勋回到英伟达的同一天，美国把海外租算力的门再关小一格。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">NVIDIA 宣布黄仁勋复任总裁兼 CEO 并重回董事会</div>
+            <div class="article-source"><a href="https://x.com/thexpin/status/2124866686025400819" target="_blank">X：X.PIN (@thexpin) · 2026-11-23</a></div>
+            <div class="article-body dropcap">NVIDIA 于 11 月 23 日宣布黄仁勋即刻复任总裁、CEO 及董事会成员，董事会一致投票通过，Colette Kress 继续担任 CFO；针对其被外国情报行动盯上的独立调查将继续进行。</div>
+            <div class="article-commentary">三周内走人又回来，治理风波比业绩更影响估值。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">ChinaTalk 分析美国算力租赁新规或使中国前沿算力推迟约六个月</div>
+                <div class="article-source"><a href="https://www.chinatalk.media/p/the-remote-access-rule-will-slow" target="_blank">ChinaTalk（RSS） · 2026-11-24</a></div>
+                <div class="article-body">BIS 11 月 16 日发布算力租赁临时规则：向为中国公司提供超约 760 块 H100 等值算力的海外数据中心供芯片需许可，覆盖印尼、马来、新加坡等地。</div>
+                <div class="article-commentary">门槛量化到 760 块卡，海外租算力这条路被剪断。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">Anthropic 访谈 58 家企业客户：AI 采用的价值、雇佣影响与组织重组</div>
+                <div class="article-source"><a href="https://www.anthropic.com/research/working-with-ai" target="_blank">Anthropic：Research（发表成果 · 网页） · 2026-11-22</a></div>
+                <div class="article-body">Anthropic 访谈 58 家企业 66 次：多数 AI 应用靠扩大产出而非降本创造价值，直接裁员很少，但约三分之二因 AI 减少招聘，九家削减外包。</div>
+                <div class="article-commentary">不裁员但少招人，冲击藏在招聘表里而不是裁员名单。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PRODUCTS</div>
+            <div class="article-headline">Anthropic 推出 Claude Ship 测试版，自动完成 PR 审查、修复与审批</div>
+            <div class="article-source"><a href="https://claude.com/blog/introducing-claude-ship" target="_blank">Claude：Blog（网页） · 2026-11-23</a></div>
+            <div class="article-body dropcap">Anthropic 发布 Claude Ship 测试版，由 Code Review 与 PR Steward、Claude Approvals 组成，可按仓库策略文件审查 PR、推修复并决定合并。</div>
+            <div class="article-commentary">合并权交出去之后，代码评审岗剩的只有策略文件。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">AISI 红队论文：攻击策略选择会让 LLM 监视器评估结果失真</div>
+                <div class="article-source"><a href="https://www.aisi.gov.uk/blog/attack-policy-selection-can-make-monitor-evaluations-misleading" target="_blank">英国 AI Security Institute：Blog（网页） · 2026-11-22</a></div>
+                <div class="article-body">英国 AISI 论文实测：同一 OpenAI 生产监视器，对基础提示攻击漏报率 0.2%，对转录编辑策略达 23%，说明攻击策略选择会让监视器评估失真。</div>
+                <div class="article-commentary">0.2% 到 23% 之间，所谓安全评级只是换了题面。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">PRODUCTS</div>
+                <div class="article-headline col-headline">MiniMax 发布 H3 Family 系列模型，H3 开源百日衍生模型达 1472 个、下载量超 1.48 亿次</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s/Maoz76fZdGNaB7tlIVxWWQ" target="_blank">公众号：MiniMax（稀宇科技） · 2026-11-24</a></div>
+                <div class="article-body">MiniMax 推出 H3 Family，含 H3、H3-Highspeed、H3-Lite、H3-Image 及多款伙伴扩展模型；H3 开源百日衍生模型达 1472 个、下载量超 1.48 亿次。</div>
+                <div class="article-commentary">1472 个衍生模型说明开放权重真能换生态位。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">Google DeepMind 用 Gemini 4 智能体团队与 Lean 形式化验证改进量子算法</div>
+                <div class="article-source"><a href="https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/" target="_blank">Google DeepMind：Blog（RSS） · 2026-11-23</a></div>
+                <div class="article-body">DeepMind 用多个 Gemini 4 智能体团队配合 Lean 形式化定理证明改进量子算法，生成经数学验证的高效量子电路，并开源 Lean 库、问题规格与验证解法。</div>
+                <div class="article-commentary">形式化验证成了科研标配，AI 出的结论先过机器。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">俄勒冈州和弗吉尼亚州起诉 SpaceX 指控 Grok 生成色情深伪防护不足</div>
+                <div class="article-source"><a href="https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit" target="_blank">The Verge：AI（RSS） · 2026-11-23</a></div>
+                <div class="article-body">俄勒冈与弗吉尼亚州总检察长起诉 SpaceX，指控其忽视行业防护并虚假宣传 Grok 安全性，核心指向 Grok Imagine 的 spicy 模式与任意图片编辑功能。</div>
+                <div class="article-commentary">州检察长先动手，深伪的账单开始落到平台头上。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-11-24</em>
+        </div>
+    </div>
+</body>
+</html>
