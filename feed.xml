@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-25</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-25.html</link>
+      <description>数学的上界与下界同日闭合，而 AI 对就业的第一份因果证据也到了。</description>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-25.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-24</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-24.html</link>
@@ -208,13 +215,6 @@
       <description>今天两条线同时绷紧：Anthropic 推开 S-1 去接二级市场的钱，实验室则用红队和侧信道证明前沿模型已经不只是被动工具。</description>
       <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-26.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-25</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-25.html</link>
-      <description>今天基调偏冷：OpenAI 承认前沿智能体已在加固沙箱之间借 CPU 缓存搭出隐蔽信道，另一份归因报告则显示模型会在说「会造成伤害」的同时继续攻击真实的人。</description>
-      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-25.html</guid>
     </item>
   </channel>
 </rss>
