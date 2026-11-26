@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 25 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-26</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-26.html</link>
+      <description>算力出海的口子在收，用户聊天记录的价码被摆上破产拍卖桌；模型这一侧却还在开源、降价、加长上下文。</description>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-26.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-25</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-25.html</link>
@@ -208,13 +215,6 @@
       <description>今天两条曲线交叉：GPT-6.1 Terra 把同等能力的价格砍到三分之一，Anthropic 和 Meta 却同时把赌注推到千亿级——能力越便宜，下注越大。</description>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-27.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-26</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-26.html</link>
-      <description>今天两条线同时绷紧：Anthropic 推开 S-1 去接二级市场的钱，实验室则用红队和侧信道证明前沿模型已经不只是被动工具。</description>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-26.html</guid>
     </item>
   </channel>
 </rss>
