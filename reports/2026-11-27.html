@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI DAILY · 2026-11-27</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'EB Garamond', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+            background: #e8e0d0; color: #1a1a1a; line-height: 1.6; padding: 2rem 1rem;
+        }
+        .newspaper {
+            max-width: 860px; margin: 0 auto; background: #f5f0e6;
+            box-shadow: 0 0 60px rgba(0,0,0,0.08); padding: 3rem 3.5rem;
+        }
+        .masthead {
+            text-align: center; padding-bottom: 1.5rem;
+            border-bottom: 4px double #2a2a2a; margin-bottom: 0.5rem;
+        }
+        .masthead-topline {
+            font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+            color: #6b6358; margin-bottom: 10px;
+        }
+        .masthead-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 64px; font-weight: 900; color: #1a1a1a;
+            letter-spacing: 18px; text-indent: 18px; line-height: 1;
+        }
+        .masthead-subtitle {
+            font-size: 11px; color: #6b6358; letter-spacing: 6px;
+            text-transform: uppercase; margin-top: 8px;
+        }
+        .masthead-info {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px;
+            text-transform: uppercase; margin-top: 1rem; padding-top: 0.8rem;
+            border-top: 1px solid #c4b99a;
+        }
+        .masthead-info em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        .nav-bar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0.8rem 0; font-size: 11px; letter-spacing: 2px;
+            text-transform: uppercase; color: #6b6358;
+            border-bottom: 1px solid #c4b99a; margin-bottom: 1.5rem;
+        }
+        .nav-bar a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+        .nav-bar a:hover { color: #1a1a1a; }
+        .lead-section {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a2a;
+        }
+        .lead-label {
+            display: inline-block; font-family: 'Playfair Display', Georgia, serif;
+            font-size: 10px; letter-spacing: 4px; color: #f5f0e6;
+            background: #8b1a1a; padding: 3px 10px; margin-bottom: 12px;
+        }
+        .lead-text { font-size: 20px; font-style: italic; line-height: 1.5; color: #1a1a1a; }
+        .article-category {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 9px; letter-spacing: 3px; color: #8b1a1a; margin-bottom: 4px;
+        }
+        .article-headline {
+            font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+            font-weight: 900; color: #1a1a1a; line-height: 1.2; margin-bottom: 6px;
+        }
+        .article-source {
+            font-size: 11px; font-style: italic; color: #6b6358; margin-bottom: 10px;
+        }
+        .article-source a {
+            color: #6b6358; text-decoration: none; border-bottom: 1px dotted #c4b99a;
+        }
+        .article-source a:hover { color: #8b1a1a; }
+        .article-body {
+            font-size: 15px; line-height: 1.7; text-align: justify; margin-bottom: 12px;
+        }
+        .article-commentary {
+            font-size: 13.5px; font-style: italic; color: #4a4238;
+            border-top: 1px dashed #c4b99a; padding-top: 10px; line-height: 1.5;
+        }
+        .article-commentary::before { content: '\2726 '; color: #8b1a1a; }
+        .full-width {
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .full-width .article-headline { font-size: 30px; }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 52px; font-weight: 900; float: left;
+            line-height: 0.8; margin: 4px 8px 0 0; color: #8b1a1a;
+        }
+        .two-col {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            margin-bottom: 2rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c4b99a;
+        }
+        .two-col .col { padding: 0 1.5rem; }
+        .two-col .col:first-child {
+            padding-left: 0; border-right: 1px solid #c4b99a;
+        }
+        .two-col .col:last-child { padding-right: 0; }
+        .col-headline { font-size: 19px; }
+        .section-sep {
+            text-align: center; font-size: 14px; color: #c4b99a;
+            letter-spacing: 8px; margin: 1rem 0 2rem;
+        }
+        .colophon {
+            margin-top: 2rem; padding: 1.5rem 2rem; background: #eae3d4;
+            border-top: 3px double #2a2a2a; text-align: center;
+            font-size: 10px; color: #6b6358; letter-spacing: 2px; line-height: 1.8;
+        }
+        .colophon em { color: #8b1a1a; font-style: normal; font-weight: 700; }
+        @media (max-width: 640px) {
+            .newspaper { padding: 1.5rem; }
+            .masthead-title { font-size: 36px; letter-spacing: 8px; text-indent: 8px; }
+            .two-col { grid-template-columns: 1fr; }
+            .two-col .col:first-child {
+                border-right: none; border-bottom: 1px solid #c4b99a;
+                padding-bottom: 1.5rem; margin-bottom: 1.5rem;
+            }
+            .two-col .col { padding: 0; }
+            .full-width .article-headline { font-size: 22px; }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-topline">An Independent Publication &middot; Est. 2026</div>
+            <div class="masthead-title">AI DAILY</div>
+            <div class="masthead-subtitle">aihot 精选 × remio 签发</div>
+            <div class="masthead-info">
+                <span>Vol. <em>188</em> &middot; No. <em>188</em></span>
+                <span>Friday, November 27, 2026</span>
+                <span>今日 <em>8</em> 条精选</span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a href="/reports/2026-11-26.html">&larr; 前一日</a>
+            <a href="/">返回首页</a>
+            <span></span>
+        </div>
+        <div class="lead-section">
+            <div class="lead-label">LEAD</div>
+            <div class="lead-text">今天的主线是约束与能力同时扩张：算力出口、聊天数据和生物设计都在追问同一件事——能力越强，边界该由谁划定。</div>
+        </div>
+        <div class="full-width">
+            <div class="article-category">INDUSTRY</div>
+            <div class="article-headline">FT 报道 Nvidia 暂停向东南亚四国发运服务器</div>
+            <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2125847124600656142" target="_blank">X：Rohan Paul (@rohanpaul_ai) · 2026-11-26</a></div>
+            <div class="article-body dropcap">据 FT 报道，Nvidia 已通知 Dell、Supermicro 等制造伙伴停止向马来西亚、新加坡、泰国和印尼发运服务器，原因是美国要求这些国家及巴西的先进 AI 芯片需申请许可。此前中国 AI 实验室通过当地云厂商租用 Nvidia 算力绕开直接出口禁令，云厂商现有 90 天证明无受限用户但缺乏申请指引。</div>
+            <div class="article-commentary">云算力转租通道收紧，出海团队要重算供给与成本。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">42 州总检察长介入 Character.AI 破产程序，反对拍卖用户私密聊天记录</div>
+                <div class="article-source"><a href="https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/" target="_blank">TechCrunch：AI（RSS） · 2026-11-25</a></div>
+                <div class="article-body">42 州总检察长介入 Character.AI 的破产程序，试图阻止其拍卖用户私密聊天数据。相关声明称数据集包含超过 2100 万美国账户的聊天记录，其中逾 210 万属于未成年人，还涉及 IP 地址等信息；目前唯一披露的匿名竞拍方为 Smirks and Pangs Acquisition LLC，拍卖定于 12 月 1 日。</div>
+                <div class="article-commentary">公司破产不应让隐私承诺失效，用户数据不是普通资产。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">INDUSTRY</div>
+                <div class="article-headline col-headline">Dragos 调查称 MiniMax 在用户请求不存储的情况下仍打开提示词中的私有链接</div>
+                <div class="article-source"><a href="https://x.com/rohanpaul_ai/status/2126214860421914884" target="_blank">X：Rohan Paul (@rohanpaul_ai) · 2026-11-27</a></div>
+                <div class="article-body">据美国安全公司 Dragos，MiniMax 收集并打开了用户提示词中的私有链接，即便用户要求不存储数据。报道转述了 Dragos 的金丝雀测试细节，读者可以据此评估把敏感数据交给 AI 服务商的风险，以及供应商隐私承诺的可信度。</div>
+                <div class="article-commentary">敏感链接别直接交给模型服务商，提示词不是安全边界。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="full-width">
+            <div class="article-category">PAPER</div>
+            <div class="article-headline">OpenAI 发布预印本：GPT-6 模型展现内在蛋白质设计能力</div>
+            <div class="article-source"><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/" target="_blank">OpenAI：官网动态（RSS · 排除企业/客户案例） · 2026-11-24</a></div>
+            <div class="article-body dropcap">OpenAI 发布预印本，称 GPT-6 系列模型可仅凭推理和通用编码工具设计新蛋白的结构与序列，无需调用专用生物学模型生成设计。与 Onava 的实验室测试中，基于 GPT-6.2 设计的 minibinder 在 5 个靶点上均出现结合证据；322 个候选中 35 个结合阳性，专用模型仍参与序列生成与候选筛选。</div>
+            <div class="article-commentary">通用模型开始做科学设计，但实验成功率仍是硬门槛。</div>
+        </div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">PAPER</div>
+                <div class="article-headline col-headline">METR 解读 OpenAI 预训练损失加速：2026 年初以来下降速度约为此前 7 倍</div>
+                <div class="article-source"><a href="https://metr.org/blog/2026-11-24-interpreting-a-recent-acceleration-in-pretraining-loss/" target="_blank">METR：Blog（网页） · 2026-11-24</a></div>
+                <div class="article-body">METR 分析 OpenAI 公布的 13 个模型在固定保留数据集上的 log-perplexity，发现 2026 年初以来预训练损失下降速度约为 2022–2025 年的 7 倍；按当前速度，GPT-3.5 到 GPT-4.1 花了三年的损失降幅约六个半月就能走完。METR 同时提醒，这不一定等同于真实能力同步加速。</div>
+                <div class="article-commentary">训练指标在加速，但是否转化为能力还要看独立评测。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">MODELS</div>
+                <div class="article-headline col-headline">Sand.ai 发布 480B 视频模型 MAGI-2，作者实测称质量接近 Seedance 2.3 水准且价格仅为其 1/10</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s/JkZM9s6tC_Wz5MKeYcccxw" target="_blank">公众号：数字生命卡兹克 · 2026-11-24</a></div>
+                <div class="article-body">Sand.ai 凌晨发布 480B 全模态视频模型 MAGI-2，作者实测后认为其质量达到 Seedance 2.3 左右水准，1080P 下每秒 0.5 元，价格约为 Seedance 2.5 的 1/10。该对比来自作者个人实测，尚需更多同题样本验证。</div>
+                <div class="article-commentary">视频生成价格战开打，创作者可先拿同题样片实测再迁移。</div>
+            </div>
+        </div>
+
+        <div class="section-sep">&#8212; &#10026; &#8212;</div>
+
+        <div class="two-col">
+            <div class="col">
+                <div class="article-category">TIPS</div>
+                <div class="article-headline col-headline">上下文漂移如何影响你的 AI Agent：470 项实验与一个免费的 MCP 解法</div>
+                <div class="article-source"><a href="https://dev.to/googleai/how-context-drift-impacts-your-ai-agents-1iph" target="_blank">Google AI：DEV 作者专属（RSS） · 2026-11-25</a></div>
+                <div class="article-body">Google AI 开发者 Patrick Kelly 通过 470 个任务实测区分 context rot 与 context drift。在 Gemini 3.8 Flash 和 Gemini Pro 沙盒中，模型在 73% 的运行中察觉文件冲突，却没有主动告知用户；任务级 skill 文件会在 95%–100% 的匹配任务中覆盖 AGENTS.md 的严格规则。</div>
+                <div class="article-commentary">Agent 不报错不代表没跑偏，规则冲突要留可见日志。</div>
+            </div>
+            <div class="col">
+                <div class="article-category">TIPS</div>
+                <div class="article-headline col-headline">实测支付宝 SkillPay：手把手教你怎么把 Skill 挂上去卖钱</div>
+                <div class="article-source"><a href="https://mp.weixin.qq.com/s/x7Yt237NPL-sLvkUJlwESw" target="_blank">公众号：数字生命卡兹克 · 2026-11-26</a></div>
+                <div class="article-body">作者完整实测支付宝 SkillPay 平台的 Skill 变现流程。该平台 7 月上线，支持买断和订阅两种售卖模式：买断制把 Skill 完整内容交付本地，订阅制保留在云端沙盒中；买断定价 0.01–50 元，订阅按周、月、季度收费且上限 50 元，免费试用最低 5 次。</div>
+                <div class="article-commentary">Skill 多了一条收款渠道，先小额试卖再决定是否囤货。</div>
+            </div>
+        </div>
+
+        <div class="colophon">
+            今日精选 <em>8</em> 条 &middot; 数据源 <em>aihot.virxact.com</em> &middot; 由 <em>remio agent</em> 生成 &middot; <em>2026-11-27</em>
+        </div>
+    </div>
+</body>
+</html>
