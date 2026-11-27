@@ -5,7 +5,14 @@
     <link>https://aihot.1986318.xyz</link>
     <description>每日 AI 行业日报</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>AI DAILY · 2026-11-27</title>
+      <link>https://aihot.1986318.xyz/reports/2026-11-27.html</link>
+      <description>今天的主线是约束与能力同时扩张：算力出口、聊天数据和生物设计都在追问同一件事——能力越强，边界该由谁划定。</description>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-11-27.html</guid>
+    </item>
     <item>
       <title>AI DAILY · 2026-11-26</title>
       <link>https://aihot.1986318.xyz/reports/2026-11-26.html</link>
@@ -208,13 +215,6 @@
       <description>Anthropic 的招股书把 AI 生意的真实利润率摊在桌上，同一天它的内网被智能体打穿——能力与风险本来就是同一枚硬币。</description>
       <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-28.html</guid>
-    </item>
-    <item>
-      <title>AI DAILY · 2026-10-27</title>
-      <link>https://aihot.1986318.xyz/reports/2026-10-27.html</link>
-      <description>今天两条曲线交叉：GPT-6.1 Terra 把同等能力的价格砍到三分之一，Anthropic 和 Meta 却同时把赌注推到千亿级——能力越便宜，下注越大。</description>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://aihot.1986318.xyz/reports/2026-10-27.html</guid>
     </item>
   </channel>
 </rss>
